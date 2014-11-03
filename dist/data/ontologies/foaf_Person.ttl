@@ -1,0 +1,88 @@
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix core:    <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+
+foaf:Person a rdfs:Class;
+  ns:term_status "stable";
+  owl:disjointWith 
+    foaf:Project,     
+    foaf:Document,     
+    foaf:Organization;
+  rdfs:comment "A person.";
+  rdfs:isDefinedBy foaf:;
+  rdfs:label "Person";
+  rdfs:subClassOf 
+    contact:Person,     
+    foaf:Agent,     
+    geo:SpatialThing .
+
+rdfs:label a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "label" ;
+	rdfs:comment "A human-readable name for the subject." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal . 
+	
+foaf:name
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "The first name of a person"^^xsd:string ;
+      rdfs:domain owl:Thing ;
+      rdfs:label "name"^^xsd:string ;
+	  owl:equivalentProperty core:name ;
+      rdfs:range xsd:string .
+	
+foaf:surname
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "The last name of a person"^^xsd:string ;
+      rdfs:domain owl:Thing ;
+      rdfs:label "surname"^^xsd:string ;
+	  owl:equivalentProperty core:surname ;
+      rdfs:range xsd:string .
+
+foaf:givenName
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "The given name of a person"^^xsd:string ;
+      rdfs:domain owl:Thing ;
+      rdfs:label "given name"^^xsd:string ;
+	  owl:equivalentProperty core:givenName ;
+      rdfs:range xsd:string .	  
+	  
+dc:description
+      rdf:type owl:DatatypeProperty ;
+      rdfs:comment "Dublin Core (dc) properties should only be used for media resources compatible with a Dublin Core type"^^xsd:string ;
+      rdfs:label "description"^^xsd:string ;
+	  owl:equivalentProperty core:description ;
+      rdfs:range xsd:string .	
+
+dbpedia-owl:birthPlace
+      rdf:type rdf:Property ;
+	  owl:equivalentProperty core:birthPlace ;
+      rdfs:label "birth place"^^xsd:string .
+	
+dbpedia-owl:birthDate
+      rdf:type rdf:Property ;
+      rdfs:label "birth date"^^xsd:string ;
+	  owl:equivalentProperty core:birthDate ;
+	  rdfs:range xsd:date .	
+	  
+dbpedia-owl:deathPlace
+      rdf:type rdf:Property ;
+	  owl:equivalentProperty core:deathPlace ;
+      rdfs:label "birth place"^^xsd:string .
+	
+dbpedia-owl:deathDate
+      rdf:type rdf:Property ;
+      rdfs:label "birth date"^^xsd:string ;
+	  owl:equivalentProperty core:deathDate ;
+	  rdfs:range xsd:date .	
+	  

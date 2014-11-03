@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:news="http://www.bbc.co.uk/ontologies/news/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:provenance="http://www.bbc.co.uk/ontologies/provenance/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:time="http://purl.org/NET/c4dm/timeline.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Core News Ontology describes the basic concepts that journalists can associate with a Creative Work.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core News Ontology</rdfs:label>
+	<owl:imports rdf:resource="http://purl.org/NET/c4dm/timeline.owl"/>
+	<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+	<owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+	<owl:imports rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/"/>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</owl:versionInfo>
+	<foaf:maker rdf:resource="http://www.topdrawersausage.net/foaf.rdf#jeremytarling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/Event">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A compound entity, the intersection of Person/Organisation doing something at a Place and Time</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An event in the news</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Event"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/Organisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic organisation class for news</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An organisation in the news</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Organisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/Person">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic person class for news</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A person in the news</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/Place">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A generic place class for news</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A place in the news</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Place"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/Theme">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An intangible theme or topic of a News asset, e.g. recession, horsemeat, snow, etc</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A theme or topic</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Theme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property to associate People, Organisations, Places, Intangibles and Events</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Thing"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is notably associated with</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Thing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/organisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associates an Event with an Organisation(s)</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/news/Event"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has agent</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/news/Organisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/person">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Associates an Event with Person(s)</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/news/Event"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has agent</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/news/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/place">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The location an Event took place in</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/news/Event"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">took place in</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/news/Place"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/theme">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">property to associate Intangibles with Events</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/news/Event"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has theme</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/news/Theme"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/news/time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time an Event took place at</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/news/Event"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/news/"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">took place on</rdfs:label>
+	<rdfs:range rdf:resource="http://purl.org/NET/c4dm/timeline.owl#Interval"/>
+</rdf:Description>
+
+</rdf:RDF>

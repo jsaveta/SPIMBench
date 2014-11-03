@@ -1,0 +1,41 @@
+# Inserting data for Testing owl:sameAs, owl:differentFrom (eq-trans), (eq-diff1)
+
+PREFIX bbc:<http://www.bbc.co.uk/ontologies/bbc/>  
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl:<http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> 
+PREFIX core:<http://www.bbc.co.uk/ontologies/coreconcepts/> 
+PREFIX cwork:<http://www.bbc.co.uk/ontologies/creativework/> 
+PREFIX ldbc:<http://www.ldbc.eu/ontologies/sempub#>
+
+INSERT DATA
+{
+ <http://www.bbc.co.uk/things/creativework-eq-trans-1#id> bbc:primaryContentOf 
+		<http://www.bbc.co.uk/things/webdoc-eq-trans-1#id> ; 
+		#a cwork:BlogPost ; 
+		owl:sameAs <http://www.bbc.co.uk/things/creativework-eq-trans-2#id> ; 
+	rdfs:comment "Testing owl:sameAs (eq-trans), (eq-rep-o), (eq-rep-p)". 
+
+<http://www.bbc.co.uk/things/creativework-eq-trans-2#id> ldbc:referTo 
+	<http://www.bbc.co.uk/things/bbc-product-eq-trans-1#id> ; 
+	#a cwork:CreativeWork ; 
+	rdfs:comment "Testing owl:sameAs (eq-trans)" ; 
+	owl:sameAs <http://www.bbc.co.uk/things/creativework-eq-trans-3#id> . 
+
+<http://www.bbc.co.uk/things/creativework-eq-trans-3#id> a cwork:CreativeWork ;
+	rdfs:comment "Testing owl:sameAs (eq-trans), (eq-rep-s)".
+
+ldbc:refersTo owl:sameAs ldbc:referTo ; 
+	rdfs:comment "Testing owl:sameAs (eq-rep-p)" . 
+
+<http://www.bbc.co.uk/things/creativework-eq-trans-4#id> 
+	#a cwork:BlogPost ;
+	rdfs:comment "Testing owl:sameAs, owl:differentFrom (eq-diff1)" ;
+	owl:sameAs <http://www.bbc.co.uk/things/creativework-eq-trans-1#id> ; 
+	owl:differentFrom <http://www.bbc.co.uk/things/creativework-eq-trans-5#id> . 
+	
+<http://www.bbc.co.uk/things/creativework-eq-trans-5#id> a cwork:CreativeWork ;
+	rdfs:comment "Testing owl:sameAs (eq-trans), (eq-rep-s)".		
+}
+

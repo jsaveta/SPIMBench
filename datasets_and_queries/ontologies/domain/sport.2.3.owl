@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:event="http://purl.org/NET/c4dm/event.owl#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:par="http://purl.org/vocab/par/schema#"
+	xmlns:protons="http://proton.semanticweb.org/2005/04/protons#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sport="http://www.bbc.co.uk/ontologies/sport/"
+	xmlns:tag="http://www.bbc.co.uk/ontologies/tag/"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<owl:imports rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/"/>
+	<owl:imports rdf:resource="http://proton.semanticweb.org/2005/04/protons"/>
+	<owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+	<owl:imports rdf:resource="http://purl.org/NET/c4dm/event.owl"/>
+	<owl:priorVersion rdf:resource="http://www.bbc.co.uk/ontologies/sport/2011-02-17.rdf"/>
+	<owl:versionInfo xml:lang="en">Additive changes to version 2. Fixes grammatical and documentation errors.</owl:versionInfo>
+	<foaf:maker rdf:resource="http://uk.linkedin.com/pub/jem-rayfield/27/b19/757"/>
+	<foaf:maker rdf:resource="http://www.blockslabpillar.com"/>
+	<foaf:maker rdf:resource="http://uk.linkedin.com/pub/stuart-williams/8/684/351"/>
+	<foaf:maker rdf:resource="http://uk.linkedin.com/in/brianwmcbride"/>
+	<foaf:maker rdf:resource="http://uk.linkedin.com/in/paulwilton"/>
+	<foaf:maker rdf:resource="http://www.linkedin.com/in/tfgrahame"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Competition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A competitive sporting event that usually appears as an occurrence of a recurring competition, for example the recurring English Football Premier League has a seasonal competition occurrence during 2012/13</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/CompetitionType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">Enumerated competition types, for example: domestic, international.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Competition type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x1">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/championship"/>
+	<rdf:rest rdf:nodeID="node18t273go4x2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x2">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/conference-north"/>
+	<rdf:rest rdf:nodeID="node18t273go4x3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x3">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/conference-south"/>
+	<rdf:rest rdf:nodeID="node18t273go4x4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x4">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/fa-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x5">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/football-conference"/>
+	<rdf:rest rdf:nodeID="node18t273go4x6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x6">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/football-league-trophy"/>
+	<rdf:rest rdf:nodeID="node18t273go4x7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x7">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/irish-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x8">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/irish-premier-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x9">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/irish-premiership"/>
+	<rdf:rest rdf:nodeID="node18t273go4x10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x10">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/league-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x11">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/league-one"/>
+	<rdf:rest rdf:nodeID="node18t273go4x12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x12">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/league-two"/>
+	<rdf:rest rdf:nodeID="node18t273go4x13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x13">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/premier-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x14">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-challenge-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x15">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x16">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-first-division"/>
+	<rdf:rest rdf:nodeID="node18t273go4x17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x17">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-highland-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x18">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-league-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x19">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-premier-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x20">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-second-division"/>
+	<rdf:rest rdf:nodeID="node18t273go4x21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x21">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/scottish-third-division"/>
+	<rdf:rest rdf:nodeID="node18t273go4x22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x22">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/welsh-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x23"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x23">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/welsh-league-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x24">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/welsh-premier-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x25"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x25">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-champions-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x26"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x26">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-european-championship"/>
+	<rdf:rest rdf:nodeID="node18t273go4x27"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x27">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-fa-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x28"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x28">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-league-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x29"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x29">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-premier-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x30">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/womens-super-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x31"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x31">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/domestic-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x32"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x32">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/domestic-league"/>
+	<rdf:rest rdf:nodeID="node18t273go4x33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x33">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/european-cup"/>
+	<rdf:rest rdf:nodeID="node18t273go4x34"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x34">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/competition-types/international"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/CompetitionType">
+	<owl:oneOf rdf:nodeID="node18t273go4x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">The group of people that are available to compete in a particular competition. Two groups with the same members are not necessarily the same group.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Competitive sporting group</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A sporting organisation that participates in competitive sporting events. For example Manchester United or Team GB at the Olympics.
+Has equivalent class of CompetitiveSportingOrganization to enable a transition to that new name in dependent code.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Competitive sporting organisation</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A Divisional Competition is a competition that is divided into a number of competitions. London 2012 is an example of a Divisional Competition.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Divisional competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/EventGender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">Enumerated type, typically Male, Female or Mixed.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Event gender</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x35">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/event-gender/womens"/>
+	<rdf:rest rdf:nodeID="node18t273go4x36"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x36">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/event-gender/mens"/>
+	<rdf:rest rdf:nodeID="node18t273go4x37"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x37">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/event-gender/mixed"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/EventGender">
+	<owl:oneOf rdf:nodeID="node18t273go4x35"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/GoverningBody">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">The Governing Body for a sport, such as The Football Association.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Governing body</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/GroupCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">An organisation as a collection of leagues used to select the top N competitors from each league.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Group competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Home">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">The home ground, stadium or location of a Competitive Sporting Organisation.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Home</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A competition or stage of competition that progresses through rounds of individual fixtures whereby one team is eliminated as a result of each fixture.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Knockout competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/LeagueCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A League Competition is a hierarchy of competitions or competition within such a hierarchy.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">League competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Match">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">The smallest unit of sporting competition.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Match</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MedalCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A competition that results in the awarding of a medal to the winner or runner up in that competition.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Medal competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A competition that incorporates a number of different sports, such as the Olympics.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Multi-discipline competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A Competition organised as a sequence of rounds, for example the Premier League or group stage of the World Cup.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Multi-round competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A Multi-stage Competition is a competition that is organised as a set of stages. An example is the Football World Cup.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Multi-stage competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Person">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">An athlete or other person with typically a participating role in a CompetitiveSportingOrganization.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Person</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/coreconcepts/Person"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/RecurringCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A recurring sports competition such as the Olympics or Rugby Super League.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Recurring competition</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Round">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A round is one or more competitions that is part of a Multi-Round Competition. Examples include the first round of Wimbledon and the final round of the FA Cup.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Round</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/RoundType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">Enumerated round types, for example: preliminary, qualifying or final.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Round Type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x38">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/round-types/preliminary"/>
+	<rdf:rest rdf:nodeID="node18t273go4x39"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x39">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/round-types/qualifying"/>
+	<rdf:rest rdf:nodeID="node18t273go4x40"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18t273go4x40">
+	<rdf:first rdf:resource="http://www.bbc.co.uk/things/round-types/final"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/RoundType">
+	<owl:oneOf rdf:nodeID="node18t273go4x38"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/Session">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A sub-division of a competition, that must be broken up due to the duration of that competition, occurring for example in snooker or cricket.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Session</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">An organization involved in Sport, for example the UK Government Department for Culture, Media and Sport.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Sporting organization</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">The type of discipline a sporting event involves. Rugby League is a discipline as it has a different set of rules from Rugby Union.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Sports discipline</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/UnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment xml:lang="en">A unit competition is the unit of competition defined by a competition discipline rules. Examples include a 100m race or Football match.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">Unit competition</rdfs:label>
+	<rdfs:subClassOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/awayCompetitor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a match to one competitor, by definition or designation not the home competitor.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Match"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">away competitor</rdfs:label>
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/brandedName">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">The name of the thing with its sponsor, for example Barclays Premier League</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">branded name</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/competesIn">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competitor, team or other agent to a competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">competes in</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent_in"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/competitionType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates something, typically a competition, to an enumerated competition type.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">competition type</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitionType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/dateOfBirth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+	<rdfs:comment xml:lang="en">Implemented because foaf has no notion of date of birth.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Person"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">date of birth</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/discipline">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates something to a sporting discipline, for example a person to athletics.</rdfs:comment>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">discipline</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/eventGender">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to a gender class instance.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">event gender</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/EventGender"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/firstRound">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to the first round in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">first round</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasRound"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/firstSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to the first session of a series of sessions.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">first session</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasSession"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/firstStage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-stage competition to its first stage in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">first stage</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasStage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to its first unit competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">first unit competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasCompetedFor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Associates an agent with sporting organisations non-temporally.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has competed for</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportingOrganisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasCompetitor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to a competitor in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has competitor</rdfs:label>
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasDivision">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a divisional competition to a division in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has division</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a league competition to a corresponding group competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/LeagueCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has group</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/GroupCompetition"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/isGroupOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasHome">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a Competitive Sporting Organisation to its home ground, stadium or location.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has home</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Home"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasMatch">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a round to a match.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has match</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Match"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasRound">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to a round in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has round</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to a session within that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has session</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasStage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-stage competition to a stage that it contains.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has stage</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a round to a unit competition in that round.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">has unit competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/homeCompetitor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a match to one competitor, by definition or designation not the away competitor.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Match"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">home competitor</rdfs:label>
+	<rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasCompetitor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competitive sporting organisation to a competitive sporting group.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is competitive sporting organisation of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isGroupOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a group competition to its corresponding League competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/GroupCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is group of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/LeagueCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isMatchOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a match to a round.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Match"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is match of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<protons:transitiveOver rdf:resource="http://www.bbc.co.uk/ontologies/sport/isRoundOf"/>
+	<protons:transitiveOver rdf:resource="http://www.bbc.co.uk/ontologies/sport/isGroupOf"/>
+	<protons:transitiveOver rdf:resource="http://www.bbc.co.uk/ontologies/sport/isStageOf"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasMatch"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isRoundOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a round to its corresponding multi-round competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is round of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasRound"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isSessionOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a session to a competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is session of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasSession"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/isStageOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a stage to a multi-stage competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">is stage of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasStage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/lastRound">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to the last round in that competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">last round</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasRound"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/lastSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to the last session of a series of sessions.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">last session</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasSession"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/lastStage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a stage in a multi-stage competition to its last stage.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">last stage</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasStage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to its last unit competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">last unit competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/nextRound">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a round in a multi-round competition to its next round.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">next round</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/nextSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a session to its next session.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">next session</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/nextStage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a stage in a multi-stage competition to its next stage.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">next stage</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to its next unit competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">next unit competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/prevRound">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a Round in a multi-round competition to its previous round.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">previous round</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/prevSession">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a session to its previous session.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">previous session</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Session"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/prevStage">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a stage in a multi-stage competition to its previous stage.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">previous stage</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a multi-round competition to its previous unit competition.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">previous unit competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/UnitCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/promotesTo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to the next competition in a heirarchy that teams are promoted to. For example the nPower Championship promotes to the Premier League.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:label xml:lang="en">promotesTo</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/recurringCompetition">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to the recurring instance of that competition, for example the 2012/13 Premier League to the Premier League.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">recurring competition</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/RecurringCompetition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/relegatesTo">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a competition to the previous competition in a heirarchy that teams are relegated to. For example the  Premier League relegates to the nPower Championship.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<rdfs:label xml:lang="en">relegatesTo</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/Competition"/>
+	<owl:inverseOf rdf:resource="http://www.bbc.co.uk/ontologies/sport/promotesTo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/roundNumber">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:comment xml:lang="en">Indicates the sequential number of a round.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">round number</rdfs:label>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/roundType">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a round, to an enumerated round type.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/Round"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">round type</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/RoundType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/subDiscipline">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a discipline with a child discipline, for example gymnastics with rhythmic gymnastics.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">sub-discipline</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/ontologies/sport/subDisciplineOf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:comment xml:lang="en">Relates a discipline with a parent discipline, for example rhythmic gymnastics with gymnastics.</rdfs:comment>
+	<rdfs:domain rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"/>
+	<rdfs:isDefinedBy rdf:resource="http://www.bbc.co.uk/ontologies/sport/"/>
+	<rdfs:label xml:lang="en">sub-discipline of</rdfs:label>
+	<rdfs:range rdf:resource="http://www.bbc.co.uk/ontologies/sport/SportsDiscipline"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/things/competition-types/domestic-cup">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/things/competition-types/domestic-league">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/things/competition-types/european-cup">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.bbc.co.uk/things/competition-types/international">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+</rdf:RDF>

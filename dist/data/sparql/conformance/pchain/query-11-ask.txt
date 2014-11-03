@@ -1,0 +1,19 @@
+# Testing owl:propertyChainAxiom (prp-spo2)
+
+PREFIX bbc:<http://www.bbc.co.uk/ontologies/bbc/>  
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl:<http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> 
+PREFIX core:<http://www.bbc.co.uk/ontologies/coreconcepts/> 
+PREFIX cwork:<http://www.bbc.co.uk/ontologies/creativework/> 
+PREFIX ldbc:<http://www.ldbc.eu/ontologies/sempub#>
+
+ASK {
+  ?cWork a cwork:CreativeWork .
+  ?cWork cwork:thumbnail ?thumbnail1 .  
+  ?thumbnail1 cwork:altText ?thumbnailAltText1 .
+  ?cWork ldbc:cworkThumbnailAltText ?thumbnailAltText2 .
+  FILTER (?thumbnailAltText1 = ?thumbnailAltText2) .
+  FILTER (?cWork = <http://www.bbc.co.uk/things/creativework-prp-spo2#id>) .
+}

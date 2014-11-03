@@ -1,0 +1,56 @@
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix ns4: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix core:    <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix : <http://www.estrellaproject.org/lkif-core/relative-places.owl#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+dbpedia-owl:Place a owl:Class;
+  owl:equivalentClass ns4:Place;
+  owl:equivalentClass core:Place; # not sure if relative-place is correct
+  rdfs:comment "Immobile things or locations.";
+  rdfs:subClassOf owl:Thing .
+
+
+foaf:name
+    rdf:type owl:DatatypeProperty ;
+    rdfs:comment "The first name of a person"^^xsd:string ;
+    rdfs:domain owl:Thing ;
+    rdfs:label "name"^^xsd:string ;
+    rdfs:range xsd:string .
+	
+rdfs:label a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "label" ;
+	rdfs:comment "A human-readable name for the subject." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal . 
+
+	  
+rdfs:comment a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "comment" ;
+	rdfs:comment "A description of the subject resource." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal .	
+
+dbpedia-owl:country
+    rdf:type owl:ObjectProperty ;
+    rdfs:label "country"^^xsd:string ;
+	owl:equivalentProperty core:country ;
+	rdfs:range dbpedia-owl:Country .
+	
+
+dbpprop:population 
+    rdf:type rdf:Property ;
+	owl:equivalentProperty core:population ;
+    rdfs:label "population"^^xsd:string .
+
+#geo:geometry
+
+

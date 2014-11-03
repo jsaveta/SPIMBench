@@ -1,0 +1,55 @@
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> 
+PREFIX core:<http://www.bbc.co.uk/ontologies/coreconcepts/> 
+
+SELECT *
+WHERE
+{ ?travelsId rdf:type <http://www.w3.org/2002/07/owl#NamedIndividual> .
+  ?travelsId rdf:type ?travelsType 
+  FILTER (
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#AdministrativeDivision> ||  
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#City> ||
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#Coastline> ||
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#Continent> ||
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#Country> || 
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#GeographicalFeature> ||
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#Island> || 
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#Ocean> ||    
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#River> || 
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#TierOneAdministrativeDivision> ||
+?travelsType = <http://www.co-ode.org/roberts/travel.owl#bodyOfLand> ||
+?travelsType = <http://www.co-ode.org/roberts/upper.owl#Person_agent>
+ ) .
+ 
+  OPTIONAL{ ?travelsId rdf:type ?r .
+  ?r rdf:type owl:Restriction .
+  ?r owl:onProperty <http://www.co-ode.org/roberts/travel.owl#hasRecognitionStatus> .
+  ?r owl:someValuesFrom ?hasRecognitionStatus .}
+  
+
+  OPTIONAL{ ?travelsId rdf:type ?r .
+  ?r rdf:type owl:Restriction .
+  ?r owl:onProperty <http://www.co-ode.org/roberts/travel.owl#hasBoundary> .
+  ?r owl:someValuesFrom ?hasBoundary.}
+  
+   OPTIONAL{ ?travelsId rdf:type ?r .
+  ?r rdf:type owl:Restriction .
+  ?r owl:onProperty <http://www.co-ode.org/roberts/travel.owl#hasHeadOfState> .
+  ?r owl:someValuesFrom ?hasHeadOfState .}
+  
+     OPTIONAL{ ?travelsId rdf:type ?r .
+  ?r rdf:type owl:Restriction .
+  ?r owl:onProperty <http://www.co-ode.org/roberts/upper.owl#occupies> .
+  ?r owl:someValuesFrom ?occupies .}
+
+  
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#surroundedBy> ?surroundedBy . } 
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/upper.owl#is_occupied_by> ?is_occupied_by . }
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#hasPhysicalProperty> ?hasPhysicalProperty.}
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#hasCapital> ?hasCapital .}
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#directPartOf> ?directPartOf . }
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#hasArea> ?hasArea . }
+  OPTIONAL {?travelsId <http://www.co-ode.org/roberts/travel.owl#hasPopulation> ?hasPopulation .}
+
+}

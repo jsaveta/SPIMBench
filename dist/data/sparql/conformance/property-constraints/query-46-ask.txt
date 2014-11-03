@@ -1,0 +1,16 @@
+# Testing owl:InverseFunctionalProperty (prp-ifp)
+
+PREFIX bbc:<http://www.bbc.co.uk/ontologies/bbc/>  
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX owl:<http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#> 
+PREFIX core:<http://www.bbc.co.uk/ontologies/coreconcepts/> 
+PREFIX cwork:<http://www.bbc.co.uk/ontologies/creativework/> 
+PREFIX ldbc:<http://www.ldbc.eu/ontologies/sempub#>
+
+ASK 
+{
+<http://www.bbc.co.uk/things/thing-prp-ifp-1#id> owl:sameAs ?o . 
+        FILTER (?o  = <http://www.bbc.co.uk/things/thing-prp-ifp-2#id>) 
+}

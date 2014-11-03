@@ -1,0 +1,71 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbpedia-owl:	<http://dbpedia.org/ontology/> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+dbpedia-owl:musicalArtist	rdf:type	owl:ObjectProperty ;
+	owl:sameAs	dbpedia-owl:musicalArtist .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbpedia-owl:musicalArtist	rdfs:domain	dbpedia-owl:Single ;
+	rdfs:range	dbpedia-owl:MusicalArtist ;
+	rdfs:label	"musical artist"@en .
+	
+rdfs:label a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "label" ;
+	rdfs:comment "A human-readable name for the subject." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal . 
+
+	  
+rdfs:comment a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "comment" ;
+	rdfs:comment "A description of the subject resource." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal .
+	
+foaf:name
+    rdf:type owl:DatatypeProperty ;
+    rdfs:comment "The first name of a person"^^xsd:string ;
+    rdfs:domain owl:Person ;
+    rdfs:label "name"^^xsd:string ;
+    rdfs:range xsd:string .
+	
+
+
+dbpedia-owl:birthDate
+	rdf:type owl:DatatypeProperty, owl:FunctionalProperty;
+	rdfs:domain owl:Thing ;
+    rdfs:label "birth date"^^xsd:string ;
+    rdfs:range xsd:date ;
+	owl:equivalentProperty <http://schema.org/birthDate> .
+
+dbpedia-owl:birthPlace
+    rdf:type owl:ObjectProperty;
+	rdfs:comment "where the person was born" ;
+	rdfs:domain owl:Person ;
+    rdfs:label "birth place"^^xsd:string ;
+    rdfs:range dbpedia-owl:Place .
+	
+
+dbpedia-owl:genre
+    rdf:type owl:ObjectProperty;
+	rdfs:label "genre"^^xsd:string ;
+	owl:equivalentProperty <http://schema.org/genre> .
+
+dbpedia-owl:hometown
+    rdf:type owl:ObjectProperty;
+	rdfs:domain dbpedia-owl:Person ;
+	rdfs:label "hometown"^^xsd:string ;
+    rdfs:range dbpedia-owl:Settlement .
+	
+	
+	 
+	 
+	 
+	 
+	 
+	 

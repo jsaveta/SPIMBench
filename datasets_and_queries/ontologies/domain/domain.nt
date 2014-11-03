@@ -1,0 +1,799 @@
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2000/01/rdf-schema#comment> "The Core News Ontology describes the basic concepts that journalists can associate with a Creative Work."^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2000/01/rdf-schema#label> "Core News Ontology"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/NET/c4dm/timeline.owl> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/dc/elements/1.1/> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2002/07/owl#imports> <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+<http://www.bbc.co.uk/ontologies/news/> <http://www.w3.org/2002/07/owl#versionInfo> "1.2"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/> <http://xmlns.com/foaf/0.1/maker> <http://www.topdrawersausage.net/foaf.rdf#jeremytarling> .
+<http://www.bbc.co.uk/ontologies/news/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/news/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A compound entity, the intersection of Person/Organisation doing something at a Place and Time"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Event> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/Event> <http://www.w3.org/2000/01/rdf-schema#label> "An event in the news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Event> .
+<http://www.bbc.co.uk/ontologies/news/Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/news/Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic organisation class for news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Organisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "An organisation in the news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Organisation> .
+<http://www.bbc.co.uk/ontologies/news/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/news/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic person class for news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/Person> <http://www.w3.org/2000/01/rdf-schema#label> "A person in the news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Person> .
+<http://www.bbc.co.uk/ontologies/news/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/news/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic place class for news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/Place> <http://www.w3.org/2000/01/rdf-schema#label> "A place in the news"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Place> .
+<http://www.bbc.co.uk/ontologies/news/Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/news/Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "An intangible theme or topic of a News asset, e.g. recession, horsemeat, snow, etc"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Theme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/Theme> <http://www.w3.org/2000/01/rdf-schema#label> "A theme or topic"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/Theme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Theme> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "property to associate People, Organisations, Places, Intangibles and Events"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/coreconcepts/Thing> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "is notably associated with"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/coreconcepts/Thing> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an Event with an Organisation(s)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/news/Event> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/2000/01/rdf-schema#label> "has agent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/organisation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/news/Organisation> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an Event with Person(s)"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/news/Event> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/2000/01/rdf-schema#label> "has agent"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/person> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/news/Person> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/2000/01/rdf-schema#comment> "The location an Event took place in"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/news/Event> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/2000/01/rdf-schema#label> "took place in"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/place> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/news/Place> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#comment> "property to associate Intangibles with Events"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/news/Event> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#label> "has theme"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/news/Theme> .
+<http://www.bbc.co.uk/ontologies/news/theme> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/news/notablyAssociatedWith> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/2000/01/rdf-schema#comment> "The time an Event took place at"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/news/Event> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/news/> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/2000/01/rdf-schema#label> "took place on"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/news/time> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/NET/c4dm/timeline.owl#Interval> .
+<http://www.bbc.co.uk/ontologies/curriculum/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.bbc.co.uk/ontologies/curriculum/> <http://purl.org/dc/elements/1.1/date> "$Date: 2012/10/09 10:26:23 $" .
+<http://www.bbc.co.uk/ontologies/curriculum/> <http://www.w3.org/2002/07/owl#versionInfo> "Revision: 0.9" .
+<http://www.bbc.co.uk/ontologies/curriculum/> <http://www.w3.org/2000/01/rdf-schema#label> "curriculum ontology" .
+<http://www.bbc.co.uk/ontologies/curriculum/> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology aims to provide data model and vocabularies for describing the national curricula within the UK" .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/2000/01/rdf-schema#label> "age" .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/2000/01/rdf-schema#comment> "Age or age range is a way to specify the stages of education." .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/Age> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/2000/01/rdf-schema#label> "year" .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Year is a way to specify the stages of education." .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/Year> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/2000/01/rdf-schema#label> "key stage" .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Key Stage is a way to specify the stage of the state education system in England, Wales, Northern Ireland." .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/KeyStage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/2000/01/rdf-schema#label> "phase" .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept is borrowed from the controlled terms for describing phase of education, which are published by the data.gov.uk. The phases of education include Primary, Secondary and 16-Plus." .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Phase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Level> <http://www.w3.org/2000/01/rdf-schema#label> "level" .
+<http://www.bbc.co.uk/ontologies/curriculum/Level> <http://www.w3.org/2000/01/rdf-schema#comment> "Levels refers to the stages of education. Typically, there are four different ways to specify the levels: age range, year, key stage and phase." .
+<http://www.bbc.co.uk/ontologies/curriculum/Level> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Level> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/tagging/TagConcept> .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#label> "field of study" .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Fields of study refers to the disciplines of a curriculum, e.g. Science, Maths, Science, etc." .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> <http://www.w3.org/2000/01/rdf-schema#label> "programme of study" .
+<http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "A programme of study is the combination of a nation, an educational level such as Key Stage 3 and the subject being studied, Science, Maths etc." .
+<http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/tagging/TagConcept> .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/2000/01/rdf-schema#label> "topic" .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/2000/01/rdf-schema#comment> "Topic can highlight the content of the learning resources in a way more specific than the Field of Study. For example, energy is a topic of physics." .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Topic> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#label> "topic of study" .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "Topic of study is topic within the context of a programme of study. It aims to provide a formal learning context to an asset or a collection of assets." .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/2000/01/rdf-schema#label> "topic of study list" .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/2000/01/rdf-schema#comment> "A ordered list of topics of study" .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Nation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Nation> <http://www.w3.org/2000/01/rdf-schema#label> "nation" .
+<http://www.bbc.co.uk/ontologies/curriculum/Nation> <http://www.w3.org/2000/01/rdf-schema#comment> "Nation is the concept to describe the four parts of the UK, i.e. England, Wales, Scotland and Northern Ireland." .
+<http://www.bbc.co.uk/ontologies/curriculum/Nation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Nation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> <http://www.w3.org/2000/01/rdf-schema#label> "exam board" .
+<http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> <http://www.w3.org/2000/01/rdf-schema#comment> "Exam board is the organization holds some exams." .
+<http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/PaperTier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/PaperTier> <http://www.w3.org/2000/01/rdf-schema#label> "paper tier" .
+<http://www.bbc.co.uk/ontologies/curriculum/PaperTier> <http://www.w3.org/2000/01/rdf-schema#comment> "Paper tier reflects the difficulty of a exam. It can be standard or higher." .
+<http://www.bbc.co.uk/ontologies/curriculum/PaperTier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/PaperTier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/curriculum/Language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
+<http://www.bbc.co.uk/ontologies/curriculum/Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Examples of language are English, Welsh, Scottish Gaelic and Irish Gaelic." .
+<http://www.bbc.co.uk/ontologies/curriculum/Language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/Language> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-level of" .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Capture the hierarchy of level." .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/subLevelOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "lower age bound" .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "The lower bound of the age range of a educational level." .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/lowerAgeBoundary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#label> "upper age bound" .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#comment> "The upper bound of the age range of a educational level." .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/upperAgeBoundary> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-field of" .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Capture the hierarchy of fields of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/subFieldOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-programme of" .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Capture the hierarchy of programmes of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/subProgrammeOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2000/01/rdf-schema#label> "taught at level" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the level of a programme of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtAtLevel> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2000/01/rdf-schema#label> "taught in field" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the field of a programme of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/FieldOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInField> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2000/01/rdf-schema#label> "taught in nation" .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the nation of a level." .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/Level> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Nation> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/taughtInNation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/2000/01/rdf-schema#label> "published at" .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "The date when a programme of study is published" .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/publishedAt> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-topic of" .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Capture the hierarchy of topics." .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/Topic> .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Topic> .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/subTopicOf> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/2000/01/rdf-schema#label> "provides context to" .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Link topics of study to BBC assets." .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/providesContextTo> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2000/01/rdf-schema#label> "about" .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2000/01/rdf-schema#comment> "Link topic of study views to topics." .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Topic> .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/about> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2000/01/rdf-schema#label> "appropriate for" .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Link topic of study to a programme of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/ProgrammeOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/appropriateFor> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/2000/01/rdf-schema#label> "topics" .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a topic of study or a programme of study to an ordered list of topics of study." .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudyList> .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/topics> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/2000/01/rdf-schema#comment> "The property of an asset being in a specific language." .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Language> .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/language> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/2000/01/rdf-schema#label> "exam board" .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify an asset is useful for preparing exams provided by an exam board." .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/ExamBoard> .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/examBoard> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/2000/01/rdf-schema#label> "paper tier" .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the difficulty level of an asset" .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/PaperTier> .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/paperTier> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/2000/01/rdf-schema#label> "nation" .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify an asset could be useful for a certain nation" .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/Nation> .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/nation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#label> "includes topic of study" .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#comment> "a short cut from a programme of study or a topic of study to the member of its topic of study list" .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/curriculum/TopicOfStudy> .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/includesTopicOfStudy> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/2000/01/rdf-schema#label> "depiction PID" .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/2000/01/rdf-schema#comment> "The PID of the depiction (image)." .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/curriculum/> .
+<http://www.bbc.co.uk/ontologies/curriculum/depictionPID> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#imports> <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#imports> <http://proton.semanticweb.org/2005/04/protons> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/NET/c4dm/event.owl> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.bbc.co.uk/ontologies/sport/2011-02-17.rdf> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://www.w3.org/2002/07/owl#versionInfo> "Additive changes to version 2. Fixes grammatical and documentation errors."@en .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://uk.linkedin.com/pub/jem-rayfield/27/b19/757> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://www.blockslabpillar.com> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://uk.linkedin.com/pub/stuart-williams/8/684/351> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://uk.linkedin.com/in/brianwmcbride> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://uk.linkedin.com/in/paulwilton> .
+<http://www.bbc.co.uk/ontologies/sport/> <http://xmlns.com/foaf/0.1/maker> <http://www.linkedin.com/in/tfgrahame> .
+<http://www.bbc.co.uk/ontologies/sport/Competition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Competition> <http://www.w3.org/2000/01/rdf-schema#comment> "A competitive sporting event that usually appears as an occurrence of a recurring competition, for example the recurring English Football Premier League has a seasonal competition occurrence during 2012/13"@en .
+<http://www.bbc.co.uk/ontologies/sport/Competition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Competition> <http://www.w3.org/2000/01/rdf-schema#label> "Competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/Competition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumerated competition types, for example: domestic, international."@en .
+<http://www.bbc.co.uk/ontologies/sport/CompetitionType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitionType> <http://www.w3.org/2000/01/rdf-schema#label> "Competition type"@en .
+_:node18t45m0rix1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/championship> .
+_:node18t45m0rix1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix2 .
+_:node18t45m0rix2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/conference-north> .
+_:node18t45m0rix2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix3 .
+_:node18t45m0rix3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/conference-south> .
+_:node18t45m0rix3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix4 .
+_:node18t45m0rix4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/fa-cup> .
+_:node18t45m0rix4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix5 .
+_:node18t45m0rix5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/football-conference> .
+_:node18t45m0rix5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix6 .
+_:node18t45m0rix6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/football-league-trophy> .
+_:node18t45m0rix6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix7 .
+_:node18t45m0rix7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/irish-cup> .
+_:node18t45m0rix7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix8 .
+_:node18t45m0rix8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/irish-premier-league> .
+_:node18t45m0rix8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix9 .
+_:node18t45m0rix9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/irish-premiership> .
+_:node18t45m0rix9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix10 .
+_:node18t45m0rix10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/league-cup> .
+_:node18t45m0rix10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix11 .
+_:node18t45m0rix11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/league-one> .
+_:node18t45m0rix11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix12 .
+_:node18t45m0rix12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/league-two> .
+_:node18t45m0rix12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix13 .
+_:node18t45m0rix13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/premier-league> .
+_:node18t45m0rix13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix14 .
+_:node18t45m0rix14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-challenge-cup> .
+_:node18t45m0rix14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix15 .
+_:node18t45m0rix15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-cup> .
+_:node18t45m0rix15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix16 .
+_:node18t45m0rix16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-first-division> .
+_:node18t45m0rix16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix17 .
+_:node18t45m0rix17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-highland-league> .
+_:node18t45m0rix17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix18 .
+_:node18t45m0rix18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-league-cup> .
+_:node18t45m0rix18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix19 .
+_:node18t45m0rix19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-premier-league> .
+_:node18t45m0rix19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix20 .
+_:node18t45m0rix20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-second-division> .
+_:node18t45m0rix20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix21 .
+_:node18t45m0rix21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/scottish-third-division> .
+_:node18t45m0rix21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix22 .
+_:node18t45m0rix22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/welsh-cup> .
+_:node18t45m0rix22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix23 .
+_:node18t45m0rix23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/welsh-league-cup> .
+_:node18t45m0rix23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix24 .
+_:node18t45m0rix24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/welsh-premier-league> .
+_:node18t45m0rix24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix25 .
+_:node18t45m0rix25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-champions-league> .
+_:node18t45m0rix25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix26 .
+_:node18t45m0rix26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-european-championship> .
+_:node18t45m0rix26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix27 .
+_:node18t45m0rix27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-fa-cup> .
+_:node18t45m0rix27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix28 .
+_:node18t45m0rix28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-league-cup> .
+_:node18t45m0rix28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix29 .
+_:node18t45m0rix29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-premier-league> .
+_:node18t45m0rix29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix30 .
+_:node18t45m0rix30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/womens-super-league> .
+_:node18t45m0rix30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix31 .
+_:node18t45m0rix31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/domestic-cup> .
+_:node18t45m0rix31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix32 .
+_:node18t45m0rix32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/domestic-league> .
+_:node18t45m0rix32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix33 .
+_:node18t45m0rix33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/european-cup> .
+_:node18t45m0rix33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix34 .
+_:node18t45m0rix34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/competition-types/international> .
+_:node18t45m0rix34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitionType> <http://www.w3.org/2002/07/owl#oneOf> _:node18t45m0rix1 .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "The group of people that are available to compete in a particular competition. Two groups with the same members are not necessarily the same group."@en .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Competitive sporting group"@en .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#comment> "A sporting organisation that participates in competitive sporting events. For example Manchester United or Team GB at the Olympics.\nHas equivalent class of CompetitiveSportingOrganization to enable a transition to that new name in dependent code."@en .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Competitive sporting organisation"@en .
+<http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> .
+<http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Divisional Competition is a competition that is divided into a number of competitions. London 2012 is an example of a Divisional Competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Divisional competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/EventGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/EventGender> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumerated type, typically Male, Female or Mixed."@en .
+<http://www.bbc.co.uk/ontologies/sport/EventGender> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/EventGender> <http://www.w3.org/2000/01/rdf-schema#label> "Event gender"@en .
+_:node18t45m0rix35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/event-gender/womens> .
+_:node18t45m0rix35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix36 .
+_:node18t45m0rix36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/event-gender/mens> .
+_:node18t45m0rix36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix37 .
+_:node18t45m0rix37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/event-gender/mixed> .
+_:node18t45m0rix37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.bbc.co.uk/ontologies/sport/EventGender> <http://www.w3.org/2002/07/owl#oneOf> _:node18t45m0rix35 .
+<http://www.bbc.co.uk/ontologies/sport/GoverningBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/GoverningBody> <http://www.w3.org/2000/01/rdf-schema#comment> "The Governing Body for a sport, such as The Football Association."@en .
+<http://www.bbc.co.uk/ontologies/sport/GoverningBody> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/GoverningBody> <http://www.w3.org/2000/01/rdf-schema#label> "Governing body"@en .
+<http://www.bbc.co.uk/ontologies/sport/GoverningBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> .
+<http://www.bbc.co.uk/ontologies/sport/GroupCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/GroupCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "An organisation as a collection of leagues used to select the top N competitors from each league."@en .
+<http://www.bbc.co.uk/ontologies/sport/GroupCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/GroupCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Group competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/GroupCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/Home> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Home> <http://www.w3.org/2000/01/rdf-schema#comment> "The home ground, stadium or location of a Competitive Sporting Organisation."@en .
+<http://www.bbc.co.uk/ontologies/sport/Home> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Home> <http://www.w3.org/2000/01/rdf-schema#label> "Home"@en .
+<http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A competition or stage of competition that progresses through rounds of individual fixtures whereby one team is eliminated as a result of each fixture."@en .
+<http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Knockout competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/KnockoutCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A League Competition is a hierarchy of competitions or competition within such a hierarchy."@en .
+<http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "League competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/Match> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Match> <http://www.w3.org/2000/01/rdf-schema#comment> "The smallest unit of sporting competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/Match> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Match> <http://www.w3.org/2000/01/rdf-schema#label> "Match"@en .
+<http://www.bbc.co.uk/ontologies/sport/Match> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/MedalCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/MedalCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A competition that results in the awarding of a medal to the winner or runner up in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/MedalCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/MedalCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Medal competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/MedalCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A competition that incorporates a number of different sports, such as the Olympics."@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Multi-discipline competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiDisciplineCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Competition organised as a sequence of rounds, for example the Premier League or group stage of the World Cup."@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Multi-round competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A Multi-stage Competition is a competition that is organised as a set of stages. An example is the Football World Cup."@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Multi-stage competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "An athlete or other person with typically a participating role in a CompetitiveSportingOrganization."@en .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://www.bbc.co.uk/ontologies/sport/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/coreconcepts/Person> .
+<http://www.bbc.co.uk/ontologies/sport/RecurringCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/RecurringCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A recurring sports competition such as the Olympics or Rugby Super League."@en .
+<http://www.bbc.co.uk/ontologies/sport/RecurringCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/RecurringCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Recurring competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/Round> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Round> <http://www.w3.org/2000/01/rdf-schema#comment> "A round is one or more competitions that is part of a Multi-Round Competition. Examples include the first round of Wimbledon and the final round of the FA Cup."@en .
+<http://www.bbc.co.uk/ontologies/sport/Round> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Round> <http://www.w3.org/2000/01/rdf-schema#label> "Round"@en .
+<http://www.bbc.co.uk/ontologies/sport/Round> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/RoundType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/RoundType> <http://www.w3.org/2000/01/rdf-schema#comment> "Enumerated round types, for example: preliminary, qualifying or final."@en .
+<http://www.bbc.co.uk/ontologies/sport/RoundType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/RoundType> <http://www.w3.org/2000/01/rdf-schema#label> "Round Type"@en .
+_:node18t45m0rix38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/round-types/preliminary> .
+_:node18t45m0rix38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix39 .
+_:node18t45m0rix39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/round-types/qualifying> .
+_:node18t45m0rix39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:node18t45m0rix40 .
+_:node18t45m0rix40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.bbc.co.uk/things/round-types/final> .
+_:node18t45m0rix40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.bbc.co.uk/ontologies/sport/RoundType> <http://www.w3.org/2002/07/owl#oneOf> _:node18t45m0rix38 .
+<http://www.bbc.co.uk/ontologies/sport/Session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/Session> <http://www.w3.org/2000/01/rdf-schema#comment> "A sub-division of a competition, that must be broken up due to the duration of that competition, occurring for example in snooker or cricket."@en .
+<http://www.bbc.co.uk/ontologies/sport/Session> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/Session> <http://www.w3.org/2000/01/rdf-schema#label> "Session"@en .
+<http://www.bbc.co.uk/ontologies/sport/Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization involved in Sport, for example the UK Government Department for Culture, Media and Sport."@en .
+<http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Sporting organization"@en .
+<http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Organization> .
+<http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of discipline a sporting event involves. Rugby League is a discipline as it has a different set of rules from Rugby Union."@en .
+<http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> <http://www.w3.org/2000/01/rdf-schema#label> "Sports discipline"@en .
+<http://www.bbc.co.uk/ontologies/sport/UnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.bbc.co.uk/ontologies/sport/UnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "A unit competition is the unit of competition defined by a competition discipline rules. Examples include a 100m race or Football match."@en .
+<http://www.bbc.co.uk/ontologies/sport/UnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/UnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "Unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/UnitCompetition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a match to one competitor, by definition or designation not the home competitor."@en .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Match> .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/2000/01/rdf-schema#label> "away competitor"@en .
+<http://www.bbc.co.uk/ontologies/sport/awayCompetitor> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.bbc.co.uk/ontologies/sport/brandedName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/sport/brandedName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the thing with its sponsor, for example Barclays Premier League"@en .
+<http://www.bbc.co.uk/ontologies/sport/brandedName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/brandedName> <http://www.w3.org/2000/01/rdf-schema#label> "branded name"@en .
+<http://www.bbc.co.uk/ontologies/sport/brandedName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competitor, team or other agent to a competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#label> "competes in"@en .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/competesIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#agent_in> .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates something, typically a competition, to an enumerated competition type."@en .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/2000/01/rdf-schema#label> "competition type"@en .
+<http://www.bbc.co.uk/ontologies/sport/competitionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/CompetitionType> .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#comment> "Implemented because foaf has no notion of date of birth."@en .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Person> .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "date of birth"@en .
+<http://www.bbc.co.uk/ontologies/sport/dateOfBirth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.bbc.co.uk/ontologies/sport/discipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/discipline> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates something to a sporting discipline, for example a person to athletics."@en .
+<http://www.bbc.co.uk/ontologies/sport/discipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/discipline> <http://www.w3.org/2000/01/rdf-schema#label> "discipline"@en .
+<http://www.bbc.co.uk/ontologies/sport/discipline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to a gender class instance."@en .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/2000/01/rdf-schema#label> "event gender"@en .
+<http://www.bbc.co.uk/ontologies/sport/eventGender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/EventGender> .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to the first round in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#label> "first round"@en .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/firstRound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasRound> .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to the first session of a series of sessions."@en .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#label> "first session"@en .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/firstSession> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasSession> .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-stage competition to its first stage in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#label> "first stage"@en .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/firstStage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasStage> .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to its first unit competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "first unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/firstUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates an agent with sporting organisations non-temporally."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/2000/01/rdf-schema#label> "has competed for"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/SportingOrganisation> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to a competitor in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/2000/01/rdf-schema#label> "has competitor"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasCompetitor> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a divisional competition to a division in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/DivisionalCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/2000/01/rdf-schema#label> "has division"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasDivision> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a league competition to a corresponding group competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has group"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/GroupCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasGroup> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/isGroupOf> .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Competitive Sporting Organisation to its home ground, stadium or location."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/2000/01/rdf-schema#label> "has home"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasHome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Home> .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a round to a match."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#label> "has match"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Match> .
+<http://www.bbc.co.uk/ontologies/sport/hasMatch> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to a round in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/2000/01/rdf-schema#label> "has round"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasRound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to a session within that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/2000/01/rdf-schema#label> "has session"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-stage competition to a stage that it contains."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/2000/01/rdf-schema#label> "has stage"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a round to a unit competition in that round."@en .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "has unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a match to one competitor, by definition or designation not the away competitor."@en .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Match> .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#label> "home competitor"@en .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.bbc.co.uk/ontologies/sport/homeCompetitor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasCompetitor> .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competitive sporting organisation to a competitive sporting group."@en .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingGroup> .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/2000/01/rdf-schema#label> "is competitive sporting organisation of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isCompetitiveSportingOrganisationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/CompetitiveSportingOrganisation> .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a group competition to its corresponding League competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/GroupCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/2000/01/rdf-schema#label> "is group of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isGroupOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/LeagueCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a match to a round."@en .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Match> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2000/01/rdf-schema#label> "is match of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://proton.semanticweb.org/2005/04/protons#transitiveOver> <http://www.bbc.co.uk/ontologies/sport/isRoundOf> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://proton.semanticweb.org/2005/04/protons#transitiveOver> <http://www.bbc.co.uk/ontologies/sport/isGroupOf> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://proton.semanticweb.org/2005/04/protons#transitiveOver> <http://www.bbc.co.uk/ontologies/sport/isStageOf> .
+<http://www.bbc.co.uk/ontologies/sport/isMatchOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/hasMatch> .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a round to its corresponding multi-round competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2000/01/rdf-schema#label> "is round of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/isRoundOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/hasRound> .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a session to a competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is session of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/isSessionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/hasSession> .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a stage to a multi-stage competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2000/01/rdf-schema#label> "is stage of"@en .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/isStageOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/hasStage> .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to the last round in that competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiRoundCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#label> "last round"@en .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/lastRound> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasRound> .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to the last session of a series of sessions."@en .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#label> "last session"@en .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/lastSession> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasSession> .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a stage in a multi-stage competition to its last stage."@en .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/MultiStageCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#label> "last stage"@en .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/lastStage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasStage> .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to its last unit competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "last unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/lastUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.bbc.co.uk/ontologies/sport/hasUnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a round in a multi-round competition to its next round."@en .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/2000/01/rdf-schema#label> "next round"@en .
+<http://www.bbc.co.uk/ontologies/sport/nextRound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a session to its next session."@en .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/2000/01/rdf-schema#label> "next session"@en .
+<http://www.bbc.co.uk/ontologies/sport/nextSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a stage in a multi-stage competition to its next stage."@en .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/2000/01/rdf-schema#label> "next stage"@en .
+<http://www.bbc.co.uk/ontologies/sport/nextStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to its next unit competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "next unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/nextUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Round in a multi-round competition to its previous round."@en .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/2000/01/rdf-schema#label> "previous round"@en .
+<http://www.bbc.co.uk/ontologies/sport/prevRound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a session to its previous session."@en .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/2000/01/rdf-schema#label> "previous session"@en .
+<http://www.bbc.co.uk/ontologies/sport/prevSession> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Session> .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a stage in a multi-stage competition to its previous stage."@en .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/2000/01/rdf-schema#label> "previous stage"@en .
+<http://www.bbc.co.uk/ontologies/sport/prevStage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a multi-round competition to its previous unit competition."@en .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "previous unit competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/prevUnitCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/UnitCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/promotesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/promotesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to the next competition in a heirarchy that teams are promoted to. For example the nPower Championship promotes to the Premier League."@en .
+<http://www.bbc.co.uk/ontologies/sport/promotesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/promotesTo> <http://www.w3.org/2000/01/rdf-schema#label> "promotesTo"@en .
+<http://www.bbc.co.uk/ontologies/sport/promotesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to the recurring instance of that competition, for example the 2012/13 Premier League to the Premier League."@en .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/2000/01/rdf-schema#label> "recurring competition"@en .
+<http://www.bbc.co.uk/ontologies/sport/recurringCompetition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/RecurringCompetition> .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a competition to the previous competition in a heirarchy that teams are relegated to. For example the  Premier League relegates to the nPower Championship."@en .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/2000/01/rdf-schema#label> "relegatesTo"@en .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/Competition> .
+<http://www.bbc.co.uk/ontologies/sport/relegatesTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.bbc.co.uk/ontologies/sport/promotesTo> .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the sequential number of a round."@en .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/2000/01/rdf-schema#label> "round number"@en .
+<http://www.bbc.co.uk/ontologies/sport/roundNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a round, to an enumerated round type."@en .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/Round> .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/2000/01/rdf-schema#label> "round type"@en .
+<http://www.bbc.co.uk/ontologies/sport/roundType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/RoundType> .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a discipline with a child discipline, for example gymnastics with rhythmic gymnastics."@en .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/2000/01/rdf-schema#label> "sub-discipline"@en .
+<http://www.bbc.co.uk/ontologies/sport/subDiscipline> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a discipline with a parent discipline, for example rhythmic gymnastics with gymnastics."@en .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.bbc.co.uk/ontologies/sport/> .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#label> "sub-discipline of"@en .
+<http://www.bbc.co.uk/ontologies/sport/subDisciplineOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.bbc.co.uk/ontologies/sport/SportsDiscipline> .
+<http://www.bbc.co.uk/things/competition-types/domestic-cup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.bbc.co.uk/things/competition-types/domestic-league> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.bbc.co.uk/things/competition-types/european-cup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.bbc.co.uk/things/competition-types/international> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

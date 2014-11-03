@@ -1,0 +1,59 @@
+@prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
+@prefix ns4: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix core:    <http://www.bbc.co.uk/ontologies/coreconcepts/> .
+@prefix org:        <http://www.w3.org/ns/org#> .
+@prefix dbpprop: <http://dbpedia.org/property/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+dbpedia-owl:Organisation a owl:Class;
+  owl:disjointWith dbpedia-owl:wgs84_pos:SpatialThing;
+  owl:equivalentClass ns4:Organization;
+  owl:equivalentClass core:Organisation; 
+  owl:equivalentClass org:Organisation;
+  owl:sameAs dbpedia-owl:Organisation;
+ 
+  rdfs:subClassOf dbpedia-owl:Agent .
+
+rdfs:label a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "label" ;
+	rdfs:comment "A human-readable name for the subject." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal . 
+
+	  
+rdfs:comment a rdf:Property ;
+	rdfs:isDefinedBy <http://www.w3.org/2000/01/rdf-schema#> ;
+	rdfs:label "comment" ;
+	rdfs:comment "A description of the subject resource." ;
+	rdfs:domain rdfs:Resource ;
+	rdfs:range rdfs:Literal .
+	
+dbpprop:manager
+    rdf:type rdf:Property ;
+	owl:equivalentProperty core:manager ;
+    rdfs:label "manager"^^xsd:string .
+
+dbpprop:name
+    rdf:type rdf:Property ;
+	owl:equivalentProperty core:name ;
+    rdfs:label "name"^^xsd:string .
+
+dbpprop:nickname
+    rdf:type rdf:Property ;
+	owl:equivalentProperty core:nickname ;
+    rdfs:label "Nickname"^^xsd:string .
+
+dbpprop:website
+    rdf:type rdf:Property ;
+	owl:equivalentProperty core:website ;
+    rdfs:label "Website"^^xsd:string .
+
+
+
+
+
+
