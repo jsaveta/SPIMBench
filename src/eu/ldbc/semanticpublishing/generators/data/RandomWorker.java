@@ -85,7 +85,6 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 		rdfFormat = SesameUtils.parseRdfFormat(serializationFormat);
 
 		long currentFilesCount = filesCount.incrementAndGet();
-		//System.out.println("filesCount from random worker : "+filesCount);
 		String D2destination = "generatedD2"; // main location for uploads
 		String GSdestination = "generatedGS"; // main location for uploads
         File theFile = new File(D2destination); 
@@ -99,9 +98,7 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 		fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 		String fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 		String fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-	//	fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-
-		
+	
 		initializeFMapEntry();
 		
 		int cwsInFileCount = 0;
@@ -124,15 +121,7 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 				fos = new FileOutputStream(fileName);	
 				fos_2 = new FileOutputStream(fileName_2);
 				fos_3 = new FileOutputStream(fileName_3);
-				
-//				File file_4 = new File(fileName_4); 
-//				// if file does not exist, then create it
-//				if (!file_4.exists()) {
-//					file_4.createNewFile();
-//				}
-//				FileWriter fw_4 = new FileWriter(file_4.getAbsoluteFile());
-				//simplegoldStandard = new BufferedWriter(fw_4);
-				
+
 				while (true) {
 					if (currentTriplesCount > triplesPerFile) {
 						break;
@@ -156,7 +145,6 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 					
 					Rio.write(sesameModel, fos, rdfFormat);
 					Rio.write(sesameModel_2, fos_2, rdfFormat);
-					//Rio.write(sesameModel_GS, fos_3, rdfFormat);
 					
 					cwsInFileCount++;
 					currentTriplesCount += sesameModel.size();											
@@ -167,7 +155,6 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 				
 				sesameModel_2 =  sesameModel;//new LinkedHashModel();
 				sesameModel_GS =  new LinkedHashModel();
-			//	System.out.println("random");
 				InsertSameAsOrDifferentFromCW(this,sesameModel_GS,fos_3);
 				Rio.write(sesameModel_2, fos_2, rdfFormat);
 
@@ -175,22 +162,10 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 				sesameModelArrayList = new ArrayList<Model>();
 				sesameModel2ArrayList = new ArrayList<Model>();
 
-				//System.out.println("FTransfArray size ------------ : " + FTransfArray.size());
-				//System.out.println("FTransfArray RANDOM" + FTransfArray);
-				//System.out.println("Ftransformations "+ Ftransformations);
-				
-				
-				
 				flushClose(fos);
 				flushClose(fos_2);
 				flushClose(fos_3);
-//				fw_4.flush();
-//				fw_4.close();
 
-				
-
-				
-				
 				if (!silent && cwsInFileCount > 0) {
 					System.out.println(Thread.currentThread().getName() + " " + this.getClass().getSimpleName() + " :: Saving file #" + currentFilesCount + " with " + String.format("%,d", cwsInFileCount) + " Creative Works. Generated triples so far: " + String.format("%,d", triplesGeneratedSoFar.get()) + ". Target: " + String.format("%,d", targetTriples) + " triples");
 				}
@@ -199,12 +174,9 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 				currentTriplesCount = 0;
 
 				currentFilesCount = filesCount.incrementAndGet();
-		//		System.out.println("filesCount from random worker : "+filesCount);
-				
 				fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 				fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 				fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);		
-				//fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
 				
 				initializeFMapEntry(); //do not remove this
 			

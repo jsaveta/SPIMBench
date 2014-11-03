@@ -108,13 +108,11 @@ public class CorrelationsWorker extends RandomWorker {
 		int thirdEntityOutsideCorrelationCountdown = 0;
 		int correlationsMagnitudeForIteration = this.correlationsMagnitude;
 		long currentFilesCount = filesCount.incrementAndGet();	
-		//System.out.println("filesCount from correlation worker : "+ filesCount);
 		
 		fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 		String fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 		String fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-	//	fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-		
+
 		initializeFMapEntry();
 
 		
@@ -125,14 +123,6 @@ public class CorrelationsWorker extends RandomWorker {
 		fos = new FileOutputStream(fileName);	
 		fos_2 = new FileOutputStream(fileName_2);
 		fos_3 = new FileOutputStream(fileName_3);
-		
-//		File file_4 = new File(fileName_4); 
-//		// if file does not exist, then create it
-//		if (!file_4.exists()) {
-//			file_4.createNewFile();
-//		}
-//		FileWriter fw_4 = new FileWriter(file_4.getAbsoluteFile());
-//		simplegoldStandard = new BufferedWriter(fw_4);
 		
 		//pick a random date starting from 1.Jan to the value of totalCorrelationPeriodDays
 		startDate = ru.randomDateTime(365 * dataGenerationPeriodYears - totalCorrelationPeriodDays);
@@ -159,26 +149,17 @@ public class CorrelationsWorker extends RandomWorker {
 						currentTriplesCount = 0;
 						
 						currentFilesCount = filesCount.incrementAndGet();
-						//System.out.println("filesCount from correlation worker : "+ filesCount);
 						
 						fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 						fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 						fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-						//fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
 					
 						initializeFMapEntry();
 						
 						fos = new FileOutputStream(fileName);	
 						fos_2 = new FileOutputStream(fileName_2);
 						fos_3 = new FileOutputStream(fileName_3);
-						
-//						file_4 = new File(fileName_4); 
-//						// if file does not exist, then create it
-//						if (!file_4.exists()) {
-//							file_4.createNewFile();
-//						}
-//						fw_4 = new FileWriter(file_4.getAbsoluteFile());
-//						simplegoldStandard = new BufferedWriter(fw_4);										
+															
 					}
 					
 					if (triplesGeneratedSoFar.get() > targetTriples) {
@@ -231,11 +212,9 @@ public class CorrelationsWorker extends RandomWorker {
 					
 					Rio.write(sesameModel, fos, rdfFormat);
 					Rio.write(sesameModel_2, fos_2, rdfFormat);
-					//Rio.write(sesameModel_GS, fos_3, rdfFormat);
 					
 					cwsInFileCount++;
 					currentTriplesCount += sesameModel.size();
-					//edw na valw to athroisma olwn twn model
 					
 					triplesGeneratedSoFar.addAndGet(sesameModel.size());				
 				}
@@ -243,16 +222,12 @@ public class CorrelationsWorker extends RandomWorker {
 
 				sesameModel_2 =  new LinkedHashModel();
 				sesameModel_GS =  new LinkedHashModel();
-			//	System.out.println("correlation");
 				InsertSameAsOrDifferentFromCW(this,sesameModel_GS,fos_3);
 				Rio.write(sesameModel_2, fos_2, rdfFormat);
 
 		
 				sesameModelArrayList = new ArrayList<Model>();
 				sesameModel2ArrayList = new ArrayList<Model>();
-				
-				//System.out.println("FTransfArray CORRELATION" + FTransfArray);
-				//System.out.println("Ftransformations "+ Ftransformations);
 				
 				thirdEntityCountdown--;
 				thirdEntityOutsideCorrelationCountdown--;
@@ -267,8 +242,6 @@ public class CorrelationsWorker extends RandomWorker {
 			flushClose(fos);
 			flushClose(fos_2);
 			flushClose(fos_3);
-			//fw_4.flush();
-			//fw_4.close();
 			if (!silent && cwsInFileCount > 0) {
 				System.out.println(Thread.currentThread().getName() + " " + this.getClass().getSimpleName() + " :: Saving file #" + currentFilesCount + " with " + String.format("%,d", cwsInFileCount) + " Creative Works. Generated triples so far: " + String.format("%,d", triplesGeneratedSoFar.get()) + ". Target: " + String.format("%,d", targetTriples) + " triples");
 			}
@@ -293,19 +266,7 @@ public class CorrelationsWorker extends RandomWorker {
 		return creativeWorkBuilder.buildSesameModel();
 	}
 	
-//	@Override
-//	public String getFileName_4() {
-//		return fileName_4;
-//	}
-//	@Override
-//	public void addStatementSesameModel_GS(Resource transf, URI weight_, Value weight_num, Resource resource) {
-//		sesameModel_GS.add(transf,weight_,weight_num,resource);
-//	}
 
-//	@Override
-//	public BufferedWriter getSimplegoldStandard() {
-//		return simplegoldStandard;
-//	}
 	public void initializeFMapEntry(){
 		if(!getFtransformations().containsKey(fileName)){
 			FTransfArray = new ArrayList<Double>();
@@ -329,10 +290,6 @@ public class CorrelationsWorker extends RandomWorker {
 	public Model getSesameModel_GS() {
 		return sesameModel_GS;
 	}
-//	@Override
-//	public WriteGoldStandard getWriteGoldStandard() {
-//		return writegs;
-//	}
 
 	@Override
 	public RandomUtil getru() {

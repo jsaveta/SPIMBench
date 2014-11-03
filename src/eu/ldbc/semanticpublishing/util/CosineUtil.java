@@ -15,11 +15,6 @@ public class CosineUtil {
 	public CosineUtil(){}
 	  public static Map<String, Map<String, Double>> calculateCosine(Map<String, ArrayList<Double>> uriMatrixD1,Map<String, ArrayList<Double>> 
       uriMatrixD2,Map<String, Map<String, Double>> gs){
-      //System.out.println("auto einai to map pou exei u,u' kai to cosine similarity pou tora einai 0 "+gs);
-      //System.out.println("------------------------------------------------------------" );
-      //System.out.println("uriMatrixD1 :" + uriMatrixD1);
-      //System.out.println("------------------------------------------------------------" );
-      //System.out.println("uriMatrixD2 :" + uriMatrixD2);
       
       ArrayList<Double> uA = null;
       ArrayList<Double> uPrimeA = null;
@@ -49,7 +44,6 @@ public class CosineUtil {
 	         }
          }
       } 
-    System.out.println("auto einai to map pou exei u,u' kai to cosine similarity pou tora DEN einai 0 "+gsWeighted);
     return gsWeighted;    	
     }
     
@@ -73,8 +67,6 @@ public class CosineUtil {
 	        magnitude1 = Math.sqrt(magnitude1);//sqrt(a^2)
 	        magnitude2 = Math.sqrt(magnitude2);//sqrt(b^2)
 	        
-	        //System.out.println("magnitude1 "+ magnitude1);
-	        //System.out.println("magnitude2 "+ magnitude2);
 	        if (!isInfinite(magnitude1) && !isInfinite(magnitude2) && !isNaN(magnitude1) && !isNaN(magnitude2))
 	        {
 	            cosineSimilarity = dotProduct / (magnitude1 * magnitude2);
@@ -98,8 +90,6 @@ public class CosineUtil {
 	            normB += Math.pow(vectorB.get(i), 2);
 	        }
 	        if(Math.sqrt(normA *normB) > 0){
-	        	//System.out.println("cos "+(dotProduct / Math.sqrt(normA *normB)));
-	        	//System.out.println("square cos "+ Math.pow((dotProduct / Math.sqrt(normA *normB)),2));
 	        	return Math.pow((dotProduct / Math.sqrt(normA *normB)),2);
 	        }
 	        else{return 0.0;}
@@ -110,16 +100,10 @@ public class CosineUtil {
 		 for (Entry<String, ArrayList<Double>> entry : Fmap.entrySet()) {
 	            ArrayList<Double> value = entry.getValue();
 	            squareCosine.put(entry.getKey().replace("./generated\\generatedCreativeWorks", "generatedCreativeWorksGS"),SquareCosineSimilarity(value,E));
-//	            System.out.println("key "+entry.getKey());
-//	            System.out.println("value "+value);
-//	            System.out.println("E "+E);
-//	            System.out.println("square cosine : " + SquareCosineSimilarity(value,E));
-	        	
 	        }
 		 //calculate here square cosine (E,F)
 		 squareCosine = sortByValues(squareCosine);
-		 //System.out.println("squareCosine: "+squareCosine);
-		return squareCosine;
+		 return squareCosine;
 		 
 	 }
 	 

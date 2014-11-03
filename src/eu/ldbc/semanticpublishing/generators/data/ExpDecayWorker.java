@@ -82,12 +82,10 @@ public class ExpDecayWorker extends RandomWorker {
 		int currentTriplesCount = 0;
 
 		long currentFilesCount = filesCount.incrementAndGet();
-		//System.out.println("filesCount from exp decay worker: "+filesCount);
 		fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 		String fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 		String fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-		//fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-
+		
 		initializeFMapEntry();
 				
 		//skip data generation if targetTriples size has already been reached 
@@ -103,15 +101,7 @@ public class ExpDecayWorker extends RandomWorker {
 			fos = new FileOutputStream(fileName);	
 			fos_2 = new FileOutputStream(fileName_2);
 			fos_3 = new FileOutputStream(fileName_3);
-			
-//			File file_4 = new File(fileName_4); 
-//			// if file does not exist, then create it
-//			if (!file_4.exists()) {
-//				file_4.createNewFile();
-//			}
-//			FileWriter fw_4 = new FileWriter(file_4.getAbsoluteFile());
-//			simplegoldStandard = new BufferedWriter(fw_4);
-			
+		
 
 			for (int i = 0; i < exponentialDecayIerations.size(); i++) {
 
@@ -119,9 +109,6 @@ public class ExpDecayWorker extends RandomWorker {
 				iterationStep = i + 1;
 				for (int j = 0; j < creativeWorksForCurrentIteration; j++) {
 					if (currentTriplesCount >= triplesPerFile) {
-						//flushClose(fos);
-						//flushClose(fos_2);
-						//flushClose(fos_3);
 						if (!silent && cwsInFileCount > 0) {
 							System.out.println(Thread.currentThread().getName() + " " + this.getClass().getSimpleName() + " :: Saving file #" + currentFilesCount + " with " + String.format("%,d", cwsInFileCount) + " Creative Works. Generated triples so far: " + String.format("%,d", triplesGeneratedSoFar.get()) + ". Target: " + String.format("%,d", targetTriples) + " triples");
 						
@@ -131,22 +118,12 @@ public class ExpDecayWorker extends RandomWorker {
 						currentTriplesCount = 0;				
 
 						currentFilesCount = filesCount.incrementAndGet();
-						//System.out.println("filesCount from exp decay worker: "+filesCount);
 						fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);						
 						fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 						fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-						//fileName_4 = String.format(FILENAME_FORMAT_SIMPLEGS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
-
+						
 						initializeFMapEntry();
-						
-//						file_4 = new File(fileName_4); 
-//						// if file does not exist, then create it
-//						if (!file_4.exists()) {
-//							file_4.createNewFile();
-//						}
-//						fw_4 = new FileWriter(file_4.getAbsoluteFile());
-//						simplegoldStandard = new BufferedWriter(fw_4);
-						
+												
 					}
 					
 					if (triplesGeneratedSoFar.get() > targetTriples) {
@@ -171,27 +148,15 @@ public class ExpDecayWorker extends RandomWorker {
 					
 					Rio.write(sesameModel, fos, rdfFormat);
 					Rio.write(sesameModel_2, fos_2, rdfFormat);
-					//Rio.write(sesameModel_GS, fos_3, rdfFormat);
-					
 					
 					cwsInFileCount++;
 					currentTriplesCount += sesameModel.size();					
 
 					triplesGeneratedSoFar.addAndGet(sesameModel.size());	
 					
-					//auta tha eprepe logika na einai kato apo tin agkuli!!! alla petaei null 
-//					sesameModel_2 =  new LinkedHashModel();
-//					sesameModel_GS =  new LinkedHashModel();
-//					System.out.println("exp");
-//					InsertSameAsOrDifferentFromCW(this,sesameModel_GS,fos_3);
-//					Rio.write(sesameModel_2, fos_2, rdfFormat);
-//
-//					
 					sesameModelArrayList = new ArrayList<Model>();
 					sesameModel2ArrayList = new ArrayList<Model>();
 					
-					//System.out.println("FTransfArray EXP" + FTransfArray);
-					//System.out.println("Ftransformations "+ Ftransformations);
 				}
 				
 			}
@@ -203,11 +168,8 @@ public class ExpDecayWorker extends RandomWorker {
 			//reached the end of iteration, close file stream in finally section
 		} finally {
 			flushClose(fos);
-		    //flushClose(fos_2);
 		    fos_2.flush();
 		    fos_3.flush();
-			//flushClose(fos_3);
-			//fw_4.close();
 			if (!silent && cwsInFileCount > 0) {
 				System.out.println(Thread.currentThread().getName() + " " + this.getClass().getSimpleName() + " :: Saving file #" + currentFilesCount + " with " + String.format("%,d", cwsInFileCount) + " Creative Works. Generated triples so far: " + String.format("%,d", triplesGeneratedSoFar.get()) + ". Target: " + String.format("%,d", targetTriples) + " triples");
 			}

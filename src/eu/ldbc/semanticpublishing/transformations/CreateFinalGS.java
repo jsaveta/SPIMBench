@@ -9,16 +9,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Map;
 
-import org.la4j.matrix.dense.Basic1DMatrix;
-import org.la4j.vector.Vector;
-import org.la4j.vector.sparse.CompressedVector;
 import org.openrdf.model.Model;
 import org.openrdf.model.Statement;
 import org.openrdf.model.impl.LinkedHashModel;
@@ -32,7 +28,6 @@ import org.openrdf.rio.helpers.StatementCollector;
 import org.openrdf.rio.turtle.TurtleParser;
 
 import Jama.Matrix;
-import Jama.SingularValueDecomposition;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.rescal.turtleRescalTripleFinder.RescalStarter;
 import eu.ldbc.semanticpublishing.util.Matrices;
@@ -101,8 +96,6 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 	String uPrime = "";
 	String source = null, target = null, gold_standard = null;
 	GSfile = GSfile.replace(".\\dist\\generatedGS\\", "");
-//to final gs mporei na fygei afou exw to map apo to rescal
-	//System.out.println("GSfile GS  "+GSfile);
 	if (GSfile.endsWith(".ttl") && GSfile.startsWith("generatedCreativeWorksGS")){
 		try {
 			File file = new File("generatedGS\\"+GSfile.toString().replace(".ttl", "")+"_final"+ ".txt");	
@@ -120,22 +113,17 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			rdfParser.parse(inputstreamreader, "");
 			Collection<Statement> col = handler.getStatements();
 			ArrayList<Object> IdTemp = new ArrayList<Object>();
-			//ArrayList<Object> ResTemp = new ArrayList<Object>();
 			ArrayList<Object> TypeTemp = initializeTypeTempArray();
 			for(Iterator<Statement> it = col.iterator(); it.hasNext();){
 				Statement st = it.next();
 			    if(st.getPredicate().toString().equals(exactmatch) && !u.equals(st.getSubject().toString())){
 			    	if(!u.equals("")){
-			    		//System.out.println("IdTemp "  +IdTemp);
-			    		//System.out.println("TypeTemp "  +TypeTemp);
 			    		if((Integer)TypeTemp.get(31) == 0 && (Integer)TypeTemp.get(33) == 0 && !IdTemp.isEmpty()){ //check for disjoint and do not add it 
 				    		finalGS.add(IdTemp);
-				    		//finalGS.add(ResTemp);
 				    		finalGS.add(TypeTemp);
 				    	}
 			    		TypeTemp = initializeTypeTempArray();
 			    		IdTemp = new ArrayList<Object>();
-			    		//ResTemp = new ArrayList<Object>(); 
 			    	}
 			    	u = st.getSubject().toString();
 					uPrime = st.getObject().toString();
@@ -150,7 +138,6 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			    if(st.getObject().toString().replace("\"", "").equals("CW_id")){
 			    	IdTemp.add(u);
 			    	IdTemp.add(uPrime);
-			    	//ResTemp.add(1);
 			    	try {
 						simpleGSfile.write(u+" "+uPrime+"\n");
 					} catch ( IOException e ) {
@@ -179,29 +166,13 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
         	 throw new UnsupportedRDFormatException("UnsupportedRDFormatException : "+ e.getMessage());
          }
     }
-//	System.out.println("finalGS "  +finalGS + " with size "+finalGS.size());
 	return finalGS;
 }
 
 
 public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayList<Object>>finalGS_, double[] S) throws RDFParseException, RDFHandlerException, IOException{
-	/*The problem at hand is a linear regression problem.  
-	 We are given a score vector S(1,n) where s_i maps with 
-	 the pair of URIs (u_i, u'_i) as well as a matrix M(m,n) 
-	 that is such that the entry m_ij tells us whether the
-	 jth transformation was used when transforming u_i into u'_i.
-	 What were are looking for is a vector T(1,m) that is such that S = TM.
-	 The solution is to compute T by solving the linear regression equation.
-	 I think libraries such as la4j contains such solvers.*/
 
-	//finalGS contains [[u,u'] , [1, cos(Au,Au')],[1,all T ]]
-	 //this has to return something like [1,weights for every transformation]
-	
-	//prosarmogi twn varwn an einai >1 kanto 1
 	ArrayList<Double> specificWeights = new ArrayList<Double>();
-//	System.out.println("lalalalala");
-//	System.out.println("finalGS_.size()/2  " +(finalGS_.size()/2));
-//	System.out.println("S len  " +S.length);
 	int top = 0; 
 	if(S.length > (finalGS_.size()/2)){
 		top = (finalGS_.size()/2);
@@ -214,69 +185,36 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 		S_[i] = S[i];
 	}
 	
-
-//	System.out.println("S_ len  " +S_.length);
-	
 	double[][] Marray = new double[40][top];
 	int j = 0;
 	Iterator<ArrayList<Object>> it = finalGS_.iterator();
-	//while (it.hasNext()) {
 	int stop = 0;
 	while(stop < top){
     	ArrayList<Object> M = it.next();
-    	//System.out.println("M len " +M.size());
-    	//System.out.println("M  " +M);
     	if(M.size() == 41){	
     		for (int i = 0; i < Marray.length; i++) {
     		    Marray[i][j] = (Double) ((Integer)M.get(i)*1.0);
-    			//System.out.println("empty ? "+M.isEmpty() );
-    			//System.out.println(" M.get(i) " +M.get(i));
-    		}
+       		}
     		j++;
     	}
     	stop++;
 	}
-//	System.out.println("***********************");
-//	for(int i=0;i<Marray.length; i++)
-//    { 
-//        for(int k=0; k<Marray[i].length; k++)
-//        System.out.print(Marray[i][k]+" ");
-//        System.out.println();
-//    }
-	
+
 	double[] Msum = new double[Marray.length];
     for (int i = 0; i < Marray.length; i++){    
     	for (int k = 0; k < Marray[0].length; k++){   
     		 Msum[i] += Marray[i][k];
     	}
     }
-    //System.out.println("Msum: " + Arrays.toString(Msum));  
-    
-	//pseudo inverse Marray because matrix is rank deficient
+   //pseudo inverse Marray because matrix is rank deficient
 	Matrix InverseMarray = Matrices.pinv(new Matrix(Marray));
 
-	//	double n = (InverseMarray.getArray().length != 0 ? S_.length/(InverseMarray.getArray().length*1.0) : 0);
-//	System.out.println("m "+InverseMarray.getArray().length);
-//	System.out.println("n "+n);
-//	System.out.println("m * n " + InverseMarray.getArray().length * n );
-//	System.out.println("S_.length "+ S_.length);
-
 	Matrix S_matrix = new Matrix(S_,1);
-//	System.out.println("InverseMarray.getArray() len " + InverseMarray.getArray().length);
-//	System.out.println("ds[0].length " + InverseMarray.getArray()[0].length);
-//	System.out.println("s_.length " + S_.length);
-//	System.out.println("InverseMarray.getRowDimension() "+InverseMarray.getRowDimension() +"  "+ InverseMarray.getColumnDimension()); 
-//	System.out.println("S_matrix.getColumnDimension() " +S_matrix.getColumnDimension()+"  "+ S_matrix.getRowDimension());
 
 	Matrix T = S_matrix.times(InverseMarray); 
 
 	double[] T_array = T.getRowPackedCopy();
 	
-	//divide weights(T_array) with sum of every transformation type (Msum)
-	
-//	System.out.println("T_array: " + Arrays.toString(T_array));    
-	
-
 	for (int i = 0; i < T_array.length; i++){
 		double weight = 0.0;
 		if(Msum[i] != 0.0){ weight = T_array[i]/Msum[i];}
@@ -284,17 +222,7 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 		specificWeights.add(weight);
 	}
 
-//	System.out.println("specificWeights: " + specificWeights.toString());    
 
-//	System.out.println("---------------- T "+Arrays.deepToString(T.getArray()));
-//	System.out.println("---------------- S_matrix "+Arrays.deepToString(S_matrix.getArray()));
-//	System.out.println("---------------- InverseMarray "+Arrays.deepToString(InverseMarray.getArray()));
-//	System.out.println("Marray size "+Marray.length );
-//	System.out.println("Msum size "+ Msum.length);
-//	System.out.println("T_array size "+ T_array.length);
-//	System.out.println("specificWeights size "+ specificWeights.size());
-	
-	
 	return specificWeights;
 	
 }
@@ -304,7 +232,6 @@ public static void writeFinalGSFiles() throws IOException, RDFParseException, RD
 //write here detailed gs(ttl) and also simple one (txt) both wighted
 //after finishing delete previous detailes GSs with the wrong weights
 ArrayList<Double> weight_per_trans_ =  calculateSpecificTransfWeights(getFinalGS(), RescalStarter.getS());
-
 File folder = new File("generatedGS\\");
 File[] listOfFiles = folder.listFiles();
 	for (File file_ : listOfFiles) {
@@ -339,10 +266,6 @@ File[] listOfFiles = folder.listFiles();
 	    		
 	    		for(Iterator<Statement> it = col.iterator(); it.hasNext();){
 				Statement st = it.next();
-				
-				//remove this and check for type and weight before adding
-				//detailedGS.add(st);
-				//ta 0 asta 0 disjoint
 				
 			    if(st.getPredicate().toString().equals(exactmatch) && !u.equals(st.getSubject().toString())){
 			    	if(!u.equals("")){ //chech disjointness again
@@ -404,15 +327,6 @@ File[] listOfFiles = folder.listFiles();
 		}
 	}
 }
-//this does not work even with closed streams
-//for (File file_ : listOfFiles) {
-//    if (file_.isFile() && file_.getName().endsWith("ttl") && !file_.getName().contains("DETAILED")) {
-//    	System.out.println("------delete file : " + file_.getName());
-//    	System.out.println(file_.delete());
-//    	file_.delete();
-//    }
-//}
-
 	
 }
 

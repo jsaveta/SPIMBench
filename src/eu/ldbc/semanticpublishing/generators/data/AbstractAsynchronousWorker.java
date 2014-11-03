@@ -33,7 +33,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 	protected static final String FILENAME_FORMAT = "%s%sgeneratedCreativeWorks-%04d.";
 	protected static final String FILENAME_FORMAT_D2 = "%s%sgeneratedCreativeWorksD2-%04d.";
 	protected static final String FILENAME_FORMAT_GS = "%s%sgeneratedCreativeWorksGS-%04d.";
+	//protected static final String FILENAME_FORMAT_SIMPLEGS = "%s%sgeneratedCreativeWorksSIMPLEGS-%04d.";
 	
+	
+
 	
 	@Override
 	public void run() {
@@ -90,24 +93,23 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 		{
 			statement = it.next();
 			if(!worker_.getURIMapping().containsKey(statement.getSubject().toString())){
-				if(TransformationConf.containsKey((core + "primaryTopic")) && statement.getSubject().toString().startsWith(bbcid)){
-					worker_.getURIMapping().put(statement.getSubject().toString(), statement.getSubject().toString());
-					//writegs.WriteSimpleGS(statement.getSubject().toString(),  worker_.getURIMapping().get(statement.getSubject().toString()), 1.0, "not transformed - new uri");
-					writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //not transformed
-				}
-				else if (statement.getSubject().toString().startsWith(bbcid)){
-					worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));
-					//writegs.WriteSimpleGS(statement.getSubject().toString(),  worker_.getURIMapping().get(statement.getSubject().toString()), 1.0, "not transformed - new uri");
-					writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //transformed
-				}
-				else {
-					worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));
-				}
-				//start of subclass change for URIs that are subclasses of CWs
+					if(TransformationConf.containsKey((core + "primaryTopic")) && statement.getSubject().toString().startsWith(bbcid)){
+						worker_.getURIMapping().put(statement.getSubject().toString(), statement.getSubject().toString());
+						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //not transformed
+					}
+					else if (statement.getSubject().toString().startsWith(bbcid)){
+						worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));
+						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //transformed
+					}
+					else {
+						worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));				
+					}
+					//start of subclass change for URIs that are subclasses of CWs
 				Value subClassOf = statement.getObject();
 				if(TransformationConf.containsKey(statement.getObject().toString())){
 					Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
 					if(!tempModel.isEmpty()){
+						
 						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
 						for (Statement st : tempModel){
 							subClassOf = st.getObject();
@@ -188,7 +190,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						
 					}
 					else if(TransformationConf.containsKey(temp_statement.getObject().toString()) &&(TransformationConf.containsKey(temp_statement.getObject().toString()) && TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
-						TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){
+							TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){
 						worker_.getURIMapping().put(statement.getObject().toString(), getru().generateUnionOneIntersectionInstance(statement).toString());
 						
 					}
@@ -238,8 +240,9 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
 						for (Statement st : tempModel){
 							if(!st.getObject().toString().equals(statement.getObject().toString())){
-									writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
-								}
+								//writegs.WriteSimpleGS(statement.getSubject().toString(),  worker_.getURIMapping().get(statement.getSubject().toString()), 0.75, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]);
+								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							}
 							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
 							
 						}

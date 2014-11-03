@@ -1,0 +1,569 @@
+
+<http://www.bbc.co.uk/things/19#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Meg Hillier refuse purely turn notion granting came games world can audience." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " basis adopted certain estimated speaking a peasants existence historically computer." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " approach had well criticism country demolition partisan hard nobility delete within platform competition estimated adaptability people was still whenever related professionally." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.guardian.co.uk/politics/person/8735/> , <http://dbpedia.org/resource/Daniel_Ortega> , <http://dbpedia.org/resource/Eli_Wallach> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/2654058/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-08-17T16:45:08.389+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-07-28T04:58:18.302+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1758432023> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/19#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1358243620#id> .
+
+<http://www.bbc.co.uk/things/1358243620#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Womens_basketball> .
+
+<http://dbpedia.org/resource/Womens_basketball> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Womens basketball is one of the few womens sports that developed in tandem with its mens counterpart. It became popular, spreading from the east coast of the United States to the west coast, in large part via womens colleges. From 1895 until 1970, the term womens basketball was also used to refer to netball, which evolved in parallel with modern womens basketball." ;
+	<http://dbpedia.org/property/caption> "WNBL Canberra Capitals player Nicole Hunt attempts to steal the ball from Logan Thunders Renae Camino" ;
+	<http://dbpedia.org/property/equipment> "Basketball" ;
+	<http://dbpedia.org/property/olympic> "Yes" ;
+	<http://dbpedia.org/property/team> "Five on-court players per team" .
+
+<http://www.bbc.co.uk/things/1358243620#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Daniel_Ortega> .
+
+<http://dbpedia.org/resource/Daniel_Ortega> a <http://xmlns.com/foaf/0.1/Person> ;
+	<http://xmlns.com/foaf/0.1/name> "Daniel Ortega" ;
+	<http://xmlns.com/foaf/0.1/surname> "Ortega" ;
+	<http://xmlns.com/foaf/0.1/givenName> "Daniel" ;
+	<http://purl.org/dc/elements/1.1/description> "President of Nicaragua" ;
+	<http://dbpedia.org/ontology/birthDate> "1945-11-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/La_Libertad,_Chontales> .
+
+<http://www.bbc.co.uk/things/20#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Montalbano Jonico necessarily local private very known took television africa whenever africa." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " without movement pieces lower rule already one-fifth collect was world." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " grounds sport reason components isolation click equality demolition pieces 15th request used software where features other entered little analyze sake common rugby television preclude." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Montalbano_Jonico> , <http://dbpedia.org/resource/Japanese_general_election,_1990> , <http://dbpedia.org/resource/Dale_Earnhardt> , <http://dbpedia.org/resource/United_States_Senate_election_in_Mississippi,_1984> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/6285830/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/AudioFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-09-10T20:49:17.440+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-03-19T04:08:42.539+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/313768792> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/20#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/991778329#id> .
+
+<http://www.bbc.co.uk/things/991778329#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Quoits> .
+
+<http://dbpedia.org/resource/Quoits> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Quoits (koits, kwoits, kwaits) is a traditional game which involves the throwing of metal, rope or rubber rings over a set distance, usually to land over or near a spike (sometimes called a hob, mott or pin). The sport of quoits encompasses several distinct variations." ;
+	<http://dbpedia.org/property/caption> "Newcastle pit men playing quoits" .
+
+<http://www.bbc.co.uk/things/991778329#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Japanese_general_election,_1990> .
+
+<http://dbpedia.org/resource/Japanese_general_election,_1990> a <http://dbpedia.org/ontology/Event> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Japanese general election, 1990" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Japan held a nationwide election for the House of Representatives, the more powerful lower house of the National Diet than the upper house, on February 18, 1990." ;
+	<http://dbpedia.org/property/country> "Japan" ;
+	<http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Japanese_general_elections> .
+
+<http://www.bbc.co.uk/things/21#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Saskatchewan substantial serve ambition holding phrase rapid transfers institution official information." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " interesting this leading state radio beginning browsers concerned tensions 1988." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Event> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " sometimes vote sporting place members include century result effective entered or large website." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/28th_Saskatchewan_general_election> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/6287270/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-02-06T08:48:03.826+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-10-27T05:23:42.181+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1256834613> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/21#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/121199718#id> .
+
+<http://www.bbc.co.uk/things/121199718#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Camogie> .
+
+<http://dbpedia.org/resource/Camogie> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Camogie (Irish: camgaocht; formerly called camoguidheacht) is an Irish stick-and-ball team sport played by women; it is almost identical to the game of hurling played by men. Camogie is played by 100,000 women inIreland and worldwide, largely among Irish communities. It is organised by the Dublin-based Camogie Association or An Cumann Camgaochta." ;
+	<http://dbpedia.org/property/caption> "A junior camogie match being played in Croke Park, Dublin,substitutes are permitted" .
+
+<http://www.bbc.co.uk/things/121199718#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://www.bbc.co.uk/ontologies/coreconcepts/Thing/459676685#id> .
+
+<http://www.bbc.co.uk/ontologies/coreconcepts/Thing/459676685#id> a <http://www.bbc.co.uk/ontologies/coreconcepts/Theme> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel> "Saskatchewan enactment approach pay that millions these affords pieces originate and/or." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/slug> "Saskatchewan individual primitive most trends easier uncommon refusing something something football." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/prefferedLabel> "Saskatchewan tables states cup click union craftsmen users already most hundreds." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/disambiguationHint> "Saskatchewan referring dogma refusing achievement achieve carried cookies achievement democratic platform." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/facebook> "Saskatchewan radio bidding equality 15th participants development seen reinforced there educated." .
+
+<http://www.bbc.co.uk/things/22#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Joseph Severn give people pretension ip protocol trends not worst identifiable bidding." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " administration popular individual merely criticism web ambition created purposes tensions." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/Persons> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " patterns achievement site's viewing 700 homogeneous state pretension present automatically platform show not feel out day this both isolation." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Joseph_Severn> , <http://www.wikidata.org/wiki/Q259836> , <http://dbpedia.org/resource/Ducal_Castle,_Szczecin> , <http://www.vernon-coaker-mp.co.uk/> , <http://dbpedia.org/resource/Catullus> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7299998/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/VideoFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-04-16T13:41:19.300+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-12-06T13:55:22.791+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/486294801> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/22#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1627521499#id> .
+
+<http://www.bbc.co.uk/things/1627521499#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Combat_sport> .
+
+<http://dbpedia.org/resource/Combat_sport> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "A combat sport or fighting sport is a competitive contact sport where two combatants fight against each other to gain enough points or a condition to declare a single winner by means of using certain rules of direct engagement." ;
+	<http://dbpedia.org/property/caption> "Boxing is a common fighting sport,No" .
+
+<http://www.bbc.co.uk/things/1627521499#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Emmer-Erfscheidenveen> .
+
+<http://dbpedia.org/resource/Emmer-Erfscheidenveen> a <http://dbpedia.org/ontology/Place> ;
+	<http://xmlns.com/foaf/0.1/name> "Emmer-Erfscheidenveen" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Emmer-Erfscheidenveen is a hamlet in the Netherlands and it is part of the Emmen municipality in Drenthe. Emmer-Erfscheidenveen has an altitude of 13 meters (45Β feet) and a population of about 1,950 (2004)." ;
+	<http://dbpedia.org/ontology/country> <http://dbpedia.org/resource/Netherlands> ;
+	<http://www.w3.org/2003/01/geo/wgs84_pos#geometry> "POINT(6.96667 52.8)" .
+
+<http://www.bbc.co.uk/things/23#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> " time by pay historically by collect necessarily 23 cases our." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " historical sake grounds man web-surfing dogma fact least compete raise." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " provide took while strongest system provider over turn purposes linked tensions administer to some government most teams player began automatically come are." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Long_Island_Rough_Riders> , <http://dbpedia.org/resource/Kayserispor> , <http://dbpedia.org/resource/28th_Saskatchewan_general_election> , <http://rdf.freebase.com/ns/m.02878v> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7296909/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-01-04T10:37:04.643+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-09-03T22:27:44.603+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/879065657> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/23#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1930728161#id> .
+
+<http://www.bbc.co.uk/things/1930728161#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Underwater_rugby> .
+
+<http://dbpedia.org/resource/Underwater_rugby> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Underwater rugby (UWR) is an underwater sport that has its origin in the physical fitness training of German diving clubs and has little in common with rugby football except for the name. It is played underwater in a pool with a depth of 3.5m to 5m and goals (heavy metal buckets with a diameter of about 40cm) at the bottom of the pool." ;
+	<http://dbpedia.org/property/caption> "Underwater rugby match in Norway." ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Water_polo_cap12> .
+
+<http://www.bbc.co.uk/things/1930728161#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Kayserispor> .
+
+<http://dbpedia.org/resource/Kayserispor> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Kayserispor" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Kayserispor is a professional Turkish football club located in the city of Kayseri. Formed in 1975 as Kayseri Emniyetspor (Real Kayserispor was founded in 1966 became Kayseri Erciyesspor in 2004), Kayserispor are nicknamed Anadolu Yldz (The Star of Anatolia). The club colours are red and yellow, and the club play their home matches at Kadir Has Stadium. The club have won one Trkiye Kupas, in 2008." ;
+	<http://dbpedia.org/property/manager> "Robert Prosineki" ;
+	<http://dbpedia.org/property/nickname> "Anadolu Yldz" ;
+	<http://dbpedia.org/property/website> <http://www.kayserispor.org.tr/tur/default.asp> .
+
+<http://www.bbc.co.uk/things/24#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Eleanor Laing relate function town so payment lower about out identify can." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " use settings and/or purposes set individual large least among been." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsAdditional> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " against terms privilege demographic football decided apartheid privilege mainly most legislation day amateur you have strongest who vote those have teams violent rapid." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.wikidata.org/wiki/Q750188> , <http://dbpedia.org/resource/New_Zealand_general_election,_2005> , <http://dbpedia.org/resource/Indian_general_election_in_Assam,_2009> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7292446/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/VideoFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-04-16T04:28:43.656+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-08-05T06:33:35.301+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/398777006> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/24#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/886543577#id> .
+
+<http://www.bbc.co.uk/things/886543577#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Tennis> .
+
+<http://dbpedia.org/resource/Tennis> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Tennis is a sport usually played between two players or between two teams of two players each. Each player uses a racket that is strung with cord to strike a hollow rubber ball covered with felt over a net and into the opponents court. The object of the game is to play the ball in such a way that the opponent is not able to play a good return. Tennis is an Olympic sport and is played at all levels of society at all ages." ;
+	<http://dbpedia.org/property/caption> "A tennis match at Wimbledon, the oldest and the most prestigious tennis tournament." ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Racket_(sports_equipment)> ;
+	<http://dbpedia.org/property/olympic> "Part of Summer Olympic programme since 1988" ;
+	<http://dbpedia.org/property/team> "Single or doubles" .
+
+<http://www.bbc.co.uk/things/886543577#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/New_Zealand_general_election,_2005> .
+
+<http://dbpedia.org/resource/New_Zealand_general_election,_2005> a <http://dbpedia.org/ontology/Event> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "New Zealand general election, 2005" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "The 2005 New Zealand general election on Saturday 17 September 2005 determined the membership of the 48th New Zealand Parliament. One hundred and twenty-one MPs were elected to the New Zealand House of Representatives, 70 from single-member electorates, including one overhang seat, and 51 from party lists. No party won a majority, but the Labour Party of Prime Minister Helen Clark secured two more seats than nearest rival, the National Party of Dr Don Brash." ;
+	<http://dbpedia.org/property/country> "New Zealand" ;
+	<http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:New_Zealand_general_election,_2005> .
+
+<http://www.bbc.co.uk/things/25#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Albert Owen their cookies celibacy final like identify flash ethos those tensions." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " these attracts 2007 radio exchange central reinforced were inform governments." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " reason side seen primitive party represented protocol browsers popular bargaining when vote mainly." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25395.stm> , <http://www.bbc.co.uk/things/gbdbd12cb-9eda-4c2f-98d7-38c30f9f732d#id> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7296767/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/AudioFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-09-12T01:49:35.098+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-08-30T04:21:14.058+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1735286820> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/25#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1840669233#id> .
+
+<http://www.bbc.co.uk/things/1840669233#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/News> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Brescia_Calcio> .
+
+<http://dbpedia.org/resource/Brescia_Calcio> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Brescia Calcio" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Brescia Calcio is aItalian]] football club in Brescia, Lombardy, currently playing in the Serie B. In the 200910 season, in the return leg of the Serie B playoff final, they defeated Torino 2-1 at home (after a goalless first leg), returning to Serie A football after a five-year absence. In the 2010-11 season, however, they were relegated back to Serie B." ;
+	<http://dbpedia.org/property/manager> <http://dbpedia.org/resource/Alessandro_Calori> ;
+	<http://dbpedia.org/property/nickname> "Biancoazzurri ," ;
+	<http://dbpedia.org/property/website> <http://www.bresciacalcio.it/> .
+
+<http://www.bbc.co.uk/things/26#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Innis Cheith used customer ads least common users considered cricket preferences automatically." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " method asked ioc progress administration existence pay compete pieces elaborate." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " purposes meant national entered beyond christendom craftsmen lies something state activity attracted consistent used impact cases fixtures billion pits 13th global." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Inchkeith> , <http://dbpedia.org/resource/Johnny_Unitas> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7294715/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-10-13T16:31:26.872+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-04-11T03:28:37.306+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1141610638> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/26#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1195555148#id> .
+
+<http://www.bbc.co.uk/things/1195555148#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Skeleton_(sport)> .
+
+<http://dbpedia.org/resource/Skeleton_(sport)> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Skeleton is a fast winter sliding sport in which an individual person rides a small sled down a frozen track while lying face down, during which athletes experience forces up to 5g. It originated in St. Moritz, Switzerland as a spin-off from the popular British sport of Cresta sledding." ;
+	<http://dbpedia.org/property/caption> "USAF Major Brady Canfield, 2003 canada skeleton champion, shows off his takeoff form.Part of the Winter Olympic programme in 1928 and 1948,1" .
+
+<http://www.bbc.co.uk/things/1195555148#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Johnny_Unitas> .
+
+<http://dbpedia.org/resource/Johnny_Unitas> a <http://xmlns.com/foaf/0.1/Person> ;
+	<http://xmlns.com/foaf/0.1/name> "Johnny Unitas" ;
+	<http://xmlns.com/foaf/0.1/surname> "Unitas" ;
+	<http://xmlns.com/foaf/0.1/givenName> "Johnny" ;
+	<http://purl.org/dc/elements/1.1/description> "American football player" ;
+	<http://dbpedia.org/ontology/deathPlace> "" .
+
+<http://www.bbc.co.uk/things/27#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Richard Shepherd 2006 amounts be for accept court uncommon clergy representative secular." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " rival petition refused achieve problems cut set following early solely." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " are cricket lead help parliament our some incur guaranteeing fixtures such union carried reporting themselves." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Richard+Shepherd> , <http://dbpedia.org/resource/OGC_Nice> , <http://rdf.freebase.com/ns/m.027bld6> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7297577/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-09-30T05:39:58.365+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-03-08T20:54:43.035+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/899075972> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/27#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1523878924#id> .
+
+<http://www.bbc.co.uk/things/1523878924#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/Blogs> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/OGC_Nice> .
+
+<http://dbpedia.org/resource/OGC_Nice> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "OGC Nice" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Olympique Gymnaste Club Nice Cte d'Azur (commonly referred to as OGC Nice or simply Nice) is a French association football club based in Nice. The club was founded in 1904 and currently plays in Ligue 1, the top-tier of French football. Nice plays its home matches at the Stade Municipal du Ray located within the city. In 2013, the club is scheduled to move into a new stadium, named Allianz Riviera. Nice is managed by Claude Puel and captained by midfielder Didier Digard." ;
+	<http://dbpedia.org/property/manager> <http://dbpedia.org/resource/Claude_Puel> ;
+	<http://dbpedia.org/property/name> "Maxime Borges" ;
+	<http://dbpedia.org/property/nickname> "Les Aiglons, Le Gym, I'OGCN" ;
+	<http://dbpedia.org/property/website> <http://www.ogcnice.com/> .
+
+<http://www.bbc.co.uk/things/28#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Lake Eugenia movement 1988 attract two browser guaranteeing services party integrity partisan." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " sporting retain achieve already place lead nobles basic football sent." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " sprang 2007 services purposes dogma impact only dogma used conscientious feel olympic little is electorate." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Lake_Eugenia> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7299964/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-01-27T18:14:10.439+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-08-04T07:44:16.528+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1178179572> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/28#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1412334522#id> .
+
+<http://www.bbc.co.uk/things/1412334522#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/Music> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Emperor_Uda> .
+
+<http://dbpedia.org/resource/Emperor_Uda> a <http://www.ldbc.eu/Person_Organisation> .
+
+<http://www.bbc.co.uk/things/29#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Maplehurst, Wisconsin exchange also payment side provides drive personal additionally users browser." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " bargaining football little very provider king until not it accept." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " or millions method competitive we wrestling head sometimes participation turn result very craftsmen make maintained pay layout allowing as commerce did politics." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Maplehurst_(community),_Wisconsin> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7300576/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-06-27T06:37:38.846+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-03-28T17:06:45.070+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/916386877> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/29#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1591729540#id> .
+
+<http://www.bbc.co.uk/things/1591729540#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Mountain_bike_orienteering> .
+
+<http://dbpedia.org/resource/Mountain_bike_orienteering> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Mountain bike orienteering (MTB-O or MTBO) is an orienteering endurance racing sport on a mountain bike where navigation is done along trails and tracks. Compared to foot orienteering, competitors usually are not permitted to leave the trail and track network. Navigation tactics are similar to ski-orienteering, where the major focus is route choice while navigating." ;
+	<http://dbpedia.org/property/caption> "Mountain Bike orienteer with hard tail mountain bike, clipless pedals, and map holder.,Individual" .
+
+<http://www.bbc.co.uk/things/1591729540#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> .
+
+<http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Llanidloes Ladies F.C." ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Llanidloes Ladies F.C. are an association football club based in the Town of Llanidloes, Powys, Wales. The team currently plays in the Welsh Premier League (women) which is the top tier of Women's Football in Wales. The club also plays in the North Powys Ladies League, and are the current holders of the North Powys Ladies Title, the County Times Cup and the Central Wales Cup." ;
+	<http://dbpedia.org/property/manager> "Gregg Harries" ;
+	<http://dbpedia.org/property/name> "Eirlys Pugh" ;
+	<http://dbpedia.org/property/nickname> "Llani Reserves" ;
+	<http://dbpedia.org/property/website> <http://www.clubwebsite.co.uk/llanidloesladies> .
+
+<http://www.bbc.co.uk/things/30#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Australian Grand Prix interesting taxation customer first competition compete town another it against." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " reject such drive asked until the website national fixtures refuse." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/SportsCompetitions> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " policy historical rapid time piece all teams personalize fundamental evident two we compete equality a." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.bbc.co.uk/things/f9138c5b-2ec9-4fd5-8fa3-3ef4c645d506#id> , <http://rdf.freebase.com/ns/m.026bwd> , <http://dbpedia.org/resource/Kfarfou> , <http://dbpedia.org/resource/FS_METTA/Latvijas_UniversitC481te> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7295884/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-03-04T15:55:49.533+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-07-24T19:03:06.955+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/2054523446> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/30#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/48540489#id> .
+
+<http://www.bbc.co.uk/things/48540489#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Team_handball> .
+
+<http://dbpedia.org/resource/Team_handball> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Handball (also known as team handball, Olympic handball, European team handball, European handball, or Borden ball) is a team sport in which two teams of seven players each (six outfield players and a goalkeeper on each team) pass a ball to throw it into the goal of the other team. A standard match consists of two periods of 30 minutes, and the team which scores the most goals wins." ;
+	<http://dbpedia.org/property/caption> "Handball player moves towards the goal prior to throwing the ball, while the goalkeeper waits to stop it.Returned to the Summer Olympic programme since 1972.,7" .
+
+<http://www.bbc.co.uk/things/31#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Zavala Island king strongest domestic individual's there games our should centuries life." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " but least individual's engine lower even seen governments institution paid." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " consistent been evident participants participation appear broadcasters us data plead worst." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Zavala_Island> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7300398/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-04-03T00:41:39.614+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-11-09T08:07:09.775+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/902937388> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/31#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1557746104#id> .
+
+<http://www.bbc.co.uk/things/1557746104#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/American_football> .
+
+<http://dbpedia.org/resource/American_football> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "American football, known in the United States as football, is a team sport. It is played by two teams, eleven players to a side, who advance an oval ball over a rectangular field that is 120 yards long by 53.3 yards wide and has goalposts at both ends. The team in possession of the ball (the offense) attempts to advance down the field by running with or passing the ball. To continue their drive, the offense must advance the ball at least 10 yards down the field in a series of four downs." ;
+	<http://dbpedia.org/property/caption> "Larry Fitzgerald catches a pass at the 2009 Pro Bowl" ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Football_helmet> ;
+	<http://dbpedia.org/property/olympic> "No; demonstrated at the 1932 Summer Olympics,11" ;
+	<http://dbpedia.org/property/team> "Both teams can substitute players freely between downs" .
+
+<http://www.bbc.co.uk/things/1557746104#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/C.D._Olimpia> .
+
+<http://dbpedia.org/resource/C.D._Olimpia> a <http://www.ldbc.eu/Person_Organisation> .
+
+<http://www.bbc.co.uk/things/32#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Yasmin Qureshi is internal medieval in phrase over areas towards retain primitive." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " flash a venue hobby strongest being first bargaining 2007 historically." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " page achieve left country concerned attracted like were as africa visit." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35869.stm> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7298950/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-02-18T03:37:39.220+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-12-12T00:25:42.938+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/426023982> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/32#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/2010405548#id> .
+
+<http://www.bbc.co.uk/things/2010405548#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Hurling> .
+
+<http://dbpedia.org/resource/Hurling> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Hurling is an outdoor team game of ancient Gaelic origin, administered by the Gaelic Athletic Association. The game has prehistoric origins, has been played for over 3,000 years, and is thought to be the worlds fastest field team game in terms of game play. One of Irelands native Gaelic games, it shares a number of features with Gaelic football, such as the field and goals, number of players, and much terminology. There is a similar game for women called camogie (camgaocht)." ;
+	<http://dbpedia.org/property/caption> "Hurling being played in Philadelphia, USAhttp://dbpedia.org/resource/Hurling_at_the_1904_Summer_Olympics" ;
+	<http://dbpedia.org/property/equipment> "substitutes are permitted" .
+
+<http://www.bbc.co.uk/things/2010405548#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://www.bbc.co.uk/ontologies/coreconcepts/Thing/1356992912#id> .
+
+<http://www.bbc.co.uk/ontologies/coreconcepts/Thing/1356992912#id> a <http://www.bbc.co.uk/ontologies/coreconcepts/Theme> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/shortLabel> "Yasmin Qureshi cherished affords achieve name achievement primitive during impact time seen." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/slug> "Yasmin Qureshi address is vote meant worldwide partisan refusing 2006 rules viewers." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/prefferedLabel> "Yasmin Qureshi merely applicable beginning rather criticism by sports one society flash." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/disambiguationHint> "Yasmin Qureshi existence games eventual union ads as ambition incur progress ends." ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/twitter> "Yasmin Qureshi pressure help come originate vote features but ads browser centuries." .
+
+<http://www.bbc.co.uk/things/33#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Helen Goodman parliament estimated primary often over browsing the achieve refuse activity." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " should war 15th educated web-surfing sessions olympic customize africa professionally." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsAdditional> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " analyze among entrance world within serve refused affords at other a politics enjoyment pay rugby pieces effective web-surfing state us provider originated out unfair display." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.wikidata.org/wiki/Q391605> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25384.stm> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25458.stm> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7292675/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/AudioFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-09-05T06:28:57.897+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-11-10T03:14:59.811+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/710454385> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/33#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/82275326#id> .
+
+<http://www.bbc.co.uk/things/82275326#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/Music> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Johann_Georg_Albrechtsberger> .
+
+<http://dbpedia.org/resource/Johann_Georg_Albrechtsberger> a <http://www.ldbc.eu/Person_Organisation> .
+
+<http://www.bbc.co.uk/things/34#id> a <http://www.bbc.co.uk/ontologies/creativework/Programme> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Peter Bone site's into pay-per-view retain meant enforced strongest layout achievement governments." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " orders petition enactment day mentality where alone incur ever compete." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsAdditional> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " revolves very practical delete most eg games appear 23 including attracted interesting court fixtures raise record incur court to enable power charge weak." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Peter_Bone> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7297720/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/VideoFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-04-27T01:34:56.883+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-03-15T01:50:43.060+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/332573515> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/34#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1464842147#id> .
+
+<http://www.bbc.co.uk/things/1464842147#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Carom_billiards> .
+
+<http://dbpedia.org/resource/Carom_billiards> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Carom billiards, sometimes called carambole billiards or simply carambole (and in some cases used as a synonym for the game of straight rail from which many carom games derive), is the overarching title of a family of billiards games generally played on cloth-covered, 5 by 10feet (approximately 1.5  3m) pocketless tables, which often feature heated slate beds." ;
+	<http://dbpedia.org/property/caption> "A carom billiard table and billiard balls" ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Billiard_ball> ;
+	<http://dbpedia.org/property/olympic> "Proposed for 2010" ;
+	<http://dbpedia.org/property/team> "Single opponents, doubles or teams" .
+
+<http://www.bbc.co.uk/things/1464842147#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> .
+
+<http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> a <http://www.ldbc.eu/Person_Organisation> .
+
+<http://www.bbc.co.uk/things/35#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Nia Griffith uncommon professional broadcasters most estimated billion diagnose something ceased unfair." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " viewing towards has problems audience sometimes view not usage always." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " rights adoption us came have the affords however collect carried uncommon around power originate such layout world each higher linked." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/37590.stm> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/2649295/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-11-28T06:24:45.154+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-12-15T17:45:29.366+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/151275903> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/35#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1157830837#id> .
+
+<http://www.bbc.co.uk/things/1157830837#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Skeleton_(sport)> .
+
+<http://dbpedia.org/resource/Skeleton_(sport)> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Skeleton is a fast winter sliding sport in which an individual person rides a small sled down a frozen track while lying face down, during which athletes experience forces up to 5g. It originated in St. Moritz, Switzerland as a spin-off from the popular British sport of Cresta sledding." ;
+	<http://dbpedia.org/property/caption> "USAF Major Brady Canfield, 2003 canada skeleton champion, shows off his takeoff form.Returned to the Winter Olympic programme in 2002 to today,1" .
+
+<http://www.bbc.co.uk/things/1157830837#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/1966_Australian_Grand_Prix> .
+
+<http://dbpedia.org/resource/1966_Australian_Grand_Prix> a <http://dbpedia.org/ontology/Event> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "1966 Australian Grand Prix" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "The 1966 Australian Grand Prix was a race held at the Lakeside International Raceway on 22 February 1966. The race had 15 starters. It was the 31st Australian Grand Prix and doubled as round six of the 1966 Tasman Series. Graham Hill won his only AGP." ;
+	<http://dbpedia.org/property/country> "Australia" ;
+	<http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Category:Australian_Grand_Prix> .
+
+<http://www.bbc.co.uk/things/36#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Robin Walker enactments enactment person vote nobles usage notion complete usage ever." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " billion strongest display concerned proof hobby some celibacy modern feel." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " the have legislation about over and broadcast function data customer over remotely practical hobby view hobby conscientious progress being." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.walker4worcester.com/> , <http://dbpedia.org/resource/ACF_Gloria_1922_BistriC89Ba> , <http://dbpedia.org/resource/Polish_parliamentary_election,_2005> , <http://rdf.freebase.com/ns/m.025g9m> , <http://dbpedia.org/resource/Russian_Constituent_Assembly_election,_1917> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/6286356/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-01-15T01:46:54.240+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-08-23T16:17:02.864+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1511680691> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/36#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/578370948#id> .
+
+<http://www.bbc.co.uk/things/578370948#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/Music> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/ACF_Gloria_1922_BistriC89Ba> .
+
+<http://dbpedia.org/resource/ACF_Gloria_1922_BistriC89Ba> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "ACF Gloria 1922 Bistria" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Gloria Bistria is a Romanian professional football club from Bistria, Bistria-Nsud County." ;
+	<http://dbpedia.org/property/manager> <http://dbpedia.org/resource/Nicolae_Manea> ;
+	<http://dbpedia.org/property/nickname> "Blue Vampires" ;
+	<http://dbpedia.org/property/website> <http://www.acfgloria.ro/> .
+
+<http://www.bbc.co.uk/things/37#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Mike Freer principle include two not carried ever ethos achievement did worldwide." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " assembly and venue ads all world eventual adaptability each terms." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://www.bbc.co.uk/category/PoliticsPersonsReference> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " analyze institution request higher global line demographic modern we player begins eligible pay-per-view being speaking ambition side." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://www.guardian.co.uk/politics/person/11041/> , <http://dbpedia.org/resource/Al_Ahly_SC> , <http://dbpedia.org/resource/Douglas_Hofstadter> , <http://dbpedia.org/resource/Christchurch_mayoral_election,_2013> , <http://www.guardian.co.uk/politics/person/12118/> , <http://www.bbc.co.uk/things/98c3db4b-498d-7c4b-acb5-d16ffb214f0d#id> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7294629/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-03-23T06:57:15.916+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2012-03-08T06:10:23.104+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/763961600> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/37#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1521235827#id> .
+
+<http://www.bbc.co.uk/things/1521235827#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Cue_sports> .
+
+<http://dbpedia.org/resource/Cue_sports> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Cue sports (sometimes written cuesports), also known as billiard sports, are a wide variety of games of skill generally played with a cue stick which is used to strike billiard balls, moving them around a cloth-covered billiards table bounded by rubber cushions. Historically, the umbrella term was billiards." ;
+	<http://dbpedia.org/property/caption> "Engraving from Charles Cottons 1674 book, The Compleat Gamester" ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Billiard_ballSingleopponents,doublesorteams> .
+
+<http://www.bbc.co.uk/things/1521235827#id> <http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Al_Ahly_SC> .
+
+<http://dbpedia.org/resource/Al_Ahly_SC> a <http://dbpedia.org/ontology/Organisation> ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Al Ahly SC" ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Al Ahly Sporting Club, commonly known as simply Al Ahly, is an Egyptian sporting club. Founded in April 1907, Al Ahly was named in 2000 by the Confederation of African Football as the African Club of the Century. Al Ahly is the most successful club of the 20th century in the African continent according to CAF, closely followed by their rivals Zamalek SC." ;
+	<http://dbpedia.org/property/manager> <http://dbpedia.org/resource/Hossam_El-Badry> ;
+	<http://dbpedia.org/property/name> "Mohamed El-Sayed" ;
+	<http://dbpedia.org/property/nickname> " " ;
+	<http://dbpedia.org/property/website> <http://www.ahlyegypt.com> .

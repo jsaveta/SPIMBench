@@ -21,7 +21,7 @@ import eu.ldbc.semanticpublishing.util.SesameUtils;
 public class WriteIntermediateGS extends RandomWorker {
 	Model GSModel = null;
 	private String exactmatch;
-	private static int count;
+	private static int count; //make it atomiclong
 	static Throwable t = new Throwable(); 
 	static StackTraceElement[] elements = t.getStackTrace(); 
 
@@ -33,6 +33,9 @@ public class WriteIntermediateGS extends RandomWorker {
 		exactmatch = "http://www.w3.org/2004/02/skos/core#exactMatch";
 		this.worker_ = worker;
 		
+	}
+	public void WriteSimpleGS(String value1,String value2, Double weight,String transformation) throws IOException{
+
 	}
 	
 	public void WriteGSAsTriples(String value1,String value2, Double weight,String transformation,String property, Model sesameModel_GS,FileOutputStream fos_3) throws IOException, RDFHandlerException{
@@ -65,11 +68,11 @@ public class WriteIntermediateGS extends RandomWorker {
 		if(this.worker_.getFtransformations().containsKey(this.worker_.getFileName1())){
 			ArrayList<Double> values = this.worker_.getFtransformations().get(this.worker_.getFileName1()); // first, copy out the existing values
 			values.set(Integer.parseInt(this.transformation),values.get((int) Double.parseDouble(this.transformation))+ 1);
-			this.worker_.getFtransformations().remove(this.worker_.getFileName1());
-			this.worker_.getFtransformations().put(this.worker_.getFileName1(), values);
+		    this.worker_.getFtransformations().remove(this.worker_.getFileName1());
+		    this.worker_.getFtransformations().put(this.worker_.getFileName1(), values);
 
+		 
 		}
-
 			
 		if(this.property  != null && !this.property.equals("")){
 			if(property.startsWith("http")) {

@@ -419,12 +419,8 @@ public class CreativeWorkBuilder implements SesameBuilder {
 				initialAboutUriUsed = true;
 			} else {
 				initialUri = DataManager.regularEntitiesList.get(ru.nextInt(DataManager.regularEntitiesList.size())).getURI();
-				//if(this.cwEntity.getCategory().equals("Person") || this.cwEntity.getCategory().equals("Place") || this.cwEntity.getCategory().equals("Event") || this.cwEntity.getCategory().equals("Organisation")){
-					about_array.add(initialUri);//.replace("<", "").replace(">", "")
-					//System.out.println("initialUri "+initialUri);
-					//System.out.println("cwEntity.getCategory() "+cwEntity.getCategory());
-				//}
-				
+				about_array.add(initialUri);//.replace("<", "").replace(">", "")
+					
 			}
 			
 			object = sesameValueFactory.createURI(initialUri.replace("<", "").replace(">", ""));
@@ -614,13 +610,7 @@ public class CreativeWorkBuilder implements SesameBuilder {
 		
 		model.add(subject, predicate, object, context);
 		
-
-		//Set PrimaryContentOf
-//		int random = ru.nextInt(1, 4);
-		//i for tha mporouse na paralifthei an theloyme na dimiourgeite ena apo to kathe ena!
-//		for (int i = 0; i < random; i++) {
-		
-//esvisa thn for gia to owl:InverseFunctionalProperty			
+	
 			boolean personUsedLocal = false;
 			boolean placeUsedLocal = false;
 			boolean eventUsedLocal = false;
@@ -1456,24 +1446,6 @@ public class CreativeWorkBuilder implements SesameBuilder {
 
 			}
 				
-				//TODO kapoia tha einai bnodes.. check prin tin metartopi
-				
-//				if(!DataManager.travelsHasHeadOfStatesList.isEmpty() && !DataManager.travelsHasHeadOfStatesList.get(temp).replace("<", "").replace(">", "").equals("")){
-//					predicate = sesameValueFactory.createURI(travel + "hasHeadOfState");
-//					object = sesameValueFactory.createBNode(DataManager.travelsHasHeadOfStatesList.get(temp).replace("<", "").replace(">", ""));
-//					//System.out.println("has head of state");
-//					model.add(subject_cwThing, predicate, object, context);
-//				}
-//				if(!DataManager.travelsOccupiesList.isEmpty() && !DataManager.travelsOccupiesList.get(temp).replace("<", "").replace(">", "").equals("")){
-//					predicate = sesameValueFactory.createURI(upper + "occupies");
-//					object = sesameValueFactory.createBNode(DataManager.travelsOccupiesList.get(temp).replace("<", "").replace(">", ""));
-//					model.add(subject_cwThing, predicate, object, context);
-//				}
-//				if(!DataManager.travelsHasBoundaryList.isEmpty() && !DataManager.travelsHasBoundaryList.get(temp).replace("<", "").replace(">", "").equals("")){
-//					predicate = sesameValueFactory.createURI(travel + "hasBoundary");
-//					object = sesameValueFactory.createLiteral(DataManager.travelsHasBoundaryList.get(temp).replace("<", "").replace(">", ""));
-//					model.add(subject_cwThing, predicate, object, context);
-//				}
 				if(!DataManager.travelsHasRecognitionStatusList.isEmpty() && !DataManager.travelsHasRecognitionStatusList.get(temp).replace("<", "").replace(">", "").equals("")){
 					predicate = sesameValueFactory.createURI(travel + "hasRecognitionStatus");
 					object = sesameValueFactory.createLiteral(DataManager.travelsHasRecognitionStatusList.get(temp).replace("<", "").replace(">", ""));

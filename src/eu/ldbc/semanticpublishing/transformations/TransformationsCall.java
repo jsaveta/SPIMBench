@@ -75,9 +75,7 @@ public class TransformationsCall {
 		transformationsMap.put("17", "KeepRoot"); 
 		transformationsMap.put("18", "ChangeSyntheticCompound");// not impemented
 		transformationsMap.put("19", "ChangeWordPermutation");
-//TODO delete ChangeWordPermutation class and everything related to it. 
-		//it is shuffle token with space for argument
-		
+
 		// 20 - 22 are structural transformations
 		transformationsMap.put("20", "AddProperty"); 
 		transformationsMap.put("21", "DeleteProperty");
@@ -101,7 +99,6 @@ public class TransformationsCall {
 		transformationsMap.put("37", "UnionOf");
 		transformationsMap.put("38", "OneOf"); //.....
 
-		//setTransformationList();
 		setLexicalList();
 		setStructuralList();
 		setComplexTransformationsList();
@@ -1050,6 +1047,7 @@ public class TransformationsCall {
 			int pick=0;
 			Random rand = new Random();
 			predicatesObjectsComplexMap = new HashMap<String, List<Transformation>>();
+			//System.out.println(complexPerc);
 			for(int i = 0; i < getComplexList().size(); i++){
 				//initializeComplexCombinationEntity();
 				switch(complexPerc){
@@ -1075,6 +1073,18 @@ public class TransformationsCall {
 						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
 					}
 				
+
+					
+//					transformation = new ArrayList<Transformation>();			
+//					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
+//					lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+//					transformation.add(lexvalue);
+//					predicatesObjectsMapTemp = structuralCases(complexArrayList); 
+//					structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+//					transformation.add(structvalue);
+//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+					
+
 					break;
 					
 				case LEXICAL_LOGICAL:
@@ -1098,6 +1108,16 @@ public class TransformationsCall {
 						transformation.add(transformationsArrayList.get(pick_log)); // equiv pr or sub pro or disj prop 
 						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
 					}
+
+//					transformation = new ArrayList<Transformation>();
+//					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
+//					lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+//					transformation.add(lexvalue); 
+//					predicatesObjectsMapTemp = logicalCases(complexArrayList); 
+//					logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+//					transformation.add(logvalue);
+//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+
 					break;
 					
 				case STRUCTURAL_LOGICAL:

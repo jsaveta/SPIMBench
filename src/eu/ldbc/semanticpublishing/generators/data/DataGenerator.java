@@ -225,8 +225,7 @@ public class DataGenerator {
 		}
 		for (Entry<String, ArrayList<Double>> entry : Fmap.entrySet()) {
             ArrayList<Double> value = (ArrayList<Double>)entry.getValue();
-            //System.out.println("value size : " + value.size());
-        	for(int i = 0 ; i < value.size(); i++){
+            for(int i = 0 ; i < value.size(); i++){
         		double array_value = E.get(i) + value.get(i);
         		E.remove(i);
              	E.add(i, array_value);
@@ -296,13 +295,12 @@ public class DataGenerator {
 		}
 		
 		double js = DivergenceUtil.jsDivergence(ProbabilisticEk, ProbabilisticE, ProbabilisticEandEkAverage);
-		//System.out.println("---------- js Divergence "  +js);
+		System.out.println("\n\tIs suggested to select more than 2 files for rescalSampling.\n");	
 		if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > 1){ //TODO also check if k is too low or too high (more files thba)
 			long triplesPerFile = configuration.getLong(Configuration.GENERATED_TRIPLES_PER_FILE);
 			long totalTriples = configuration.getLong(Configuration.DATASET_SIZE_TRIPLES);
-			long files = totalTriples/triplesPerFile;
+			int files = (int) (totalTriples/triplesPerFile);
 			double k = (0.1 * Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)))/js;
-			
 			if(k > files || k <= Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING))){
 				System.out.println("\tThe rescalSampling you chose is satisfactory.");
 			}
@@ -312,8 +310,13 @@ public class DataGenerator {
 			
 			
 			List<String> list = new ArrayList<String>();
+			int times = Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING));
+			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
+				times = files;
+			}
+			
 			for (Entry<String, Double> entry : square_cos.entrySet()) {
-			  if (list.size() > Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) -1) {CreateFinalGS.writeFinalGSFiles(); break;}
+			  if (list.size() > times -1) {CreateFinalGS.writeFinalGSFiles(); break;}
 			  else{  
 				  list.add(entry.getKey());
 				  try {
@@ -326,7 +329,7 @@ public class DataGenerator {
 			}
 		}
 		else{
-			System.out.println("\tPlease give a number greater than 1 for rescalSampling.");			
+			System.out.println("\n\tPlease give a number greater than 2 for rescalSampling.\n");			
 		}
 	
 		System.out.println("\tcompleted! Total Creative Works created : " + String.format("%,d", (DataManager.creativeWorksNextId.get() - creativeWorksInDatabase)) + ". Time : " + (System.currentTimeMillis() - currentTime) + " ms");		
