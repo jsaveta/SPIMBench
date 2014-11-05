@@ -4,81 +4,73 @@
 
 <http://www.trans/31> <http://www.type> "0" ;
 	<http://www.prop> "CW_id" ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.09052275152066658"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/9#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/515008344#id> ;
-	<http://www.transf_num> <http://www.trans/32> .
+<http://www.bbc.co.uk/things/9#id> <http://www.transf_num> <http://www.trans/32> .
 
 <http://www.trans/32> <http://www.type> "22" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/title> ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/9#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/515008344#id> ;
-	<http://www.transf_num> <http://www.trans/33> .
+<http://www.bbc.co.uk/things/9#id> <http://www.transf_num> <http://www.trans/33> .
 
 <http://www.trans/33> <http://www.type> "21" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/category> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/9#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/515008344#id> ;
-	<http://www.transf_num> <http://www.trans/34> .
+<http://www.bbc.co.uk/things/9#id> <http://www.transf_num> <http://www.trans/34> .
 
 <http://www.trans/34> <http://www.type> "21" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/description> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/9#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/515008344#id> ;
-	<http://www.transf_num> <http://www.trans/35> .
+<http://www.bbc.co.uk/things/9#id> <http://www.transf_num> <http://www.trans/35> .
 
 <http://www.trans/35> <http://www.type> "22" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/altText> ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <http://www.bbc.co.uk/things/10#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1610967837#id> ;
 	<http://www.transf_num> <http://www.trans/36> .
 
 <http://www.trans/36> <http://www.type> "0" ;
 	<http://www.prop> "CW_id" ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.09052275152066658"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <http://www.bbc.co.uk/things/11#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1889405154#id> ;
 	<http://www.transf_num> <http://www.trans/37> .
 
 <http://www.trans/37> <http://www.type> "0" ;
 	<http://www.prop> "CW_id" ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.09052275152066658"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/11#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1889405154#id> ;
-	<http://www.transf_num> <http://www.trans/38> .
+<http://www.bbc.co.uk/things/11#id> <http://www.transf_num> <http://www.trans/38> .
 
 <http://www.trans/38> <http://www.type> "20" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/title> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/11#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1889405154#id> ;
-	<http://www.transf_num> <http://www.trans/39> .
+<http://www.bbc.co.uk/things/11#id> <http://www.transf_num> <http://www.trans/39> .
 
 <http://www.trans/39> <http://www.type> "21" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/shortTitle> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/11#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1889405154#id> ;
-	<http://www.transf_num> <http://www.trans/40> .
+<http://www.bbc.co.uk/things/11#id> <http://www.transf_num> <http://www.trans/40> .
 
 <http://www.trans/40> <http://www.type> "21" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/category> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
-<http://www.bbc.co.uk/things/11#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1889405154#id> ;
-	<http://www.transf_num> <http://www.trans/41> .
+<http://www.bbc.co.uk/things/11#id> <http://www.transf_num> <http://www.trans/41> .
 
 <http://www.trans/41> <http://www.type> "21" ;
 	<http://www.prop> <http://www.bbc.co.uk/ontologies/creativework/description> ;
-	<http://www.weight> "0.9" .
+	<http://www.weight> "0.03015864228374278"^^<http://www.w3.org/2001/XMLSchema#double> .
 
 <http://www.bbc.co.uk/things/12#id> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.bbc.co.uk/things/1090075528#id> ;
 	<http://www.transf_num> <http://www.trans/42> .
 
 <http://www.trans/42> <http://www.type> "0" ;
 	<http://www.prop> "CW_id" ;
-	<http://www.weight> "1.0" .
+	<http://www.weight> "0.09052275152066658"^^<http://www.w3.org/2001/XMLSchema#double> .

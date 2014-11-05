@@ -580,31 +580,32 @@ public class TransformationsCall {
 		complexArrayList.add(core + "facebook");
 		complexArrayList.add(core + "officialHomepage");
 		complexArrayList.add(travel + "hasArea"); //apo lexical mono number
-		complexArrayList.add(core + "twitter"); //subpropertyof, disjointproperty + everything
-		complexArrayList.add(core + "facebook"); //subpropertyof, disjointproperty + everything
-		complexArrayList.add(core + "officialHomepage"); //subpropertyof , disjointproperty + everything
-		complexArrayList.add(cworkNamespace + "about"); //subpropertyof + structural 
-		complexArrayList.add(cworkNamespace + "mentions"); //subpropertyof + structural 
 		complexArrayList.add(cworkNamespace + "title");
 		complexArrayList.add(cworkNamespace + "shortTitle");
-		complexArrayList.add(cworkNamespace + "category");
 		complexArrayList.add(cworkNamespace + "description");
 		complexArrayList.add(cworkNamespace + "dateCreated"); //apo lexical mono date
 		complexArrayList.add(cworkNamespace + "dateModified"); //apo lexical mono date
-		//complexArrayList.add(cworkNamespace + "altText");
-		//equivalent props
+		
 		complexArrayList.add(foaf + "name");
 		complexArrayList.add(rdfs + "comment");
 		complexArrayList.add(dbpediaowl + "country");
 		complexArrayList.add(dcterms + "subject");
-		complexArrayList.add(geo + "geometry");
 		complexArrayList.add(rdfs + "label");
 		complexArrayList.add(dbpprop + "country");
 		complexArrayList.add(dcterms + "subject");
+		
+		complexArrayList.add(cworkNamespace + "about"); //subpropertyof + structural 
+		complexArrayList.add(cworkNamespace + "mentions"); //subpropertyof + structural 
+		complexArrayList.add(cworkNamespace + "category");
 		complexArrayList.add(dbpprop + "manager");
 		complexArrayList.add(dbpprop + "name");
 		complexArrayList.add(dbpprop + "nickname");
 		complexArrayList.add(dbpprop + "website");
+		
+		complexArrayList.add(geo + "geometry");
+		
+
+
 		
 	}
 	public ArrayList<String> getComplexList(){
@@ -1067,7 +1068,7 @@ public class TransformationsCall {
 						pick = new Random().nextInt(Lexical.values().length);
 
 						transformation.add(transformationsArrayList.get(pick)); //lexical
-						int pick_str = rand.nextInt((21 - 20) + 1) + 21;
+						int pick_str = rand.nextInt((19 - 18) + 1) + 19;
 						
 						transformation.add(transformationsArrayList.get(pick_str)); //extract
 						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);

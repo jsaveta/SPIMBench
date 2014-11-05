@@ -1,18 +1,3 @@
-http://www.bbc.co.uk/things/1#id http://www.bbc.co.uk/things/1943302423#id
-http://www.bbc.co.uk/things/2#id http://www.bbc.co.uk/things/835659672#id
-http://www.bbc.co.uk/things/3#id http://www.bbc.co.uk/things/1771799911#id
-http://www.bbc.co.uk/things/4#id http://www.bbc.co.uk/things/1112298850#id
-http://www.bbc.co.uk/things/5#id http://www.bbc.co.uk/things/1381923723#id
-http://www.bbc.co.uk/things/6#id http://www.bbc.co.uk/things/170692812#id
-http://www.bbc.co.uk/things/7#id http://www.bbc.co.uk/things/7#id
-http://www.bbc.co.uk/things/8#id http://www.bbc.co.uk/things/216065383#id
-http://www.bbc.co.uk/things/9#id http://www.bbc.co.uk/things/2076516697#id
-http://www.bbc.co.uk/things/10#id http://www.bbc.co.uk/things/356664078#id
-http://www.bbc.co.uk/things/11#id http://www.bbc.co.uk/things/1551344522#id
-http://www.bbc.co.uk/things/12#id http://www.bbc.co.uk/things/819554295#id
-http://www.bbc.co.uk/things/13#id http://www.bbc.co.uk/things/293090189#id
-http://www.bbc.co.uk/things/14#id http://www.bbc.co.uk/things/82909665#id
-http://www.bbc.co.uk/things/15#id http://www.bbc.co.uk/things/105896732#id
-http://www.bbc.co.uk/things/16#id http://www.bbc.co.uk/things/657319913#id
-http://www.bbc.co.uk/things/17#id http://www.bbc.co.uk/things/1727341242#id
-http://www.bbc.co.uk/things/18#id http://www.bbc.co.uk/things/877162670#id
+http://www.bbc.co.uk/things/1#id http://www.bbc.co.uk/things/1228223309#id 0.9094772484793334
+http://www.bbc.co.uk/things/2#id http://www.bbc.co.uk/things/1059727966#id 0.7284317454380003
+http://www.bbc.co.uk/things/3#id http://www.bbc.co.uk/things/1026435030#id 0.6379089939173337

@@ -1,0 +1,55 @@
+
+<http://www.bbc.co.uk/things/21#id> a <http://www.bbc.co.uk/ontologies/creativework/BlogPost> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Andrew Jackson does plead eligible individual's war transfers higher while retain elaborate." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " beyond experience adaptability analyze venue asked and celibacy about that." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://xmlns.com/foaf/0.1/Person> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " beginning attract help they parliament existence certain hundreds lead customer effects negatively lies democratic audience pretension exist always democratic institutions." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Andrew_Jackson> , <http://dbpedia.org/resource/Ernest_Thayer> , <http://dbpedia.org/resource/Gerolamo_Cardano> , <http://dbpedia.org/resource/Alexander_Fleming> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7297451/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/InternationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-05-14T08:00:57.389+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-08-18T17:47:34.439+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/1887206776> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/21#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/354209588#id> .
+
+<http://www.bbc.co.uk/things/354209588#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/Mobile> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://www.bbc.co.uk/ontologies/bbc/News> ;
+	<http://www.bbc.co.uk/ontologies/coreconcepts/primaryTopic> <http://dbpedia.org/resource/Ernest_Thayer> .
+
+<http://dbpedia.org/resource/Ernest_Thayer> a <http://xmlns.com/foaf/0.1/Person> ;
+	<http://xmlns.com/foaf/0.1/name> "Ernest Thayer" ;
+	<http://xmlns.com/foaf/0.1/surname> "Thayer" ;
+	<http://xmlns.com/foaf/0.1/givenName> "Ernest" ;
+	<http://purl.org/dc/elements/1.1/description> "American poet" ;
+	<http://dbpedia.org/ontology/birthDate> "1863-08-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Lawrence,_Massachusetts> ;
+	<http://dbpedia.org/ontology/deathDate> "1940-08-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Lawrence,_Massachusetts> .
+
+<http://www.bbc.co.uk/things/22#id> a <http://www.bbc.co.uk/ontologies/creativework/NewsItem> ;
+	<http://www.bbc.co.uk/ontologies/creativework/title> "Petra analyze orders seat referring approach being servers elaborate or christendom." ;
+	<http://www.bbc.co.uk/ontologies/creativework/shortTitle> " give any number originally one common century compete lies audiences." ;
+	<http://www.bbc.co.uk/ontologies/creativework/category> <http://dbpedia.org/ontology/Place> ;
+	<http://www.bbc.co.uk/ontologies/creativework/description> " tensions others make there pages problems server among faster cherished eg your usage." ;
+	<http://www.bbc.co.uk/ontologies/creativework/about> <http://dbpedia.org/resource/Petra,_Cyprus> , <http://dbpedia.org/resource/Annette_Brooke> ;
+	<http://www.bbc.co.uk/ontologies/creativework/mentions> <http://sws.geonames.org/7293201/> ;
+	<http://www.bbc.co.uk/ontologies/creativework/audience> <http://www.bbc.co.uk/ontologies/creativework/NationalAudience> ;
+	<http://www.bbc.co.uk/ontologies/creativework/liveCoverage> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+	<http://www.bbc.co.uk/ontologies/creativework/primaryFormat> <http://www.bbc.co.uk/ontologies/creativework/TextualFormat> , <http://www.bbc.co.uk/ontologies/creativework/InteractiveFormat> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateCreated> "2011-04-28T22:38:35.084+03:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/dateModified> "2011-11-29T19:28:05.711+02:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<http://www.bbc.co.uk/ontologies/creativework/thumbnail> <http://www.bbc.co.uk/thumbnail/16883864> ;
+	<http://www.bbc.co.uk/ontologies/creativework/altText> "thumbnail atlText for CW http://www.bbc.co.uk/context/22#id" ;
+	<http://www.bbc.co.uk/ontologies/bbc/primaryContentOf> <http://www.bbc.co.uk/things/1399017068#id> .
+
+<http://www.bbc.co.uk/things/1399017068#id> <http://www.bbc.co.uk/ontologies/bbc/webDocumentType> <http://www.bbc.co.uk/ontologies/bbc/HighWeb> ;
+	<http://www.bbc.co.uk/ontologies/bbc/ProductType> <http://dbpedia.org/resource/Baseball> .
+
+<http://dbpedia.org/resource/Baseball> a <http://dbpedia.org/ontology/Sport> ;
+	<http://www.w3.org/2000/01/rdf-schema#comment> "Baseball is a bat-and-ball sport played between two teams of nine players. The aim is to score runs by hitting a thrown ball with a bat and touching a series of four bases arranged at the corners of a 90-foot diamond. Players on the batting team take turns hitting against the pitcher of the fielding team, which tries to prevent runs by getting hitters out in any of several ways. A player on the batting team can stop at any of the bases and later advance via a teammates hit or other means." ;
+	<http://dbpedia.org/property/caption> "The baseball diamond at Wrigley Field, Chicago" ;
+	<http://dbpedia.org/property/equipment> <http://dbpedia.org/resource/Baseball_(ball)> ;
+	<http://dbpedia.org/property/olympic> "In Summer Olympic program, 19922008,9" .

@@ -341,16 +341,22 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 					for (int e = 0; e < value.size(); e++) {
 						Transformation tr = (Transformation) value.get(e);
 						if(tr.toString().startsWith((transformationPath + "lexical."))){
-							 Object temp = tr.execute(statement.getObject().toString());
+							Object temp;
+							if(statement.getObject().toString().startsWith("http")){
+								 temp = statement.getObject().toString();
+							}
+							else{
+								 temp = tr.execute(statement.getObject().toString());
+							}
 							 if (temp instanceof Value){
-								 if( temp.toString().replace("\"", "").startsWith("http://www.")){
-									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createURI(temp.toString().replace("\"", "")), (Resource)statement.getContext());
-									  
-								 }
-								 else{
+//								 if( temp.toString().replace("\"", "").startsWith("http://")){
+//									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createURI(temp.toString().replace("\"", "")), (Resource)statement.getContext());
+//									  
+//								 }
+//								 else{
 									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(temp.toString().replace("\"", "")), (Resource)statement.getContext());
 									 
-								 }
+								// }
 								 writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
 										 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 												 tr.toString().replace(transformationPath + "lexical.", "").split("@")[0]),
@@ -358,7 +364,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							
 							 }
 							 else{
-								 if( temp.toString().replace("\"", "").startsWith("http://www.")){
+								 if( temp.toString().replace("\"", "").startsWith("http://")){
 									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createURI(temp.toString().replace("\"", "")), (Resource)statement.getContext());
 									  
 								 }

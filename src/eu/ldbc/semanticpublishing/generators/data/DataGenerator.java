@@ -314,16 +314,14 @@ public class DataGenerator {
 			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
 				times = files;
 			}
-			
 			for (Entry<String, Double> entry : square_cos.entrySet()) {
 			  if (list.size() > times -1) {CreateFinalGS.writeFinalGSFiles(); break;}
 			  else{  
 				  list.add(entry.getKey());
 				  try {
 					  CreateFinalGS.GSScores(entry.getKey());
-				} catch (RDFParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				  } catch (RDFParseException e) {
+					throw new RDFParseException("RDFParseException " + e.getMessage());
 				}
 			  }
 			}

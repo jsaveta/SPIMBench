@@ -141,7 +141,7 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			    	try {
 						simpleGSfile.write(u+" "+uPrime+"\n");
 					} catch ( IOException e ) {
-						   e.printStackTrace();
+						throw new IOException("Failed to calculate scores for gs file : " + e.getMessage(), e);
 					}
 			    }
 			    
@@ -154,6 +154,7 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			target = "generatedD2\\"+GSfile.toString().replace("GS", "D2");
 			gold_standard = file.toString();
 			Rescal(source, target, gold_standard);
+			System.out.println("vgika apo to rescal");
 
 		}
 		 catch (IOException e) {
@@ -207,7 +208,7 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
     	}
     }
    //pseudo inverse Marray because matrix is rank deficient
-	Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
+    Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
 
 	Matrix S_matrix = new Matrix(S_,1);
 
