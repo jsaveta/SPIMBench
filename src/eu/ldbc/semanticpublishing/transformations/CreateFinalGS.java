@@ -207,7 +207,7 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
     	}
     }
    //pseudo inverse Marray because matrix is rank deficient
-	Matrix InverseMarray = Matrices.pinv(new Matrix(Marray));
+	Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
 
 	Matrix S_matrix = new Matrix(S_,1);
 
