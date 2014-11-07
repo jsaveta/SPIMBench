@@ -154,7 +154,6 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			target = "generatedD2\\"+GSfile.toString().replace("GS", "D2");
 			gold_standard = file.toString();
 			Rescal(source, target, gold_standard);
-			System.out.println("vgika apo to rescal");
 
 		}
 		 catch (IOException e) {

@@ -26,14 +26,10 @@ public class CWSameAs implements Transformation{
 	private static final String owlsameAs = "http://www.w3.org/2002/07/owl#sameAs";
 	private static final String thing = "http://www.bbc.co.uk/things";
 	private static final String cworkNamespace = "http://www.bbc.co.uk/ontologies/creativework/";
-//	TransformationsCall transformationscall;
-//	private Map <String, Transformation> TransformationConf;
-//	private static final String transformationPath =  "eu.ldbc.semanticpublishing.transformations.";
 	Random random = new Random();
 	
 	public CWSameAs(AbstractAsynchronousWorker worker){
 		this.worker = worker;
-//		this.transformationscall = new TransformationsCall(worker);
 		
 	}
 
@@ -50,8 +46,6 @@ public class CWSameAs implements Transformation{
 
 	@Override
 	public Model executeStatement(Statement st) {
-//		transformationscall.setTransformationConf();
-//		TransformationConf = transformationscall.getTransformationConf();
     	Model model = new LinkedHashModel();
 		Model sameAsModel = new LinkedHashModel();
 		int randomIndexSameAs = 0;
@@ -61,7 +55,6 @@ public class CWSameAs implements Transformation{
 		URI predicate_original_cw = null;
     	Resource subject_sameas = null;
     	Boolean sameAsStatement = false;
-    	System.out.println("same as "+ worker.getsesameModelArrayList().size());
     	if(!worker.getsesameModelArrayList().isEmpty() && worker.getsesameModelArrayList().size() >= 2){
     	int times = 0;
     	do{
@@ -106,17 +99,16 @@ public class CWSameAs implements Transformation{
 							}	
 						}
 					}
-					else if(statement.getPredicate().toString().equals(cworkNamespace + "dateCreated") || statement.getPredicate().toString().equals(cworkNamespace + "dateModified")){
-						Object temp = (String) TransformationConfiguration.dateFORMAT("yyyy-MM-dd HH:mm:ss", DateFormat.SHORT).execute(statement.getObject().toString()).toString();
-						if (temp instanceof Value){
-							worker.getSesameModel_2().add(subject_sameas, (URI)statement.getPredicate(),(Value)temp, (Resource)statement.getContext());
-						}
-					}
+//					else if(statement.getPredicate().toString().equals(cworkNamespace + "dateCreated") || statement.getPredicate().toString().equals(cworkNamespace + "dateModified")){
+//						Object temp = (String) TransformationConfiguration.dateFORMAT("yyyy-MM-dd HH:mm:ss", DateFormat.SHORT).execute(statement.getObject().toString()).toString();
+//						if (temp instanceof Value){
+//							worker.getSesameModel_2().add(subject_sameas, (URI)statement.getPredicate(),(Value)temp, (Resource)statement.getContext());
+//						}
+//					}
 					else if (statement.getPredicate().toString().equals(rdfTypeNamespace)){
 						worker.getSesameModel_2().add(subject_sameas, (URI)statement.getPredicate(),(Value) statement.getObject(), (Resource)statement.getContext());		
 					}
 					else{
-						//isws edw mia allagi sta transformation... H' na min ginontai toso manually
 						String temp = (String) TransformationConfiguration.deleteRANDOMCHARS(0.2).execute(statement.getObject().toString()).toString();
 						worker.getSesameModel_2().add(subject_sameas, (URI)statement.getPredicate(),SesameBuilder.sesameValueFactory.createLiteral(temp.replace("\"", "")), (Resource)statement.getContext());
 					}

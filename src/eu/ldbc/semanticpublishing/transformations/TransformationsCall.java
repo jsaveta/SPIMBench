@@ -495,7 +495,7 @@ public class TransformationsCall {
 		structuralArrayList = new ArrayList<String>();
 		structuralArrayList.add(cworkNamespace + "title"); 
 		structuralArrayList.add(cworkNamespace + "shortTitle");
-		structuralArrayList.add(cworkNamespace + "category");
+		//structuralArrayList.add(cworkNamespace + "category");
 		structuralArrayList.add(cworkNamespace + "description");
 		structuralArrayList.add(cworkNamespace + "altText");
 		structuralArrayList.add(core + "shortLabel");
@@ -570,7 +570,8 @@ public class TransformationsCall {
 		return this.logicalArrayList; 
 	}
 	public void setComplexTransformationsList(){
-		 
+		
+		//fix this!
 		complexArrayList = new ArrayList<String>();
 		complexArrayList.add(core + "shortLabel");
 		complexArrayList.add(core + "slug");

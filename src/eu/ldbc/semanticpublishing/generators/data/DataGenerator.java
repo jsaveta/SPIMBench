@@ -296,7 +296,7 @@ public class DataGenerator {
 		
 		double js = DivergenceUtil.jsDivergence(ProbabilisticEk, ProbabilisticE, ProbabilisticEandEkAverage);
 		System.out.println("\n\tIs suggested to select more than 2 files for rescalSampling.\n");	
-		if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > 1){ //TODO also check if k is too low or too high (more files thba)
+		if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > 0/*1*/){ //TODO also check if k is too low or too high (more files thba)
 			long triplesPerFile = configuration.getLong(Configuration.GENERATED_TRIPLES_PER_FILE);
 			long totalTriples = configuration.getLong(Configuration.DATASET_SIZE_TRIPLES);
 			int files = (int) (totalTriples/triplesPerFile);

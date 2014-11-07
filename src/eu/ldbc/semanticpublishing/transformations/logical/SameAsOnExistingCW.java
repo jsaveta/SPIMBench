@@ -53,7 +53,6 @@ public Model executeStatement(Statement statement) {
 	if(!worker.getsesameModelArrayList().isEmpty() && worker.getsesameModelArrayList().size() >= 2){
 		int times = 0;
 	do{
-		System.out.println("--");
 		randomIndexSameAs1 = random.nextInt(worker.getsesameModel2ArrayList().size()); 
 		randomIndexSameAs2 = random.nextInt(worker.getsesameModel2ArrayList().size());
 		while(randomIndexSameAs1 != 0 && randomIndexSameAs2!=0 && (times <  worker.getsesameModelArrayList().size())){ 

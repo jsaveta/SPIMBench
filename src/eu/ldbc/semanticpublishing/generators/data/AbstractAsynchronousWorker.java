@@ -74,6 +74,14 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 	private Map <String, List<Transformation>> TransformationConfComplex;
 	private AbstractAsynchronousWorker worker_;
 	public abstract Model getSesameModel_GS();
+	static int same_lexical = 0;
+	static int diff_lexical = 0;
+	static int same_struct = 0;
+	static int diff_struct = 0;
+	static int different_log = 0;
+	static int diff_log= 0;
+	static int same_comp = 0;
+	static int diff_comp= 0;
 	
 	public Model TransformateSesameModel(AbstractAsynchronousWorker worker,Model sesameModel_GS_,FileOutputStream fos_3) throws RDFHandlerException, IOException{
 		Model sesameModel_GS = sesameModel_GS_;
@@ -218,7 +226,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
 							if(!st.getObject().toString().equals(statement.getObject().toString())){
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								different_log++;
+								
 							}
+							else{diff_log++;}
 						}	
 					}
 					else if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
@@ -230,10 +241,14 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
 							if(!st.getObject().toString().equals(ldbc + "Individual_Corporation")){
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.85,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								different_log++;
 							}
 							else if(!st.getObject().toString().equals(statement.getObject().toString())){
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								different_log++;
+								
 							}
+							else{diff_log++;}
 						}
 					}
 					else if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.SubClassOf"))){
@@ -242,7 +257,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							if(!st.getObject().toString().equals(statement.getObject().toString())){
 								//writegs.WriteSimpleGS(statement.getSubject().toString(),  worker_.getURIMapping().get(statement.getSubject().toString()), 0.75, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]);
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								different_log++;
+								
 							}
+							else{diff_log++;}
 							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
 							
 						}
@@ -254,7 +272,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
 							if(!st.getObject().toString().equals(statement.getObject().toString())){
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								different_log++;
+								
 							}
+							else{diff_log++;}
 						}
 					}
 				}
@@ -269,7 +290,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							temp_sesameModel_d2.add(subjectFromMap, (URI)predicate,(Value)statement.getObject(), (Resource)statement.getContext());
 								if(!predicate.toString().equals(statement.getPredicate().toString())){
 									writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().toString(),sesameModel_GS,fos_3);
+									different_log++;
+									
 								}
+								else{diff_log++;}
 							}
 						}	
 					}
@@ -281,7 +305,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 								temp_sesameModel_d2.add(subjectFromMap, (URI)predicate,(Value)statement.getObject(), (Resource)statement.getContext());
 									if(!predicate.toString().equals(statement.getPredicate().toString())){
 										writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().toString(),sesameModel_GS,fos_3);
+										different_log++;
+										
 									}
+									else{diff_log++;}
 								}
 							}	
 						}
@@ -289,17 +316,24 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 				    //structural transformations
 					else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural."))){
 						Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(statement);
-
+						boolean didStructTrans = false;
 						if(!tempModel.isEmpty()){ 
 							for (Statement tempStatement : tempModel){
 								temp_sesameModel_d2.add((Resource)subjectFromMap,(URI)tempStatement.getPredicate(),(Value)tempStatement.getObject(),(Resource)statement.getContext());											
+								if(tempStatement.getObject().toString().equals(statement.getObject().toString())){
+									same_struct++;
+								}
+								else{
+									diff_struct++;
+								}
 							}	
 							if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.AddProperty"))){
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+								didStructTrans = false;
 							}
 							else {
 								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
-						
+								didStructTrans = false;
 							}
 							if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.AggregateProperties"))){
 								if(it.hasNext())statement = it.next();
@@ -307,12 +341,28 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 						else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.DeleteProperty"))){
 							writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+							didStructTrans = false;
+						}
+						if(didStructTrans == true){
+							same_struct++;
+						}
+						else{
+							diff_struct++;
 						}
 					}				
 					else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "lexical."))){
 						//lexical transformations
 						Object temp = TransformationConf.get(statement.getPredicate().toString()).execute(statement.getObject().toString());
-						 if(temp instanceof String){
+						
+						//for experiments
+						if(temp.toString().equals(statement.getObject().toString())){
+							same_lexical++;
+						}
+						else{
+							diff_lexical++;
+						}
+						 
+						if(temp instanceof String){
 							if(!(temp.equals("")) && (temp!=null) && !(temp.equals(statement.getObject().toString()))){
 								if(((String) temp).replace("\"", "").startsWith("http://www.")){
 									temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),SesameBuilder.sesameValueFactory.createURI(((String) temp).replace("\"", "")), (Resource)statement.getContext());	
@@ -361,7 +411,11 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 										 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 												 tr.toString().replace(transformationPath + "lexical.", "").split("@")[0]),
 												 statement.getPredicate().toString(),sesameModel_GS,fos_3);
-							
+								 if(temp.toString().replace("\"", "").equals(statement.getObject().toString())){
+									 same_comp++;
+									
+								}
+								else{diff_comp++;}
 							 }
 							 else{
 								 if( temp.toString().replace("\"", "").startsWith("http://")){
@@ -372,6 +426,11 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(temp.toString().replace("\"", "")), (Resource)statement.getContext());
 									 
 								 }
+								 if(temp.toString().replace("\"", "").equals(statement.getObject().toString())){
+									 same_comp++;
+									
+								}
+								else{diff_comp++;}
 								 writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
 										 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 												 tr.toString().replace(transformationPath + "lexical.", "").split("@")[0]),
@@ -391,7 +450,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 														 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 																 tr.toString().replace(transformationPath + "logical.", "").split("@")[0]),
 																 statement.getPredicate().toString(),sesameModel_GS,fos_3);	
+												diff_comp++;
+												
 											}
+											else{same_comp++;}
 											complexModel = new LinkedHashModel();
 											complexModel.add(subjectFromMap, (URI)st1.getPredicate(),(Value)st1.getObject(), (Resource)st1.getContext());
 										} 
@@ -420,7 +482,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 													 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 															 tr.toString().replace(transformationPath + "structural.", "").split("@")[0]),
 															 statement.getPredicate().toString(),sesameModel_GS,fos_3);	
+											diff_comp++;
+											
 										}
+										else{same_comp++;}
 										
 										complexModel.add(subjectFromMap, (URI)st1.getPredicate(),(Value)st1.getObject(), (Resource)st1.getContext());
 									} 
@@ -455,6 +520,14 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 			sesameModel_GS = new LinkedHashModel();
 			
 		}
+//System.out.println("same_lexical " + same_lexical);
+//System.out.println("diff_lexical " + diff_lexical);
+//System.out.println("same_struct " + same_struct);
+//System.out.println("diff_struct " + diff_struct);
+//System.out.println("different_log " + different_log);
+//System.out.println("diff_log " + diff_log);
+//System.out.println("same_comp " + same_comp);
+//System.out.println("diff_comp " + diff_comp);
 
 		getsesameModelArrayList().add(worker_.getSesameModel()); //add every CW from the sesame model in an arraylist as models	
 		getsesameModel2ArrayList().add(temp_sesameModel_d2); //add every CW from the sesame model 2 in an arraylist as models
