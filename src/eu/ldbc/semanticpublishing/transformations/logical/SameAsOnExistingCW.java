@@ -91,8 +91,8 @@ public Model executeStatement(Statement statement) {
 	}while((times <  worker.getsesameModelArrayList().size()) &&  (subject1.toString().equals(subject2.toString()) || !object1.toString().equals(object2.toString()) || !o11.toString().equals(object1.toString()) ||!o12.toString().equals(object2.toString()) || !(subject1.toString().startsWith(thing)) || !(subject2.toString().startsWith(thing))));//{
 	}
 	if(subject1 != null && subject2 != null){
-	worker.getSesameModel_2().add(subject1, SesameBuilder.sesameValueFactory.createURI(owlsameAs), subject2, (Resource)null);
-	return_model.add(subject1, SesameBuilder.sesameValueFactory.createURI(owlsameAs), subject2, (Resource)null);
+		worker.getSesameModel_2().add(subject1, SesameBuilder.sesameValueFactory.createURI(owlsameAs), subject2, (Resource)null);
+		return_model.add(subject1, SesameBuilder.sesameValueFactory.createURI(owlsameAs), subject2, (Resource)null);
 	}
 	return return_model;
 }

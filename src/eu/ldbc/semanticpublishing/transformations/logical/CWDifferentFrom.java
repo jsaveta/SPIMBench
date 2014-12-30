@@ -42,8 +42,6 @@ public class CWDifferentFrom implements Transformation{
 
 	@Override
 	public Model executeStatement(Statement st) {
-//		transformationscall.setTransformationConf();
-//		TransformationConf = transformationscall.getTransformationConf();
 		Model differentFromModel =  new LinkedHashModel();
     	Model model = new LinkedHashModel();
 		int randomIndexDifferentFrom = 0;
@@ -53,16 +51,11 @@ public class CWDifferentFrom implements Transformation{
 		URI predicate_original_cw = null;
     	Resource subject_differentfrom = null;
     	Boolean differentFromStatement = false;
-//    	System.out.println("different");
-//    	System.out.println("array 1 "+worker.getsesameModelArrayList().size());
-//    	System.out.println("array 2 "+worker.getsesameModel2ArrayList().size());
     	if(!worker.getsesameModelArrayList().isEmpty() && worker.getsesameModelArrayList().size()>=2){
     	int times = 0;
     	do{
 			while(randomIndexDifferentFrom != 0){ 
-    		randomIndexDifferentFrom = random.nextInt(worker.getsesameModelArrayList().size()); 
-    		//System.out.println("rand ind : " + randomIndexDifferentFrom);
-    		
+				randomIndexDifferentFrom = random.nextInt(worker.getsesameModelArrayList().size()); 
 			}
     		differentFromModel = worker.getsesameModel2ArrayList().get(randomIndexDifferentFrom);
 			Model s11 = worker.getsesameModelArrayList().get(randomIndexDifferentFrom);

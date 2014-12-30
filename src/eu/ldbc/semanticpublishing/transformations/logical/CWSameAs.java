@@ -2,8 +2,6 @@
 
 package eu.ldbc.semanticpublishing.transformations.logical;
 
-import java.text.DateFormat;
-import java.util.Map;
 import java.util.Random;
 
 import org.openrdf.model.Model;
@@ -12,13 +10,11 @@ import org.openrdf.model.Statement;
 import org.openrdf.model.URI;
 import org.openrdf.model.Value;
 import org.openrdf.model.impl.LinkedHashModel;
-import org.openrdf.model.vocabulary.XMLSchema;
 
 import eu.ldbc.semanticpublishing.generators.data.AbstractAsynchronousWorker;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.transformations.Transformation;
 import eu.ldbc.semanticpublishing.transformations.TransformationConfiguration;
-import eu.ldbc.semanticpublishing.transformations.TransformationsCall;
 
 public class CWSameAs implements Transformation{
 	AbstractAsynchronousWorker worker;

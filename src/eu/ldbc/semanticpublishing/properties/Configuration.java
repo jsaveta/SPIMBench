@@ -103,7 +103,7 @@ public class Configuration {
 		properties.setProperty(BENCHMARK_BY_QUERY_RUNS, "0");
 		properties.setProperty(RUN_BENCHMARK_ONLINE_REPlICATION_AND_BACKUP, "false");
 		properties.setProperty(ENTERPRISE_FEATURES_PATH, "./data/enterprise");
-		properties.setProperty(WORDNET_PATH, "");
+		properties.setProperty(WORDNET_PATH, "C:/Program Files/WordNet/2.1/dict/");
 		properties.setProperty(FILES_FOR_RESCAL_SAMPLING, "5");
 	}
 	

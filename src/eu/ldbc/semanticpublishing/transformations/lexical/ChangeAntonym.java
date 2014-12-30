@@ -31,7 +31,7 @@ public class ChangeAntonym implements DataValueTransformation{
 	public Object execute(Object arg) {
 		String f = (String)arg;
 		if(arg instanceof String){
-			System.setProperty(PropertyNames.DATABASE_DIRECTORY, configuration.getString(Configuration.WORDNET_PATH));
+			System.setProperty("wordnet.database.dir", configuration.getString(Configuration.WORDNET_PATH));
 			WordNetDatabase database = WordNetDatabase.getFileInstance(); 
 			
 			String[] tokens = f.split(this.splitter);
