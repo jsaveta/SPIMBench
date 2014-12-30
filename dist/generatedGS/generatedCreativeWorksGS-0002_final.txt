@@ -1,3 +1,0 @@
-http://www.bbc.co.uk/things/5#id http://www.bbc.co.uk/things/1414442456#id 0.8480558404118761
-http://www.bbc.co.uk/things/6#id http://www.bbc.co.uk/things/989396323#id 0.7273744466074668
-http://www.bbc.co.uk/things/7#id http://www.bbc.co.uk/things/7#id 0.6368516950868002
