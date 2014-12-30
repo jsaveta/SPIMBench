@@ -55,9 +55,9 @@ public class UnionOf implements Transformation{
 		 if(arg instanceof Statement){
 			String key = "";
 			for (Entry<String, ArrayList<String>> entry : ClassUnionOfMap.entrySet()) {
-				 if(entry.getValue().contains(s.getObject().toString())){
+				 if(entry.getValue().contains(s.getObject().stringValue())){
 					 key = entry.getKey();
-					 String[] new_sub = s.getSubject().toString().replace("rdf-schema#", "").split("/");
+					 String[] new_sub = s.getSubject().stringValue().replace("rdf-schema#", "").split("/");
 					 String lastOne_ = new_sub[new_sub.length-1];
 						
 					 model.add(SesameBuilder.sesameValueFactory.createURI(ldbc+lastOne_),s.getPredicate() ,SesameBuilder.sesameValueFactory.createURI(key),s.getContext());

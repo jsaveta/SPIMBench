@@ -33,7 +33,6 @@ import eu.ldbc.semanticpublishing.refdataset.model.Entity;
 import eu.ldbc.semanticpublishing.resultanalyzers.CreativeWorksAnalyzer;
 import eu.ldbc.semanticpublishing.resultanalyzers.EventsAnalyzer;
 import eu.ldbc.semanticpublishing.resultanalyzers.GeonamesAnalyzer;
-import eu.ldbc.semanticpublishing.resultanalyzers.MusicalartistsAnalyzer;
 import eu.ldbc.semanticpublishing.resultanalyzers.OrganisationsAnalyzer;
 import eu.ldbc.semanticpublishing.resultanalyzers.PersonsAnalyzer;
 import eu.ldbc.semanticpublishing.resultanalyzers.PlacesAnalyzer;

@@ -2,6 +2,7 @@ package eu.ldbc.semanticpublishing.transformations.structural;
 
 import java.util.ArrayList;
 
+import org.openrdf.model.Literal;
 import org.openrdf.model.Model;
 import org.openrdf.model.Resource;
 import org.openrdf.model.Statement;
@@ -71,8 +72,8 @@ public class ExtractProperty  implements Transformation{
 			
 		    if(arg instanceof Statement){
 				
-		    	String s = st.getObject().toString().replace("\"", "");
-		    	if(!st.getPredicate().toString().contains("date") && !st.getPredicate().toString().contains("about") && !extractProp.contains(st.getPredicate().toString()) ){
+		    	String s = st.getObject().stringValue();
+		    	if(!st.getPredicate().stringValue().contains("date") && !st.getPredicate().stringValue().contains("about") && !extractProp.contains(st.getPredicate().stringValue()) ){
 					final int base = s.length() / N;
 				    final int remainder = s.length() % N;
 		
@@ -82,14 +83,15 @@ public class ExtractProperty  implements Transformation{
 				        parts[i] = s.substring(0, length);
 				        s = s.substring(length);
 				        
-				        URI predicate = SesameBuilder.sesameValueFactory.createURI((st.getPredicate().toString() + Integer.toString(i)));
-				        if(st.getObject().toString().startsWith("http")){
-							model.add((Resource)st.getSubject(), (URI)predicate ,(Value)st.getObject(),(Resource)st.getContext());	
-						}
-						else{
+				        URI predicate = SesameBuilder.sesameValueFactory.createURI((st.getPredicate().stringValue() + Integer.toString(i)));
+				        if(st.getObject() instanceof Literal){
 							Value object = SesameBuilder.sesameValueFactory.createLiteral(parts[i]);
 							model.add((Resource)st.getSubject(), (URI)predicate ,(Value)object,(Resource)st.getContext());
 						}
+				        else{
+				        	model.add((Resource)st.getSubject(), (URI)predicate ,(Value)st.getObject(),(Resource)st.getContext());	
+							
+				        }
 				    }
 		    	}
 		    	else{ model.add(st);}

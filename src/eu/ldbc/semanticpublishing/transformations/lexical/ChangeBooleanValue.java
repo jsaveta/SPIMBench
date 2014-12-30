@@ -26,8 +26,6 @@ public class ChangeBooleanValue implements Transformation {
 	@Override
 	public Object execute(Object arg) {
 		String f = (String)arg;
-		f = f.replace("^^<http://www.w3.org/2001/XMLSchema#boolean>", "");
-		f = f.replace("\"", "");
 		if(arg instanceof String){
 			if(f.equals("false")){
 				f = "true";

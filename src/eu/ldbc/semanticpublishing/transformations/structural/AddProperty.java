@@ -27,7 +27,7 @@ public class AddProperty implements Transformation {
 	Model model = new LinkedHashModel();
 		
 	if(arg instanceof Statement){
-		Random ru = new Random(); //
+		Random ru = new Random(); 
 		URI predicate = SesameBuilder.sesameValueFactory.createURI(core + "creator"); 
 		Value object;
 		if(ru.nextBoolean()){object = SesameBuilder.sesameValueFactory.createURI(DataManager.organisationsIdsList.get(ru.nextInt(DataManager.organisationsIdsList.size())).replace("<", "").replace(">", "").replace("\\", ""));}

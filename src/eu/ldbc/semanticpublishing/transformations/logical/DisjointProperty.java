@@ -49,7 +49,7 @@ public class DisjointProperty implements Transformation{
 	    	for(int i = 0; i < PropertyDisjointness.size(); i++){
 	    		ArrayList<String> list = PropertyDisjointness.get(i);
 	    		for(int j = 0; j < list.size(); j++){
-	    			if(list.contains(s.getPredicate().toString())){
+	    			if(list.contains(s.getPredicate().stringValue())){
 	    				Random rand = new Random();
 	    				int disj = 0;
 	    				while(list.get(disj).equals(s.getPredicate().toString())){disj = rand.nextInt(list.size());}

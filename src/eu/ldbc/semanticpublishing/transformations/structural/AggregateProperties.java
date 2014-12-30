@@ -74,7 +74,7 @@ public class AggregateProperties implements Transformation{
 		 if(arg instanceof Statement){
 			String key = "";
 			for (Entry<String, ArrayList<String>> entry : AggregationMap.entrySet()) {
-				 if(entry.getValue().contains(s.getPredicate().toString())){
+				 if(entry.getValue().contains(s.getPredicate().stringValue())){
 					 key = entry.getKey();
 				 }				
 			}
@@ -86,7 +86,7 @@ public class AggregateProperties implements Transformation{
 				if(st.getPredicate().toString().equals(s.getPredicate().toString())){
 					if(it.hasNext()){
 						st = it.next();
-		    			Value o = SesameBuilder.sesameValueFactory.createLiteral( s.getObject().toString().replace("\"", "") + " " + st.getObject().toString().replace("\"", ""));
+		    			Value o = SesameBuilder.sesameValueFactory.createLiteral( s.getObject().stringValue() + " " + st.getObject().stringValue());
 		    			model.add(st.getSubject(), (URI)SesameBuilder.sesameValueFactory.createURI(key),(Value)o, st.getContext());
 	
 					}

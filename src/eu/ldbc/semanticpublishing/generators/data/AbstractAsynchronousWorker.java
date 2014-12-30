@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import org.openrdf.model.Literal;
 import org.openrdf.model.Model;
 import org.openrdf.model.Resource;
 import org.openrdf.model.Statement;
@@ -100,178 +101,178 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 		while(it.hasNext())
 		{
 			statement = it.next();
-			if(!worker_.getURIMapping().containsKey(statement.getSubject().toString())){
-					if(TransformationConf.containsKey((core + "primaryTopic")) && statement.getSubject().toString().startsWith(bbcid)){
-						worker_.getURIMapping().put(statement.getSubject().toString(), statement.getSubject().toString());
-						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //not transformed
+			if(!worker_.getURIMapping().containsKey(statement.getSubject().stringValue())){
+					if(TransformationConf.containsKey((core + "primaryTopic")) && statement.getSubject().stringValue().startsWith(bbcid)){
+						worker_.getURIMapping().put(statement.getSubject().stringValue(), statement.getSubject().stringValue());
+						writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,"0","CW_id",sesameModel_GS,fos_3); //not transformed
 					}
-					else if (statement.getSubject().toString().startsWith(bbcid)){
-						worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));
-						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,"0","CW_id",sesameModel_GS,fos_3); //transformed
+					else if (statement.getSubject().stringValue().startsWith(bbcid)){
+						worker_.getURIMapping().put(statement.getSubject().stringValue(), getru().GenerateUniqueID(statement.getSubject().stringValue()));
+						writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,"0","CW_id",sesameModel_GS,fos_3); //transformed
 					}
 					else {
-						worker_.getURIMapping().put(statement.getSubject().toString(), getru().GenerateUniqueID(statement.getSubject().toString()));				
+						worker_.getURIMapping().put(statement.getSubject().stringValue(), getru().GenerateUniqueID(statement.getSubject().stringValue()));				
 					}
 					//start of subclass change for URIs that are subclasses of CWs
 				Value subClassOf = statement.getObject();
-				if(TransformationConf.containsKey(statement.getObject().toString())){
-					Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
+				if(TransformationConf.containsKey(statement.getObject().stringValue())){
+					Model tempModel = TransformationConf.get(statement.getObject().stringValue()).executeStatement(statement);
 					if(!tempModel.isEmpty()){
 						
-						writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+						writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 						for (Statement st : tempModel){
 							subClassOf = st.getObject();
 						}
 					}	
 				}
 				//end of subclass change 
-				Resource subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().toString()));
+				Resource subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().stringValue()));
 				
 				temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),(Value)subClassOf, (Resource)statement.getContext());		
 			}
 			else{ 
-				Resource subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().toString()));				
-				if( statement.getPredicate().toString().equals(bbcNamespace + "primaryContentOf")){	
+				Resource subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().stringValue()));				
+				if( statement.getPredicate().stringValue().equals(bbcNamespace + "primaryContentOf")){	
 					Statement nameStatement=factory.createStatement(statement.getSubject(), statement.getPredicate(), statement.getObject(), statement.getContext());;
 					if(TransformationConf.containsKey(core + "primaryTopic")){
-						String uri = getru().GenerateUniqueID(statement.getObject().toString());
-						worker_.getURIMapping().put(statement.getObject().toString(),uri);
+						String uri = getru().GenerateUniqueID(statement.getObject().stringValue());
+						worker_.getURIMapping().put(statement.getObject().stringValue(),uri);
 						nameStatement = factory.createStatement(statement.getSubject(), statement.getPredicate(), SesameBuilder.sesameValueFactory.createURI(uri), statement.getContext());
 						
 					}
 					else{
-						worker_.getURIMapping().put(statement.getObject().toString(), statement.getObject().toString());
+						worker_.getURIMapping().put(statement.getObject().stringValue(), statement.getObject().stringValue());
 					}
 					
-					if( TransformationConf.containsKey(statement.getPredicate().toString()) && TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "logical.InverseFunctionalProperty"))){
-						Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(nameStatement);
+					if( TransformationConf.containsKey(statement.getPredicate().stringValue()) && TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "logical.InverseFunctionalProperty"))){
+						Model tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(nameStatement);
 						for (Statement st : tempModel){
-							temp_sesameModel_d2.add(st.getSubject(),st.getPredicate(),SesameBuilder.sesameValueFactory.createURI(worker_.getURIMapping().get(st.getObject().toString())),st.getContext());
-							writegs.WriteGSAsTriples(statement.getObject().toString(), worker_.getURIMapping().get(statement.getObject().toString()),1.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							temp_sesameModel_d2.add(st.getSubject(),st.getPredicate(),SesameBuilder.sesameValueFactory.createURI(worker_.getURIMapping().get(st.getObject().stringValue())),st.getContext());
+							writegs.WriteGSAsTriples(statement.getObject().stringValue(), worker_.getURIMapping().get(statement.getObject().stringValue()),1.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 							
 						}
 						
 					}
 					else{
-						Value objectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getObject().toString()));
+						Value objectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getObject().stringValue()));
 						temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),objectFromMap, (Resource)statement.getContext());
 					}
-					if(!statement.getObject().toString().equals(worker_.getURIMapping().get(statement.getObject().toString()))){
-						writegs.WriteGSAsTriples(statement.getObject().toString(), worker_.getURIMapping().get(statement.getObject().toString()),1.0,"0",/*statement.getPredicate().toString()*/"primary_id",sesameModel_GS,fos_3);
+					if(!statement.getObject().stringValue().equals(worker_.getURIMapping().get(statement.getObject().stringValue()))){
+						writegs.WriteGSAsTriples(statement.getObject().stringValue(), worker_.getURIMapping().get(statement.getObject().stringValue()),1.0,"0",/*statement.getPredicate().stringValue()*/"primary_id",sesameModel_GS,fos_3);
 					}
 					continue;
 				}
-				else if(statement.getPredicate().toString().equals(core + "primaryTopic")){
+				else if(statement.getPredicate().stringValue().equals(core + "primaryTopic")){
 					Iterator<Statement> it_2 = it;
 					Statement temp_statement = factory.createStatement(statement.getSubject(),statement.getPredicate(),statement.getObject(),statement.getContext());
 					if(it_2.hasNext()){temp_statement = it_2.next();}
-					if(TransformationConf.containsKey(statement.getPredicate().toString())){
-						if( TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "logical.FunctionalProperty"))){
-						Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(statement);
-						if(TransformationConf.containsKey(temp_statement.getObject().toString()) && TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
+					if(TransformationConf.containsKey(statement.getPredicate().stringValue())){
+						if( TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "logical.FunctionalProperty"))){
+						Model tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(statement);
+						if(TransformationConf.containsKey(temp_statement.getObject().stringValue()) && TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
 								for (Statement st : tempModel){
 									Statement nameStatement = factory.createStatement(st.getSubject(), st.getPredicate(), SesameBuilder.sesameValueFactory.createURI(getru().generateEquivalentClassInstance(st).toString()), st.getContext());
-									tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(nameStatement);
+									tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(nameStatement);
 								}
 								
 						}
-						else if(TransformationConf.containsKey(temp_statement.getObject().toString()) && (TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
-								/*TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.OneOf")) ||*/
-								TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){	
+						else if(TransformationConf.containsKey(temp_statement.getObject().stringValue()) && (TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
+								/*TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.OneOf")) ||*/
+								TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){	
 							for (Statement st : tempModel){
 								Statement nameStatement = factory.createStatement(st.getSubject(), st.getPredicate(), SesameBuilder.sesameValueFactory.createURI(getru().generateUnionOneIntersectionInstance(st).toString()), st.getContext());
-								tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(nameStatement);
+								tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(nameStatement);
 							}
 							
 						}
 						
 						for (Statement st : tempModel){
-								worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
-								if(!st.getObject().toString().equals(statement.getObject().toString())){
-									writegs.WriteGSAsTriples(statement.getObject().toString(), worker_.getURIMapping().get(statement.getObject().toString()),1.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+								worker_.getURIMapping().put(statement.getObject().stringValue(), st.getObject().stringValue());
+								if(!st.getObject().stringValue().equals(statement.getObject().stringValue())){
+									writegs.WriteGSAsTriples(statement.getObject().stringValue(), worker_.getURIMapping().get(statement.getObject().stringValue()),1.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								}
 							}
 						}
 					}
-					else if(TransformationConf.containsKey(temp_statement.getObject().toString()) && TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
-						worker_.getURIMapping().put(statement.getObject().toString(), getru().generateEquivalentClassInstance(statement).toString());
+					else if(TransformationConf.containsKey(temp_statement.getObject().stringValue()) && TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
+						worker_.getURIMapping().put(statement.getObject().stringValue(), getru().generateEquivalentClassInstance(statement).toString());
 						
 					}
-					else if(TransformationConf.containsKey(temp_statement.getObject().toString()) &&(TransformationConf.containsKey(temp_statement.getObject().toString()) && TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
-							TransformationConf.get(temp_statement.getObject().toString()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){
-						worker_.getURIMapping().put(statement.getObject().toString(), getru().generateUnionOneIntersectionInstance(statement).toString());
+					else if(TransformationConf.containsKey(temp_statement.getObject().stringValue()) &&(TransformationConf.containsKey(temp_statement.getObject().stringValue()) && TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
+							TransformationConf.get(temp_statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.IntersectionOf")))){
+						worker_.getURIMapping().put(statement.getObject().stringValue(), getru().generateUnionOneIntersectionInstance(statement).toString());
 						
 					}
 					else{
-						worker_.getURIMapping().put(statement.getObject().toString(), statement.getObject().toString());
+						worker_.getURIMapping().put(statement.getObject().stringValue(), statement.getObject().stringValue());
 					}
 					
 					
-					Value objectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getObject().toString()));
+					Value objectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getObject().stringValue()));
 					temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),objectFromMap, (Resource)statement.getContext());
 					
-					if(!statement.getObject().toString().equals(worker_.getURIMapping().get(statement.getObject().toString()))){
-						writegs.WriteGSAsTriples(statement.getObject().toString(), worker_.getURIMapping().get(statement.getObject().toString()),1.0,"0",/*statement.getPredicate().toString()*/"Thing_sub",sesameModel_GS,fos_3);
+					if(!statement.getObject().stringValue().equals(worker_.getURIMapping().get(statement.getObject().stringValue()))){
+						writegs.WriteGSAsTriples(statement.getObject().stringValue(), worker_.getURIMapping().get(statement.getObject().stringValue()),1.0,"0",/*statement.getPredicate().stringValue()*/"Thing_sub",sesameModel_GS,fos_3);
 					}
 					statement = temp_statement;
-					subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().toString()));
+					subjectFromMap = SesameBuilder.sesameValueFactory.createURI( worker_.getURIMapping().get(statement.getSubject().stringValue()));
 				}
 							
-				if (TransformationConf.containsKey(statement.getObject().toString())){
+				if (TransformationConf.containsKey(statement.getObject().stringValue())){
 
-					if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
-						Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
+					if(TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.EquivalentClass"))){
+						Model tempModel = TransformationConf.get(statement.getObject().stringValue()).executeStatement(statement);
 						for (Statement st : tempModel){
 							temp_sesameModel_d2.add(subjectFromMap, (URI)st.getPredicate(),(Value)st.getObject(), (Resource)st.getContext());
-							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
-							if(!st.getObject().toString().equals(statement.getObject().toString())){
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							worker_.getURIMapping().put(statement.getObject().stringValue(), st.getObject().stringValue());
+							if(!st.getObject().stringValue().equals(statement.getObject().stringValue())){
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								different_log++;
 								
 							}
 							else{diff_log++;}
 						}	
 					}
-					else if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
-							TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.OneOf")) ||
-							TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.IntersectionOf"))){
-						Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
+					else if(TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.UnionOf")) ||
+							TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.OneOf")) ||
+							TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.IntersectionOf"))){
+						Model tempModel = TransformationConf.get(statement.getObject().stringValue()).executeStatement(statement);
 						for (Statement st : tempModel){
 							temp_sesameModel_d2.add(subjectFromMap, (URI)st.getPredicate(),(Value)st.getObject(), (Resource)st.getContext());
-							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
-							if(!st.getObject().toString().equals(ldbc + "Individual_Corporation")){
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.85,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							worker_.getURIMapping().put(statement.getObject().stringValue(), st.getObject().stringValue());
+							if(!st.getObject().stringValue().equals(ldbc + "Individual_Corporation")){
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.85,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								different_log++;
 							}
-							else if(!st.getObject().toString().equals(statement.getObject().toString())){
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							else if(!st.getObject().stringValue().equals(statement.getObject().stringValue())){
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								different_log++;
 								
 							}
 							else{diff_log++;}
 						}
 					}
-					else if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.SubClassOf"))){
-						Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
+					else if(TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.SubClassOf"))){
+						Model tempModel = TransformationConf.get(statement.getObject().stringValue()).executeStatement(statement);
 						for (Statement st : tempModel){
-							if(!st.getObject().toString().equals(statement.getObject().toString())){
-								//writegs.WriteSimpleGS(statement.getSubject().toString(),  worker_.getURIMapping().get(statement.getSubject().toString()), 0.75, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]);
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							if(!st.getObject().stringValue().equals(statement.getObject().stringValue())){
+								//writegs.WriteSimpleGS(statement.getSubject().stringValue(),  worker_.getURIMapping().get(statement.getSubject().stringValue()), 0.75, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]);
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.75,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								different_log++;
 								
 							}
 							else{diff_log++;}
-							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
+							worker_.getURIMapping().put(statement.getObject().stringValue(), st.getObject().stringValue());
 							
 						}
 					}
-					else if(TransformationConf.get(statement.getObject().toString()).toString().startsWith((transformationPath + "logical.DisjointWith"))){
-						Model tempModel = TransformationConf.get(statement.getObject().toString()).executeStatement(statement);
+					else if(TransformationConf.get(statement.getObject().stringValue()).toString().startsWith((transformationPath + "logical.DisjointWith"))){
+						Model tempModel = TransformationConf.get(statement.getObject().stringValue()).executeStatement(statement);
 						for (Statement st : tempModel){
 							temp_sesameModel_d2.add(subjectFromMap, (URI)st.getPredicate(),(Value)st.getObject(), (Resource)st.getContext());
-							worker_.getURIMapping().put(statement.getObject().toString(), st.getObject().toString());
-							if(!st.getObject().toString().equals(statement.getObject().toString())){
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().toString(),sesameModel_GS,fos_3);
+							worker_.getURIMapping().put(statement.getObject().stringValue(), st.getObject().stringValue());
+							if(!st.getObject().stringValue().equals(statement.getObject().stringValue())){
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getObject().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getObject().stringValue(),sesameModel_GS,fos_3);
 								different_log++;
 								
 							}
@@ -279,17 +280,17 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 					}
 				}
-				else if(TransformationConf.containsKey(statement.getPredicate().toString())){
+				else if(TransformationConf.containsKey(statement.getPredicate().stringValue())){
 					URI predicate = statement.getPredicate();
-					if(	TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "logical.EquivalentProperty")) || 
-						TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "logical.DisjointProperty"))){ 
-					Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(statement);
+					if(	TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "logical.EquivalentProperty")) || 
+						TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "logical.DisjointProperty"))){ 
+					Model tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(statement);
 					if(!tempModel.isEmpty()){	
 						for (Statement st : tempModel){							
 							predicate = st.getPredicate();
 							temp_sesameModel_d2.add(subjectFromMap, (URI)predicate,(Value)statement.getObject(), (Resource)statement.getContext());
-								if(!predicate.toString().equals(statement.getPredicate().toString())){
-									writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().toString(),sesameModel_GS,fos_3);
+								if(!predicate.toString().equals(statement.getPredicate().stringValue())){
+									writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.9, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 									different_log++;
 									
 								}
@@ -297,14 +298,14 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							}
 						}	
 					}
-					else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "logical.SubPropertyOf"))){ //+ "logical.SubPropertyOf"
-						Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(statement);
+					else if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "logical.SubPropertyOf"))){ //+ "logical.SubPropertyOf"
+						Model tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(statement);
 						if(!tempModel.isEmpty()){	
 							for (Statement st : tempModel){							
 								predicate = st.getPredicate();
 								temp_sesameModel_d2.add(subjectFromMap, (URI)predicate,(Value)statement.getObject(), (Resource)statement.getContext());
-									if(!predicate.toString().equals(statement.getPredicate().toString())){
-										writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().toString(),sesameModel_GS,fos_3);
+									if(!predicate.toString().equals(statement.getPredicate().stringValue())){
+										writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.0, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 										different_log++;
 										
 									}
@@ -314,33 +315,33 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 					
 				    //structural transformations
-					else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural."))){
-						Model tempModel = TransformationConf.get(statement.getPredicate().toString()).executeStatement(statement);
+					else if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "structural."))){
+						Model tempModel = TransformationConf.get(statement.getPredicate().stringValue()).executeStatement(statement);
 						boolean didStructTrans = false;
 						if(!tempModel.isEmpty()){ 
 							for (Statement tempStatement : tempModel){
 								temp_sesameModel_d2.add((Resource)subjectFromMap,(URI)tempStatement.getPredicate(),(Value)tempStatement.getObject(),(Resource)statement.getContext());											
-								if(tempStatement.getObject().toString().equals(statement.getObject().toString())){
+								if(tempStatement.getObject().stringValue().equals(statement.getObject().stringValue())){
 									same_struct++;
 								}
 								else{
 									diff_struct++;
 								}
 							}	
-							if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.AddProperty"))){
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+							if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "structural.AddProperty"))){
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 								didStructTrans = false;
 							}
 							else {
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 								didStructTrans = false;
 							}
-							if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.AggregateProperties"))){
+							if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "structural.AggregateProperties"))){
 								if(it.hasNext())statement = it.next();
 							}
 						}
-						else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "structural.DeleteProperty"))){
-							writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+						else if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "structural.DeleteProperty"))){
+							writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.9,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "structural.", "").split("@")[0]),statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 							didStructTrans = false;
 						}
 						if(didStructTrans == true){
@@ -350,12 +351,12 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 							diff_struct++;
 						}
 					}				
-					else if(TransformationConf.get(statement.getPredicate().toString()).toString().startsWith((transformationPath + "lexical."))){
+					else if(TransformationConf.get(statement.getPredicate().stringValue()).toString().startsWith((transformationPath + "lexical."))){
 						//lexical transformations
-						Object temp = TransformationConf.get(statement.getPredicate().toString()).execute(statement.getObject().toString());
+						Object temp = TransformationConf.get(statement.getPredicate().stringValue()).execute(statement.getObject().stringValue());
 						
 						//for experiments
-						if(temp.toString().equals(statement.getObject().toString())){
+						if(temp.toString().equals(statement.getObject().stringValue())){
 							same_lexical++;
 						}
 						else{
@@ -363,14 +364,14 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 						 
 						if(temp instanceof String){
-							if(!(temp.equals("")) && (temp!=null) && !(temp.equals(statement.getObject().toString()))){
+							if(!(temp.equals("")) && (temp!=null) && !(temp.equals(statement.getObject().stringValue()))){
 								if(((String) temp).replace("\"", "").startsWith("http://www.")){
 									temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),SesameBuilder.sesameValueFactory.createURI(((String) temp).replace("\"", "")), (Resource)statement.getContext());	
 								}
 								else{
 									temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(((String) temp).replace("\"", "")), (Resource)statement.getContext());
 								}
-								writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "lexical.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "lexical.", "").split("@")[0]),statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 							
 							}
 							else{
@@ -379,46 +380,39 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 						else if (temp instanceof Value){
 							temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),(Value)temp, (Resource)statement.getContext());
-							writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().toString()).toString().replace(transformationPath + "lexical.", "").split("@")[0]),statement.getPredicate().toString(),sesameModel_GS,fos_3);
+							writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "lexical.", "").split("@")[0]),statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 						}
 					}
 					
 				}
-				else if (TransformationConfComplex.containsKey(statement.getPredicate().toString())){
+				else if (TransformationConfComplex.containsKey(statement.getPredicate().stringValue())){
 					Model complexModel = new LinkedHashModel();
-					List<Transformation> value = TransformationConfComplex.get(statement.getPredicate().toString());//entry.getValue();
+					List<Transformation> value = TransformationConfComplex.get(statement.getPredicate().stringValue());//entry.getValue();
 					complexModel = new LinkedHashModel();
 					for (int e = 0; e < value.size(); e++) {
 						Transformation tr = (Transformation) value.get(e);
 						if(tr.toString().startsWith((transformationPath + "lexical."))){
 							Object temp;
-							if(statement.getObject().toString().startsWith("http")){
-								 temp = statement.getObject().toString();
+							if(!(statement.getObject() instanceof Literal)){
+								 temp = statement.getObject().stringValue();
 							}
 							else{
-								 temp = tr.execute(statement.getObject().toString());
+								 temp = tr.execute(statement.getObject().stringValue());
 							}
-							 if (temp instanceof Value){
-//								 if( temp.toString().replace("\"", "").startsWith("http://")){
-//									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createURI(temp.toString().replace("\"", "")), (Resource)statement.getContext());
-//									  
-//								 }
-//								 else{
-									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(temp.toString().replace("\"", "")), (Resource)statement.getContext());
-									 
-								// }
-								 writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
-										 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
+							if (temp instanceof Literal){
+								complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(((Value) temp).stringValue()), (Resource)statement.getContext());
+								writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
+										 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 												 tr.toString().replace(transformationPath + "lexical.", "").split("@")[0]),
-												 statement.getPredicate().toString(),sesameModel_GS,fos_3);
-								 if(temp.toString().replace("\"", "").equals(statement.getObject().toString())){
+												 statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
+								 if(temp.toString().equals(statement.getObject().stringValue())){
 									 same_comp++;
 									
 								}
 								else{diff_comp++;}
 							 }
 							 else{
-								 if( temp.toString().replace("\"", "").startsWith("http://")){
+								 if( temp.toString().startsWith("http://")){
 									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createURI(temp.toString().replace("\"", "")), (Resource)statement.getContext());
 									  
 								 }
@@ -426,15 +420,15 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 									 complexModel.add(subjectFromMap, (URI)statement.getPredicate(),(Value)SesameBuilder.sesameValueFactory.createLiteral(temp.toString().replace("\"", "")), (Resource)statement.getContext());
 									 
 								 }
-								 if(temp.toString().replace("\"", "").equals(statement.getObject().toString())){
+								 if(temp.toString().equals(statement.getObject().stringValue())){
 									 same_comp++;
 									
 								}
 								else{diff_comp++;}
-								 writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
-										 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
+								 writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
+										 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 												 tr.toString().replace(transformationPath + "lexical.", "").split("@")[0]),
-												 statement.getPredicate().toString(),sesameModel_GS,fos_3);
+												 statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 							 }
 						}
 						else if(tr.toString().startsWith((transformationPath + "logical."))){
@@ -446,10 +440,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 									if(!temp.isEmpty()){
 										for (Statement st1 : temp){
 											if(!st1.equals(st)){
-												writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
-														 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
+												writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
+														 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 																 tr.toString().replace(transformationPath + "logical.", "").split("@")[0]),
-																 statement.getPredicate().toString(),sesameModel_GS,fos_3);	
+																 statement.getPredicate().stringValue(),sesameModel_GS,fos_3);	
 												diff_comp++;
 												
 											}
@@ -478,10 +472,10 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 								if(!temp.isEmpty()){
 									for (Statement st1 : temp){
 										if(!st1.equals(st)){
-											writegs.WriteGSAsTriples(statement.getSubject().toString(), worker_.getURIMapping().get(
-													 statement.getSubject().toString()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
+											writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
+													 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 															 tr.toString().replace(transformationPath + "structural.", "").split("@")[0]),
-															 statement.getPredicate().toString(),sesameModel_GS,fos_3);	
+															 statement.getPredicate().stringValue(),sesameModel_GS,fos_3);	
 											diff_comp++;
 											
 										}
@@ -507,7 +501,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 				}
 				}
 				else{
-					if(statement.getPredicate().toString().equals(cworkNamespace+"altText")){
+					if(statement.getPredicate().stringValue().equals(cworkNamespace+"altText")){
 						String new_altText = "thumbnail atlText for CW http://www.bbc.co.uk/context/" + subjectFromMap.toString().replace("http://www.bbc.co.uk/things/", "");
 						temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),SesameBuilder.sesameValueFactory.createLiteral(new_altText));	
 					}
@@ -546,8 +540,8 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 			Model model_e =TransformationConf.get("logicalSameAsOnExistingCW").executeStatement(null);
 			if(!model_e.isEmpty()){	
 				for (Statement statement : model_e){
-					writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getSubject().toString()),statement.getObject().toString(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAsOnExistingCW").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
-			    	writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getObject().toString()),statement.getSubject().toString(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAsOnExistingCW").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
+					writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getSubject().stringValue()),statement.getObject().stringValue(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAsOnExistingCW").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
+			    	writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getObject().stringValue()),statement.getSubject().stringValue(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAsOnExistingCW").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
 			
 				}
 			}
@@ -557,7 +551,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 			System.out.println("model sameas " + model_s.size());
 			if(!model_s.isEmpty()){
 				for (Statement statement : model_s){
-					writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getSubject().toString()),statement.getObject().toString(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAs").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
+					writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getSubject().stringValue()),statement.getObject().stringValue(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAs").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);
 				}
 			}
 		}

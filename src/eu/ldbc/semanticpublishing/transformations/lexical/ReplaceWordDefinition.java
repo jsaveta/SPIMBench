@@ -41,18 +41,10 @@ public class ReplaceWordDefinition implements DataValueTransformation{
 				for(int i = 0; i < tokens.length; i++){
 					String syn = tokens[i];
 					Synset[] synset_list = database.getSynsets(syn);
-					//System.out.println("\n\n** Process word: " + syn);
 					
 					if(coin.nextDouble() <= this.severity){
 						for (int k = 0; k < synset_list.length; k++)
 						{
-							//System.out.println("");
-//							String[] wordForms = synset_list[k].getWordForms();
-//							for (int j = 0; j < wordForms.length; j++)
-//							{
-//								System.out.print((j > 0 ? ", " : "") +
-//										wordForms[j]);
-//							}
 							syn = synset_list[k].getDefinition();
 							System.out.println(": " + synset_list[k].getDefinition());
 						}

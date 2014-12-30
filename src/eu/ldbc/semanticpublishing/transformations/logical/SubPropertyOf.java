@@ -63,7 +63,7 @@ public class SubPropertyOf implements Transformation{
 	if(arg instanceof Statement){
 		String key = "";
 		for (Entry<String, ArrayList<String>> entry : SubPropertyMap.entrySet()) {
-			 if(entry.getValue().contains(s.getPredicate().toString())){
+			 if(entry.getValue().contains(s.getPredicate().stringValue())){
 				 key = entry.getKey();
 				 model.add(s.getSubject(), SesameBuilder.sesameValueFactory.createURI(key),s.getObject(),s.getContext());
 			 }

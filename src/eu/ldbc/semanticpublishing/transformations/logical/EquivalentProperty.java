@@ -76,8 +76,8 @@ public class EquivalentProperty implements Transformation{
 			Model model = new LinkedHashModel();
 					
 		    if(arg instanceof Statement){
-		    	if(PropertyEquivalence.containsKey(s.getPredicate().toString())){
-		    		model.add(s.getSubject(), SesameBuilder.sesameValueFactory.createURI(PropertyEquivalence.get(s.getPredicate().toString())),s.getObject(),s.getContext());
+		    	if(PropertyEquivalence.containsKey(s.getPredicate().stringValue())){
+		    		model.add(s.getSubject(), SesameBuilder.sesameValueFactory.createURI(PropertyEquivalence.get(s.getPredicate().stringValue())),s.getObject(),s.getContext());
 		    	}
 		    	else{
 		    		model.add(s);

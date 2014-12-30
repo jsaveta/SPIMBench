@@ -58,8 +58,8 @@ public class EquivalentClass implements Transformation{
 			Statement s = (Statement)arg;
 			Model model = new LinkedHashModel();
 			if(arg instanceof Statement){
-    			if(ClassEquivalence.containsKey(s.getObject().toString())){
-    				model.add(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassEquivalence.get(s.getObject().toString())),s.getContext());
+    			if(ClassEquivalence.containsKey(s.getObject().stringValue())){
+    				model.add(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassEquivalence.get(s.getObject().stringValue())),s.getContext());
     	    	}
     	    	else{
     	    		model.add(s);

@@ -83,10 +83,10 @@ public class SubClassOf implements Transformation{
 	    if(arg instanceof Statement){
 	    	for(int i = 0; i< this.depth; i++){
 	    		model = new LinkedHashModel();
-	    		if(ClassHierarchy.containsKey(s.getObject().toString())){
-		    		model.add(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassHierarchy.get(s.getObject().toString())),s.getContext());
+	    		if(ClassHierarchy.containsKey(s.getObject().stringValue())){
+		    		model.add(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassHierarchy.get(s.getObject().stringValue())),s.getContext());
 		    		ValueFactory factory = ValueFactoryImpl.getInstance();
-		    		s=factory.createStatement(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassHierarchy.get(s.getObject().toString())), s.getContext());
+		    		s=factory.createStatement(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(ClassHierarchy.get(s.getObject().stringValue())), s.getContext());
 					subclass = true;
 	    		}
 		    	else{

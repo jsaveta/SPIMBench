@@ -38,9 +38,9 @@ public class InverseFunctionalProperty implements Transformation{
 	   Model model = new LinkedHashModel();
 		if(arg instanceof Statement){
 			//TODO check if!!!!!!!
-			if(PropertyInverseFunct.contains(s.getPredicate().toString())){
+			if(PropertyInverseFunct.contains(s.getPredicate().stringValue())){
 				//model.add(s); //.indexOf((s.getPredicate().toString()))
-				model.add(SesameBuilder.sesameValueFactory.createURI(s.getObject().toString()), SesameBuilder.sesameValueFactory.createURI(PropertyInverseFunct.get(PropertyInverseFunct.indexOf(s.getPredicate().toString()))),s.getSubject(),s.getContext());
+				model.add(SesameBuilder.sesameValueFactory.createURI(s.getObject().stringValue()), SesameBuilder.sesameValueFactory.createURI(PropertyInverseFunct.get(PropertyInverseFunct.indexOf(s.getPredicate().stringValue()))),s.getSubject(),s.getContext());
 	    		
 	    	}
 	    	else{

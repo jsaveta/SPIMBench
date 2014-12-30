@@ -293,29 +293,11 @@ public class NameStyleAbbreviation implements DataValueTransformation {
 	@SuppressWarnings("finally")
 	@Override
 	public Object execute(Object arg) {
-		//Statement s = (Statement)arg;
 		String s = (String)arg;
-	//	Model model = new LinkedHashModel();
 		if(arg instanceof String){
 			if(countryAbbreviation.containsKey(s.toString())){
 				s =  countryAbbreviation.get(s.toString());
 	    	}
-	    	
-//			//Do the job
-//			String[] tokens = f.split(" ");
-//			if(tokens.length > 1){
-//				String buffer = "";
-//				if(this.format == NDOTS){
-//					buffer = this.ndots(buffer, tokens);
-//				}else if(this.format == SCOMMANDOT){
-//					buffer = this.scommadots(buffer, tokens);
-//				}else if(this.format == ALLDOTS){
-//					buffer = this.alldots(buffer, tokens);
-//				}else{
-//					buffer = this.ndots(buffer, tokens);
-//				}
-//				f = buffer;
-//			}
 		}else{
 			try {
 				throw new InvalidTransformation();
@@ -327,73 +309,6 @@ public class NameStyleAbbreviation implements DataValueTransformation {
 		}
 		return s;
 	}
-	
-//	private String ndots(String buffer, String[] tokens){
-//		int stop = 1;
-//		if(this.surnames <= tokens.length){
-//			stop = this.surnames;
-//		}
-//		try{
-//			for(int i = 0; i < tokens.length - stop; i++){
-//				buffer += tokens[i].charAt(0);
-//				buffer += ".";
-//				if(i == tokens.length - stop - 1){
-//					buffer += " ";
-//				}
-//			}
-//			while(stop > 0){
-//				buffer += tokens[tokens.length - stop--] + " ";
-//			}
-//			return buffer.trim();
-//		}
-//		catch (java.lang.StringIndexOutOfBoundsException exception)
-//		{
-//			//System.out.println("OUT OF BOUNDS AT ABBREVIATION ndots");
-//			return buffer;
-//		}
-//	}
-
-//	private String scommadots(String buffer, String[] tokens){
-//		int stop = 1;
-//		if(this.surnames <= tokens.length){
-//			stop = this.surnames;
-//		}
-//		try{
-//			for(int i = 0; i < tokens.length - stop; i++){
-//				buffer += tokens[i].charAt(0);
-//				buffer += ".";
-//			}
-//			String surnames = "";
-//			while(stop > 0){
-//				surnames += tokens[tokens.length - stop--] + " ";
-//			}
-//			buffer = surnames.trim() + ", " + buffer;
-//			return buffer;
-//		}
-//		catch (java.lang.StringIndexOutOfBoundsException exception)
-//		{
-//			//System.out.println("OUT OF BOUNDS AT ABBREVIATION scommadots");
-//			return buffer;
-//		}
-//	}
-//
-//	private String alldots(String buffer, String[] tokens){
-//		try{
-//			for(int i = 0; i < tokens.length; i++){
-//				buffer += tokens[i].charAt(0);
-//				buffer += ".";
-//				if(i != tokens.length - 1){
-//					buffer += " ";
-//				}
-//			}
-//			return buffer;
-//		}
-//		catch (java.lang.StringIndexOutOfBoundsException exception)
-//		{
-//			//System.out.println("OUT OF BOUNDS AT ABBREVIATION alldots");
-//			return buffer;
-//		}
-//	}
 
 	@Override
 	public Model executeStatement(Statement statement) {

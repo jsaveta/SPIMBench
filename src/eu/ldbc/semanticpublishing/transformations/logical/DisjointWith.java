@@ -51,10 +51,10 @@ public class DisjointWith implements Transformation{
 	    		ArrayList<String> list = ClassDisjointness.get(i);
 	    		for(int j = 0; j < list.size(); j++){
 	    			model = new LinkedHashModel();
-	    			if(list.contains(s.getObject().toString())){
+	    			if(list.contains(s.getObject().stringValue())){
 	    				Random rand = new Random();
 	    				int disj = 0;
-	    				while(list.get(disj).equals(s.getObject().toString())){disj = rand.nextInt(list.size());}
+	    				while(list.get(disj).equals(s.getObject().stringValue())){disj = rand.nextInt(list.size());}
 	    				model.add(s.getSubject(), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(list.get(disj)),s.getContext());
 	    			}
 	    			else{

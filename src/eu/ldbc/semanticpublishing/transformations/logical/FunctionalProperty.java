@@ -40,13 +40,13 @@ public class FunctionalProperty implements Transformation{
 		Statement s = (Statement)arg;
 		Model model = new LinkedHashModel();
 		if(arg instanceof Statement){
-	    	if(PropertyFunct.contains(s.getPredicate().toString())){
+	    	if(PropertyFunct.contains(s.getPredicate().stringValue())){
 	    		String[] new_obj;
-	    		if(s.getObject().toString().contains("#")){
-	    			 new_obj = s.getObject().toString().split("#"); 
+	    		if(s.getObject().stringValue().contains("#")){
+	    			 new_obj = s.getObject().stringValue().split("#"); 
 	    		}
 	    		else{
-	    			 new_obj = s.getObject().toString().split("/"); 
+	    			 new_obj = s.getObject().stringValue().split("/"); 
 	    		}
 				String lastOne = new_obj[new_obj.length-1];
 				model.add(s.getSubject(),s.getPredicate(),SesameBuilder.sesameValueFactory.createURI(ldbc+lastOne),s.getContext());

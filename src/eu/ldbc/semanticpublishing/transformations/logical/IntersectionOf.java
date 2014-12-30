@@ -45,7 +45,7 @@ public class IntersectionOf implements Transformation{
 				 String[] new_sub = s.getSubject().toString().replace("rdf-schema#", "").split("/");
 				 String lastOne_ = new_sub[new_sub.length-1];
 					
-				 model.add(SesameBuilder.sesameValueFactory.createURI(ldbc+lastOne_), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(Intersection.get(s.getObject().toString())),s.getContext());
+				 model.add(SesameBuilder.sesameValueFactory.createURI(ldbc+lastOne_), s.getPredicate(), SesameBuilder.sesameValueFactory.createURI(Intersection.get(s.getObject().stringValue())),s.getContext());
 	    	}
 	    	else{
 	    		model.add(s);
