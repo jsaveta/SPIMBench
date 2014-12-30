@@ -1,12 +1,13 @@
-Semantic Publishing Benchmark
+Semantic Publishing Instance Matching Benchmark (SPIMBENCH)
 
 
 
 Description : 
 ------------------------------------------------------------------------------
-
-The benchmark driver measures the performance of CRUD operations of a SPARQL endpoint, by starting a number of concurrently running agents (editorial and aggregation) 
-which execute a series of INSERT/UPDATE/DELETE (for editorial agents) and CONSTRUCT/SELECT (for aggregation agents) queries on a SPARQL endpoint.
+Semantic Publishing Instance Matching Benchmark (SPIMBENCH), is a benchmark for the assessment of Instance Matching techniques 
+for RDF data with an associated schema. Essentially, SPIMBENCH implements: (i) a set of test cases based on 
+transformations that distinguish different types of matching entities, (ii) a scalable data generator, 
+(iii) a gold standard documenting the matches that IM systems should find, and (iv) evaluation metrics. 
 
 
 
