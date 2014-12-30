@@ -186,3 +186,4 @@ Results of the benchmark :
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 The required dependencies for RESCAL are Numpy >= 1.3, SciPy >= 0.7.
+WordNet is also required in order to change synonyms-antonyms in lexical transformation test cases.
