@@ -40,7 +40,7 @@ Required dependencies for RESCAL :
 * ***Numpy >= 1.3***
 * ***SciPy >= 0.7***
 
-* ***WordNet*** = is also required for lexical transformations
+* ***WordNet*** - is also required for lexical transformations
 
 Required configuration files : 
 
