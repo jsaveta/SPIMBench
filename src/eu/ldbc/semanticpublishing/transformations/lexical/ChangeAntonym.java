@@ -10,7 +10,6 @@ import org.openrdf.model.Statement;
 import edu.smu.tspell.wordnet.Synset;
 import edu.smu.tspell.wordnet.WordNetDatabase;
 import edu.smu.tspell.wordnet.WordSense;
-import edu.smu.tspell.wordnet.impl.file.PropertyNames;
 import eu.ldbc.semanticpublishing.properties.Configuration;
 import eu.ldbc.semanticpublishing.transformations.DataValueTransformation;
 import eu.ldbc.semanticpublishing.transformations.InvalidTransformation;

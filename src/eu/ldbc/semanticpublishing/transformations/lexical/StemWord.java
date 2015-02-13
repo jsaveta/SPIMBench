@@ -13,23 +13,18 @@
 	
 package eu.ldbc.semanticpublishing.transformations.lexical;
 
-import java.util.Random;
-
 import org.openrdf.model.Model;
 import org.openrdf.model.Statement;
 import org.tartarus.snowball.ext.EnglishStemmer;
-import org.tartarus.snowball.ext.PorterStemmer;
 import eu.ldbc.semanticpublishing.transformations.DataValueTransformation;
 import eu.ldbc.semanticpublishing.transformations.InvalidTransformation;
 
-public class KeepRoot implements DataValueTransformation{
+public class StemWord implements DataValueTransformation{
 
 	private String splitter;
-	private double severity;
 		
-	public KeepRoot(double severity){
+	public StemWord(){
 		this.splitter = "[\\s|\n|\t]";
-		this.severity = severity;
 	}
 	/*
 	 *  1.Danish-DanishStemmer
@@ -55,10 +50,8 @@ public class KeepRoot implements DataValueTransformation{
 		if(arg instanceof String){
 			String[] tokens = f.split(this.splitter);
 			f = "";
-			Random coin = new Random();
 			for(int i = 0; i < tokens.length; i++){
 				String syn = tokens[i];
-				if(coin.nextDouble() <= this.severity){
 					//System.out.println("syn :" + syn);
 					//PorterStemmer stemmer = new PorterStemmer();
 					EnglishStemmer stemmer = new EnglishStemmer();
@@ -68,7 +61,6 @@ public class KeepRoot implements DataValueTransformation{
 						 syn = stemmer.getCurrent();
 						 //System.out.println("syn transf: " + syn);
 					}
-				}
 				f += syn + " ";
 			}
 			f = f.trim();

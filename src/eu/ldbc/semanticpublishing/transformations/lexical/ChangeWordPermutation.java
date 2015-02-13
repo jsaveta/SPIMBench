@@ -13,9 +13,6 @@ import eu.ldbc.semanticpublishing.transformations.DataValueTransformation;
 import eu.ldbc.semanticpublishing.transformations.InvalidTransformation;
 
 public class ChangeWordPermutation implements DataValueTransformation{
-
-	private String output;
-
 	@SuppressWarnings("finally")
 	@Override
 	public Object execute(Object arg) {

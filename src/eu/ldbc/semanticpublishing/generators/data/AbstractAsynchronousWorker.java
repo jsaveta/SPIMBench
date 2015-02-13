@@ -289,7 +289,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						for (Statement st : tempModel){							
 							predicate = st.getPredicate();
 							temp_sesameModel_d2.add(subjectFromMap, (URI)predicate,(Value)statement.getObject(), (Resource)statement.getContext());
-								if(!predicate.toString().equals(statement.getPredicate().stringValue())){
+								if(!predicate.stringValue().equals(statement.getPredicate().stringValue())){
 									writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(statement.getSubject().stringValue()),0.9, TransformationsCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get(statement.getPredicate().stringValue()).toString().replace(transformationPath + "logical.", "").split("@")[0]), statement.getPredicate().stringValue(),sesameModel_GS,fos_3);
 									different_log++;
 									
@@ -364,7 +364,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 						}
 						 
 						if(temp instanceof String){
-							if(!(temp.equals("")) && (temp!=null) && !(temp.equals(statement.getObject().stringValue()))){
+							if(!(temp.toString().equals("")) && (temp!=null) && !(temp.toString().equals(statement.getObject().stringValue()))){
 								if(((String) temp).replace("\"", "").startsWith("http://www.")){
 									temp_sesameModel_d2.add(subjectFromMap, (URI)statement.getPredicate(),SesameBuilder.sesameValueFactory.createURI(((String) temp).replace("\"", "")), (Resource)statement.getContext());	
 								}
@@ -439,7 +439,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 									temp = tr.executeStatement(st);
 									if(!temp.isEmpty()){
 										for (Statement st1 : temp){
-											if(!st1.equals(st)){
+											if(!st1.toString().equals(st.toString())){
 												writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
 														 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 																 tr.toString().replace(transformationPath + "logical.", "").split("@")[0]),
@@ -471,7 +471,7 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 								complexModel = new LinkedHashModel();
 								if(!temp.isEmpty()){
 									for (Statement st1 : temp){
-										if(!st1.equals(st)){
+										if(!st1.toString().equals(st.toString())){
 											writegs.WriteGSAsTriples(statement.getSubject().stringValue(), worker_.getURIMapping().get(
 													 statement.getSubject().stringValue()),1.0,TransformationsCall.getKey(TransformationsCall.transformationsMap, 
 															 tr.toString().replace(transformationPath + "structural.", "").split("@")[0]),
@@ -548,7 +548,6 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 		}
 		if(TransformationConf.containsKey("logicalSameAs")){
 			Model model_s = TransformationConf.get("logicalSameAs").executeStatement(null);
-			System.out.println("model sameas " + model_s.size());
 			if(!model_s.isEmpty()){
 				for (Statement statement : model_s){
 					writegs.WriteGSAsTriples( TrCall.getKey(worker_.getURIMapping(),statement.getSubject().stringValue()),statement.getObject().stringValue(),1.0,TrCall.getKey(TransformationsCall.transformationsMap, TransformationConf.get("logicalSameAs").toString().replace(transformationPath + "logical.", "").split("@")[0]),"CW",sesameModel_GS,fos_3);

@@ -1,9 +1,7 @@
 package eu.ldbc.semanticpublishing.generators.data;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,19 +9,14 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
 import org.openrdf.model.Model;
-import org.openrdf.model.Resource;
-import org.openrdf.model.URI;
-import org.openrdf.model.Value;
 import org.openrdf.model.impl.LinkedHashModel;
 import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFHandlerException;
-import org.openrdf.rio.RDFWriter;
 import org.openrdf.rio.Rio;
 
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.CreativeWorkBuilder;
 import eu.ldbc.semanticpublishing.transformations.Transformation;
 import eu.ldbc.semanticpublishing.transformations.TransformationsCall;
-import eu.ldbc.semanticpublishing.transformations.WriteIntermediateGS;
 import eu.ldbc.semanticpublishing.util.RandomUtil;
 import eu.ldbc.semanticpublishing.util.SesameUtils;
 
@@ -74,9 +67,8 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 		sesameModel2ArrayList = new ArrayList<Model>(); //ArrayList with all CWs in D2 as Models
 
 	}
-	public RandomWorker() {
-		// TODO Auto-generated constructor stub
-	}
+	public RandomWorker() {}
+	
 	@Override
 	public void execute() throws Exception {
 		FileOutputStream fos = null;
@@ -91,10 +83,7 @@ public class RandomWorker extends AbstractAsynchronousWorker{
         theFile.mkdirs();// will create a folder for the transformed data if not exists
         File theFilegs = new File(GSdestination); 
         theFilegs.mkdirs();// will create a folder for the transformed data if not exists
-        
-        
-
-        
+                
 		fileName = String.format(FILENAME_FORMAT + rdfFormat.getDefaultFileExtension(), destinationPath, File.separator, currentFilesCount);
 		String fileName_2 = String.format(FILENAME_FORMAT_D2 + rdfFormat.getDefaultFileExtension(), D2destination, File.separator, currentFilesCount);
 		String fileName_3 = String.format(FILENAME_FORMAT_GS + rdfFormat.getDefaultFileExtension(), GSdestination, File.separator, currentFilesCount);
@@ -138,9 +127,7 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 						//TODO 
 						sesameModel_GS = new LinkedHashModel();
 						sesameModel_2 =  TransformateSesameModel(this,sesameModel_GS,fos_3);
-						
-						
-			
+	
 					}
 					
 					Rio.write(sesameModel, fos, rdfFormat);
@@ -200,6 +187,7 @@ public class RandomWorker extends AbstractAsynchronousWorker{
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	public void initializeFMapEntry(){
 		if(!getFtransformations().containsKey(fileName)){
 			FTransfArray = new ArrayList<Double>();

@@ -13,6 +13,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.openrdf.model.Model;
@@ -30,7 +31,7 @@ import org.openrdf.rio.turtle.TurtleParser;
 import Jama.Matrix;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.rescal.turtleRescalTripleFinder.RescalStarter;
-import eu.ldbc.semanticpublishing.util.Matrices;
+import eu.ldbc.semanticpublishing.util.CleanZeros;
 import eu.ldbc.semanticpublishing.util.SesameUtils;
 
 
@@ -81,21 +82,19 @@ transformationsMap.put("38", "OneOf"); */
 
 public class CreateFinalGS {
 	 private static ArrayList<ArrayList<Object>> finalGS = new ArrayList<ArrayList<Object>>();
+	 private static ArrayList<ArrayList<Object>> GS = new ArrayList<ArrayList<Object>>();
 	 private static String exactmatch = "http://www.w3.org/2004/02/skos/core#exactMatch";
-	 private static String path = ".\\dist\\generatedGS\\";
+	// private static String path = ".\\dist\\generatedGS\\";
 	 public static double MACHEPS = 2E-16;
 	 
 public CreateFinalGS(){
 }
 	 
-@SuppressWarnings("deprecation")
-public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOException, RDFHandlerException, RDFParseException {
-	String GSfile = path+file_;	
-	FileOutputStream fos = null;
+public static  List<ArrayList<Object>> GSScores(String file_) throws IOException, RDFHandlerException, RDFParseException {
+	String GSfile = file_;	
 	String u = "";
 	String uPrime = "";
 	String source = null, target = null, gold_standard = null;
-	GSfile = GSfile.replace(".\\dist\\generatedGS\\", "");
 	if (GSfile.endsWith(".ttl") && GSfile.startsWith("generatedCreativeWorksGS")){
 		try {
 			File file = new File("generatedGS\\"+GSfile.toString().replace(".ttl", "")+"_final"+ ".txt");	
@@ -116,11 +115,11 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			ArrayList<Object> TypeTemp = initializeTypeTempArray();
 			for(Iterator<Statement> it = col.iterator(); it.hasNext();){
 				Statement st = it.next();
-			    if(st.getPredicate().toString().equals(exactmatch) && !u.equals(st.getSubject().toString())){
+			    if(st.getPredicate().stringValue().equals(exactmatch) && !u.equals(st.getSubject().stringValue())){
 			    	if(!u.equals("")){
 			    		if((Integer)TypeTemp.get(31) == 0 && (Integer)TypeTemp.get(33) == 0 && !IdTemp.isEmpty()){ //check for disjoint and do not add it 
-				    		finalGS.add(IdTemp);
-				    		finalGS.add(TypeTemp);
+			    			GS.add(IdTemp);
+			    			GS.add(TypeTemp);
 				    	}
 			    		TypeTemp = initializeTypeTempArray();
 			    		IdTemp = new ArrayList<Object>();
@@ -129,13 +128,13 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 					uPrime = st.getObject().toString();
 			    }
 			    
-			    if(st.getPredicate().toString().equals("http://www.type")){
+			    if(st.getPredicate().stringValue().equals("http://www.type")){
 			    	int indexToReplace = Integer.parseInt(st.getObject().toString().replace("\"", ""))+1;
 			    	int transf = (Integer)TypeTemp.get(indexToReplace) +1;
 			    	TypeTemp.remove(indexToReplace);
 			    	TypeTemp.add(indexToReplace,transf);
 			    }
-			    if(st.getObject().toString().replace("\"", "").equals("CW_id")){
+			    if(st.getObject().stringValue().equals("CW_id")){
 			    	IdTemp.add(u);
 			    	IdTemp.add(uPrime);
 			    	try {
@@ -150,9 +149,10 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
 			simpleGSfile.close();
 			
 			//call rescal
-			source = "generated\\"+GSfile.toString().replace("GS", ""); 
-			target = "generatedD2\\"+GSfile.toString().replace("GS", "D2");
+			source = "generated\\"+GSfile.replace("GS", ""); 
+			target = "generatedD2\\"+GSfile.replace("GS", "D2");
 			gold_standard = file.toString();
+
 			Rescal(source, target, gold_standard);
 
 		}
@@ -166,72 +166,105 @@ public static ArrayList<ArrayList<Object>> GSScores(String file_) throws IOExcep
         	 throw new UnsupportedRDFormatException("UnsupportedRDFormatException : "+ e.getMessage());
          }
     }
-	return finalGS;
+	return Collections.synchronizedList(GS);
 }
 
-
-public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayList<Object>>finalGS_, double[] S) throws RDFParseException, RDFHandlerException, IOException{
-
-	ArrayList<Double> specificWeights = new ArrayList<Double>();
-	int top = 0; 
-	if(S.length > (finalGS_.size()/2)){
-		top = (finalGS_.size()/2);
-	}
-	else{
-		top = S.length;
-	}
-	double [] S_ = new double [top]; 
-	for(int i = 0; i < top ; i++){
-		S_[i] = S[i];
-	}
-	
-	double[][] Marray = new double[40][top];
+public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayList<Object>>finalGS_, Map<String, Map<String, Double>> S) throws RDFParseException, RDFHandlerException, IOException{
+	ArrayList<Double> Y = new ArrayList<Double>();
+	double[][] M = new double[RescalStarter.getSArrayList().size()][41];
 	int j = 0;
-	Iterator<ArrayList<Object>> it = finalGS_.iterator();
-	int stop = 0;
-	while(stop < top){
-    	ArrayList<Object> M = it.next();
-    	if(M.size() == 41){	
-    		for (int i = 0; i < Marray.length; i++) {
-    		    Marray[i][j] = (Double) ((Integer)M.get(i)*1.0);
-       		}
-    		j++;
-    	}
-    	stop++;
-	}
+	double cos = 0.0;
+	Iterator<String> iteratorGS = S.keySet().iterator();
+	while (iteratorGS.hasNext()) {
+		 String key = iteratorGS.next().toString();
+	     //System.out.println("key : " + key);
+	    	 for(int i = 0; i < finalGS_.size(); i++) {   
+	    			ArrayList<Object> in = finalGS_.get(i);
+	    			if(in.contains(key)){
+		     	 		//System.out.println("in key " + in.toString());
 
-	double[] Msum = new double[Marray.length];
-    for (int i = 0; i < Marray.length; i++){    
-    	for (int k = 0; k < Marray[0].length; k++){   
-    		 Msum[i] += Marray[i][k];
-    	}
-    }
-   //pseudo inverse Marray because matrix is rank deficient
-    Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
-
-	Matrix S_matrix = new Matrix(S_,1);
-
-	Matrix T = S_matrix.times(InverseMarray); 
-
-	double[] T_array = T.getRowPackedCopy();
+			     		Map<String,Double> value = S.get(key);
+					    Iterator<String> internalIteratorGS = value.keySet().iterator();
+					    String internalKey = internalIteratorGS.next().toString();
+					    cos = value.get(internalKey);
+			     	}
+	     			if(cos > 0.0 && in.size() == 41){
+		        		for (int k = 0; k < in.size(); k++) {
+		        			 M[j][k] = (Double) ((Integer)in.get(k)*1.0);
+		           		}
+		        		j++;
+		        	//System.out.println("cos " + cos);
+		     		Y.add(cos);
+				    cos = 0.0;
+	     			}
+			   	}
+	    	 }
+    	
+    	
+   /*clean M from columns that contain only zeros*/
+    double[][] transposed = CleanZeros.transpose(M);
+    double[][] colsCleaned = CleanZeros.cleanZeroRows(transposed);
+    double[][] transposedBack = CleanZeros.transpose(colsCleaned);
+   
+    /*Create Marray*/
+    double[][] Marray = new double[Y.size()][transposedBack[0].length];
+	for (int x = 0; x < Marray.length; x++)
+		  for (int y = 0; y < Marray[0].length; y++)
+		    Marray[x][y] = transposedBack[x][y];
 	
-	for (int i = 0; i < T_array.length; i++){
-		double weight = 0.0;
-		if(Msum[i] != 0.0){ weight = T_array[i]/Msum[i];}
-		else{weight = 0.0;}
-		specificWeights.add(weight);
+	/*Create Yarray*/
+	double[][] Yarray = new double[Y.size()][1];
+	double[] Ytemp = new double[Y.size()];
+	for (int k = 0; k < Yarray.length; k++){   
+		Yarray[k][0] = Y.get(k);
+		Ytemp[k] = Y.get(k);
 	}
+	/*Convert Y from array to matrix*/
+	Matrix Ymatrix = new Matrix(Yarray);
+	
+	/*pseudo inverse Marray*/
+	//Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
+	Matrix InverseMarray = new Matrix(Marray).inverse();
 
+	
+	/*Calculate final weight*/
+	Matrix T = InverseMarray.times(Ymatrix); 
+	double[] T_array = T.getRowPackedCopy();//row or column, contain the same nums
+	
+	System.out.print("\nT\n");
+	for (int i = 0; i < T_array.length; i++) {
+		System.out.print(T_array[i] + " ");
+	}
+	System.out.print("\n");
+	
+	ArrayList<Double> specificWeights = new ArrayList<Double>();
+	specificWeights.add(0,0.0);
+	specificWeights.add(1,0.0);
+	int zeroIndexes = 0;
+	for (int i = 2; i < 41; i++){
+		double weight = 0.0;
+		if(CleanZeros.indexes.contains(i)){ 
+			weight = 0.0;
+			zeroIndexes ++;
+		} 
+		else{
+			weight = T_array[i - zeroIndexes];//regression.residuals(i - zeroIndexes);   <-------------
+		}
+		specificWeights.add(Math.abs(weight));
+	}
+	for(int i = 0; i < specificWeights.size(); i++) {   
+	    System.out.println("i: "+ i+ "  specificWeight: "+specificWeights.get(i));
+	}
 
 	return specificWeights;
-	
 }
+
 
 
 public static void writeFinalGSFiles() throws IOException, RDFParseException, RDFHandlerException{
 //write here detailed gs(ttl) and also simple one (txt) both wighted
 //after finishing delete previous detailes GSs with the wrong weights
-ArrayList<Double> weight_per_trans_ =  calculateSpecificTransfWeights(getFinalGS(), RescalStarter.getS());
+ArrayList<Double> weight_per_trans_ =  calculateSpecificTransfWeights(getFinalGS(),RescalStarter.getGsWeighted());
 File folder = new File("generatedGS\\");
 File[] listOfFiles = folder.listFiles();
 	for (File file_ : listOfFiles) {
@@ -267,7 +300,7 @@ File[] listOfFiles = folder.listFiles();
 	    		for(Iterator<Statement> it = col.iterator(); it.hasNext();){
 				Statement st = it.next();
 				
-			    if(st.getPredicate().toString().equals(exactmatch) && !u.equals(st.getSubject().toString())){
+			    if(st.getPredicate().stringValue().equals(exactmatch) && !u.equals(st.getSubject().stringValue())){
 			    	if(!u.equals("")){ //chech disjointness again
 			    		if((Integer)TypeTemp.get(31) == 0 && (Integer)TypeTemp.get(33) == 0 && !IdTemp.isEmpty()){ //check for disjoint and do not add it 
 				    		finalGS.add(IdTemp);
@@ -276,10 +309,14 @@ File[] listOfFiles = folder.listFiles();
 				    		
 					    	try {
 					    		double weight = (1.0 - u_uPrime_weight);
-					    		if((1.0 - u_uPrime_weight) > 1.0){
+					    		if(weight > 1.0){
 					    			weight = 1.0;
 					    		}
+					    		if((1.0 - u_uPrime_weight) < 0.0){ //we need this
+					    			weight = 0.0;
+					    		}
 								simpleGSfile.write(IdTemp.get(0)+" "+IdTemp.get(1)+" "+weight+"\n"); //made it 1- weight 
+					    		u_uPrime_weight = 0d; /////
 							} catch ( IOException e ) {
 								   e.printStackTrace();
 							}
@@ -287,25 +324,26 @@ File[] listOfFiles = folder.listFiles();
 			    		TypeTemp = initializeTypeTempArray();
 			    		IdTemp = new ArrayList<Object>();
 			    		ResTemp = new ArrayList<Object>(); 
+
 			    	}
 			    	u = st.getSubject().toString();
 					uPrime = st.getObject().toString();
 			    }
 			    
-			    if(st.getPredicate().toString().equals("http://www.type")){
+			    if(st.getPredicate().stringValue().equals("http://www.type")){
 			    	indexToReplace = Integer.parseInt(st.getObject().toString().replace("\"", ""))+1;
 			    	//System.out.println("indexToReplace " + indexToReplace);
 			    	int transf = (Integer)TypeTemp.get(indexToReplace) +1;
 			    	TypeTemp.remove(indexToReplace);
 			    	TypeTemp.add(indexToReplace,transf);
 			    }
-			    if(st.getObject().toString().replace("\"", "").equals("CW_id")){
+			    if(st.getObject().stringValue().equals("CW_id")){
 			    	IdTemp.add(u);
 			    	IdTemp.add(uPrime);
 			    	ResTemp.add(1);
 			    }
 				  //check weight here
-				if(st.getPredicate().toString().equals("http://www.weight")){
+				if(st.getPredicate().stringValue().equals("http://www.weight")){
 					double weight = weight_per_trans_.get((indexToReplace));
 					detailedGS.add(st.getSubject(),st.getPredicate(),SesameBuilder.sesameValueFactory.createLiteral(weight),st.getContext());
 					//keep sum here for final gs
@@ -325,6 +363,7 @@ File[] listOfFiles = folder.listFiles();
 		catch (UnsupportedRDFormatException e) {
 			throw new UnsupportedRDFormatException("UnsupportedRDFormatException : "+ e.getMessage());
 		}
+	    file_.delete(); //DELETE INTERMEDIATE GS
 	}
 }
 	
@@ -362,7 +401,7 @@ public static ArrayList<Object> initializeTypeTempArray(){
 }
 
 public static ArrayList<ArrayList<Object>> getFinalGS(){
-	return finalGS;
+	return GS;
 }
 
 }

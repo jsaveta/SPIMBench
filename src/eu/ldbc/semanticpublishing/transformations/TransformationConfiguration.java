@@ -9,7 +9,7 @@ import eu.ldbc.semanticpublishing.transformations.lexical.ChangeGenderFormat;
 import eu.ldbc.semanticpublishing.transformations.lexical.ChangeLanguage;
 import eu.ldbc.semanticpublishing.transformations.lexical.ChangeNumberFormat;
 import eu.ldbc.semanticpublishing.transformations.lexical.ChangeWordPermutation;
-import eu.ldbc.semanticpublishing.transformations.lexical.KeepRoot;
+import eu.ldbc.semanticpublishing.transformations.lexical.StemWord;
 import eu.ldbc.semanticpublishing.transformations.lexical.NameStyleAbbreviation;
 import eu.ldbc.semanticpublishing.transformations.lexical.RandomCharsAddition;
 import eu.ldbc.semanticpublishing.transformations.lexical.RandomCharsDeletion;
@@ -104,8 +104,8 @@ public class TransformationConfiguration {
 		return new ChangeWordPermutation();
 	}
 	
-	public static KeepRoot KEEPROOT(double severity){
-		return new KeepRoot(severity);
+	public static StemWord STEMWORD(){
+		return new StemWord();
 	}
 	//structural transformations
 	public static DeleteProperty deletePROPERTY(){

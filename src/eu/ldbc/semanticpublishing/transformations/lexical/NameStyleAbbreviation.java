@@ -287,17 +287,23 @@ public class NameStyleAbbreviation implements DataValueTransformation {
 		return name + "\t" + this.surnames /*+ "\t" + this.format*/;
 	}
 
-	/* (non-Javadoc)
-	 * @see it.unimi.dico.islab.iimb.transfom.Transformation#execute(java.lang.Object)
-	 */
 	@SuppressWarnings("finally")
 	@Override
 	public Object execute(Object arg) {
+		String newS = "";
 		String s = (String)arg;
 		if(arg instanceof String){
-			if(countryAbbreviation.containsKey(s.toString())){
-				s =  countryAbbreviation.get(s.toString());
-	    	}
+			String[] tokens = s.split(" ");
+			for(int i = 0; i < tokens.length; i++){
+				if(countryAbbreviation.containsKey(tokens[i].toLowerCase())){
+					newS += countryAbbreviation.get(tokens[i].toLowerCase());
+					newS += " ";
+		    	}
+				else{
+					newS += tokens[i];
+					newS += " ";
+				}
+			}
 		}else{
 			try {
 				throw new InvalidTransformation();
@@ -307,9 +313,9 @@ public class NameStyleAbbreviation implements DataValueTransformation {
 				return arg;
 			}
 		}
-		return s;
+		return newS;
 	}
-
+	
 	@Override
 	public Model executeStatement(Statement statement) {
 		// TODO Auto-generated method stub

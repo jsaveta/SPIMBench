@@ -102,7 +102,7 @@ public class TransformationsCall {
 		setLexicalList();
 		setStructuralList();
 		setComplexTransformationsList();
-		predicatesObjectsMap = new HashMap<String, Transformation>(); //if you remove it you will have a null pointer error
+		predicatesObjectsMap = new HashMap<String, Transformation>(); 
 		predicatesObjectsComplexMap = new HashMap<String, List<Transformation>>();
 		
 	}
@@ -417,7 +417,7 @@ public class TransformationsCall {
 		transformationsArrayList.add(TransformationConfiguration.deleteTOKENS("b", 0.2));
 		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS("e", 0.2));
 		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS(" ", 0.2));
-		transformationsArrayList.add(TransformationConfiguration.KEEPROOT(1.0));
+		transformationsArrayList.add(TransformationConfiguration.STEMWORD());
 		transformationsArrayList.add(TransformationConfiguration.abbreviateNAME(/*NameStyleAbbreviation.SCOMMANDOT,*/1)); //NDOTS/ALLDOTS
 		//transformationsArrayList.add(TransformationConfiguration.abbreviateNAME(NameStyleAbbreviation.NDOTS,1)); //NDOTS/ALLDOTS
 		//transformationsArrayList.add(TransformationConfiguration.abbreviateNAME(NameStyleAbbreviation.ALLDOTS,1)); //NDOTS/ALLDOTS

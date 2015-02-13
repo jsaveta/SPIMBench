@@ -19,13 +19,11 @@ public class ReplaceWordDefinition implements DataValueTransformation{
 	private WordNetDatabase database = WordNetDatabase.getFileInstance();
 	private String splitter;
 	private double severity;
-	private String wn;
 	private final Configuration configuration = new Configuration();
 		
 	public ReplaceWordDefinition(String wndict, double severity){
 		this.splitter = "[\\s|\n|\t]";
 		this.severity = severity;
-		this.wn = wndict;
 	}
 
 	@SuppressWarnings("finally")

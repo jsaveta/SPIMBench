@@ -178,10 +178,16 @@
 	</target>		
 	
 	<target name="copy-config-files-to-dist" >
+		<delete file="${dir.dist}\readme.txt"/>
+		<delete file="${dir.dist}\test.properties"/>
+		<!--<delete file="${dir.dist}\definitions.properties"/>-->
+		<delete file="${dir.dist}\config.ini"/>
+	
 		<copy todir="${dir.dist}">
 			<fileset file="readme.txt" />
 			<fileset file="test.properties" />
 			<fileset file="definitions.properties" />
+			<fileset file="config.ini" />
 		</copy>
 	</target>
 	
@@ -203,6 +209,13 @@
 			<param name="query_mix" value="base"/>
 		</antcall>
 		<delete dir="./data"/>
+		<delete dir="${dir.dist}\generated" />
+		<mkdir dir="${dir.dist}\generated" />
+		<delete dir="${dir.dist}\generatedD2" />
+		<mkdir dir="${dir.dist}\generatedD2" />
+		<delete dir="${dir.dist}\generatedGS" />
+		<mkdir dir="${dir.dist}\generatedGS" />
+		
 		<delete file="./definitions.properties" />
 	</target>
 	
@@ -224,6 +237,12 @@
 			<param name="query_mix" value="base"/>
 		</antcall>	
 		<delete dir="./data"/>
+		<delete dir="${dir.dist}\generated" />
+		<mkdir dir="${dir.dist}\generated" />
+		<delete dir="${dir.dist}\generatedD2" />
+		<mkdir dir="${dir.dist}\generatedD2" />
+		<delete dir="${dir.dist}\generatedGS" />
+		<mkdir dir="${dir.dist}\generatedGS" />
 		<delete file="./definitions.properties" />
 	</target>	
 	
@@ -245,6 +264,12 @@
 			<param name="query_mix" value="full"/>
 		</antcall>		
 		<delete dir="./data"/>
+		<delete dir="${dir.dist}\generated" />
+		<mkdir dir="${dir.dist}\generated" />
+		<delete dir="${dir.dist}\generatedD2" />
+		<mkdir dir="${dir.dist}\generatedD2" />
+		<delete dir="${dir.dist}\generatedGS" />
+		<mkdir dir="${dir.dist}\generatedGS" />
 		<delete file="./definitions.properties" />
 	</target>
 	
@@ -266,6 +291,12 @@
 			<param name="query_mix" value="full"/>
 		</antcall>		
 		<delete dir="./data"/>
+		<delete dir="${dir.dist}\generated" />
+		<mkdir dir="${dir.dist}\generated" />
+		<delete dir="${dir.dist}\generatedD2" />
+		<mkdir dir="${dir.dist}\generatedD2" />
+		<delete dir="${dir.dist}\generatedGS" />
+		<mkdir dir="${dir.dist}\generatedGS" />
 		<delete file="./definitions.properties" />
 	</target>	
 
