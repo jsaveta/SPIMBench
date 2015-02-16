@@ -8,7 +8,7 @@
 
 <http://www.bbc.co.uk/contexts/8ec696a8-ddd5-4eca-a853-5b5e8b4a1b76#id> a provenance:Dataset ;
   rdfs:label "all 650 UK Members of Parliament"^^xsd:string ;
-  provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/news/politics/UK-Parliament-Identifiers-People-%version%.ttl";
+  provenance:canonicalLocation "https://repo.dev.bbc.co.uk/services/linked-data/datasets/news/politics/UK-Parliament-Identifiers-People-version.ttl";
   provenance:changeReason "fixed typo in cnews URI"^^xsd:string ;
   provenance:provider <mailto:jeremy.tarling@bbc.co.uk> ;
   provenance:version "6"^^xsd:int .
@@ -2526,737 +2526,737 @@
 <http://www.bbc.co.uk/things/g4fac6376-df6b-420f-bc19-088ede8c6fc0#id> a news:Person ;
 	bbc:preferredLabel "Alan Reid" ;
 	bbc:sameAs <http://dbpedia.org/resource/Alan_Reid_(politician)> , <http://www.wikidata.org/wiki/Q574847> , <http://rdf.freebase.com/ns/m.0283sl> ;
-	rdfs:seeAlso <http://www.alanreid.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25342.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Alan+Reid> .
+	rdfs:seeAlso <http://www.alanreid.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25342.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Alan+Reid> .
 
 <http://www.bbc.co.uk/things/g0e2d67ad-e533-4a37-b9d5-ef96e196d0a8#id> a news:Person ;
 	bbc:preferredLabel "Emma Reynolds" ;
 	bbc:sameAs <http://dbpedia.org/resource/Emma_Reynolds> , <http://www.wikidata.org/wiki/Q501942> , <http://rdf.freebase.com/ns/m.0by1gqy> ;
-	rdfs:seeAlso <http://www.emmareynolds.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/52382.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Emma+Reynolds> .
+	rdfs:seeAlso <http://www.emmareynolds.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/52382.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Emma+Reynolds> .
 
 <http://www.bbc.co.uk/things/g4ea7f5e9-f466-4e85-b50c-b20444324dad#id> a news:Person ;
 	bbc:preferredLabel "Jonathan Reynolds" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jonathan_Reynolds> , <http://www.wikidata.org/wiki/Q501926> , <http://rdf.freebase.com/ns/m.0bx_sxd> ;
-	rdfs:seeAlso <http://www.jonathanreynolds.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84903.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jonathan+Reynolds> .
+	rdfs:seeAlso <http://www.jonathanreynolds.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84903.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jonathan+Reynolds> .
 
 <http://www.bbc.co.uk/things/g58d2e1e3-4e27-44be-9eb6-b52e0c7a575b#id> a news:Person ;
 	bbc:preferredLabel "Malcolm Rifkind" ;
 	bbc:sameAs <http://dbpedia.org/resource/Malcolm_Rifkind> , <http://www.wikidata.org/wiki/Q333487> , <http://rdf.freebase.com/ns/m.01zq6b> ;
-	rdfs:seeAlso <http://www.malcolmrifkind.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31729.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Malcolm+Rifkind> .
+	rdfs:seeAlso <http://www.malcolmrifkind.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31729.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Malcolm+Rifkind> .
 
 <http://www.bbc.co.uk/things/g58661e5f-8ee2-403a-9405-dd76ae43971e#id> a news:Person ;
 	bbc:preferredLabel "Linda Riordan" ;
 	bbc:sameAs <http://dbpedia.org/resource/Linda_Riordan> , <http://www.wikidata.org/wiki/Q501883> , <http://rdf.freebase.com/ns/m.05wnyp> ;
-	rdfs:seeAlso <http://www.lindariordanmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35915.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Linda+Riordan> .
+	rdfs:seeAlso <http://www.lindariordanmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35915.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Linda+Riordan> .
 
 <http://www.bbc.co.uk/things/g54ee9938-7d00-47cb-9171-b7ac72f8bf47#id> a news:Person ;
 	bbc:preferredLabel "Margaret Ritchie" ;
 	bbc:sameAs <http://dbpedia.org/resource/Margaret_Ritchie_(politician)> , <http://www.wikidata.org/wiki/Q501860> , <http://rdf.freebase.com/ns/m.027_0s7> ;
-	rdfs:seeAlso <http://www.margaretritchie.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33632.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Margaret+Ritchie> .
+	rdfs:seeAlso <http://www.margaretritchie.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33632.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Margaret+Ritchie> .
 
 <http://www.bbc.co.uk/things/g37ba27ac-3e33-4d84-be2a-7abd90e3d881#id> a news:Person ;
 	bbc:preferredLabel "Andrew Robathan" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Robathan> , <http://www.wikidata.org/wiki/Q501089> , <http://rdf.freebase.com/ns/m.029tcj> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25346.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Robathan> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25346.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Robathan> .
 
 <http://www.bbc.co.uk/things/ge7c49038-30f3-42cd-ac65-b9cfee2ec743#id> a news:Person ;
 	bbc:preferredLabel "Angus Robertson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Angus_Robertson> , <http://www.wikidata.org/wiki/Q480184> , <http://rdf.freebase.com/ns/m.0283tp> ;
-	rdfs:seeAlso <http://www.angusrobertson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25347.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Angus+Robertson> .
+	rdfs:seeAlso <http://www.angusrobertson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25347.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Angus+Robertson> .
 
 <http://www.bbc.co.uk/things/g9eb78c5d-d9d1-4c04-aea5-32535ff37b05#id> a news:Person ;
 	bbc:preferredLabel "Hugh Robertson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Hugh_Robertson_(politician)> , <http://www.wikidata.org/wiki/Q480170> , <http://rdf.freebase.com/ns/m.029tdl> ;
-	rdfs:seeAlso <http://www.hughrobertson.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25348.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Hugh+Robertson> .
+	rdfs:seeAlso <http://www.hughrobertson.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25348.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Hugh+Robertson> .
 
 <http://www.bbc.co.uk/things/gafa0ae1e-3df0-489c-9e6a-0a8759482374#id> a news:Person ;
 	bbc:preferredLabel "John Robertson" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Robertson_(Glasgow_politician)> , <http://www.wikidata.org/wiki/Q480150> , <http://rdf.freebase.com/ns/m.032231> ;
-	rdfs:seeAlso <http://www.john-robertson.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25349.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Robertson> .
+	rdfs:seeAlso <http://www.john-robertson.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25349.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Robertson> .
 
 <http://www.bbc.co.uk/things/g7e905d9f-7ad7-495e-b027-f52edc429c59#id> a news:Person ;
 	bbc:preferredLabel "Laurence Robertson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Laurence_Robertson> , <http://www.wikidata.org/wiki/Q480148> , <http://rdf.freebase.com/ns/m.029tf8> ;
-	rdfs:seeAlso <http://www.laurencerobertsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25350.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Laurence+Robertson> .
+	rdfs:seeAlso <http://www.laurencerobertsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25350.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Laurence+Robertson> .
 
 <http://www.bbc.co.uk/things/g00b91cfc-472f-4558-97e5-c0d499e06271#id> a news:Person ;
 	bbc:preferredLabel "Geoffrey Robinson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Geoffrey_Robinson> , <http://www.wikidata.org/wiki/Q480132> , <http://rdf.freebase.com/ns/m.026866> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25201.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Geoffrey+Robinson> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25201.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Geoffrey+Robinson> .
 
 <http://www.bbc.co.uk/things/g58dedfd6-1207-4cd2-9764-788ebb35b54c#id> a news:Person ;
 	bbc:preferredLabel "Dan Rogerson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Dan_Rogerson> , <http://www.wikidata.org/wiki/Q480110> , <http://rdf.freebase.com/ns/m.062c0n> ;
-	rdfs:seeAlso <http://www.danrogerson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31629.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Dan+Rogerson> .
+	rdfs:seeAlso <http://www.danrogerson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31629.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Dan+Rogerson> .
 
 <http://www.bbc.co.uk/things/ga071abba-1fcb-496d-80dc-65e6b7b01de7#id> a news:Person ;
 	bbc:preferredLabel "Andrew Rosindell" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Rosindell> , <http://www.wikidata.org/wiki/Q480092> , <http://rdf.freebase.com/ns/m.01zh9m> ;
-	rdfs:seeAlso <http://www.andrew.rosindell.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25356.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Rosindell> .
+	rdfs:seeAlso <http://www.andrew.rosindell.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25356.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Rosindell> .
 
 <http://www.bbc.co.uk/things/ga8942f4c-fd44-454a-ae57-bcaa69fc1638#id> a news:Person ;
 	bbc:preferredLabel "Steve Rotheram" ;
 	bbc:sameAs <http://dbpedia.org/resource/Steve_Rotheram> , <http://www.wikidata.org/wiki/Q480068> , <http://rdf.freebase.com/ns/m.0bs5y89> ;
-	rdfs:seeAlso <http://www.steverotherammp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/85412.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Steve+Rotheram> .
+	rdfs:seeAlso <http://www.steverotherammp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/85412.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Steve+Rotheram> .
 
 <http://www.bbc.co.uk/things/g7faaecba-4098-46b7-9973-da5f7570a09d#id> a news:Person ;
 	bbc:preferredLabel "Frank Roy" ;
 	bbc:sameAs <http://dbpedia.org/resource/Frank_Roy> , <http://www.wikidata.org/wiki/Q480033> , <http://rdf.freebase.com/ns/m.029tn3> ;
-	rdfs:seeAlso <http://www.frankroy.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25362.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Frank+Roy> .
+	rdfs:seeAlso <http://www.frankroy.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25362.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Frank+Roy> .
 
 <http://www.bbc.co.uk/things/g560e3566-6461-4b2d-95b5-1ac7737b9350#id> a news:Person ;
 	bbc:preferredLabel "Lindsay Roy" ;
 	bbc:sameAs <http://dbpedia.org/resource/Lindsay_Roy> , <http://www.wikidata.org/wiki/Q479213> , <http://rdf.freebase.com/ns/m.04yd6v2> ;
-	rdfs:seeAlso <http://www.lroymp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/74691.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Lindsay+Roy> .
+	rdfs:seeAlso <http://www.lroymp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/74691.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Lindsay+Roy> .
 
 <http://www.bbc.co.uk/things/g6cea03c2-00a9-4d0a-a294-ac685200e2c7#id> a news:Person ;
 	bbc:preferredLabel "Chris Ruane" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chris_Ruane> , <http://www.wikidata.org/wiki/Q479188> , <http://rdf.freebase.com/ns/m.029tng> ;
-	rdfs:seeAlso <http://www.chrisruane.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25363.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chris+Ruane> .
+	rdfs:seeAlso <http://www.chrisruane.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25363.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chris+Ruane> .
 
 <http://www.bbc.co.uk/things/g1d73f909-0ded-47e8-ba53-4de76d927501#id> a news:Person ;
 	bbc:preferredLabel "Amber Rudd" ;
 	bbc:sameAs <http://dbpedia.org/resource/Amber_Rudd> , <http://www.wikidata.org/wiki/Q479171> , <http://rdf.freebase.com/ns/m.0by1rrx> ;
-	rdfs:seeAlso <http://www.amberrudd.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/41303.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Amber+Rudd> .
+	rdfs:seeAlso <http://www.amberrudd.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/41303.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Amber+Rudd> .
 
 <http://www.bbc.co.uk/things/g1ca8a1af-0425-4bb9-8fb2-a774b0bbeedd#id> a news:Person ;
 	bbc:preferredLabel "Joan Ruddock" ;
 	bbc:sameAs <http://dbpedia.org/resource/Joan_Ruddock> , <http://www.wikidata.org/wiki/Q479115> , <http://rdf.freebase.com/ns/m.029ttx> ;
-	rdfs:seeAlso <http://www.joanruddock.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25364.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Joan+Ruddock> .
+	rdfs:seeAlso <http://www.joanruddock.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25364.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Joan+Ruddock> .
 
 <http://www.bbc.co.uk/things/gbbd6237d-ab0b-4c25-b6e4-d63574509ae5#id> a news:Person ;
 	bbc:preferredLabel "David Ruffley" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Ruffley> , <http://www.wikidata.org/wiki/Q479098> , <http://rdf.freebase.com/ns/m.029tnt> ;
-	rdfs:seeAlso <http://www.davidruffleymp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25360.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Ruffley> .
+	rdfs:seeAlso <http://www.davidruffleymp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25360.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Ruffley> .
 
 <http://www.bbc.co.uk/things/g52cf00a1-c6be-4347-98a2-c4d68e8b2e2b#id> a news:Person ;
 	bbc:preferredLabel "Bob Russell" ;
 	bbc:sameAs <http://dbpedia.org/resource/Bob_Russell_(British_politician)> , <http://www.wikidata.org/wiki/Q479081> , <http://rdf.freebase.com/ns/m.029tsf> ;
-	rdfs:seeAlso <http://www.bobrussell.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25361.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Bob+Russell> .
+	rdfs:seeAlso <http://www.bobrussell.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25361.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Bob+Russell> .
 
 <http://www.bbc.co.uk/things/ga9aa2e7b-3b0f-4620-8c41-72e7aae892ac#id> a news:Person ;
 	bbc:preferredLabel "David Rutley" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Rutley> , <http://www.wikidata.org/wiki/Q479064> , <http://rdf.freebase.com/ns/m.0by0r32> ;
-	rdfs:seeAlso <http://www.davidrutley.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83409.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Rutley> .
+	rdfs:seeAlso <http://www.davidrutley.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83409.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Rutley> .
 
 <http://www.bbc.co.uk/things/gc5197730-5798-4ad4-88c2-5076f9a89fc1#id> a news:Person ;
 	bbc:preferredLabel "Adrian Sanders" ;
 	bbc:sameAs <http://dbpedia.org/resource/Adrian_Sanders> , <http://www.wikidata.org/wiki/Q479047> , <http://rdf.freebase.com/ns/m.029ydz> ;
-	rdfs:seeAlso <http://www.adriansanders.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25377.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Adrian+Sanders> .
+	rdfs:seeAlso <http://www.adriansanders.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25377.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Adrian+Sanders> .
 
 <http://www.bbc.co.uk/things/g01611d40-b0ec-43fe-81f8-ecc47960bb50#id> a news:Person ;
 	bbc:preferredLabel "Laura Sandys" ;
 	bbc:sameAs <http://dbpedia.org/resource/Laura_Sandys> , <http://www.wikidata.org/wiki/Q478832> , <http://rdf.freebase.com/ns/m.0cmr4l> ;
-	rdfs:seeAlso <http://www.telllaura.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62773.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Laura+Sandys> .
+	rdfs:seeAlso <http://www.telllaura.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62773.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Laura+Sandys> .
 
 <http://www.bbc.co.uk/things/g5a799b6c-423d-45ee-9c1f-a11bb0e67024#id> a news:Person ;
 	bbc:preferredLabel "Anas Sarwar" ;
 	bbc:sameAs <http://dbpedia.org/resource/Anas_Sarwar> , <http://www.wikidata.org/wiki/Q478812> , <http://rdf.freebase.com/ns/m.04jjkvy> ;
-	rdfs:seeAlso <http://www.anassarwar.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/58360.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Anas+Sarwar> .
+	rdfs:seeAlso <http://www.anassarwar.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/58360.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Anas+Sarwar> .
 
 <http://www.bbc.co.uk/things/gd14d9901-f933-4cfc-bb90-f60a5215243c#id> a news:Person ;
 	bbc:preferredLabel "Lee Scott" ;
 	bbc:sameAs <http://dbpedia.org/resource/Lee_Scott_(politician)> , <http://www.wikidata.org/wiki/Q478758> , <http://rdf.freebase.com/ns/m.060p42> ;
-	rdfs:seeAlso <http://www.leescott.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31722.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Lee+Scott> .
+	rdfs:seeAlso <http://www.leescott.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31722.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Lee+Scott> .
 
 <http://www.bbc.co.uk/things/g99e0f9a4-d795-40a5-bfb7-ef92c1ceb8d6#id> a news:Person ;
 	bbc:preferredLabel "Alison Seabeck" ;
 	bbc:sameAs <http://dbpedia.org/resource/Alison_Seabeck> , <http://www.wikidata.org/wiki/Q478758> , <http://rdf.freebase.com/ns/m.062t3d> ;
-	rdfs:seeAlso <http://www.alisonseabeck.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40799.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Alison+Seabeck> .
+	rdfs:seeAlso <http://www.alisonseabeck.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40799.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Alison+Seabeck> .
 
 <http://www.bbc.co.uk/things/g61b99f0d-0347-4e5b-a718-10e36665b364#id> a news:Person ;
 	bbc:preferredLabel "Andrew Selous" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Selous> , <http://www.wikidata.org/wiki/Q478714> , <http://rdf.freebase.com/ns/m.029yhf> ;
-	rdfs:seeAlso <http://www.andrewselous.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25301.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Selous> .
+	rdfs:seeAlso <http://www.andrewselous.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25301.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Selous> .
 
 <http://www.bbc.co.uk/things/g15ea54ae-322e-4778-b6e0-7e7663257d7d#id> a news:Person ;
 	bbc:preferredLabel "Jim Shannon" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jim_Shannon> , <http://www.wikidata.org/wiki/Q478702> , <http://rdf.freebase.com/ns/m.027vm7t> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33634.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jim+Shannon> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33634.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jim+Shannon> .
 
 <http://www.bbc.co.uk/things/g4c96772a-3aa2-4f2d-acad-10100bb800d9#id> a news:Person ;
 	bbc:preferredLabel "Grant Shapps" ;
 	bbc:sameAs <http://dbpedia.org/resource/Grant_Shapps> , <http://www.wikidata.org/wiki/Q478596> , <http://rdf.freebase.com/ns/m.062pg_> ;
-	rdfs:seeAlso <http://www.shapps.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31715.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Grant+Shapps> .
+	rdfs:seeAlso <http://www.shapps.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31715.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Grant+Shapps> .
 
 <http://www.bbc.co.uk/things/g844a07dc-76f5-46d0-b10d-fb8ac2adfea5#id> a news:Person ;
 	bbc:preferredLabel "Alok Sharma" ;
 	bbc:sameAs <http://dbpedia.org/resource/Alok_Sharma> , <http://www.wikidata.org/wiki/Q478531> , <http://rdf.freebase.com/ns/m.0bwkqrl> ;
-	rdfs:seeAlso <http://www.aloksharma.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62774.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Alok+Sharma> .
+	rdfs:seeAlso <http://www.aloksharma.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62774.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Alok+Sharma> .
 
 <http://www.bbc.co.uk/things/gab93730c-5e59-4c45-8701-cc088d5131f4#id> a news:Person ;
 	bbc:preferredLabel "Virendra Sharma" ;
 	bbc:sameAs <http://dbpedia.org/resource/Virendra_Sharma> , <http://www.wikidata.org/wiki/Q478387> , <http://rdf.freebase.com/ns/m.02qdfs9> ;
-	rdfs:seeAlso <http://www.virendrasharma.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/61606.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Virendra+Sharma> .
+	rdfs:seeAlso <http://www.virendrasharma.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/61606.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Virendra+Sharma> .
 
 <http://www.bbc.co.uk/things/gc5c2f176-b340-4268-aa1c-f5fa06ad63f5#id> a news:Person ;
 	bbc:preferredLabel "Barry Sheerman" ;
 	bbc:sameAs <http://dbpedia.org/resource/Barry_Sheerman> , <http://www.wikidata.org/wiki/Q477464> , <http://rdf.freebase.com/ns/m.029yj3> ;
-	rdfs:seeAlso <http://www.barrysheerman.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25297.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Barry+Sheerman> .
+	rdfs:seeAlso <http://www.barrysheerman.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25297.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Barry+Sheerman> .
 
 <http://www.bbc.co.uk/things/g2a6d01e6-fa95-41c5-833a-eba55abda457#id> a news:Person ;
 	bbc:preferredLabel "Alec Shelbrooke" ;
 	bbc:sameAs <http://dbpedia.org/resource/Alec_Shelbrooke> , <http://www.wikidata.org/wiki/Q393751> , <http://rdf.freebase.com/ns/m.0bwjwv9> ;
-	rdfs:seeAlso <http://www.alecshelbrooke.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35500.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Alec+Shelbrooke> .
+	rdfs:seeAlso <http://www.alecshelbrooke.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35500.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Alec+Shelbrooke> .
 
 <http://www.bbc.co.uk/things/ga9dd4159-791e-47fb-8057-cd5d3f0f0736#id> a news:Person ;
 	bbc:preferredLabel "Richard Shepherd" ;
 	bbc:sameAs <http://dbpedia.org/resource/Richard_Shepherd> , <http://www.wikidata.org/wiki/Q392533> , <http://rdf.freebase.com/ns/m.029yjg> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25205.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Richard+Shepherd> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25205.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Richard+Shepherd> .
 
 <http://www.bbc.co.uk/things/g2bcac6a7-17aa-422d-bea3-d61bbc6a95a2#id> a news:Person ;
 	bbc:preferredLabel "Jim Sheridan" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jim_Sheridan_(politician)> , <http://www.wikidata.org/wiki/Q392461> , <http://rdf.freebase.com/ns/m.05b5mw> ;
-	rdfs:seeAlso <http://www.jimsheridanmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25305.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jim+Sheridan> .
+	rdfs:seeAlso <http://www.jimsheridanmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25305.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jim+Sheridan> .
 
 <http://www.bbc.co.uk/things/g1e498036-964e-4236-9904-dd9832b76f77#id> a news:Person ;
 	bbc:preferredLabel "Gavin Shuker" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gavin_Shuker> , <http://www.wikidata.org/wiki/Q392367> , <http://rdf.freebase.com/ns/m.0bwgz0d> ;
-	rdfs:seeAlso <http://www.gavinshuker.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83624.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gavin+Shuker> .
+	rdfs:seeAlso <http://www.gavinshuker.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83624.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gavin+Shuker> .
 
 <http://www.bbc.co.uk/things/gb503909f-b9b1-4c5b-829b-6ca28dcfb66d#id> a news:Person ;
 	bbc:preferredLabel "Mark Simmonds" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mark_Simmonds> , <http://www.wikidata.org/wiki/Q392061> , <http://rdf.freebase.com/ns/m.029yk4> ;
-	rdfs:seeAlso <http://www.marksimmonds.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25302.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mark+Simmonds> .
+	rdfs:seeAlso <http://www.marksimmonds.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25302.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mark+Simmonds> .
 
 <http://www.bbc.co.uk/things/g18366637-7cba-4d00-8ed7-7affb9f739ce#id> a news:Person ;
 	bbc:preferredLabel "David Simpson" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Simpson_(British_politician)> , <http://www.wikidata.org/wiki/Q392000> , <http://rdf.freebase.com/ns/m.05kjrf> ;
-	rdfs:seeAlso <http://www.davidsimpsonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33635.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Simpson> .
+	rdfs:seeAlso <http://www.davidsimpsonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33635.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Simpson> .
 
 <http://www.bbc.co.uk/things/g42d57f29-c9b0-4518-8cb7-c0cd8c18c665#id> a news:Person ;
 	bbc:preferredLabel "Keith Simpson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Keith_Simpson_(politician)> , <http://www.wikidata.org/wiki/Q391652> , <http://rdf.freebase.com/ns/m.029ylr> ;
-	rdfs:seeAlso <http://www.keithsimpson.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25206.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Keith+Simpson> .
+	rdfs:seeAlso <http://www.keithsimpson.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25206.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Keith+Simpson> .
 
 <http://www.bbc.co.uk/things/g99753d8a-2f5d-47f1-89ea-ded2f0fd2dce#id> a news:Person ;
 	bbc:preferredLabel "Chris Skidmore" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chris_Skidmore> , <http://www.wikidata.org/wiki/Q391526> , <http://rdf.freebase.com/ns/m.0bwhjpf> ;
-	rdfs:seeAlso <http://www.chrisskidmore.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62314.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chris+Skidmore> .
+	rdfs:seeAlso <http://www.chrisskidmore.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62314.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chris+Skidmore> .
 
 <http://www.bbc.co.uk/things/gc1cf512c-e34e-41f5-ae4c-89a6a3b94e80#id> a news:Person ;
 	bbc:preferredLabel "Dennis Skinner" ;
 	bbc:sameAs <http://dbpedia.org/resource/Dennis_Skinner> , <http://www.wikidata.org/wiki/Q391437> , <http://rdf.freebase.com/ns/m.02046f> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25309.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Dennis+Skinner> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25309.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Dennis+Skinner> .
 
 <http://www.bbc.co.uk/things/g87eb6e62-d17e-48e7-8e44-bbeb829efb3e#id> a news:Person ;
 	bbc:preferredLabel "Andy Slaughter" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andy_Slaughter> , <http://www.wikidata.org/wiki/Q391341> , <http://rdf.freebase.com/ns/m.04lm4q> ;
-	rdfs:seeAlso <http://www.andyslaughter.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35897.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andy+Slaughter> .
+	rdfs:seeAlso <http://www.andyslaughter.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35897.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andy+Slaughter> .
 
 <http://www.bbc.co.uk/things/g95016c58-134e-467b-901f-aa74eab6d323#id> a news:Person ;
 	bbc:preferredLabel "Andrew Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Smith_(politician)> , <http://www.wikidata.org/wiki/Q334296> , <http://rdf.freebase.com/ns/m.024zj9> ;
-	rdfs:seeAlso <http://www.andrewsmithmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25823.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Smith> .
+	rdfs:seeAlso <http://www.andrewsmithmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25823.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Smith> .
 
 <http://www.bbc.co.uk/things/g1fa9e5c6-bac8-414d-9ce7-07aca9b02cbc#id> a news:Person ;
 	bbc:preferredLabel "Angela Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Angela_C._Smith> , <http://www.wikidata.org/wiki/Q390949> , <http://rdf.freebase.com/ns/m.060tnv> ;
-	rdfs:seeAlso <http://www.angelasmith-mp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40274.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Angela+Smith> .
+	rdfs:seeAlso <http://www.angelasmith-mp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40274.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Angela+Smith> .
 
 <http://www.bbc.co.uk/things/gefb98b0a-c2b9-41d5-a5bd-20d37ad45a4b#id> a news:Person ;
 	bbc:preferredLabel "Chloe Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chloe_Smith> , <http://www.wikidata.org/wiki/Q333680> , <http://rdf.freebase.com/ns/m.06zq4y9> ;
-	rdfs:seeAlso <http://www.chloesmith.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72302.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chloe+Smith> .
+	rdfs:seeAlso <http://www.chloesmith.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72302.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chloe+Smith> .
 
 <http://www.bbc.co.uk/things/gc6a31792-c40d-4c4d-83b4-89ff892aa520#id> a news:Person ;
 	bbc:preferredLabel "Henry Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Henry_Smith_(British_politician)> , <http://www.wikidata.org/wiki/Q390849> , <http://rdf.freebase.com/ns/m.09v984f> ;
-	rdfs:seeAlso <http://www.henrysmith.info/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35320.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Henry+Smith> .
+	rdfs:seeAlso <http://www.henrysmith.info/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35320.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Henry+Smith> .
 
 <http://www.bbc.co.uk/things/ge4e8a109-196f-474f-8a4f-dd37250f2e12#id> a news:Person ;
 	bbc:preferredLabel "Julian Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Julian_Smith_(politician)> , <http://www.wikidata.org/wiki/Q390794> , <http://rdf.freebase.com/ns/m.0bwfnmr> ;
-	rdfs:seeAlso <http://www.juliansmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83149.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Julian+Smith> .
+	rdfs:seeAlso <http://www.juliansmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83149.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Julian+Smith> .
 
 <http://www.bbc.co.uk/things/ge6093ea5-b582-4213-8552-384a39df941a#id> a news:Person ;
 	bbc:preferredLabel "Nick Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Nick_Smith_(British_politician)> , <http://www.wikidata.org/wiki/Q390760> , <http://rdf.freebase.com/ns/m.0bwj224> ;
-	rdfs:seeAlso <http://www.nicksmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72304.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Nick+Smith> .
+	rdfs:seeAlso <http://www.nicksmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72304.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Nick+Smith> .
 
 <http://www.bbc.co.uk/things/g6ac03919-ee79-4893-851b-3bb564fd62bb#id> a news:Person ;
 	bbc:preferredLabel "Owen Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Owen_Smith> , <http://www.wikidata.org/wiki/Q390690> , <http://rdf.freebase.com/ns/m.0bwj3h7> ;
-	rdfs:seeAlso <http://www.owensmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/54340.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Owen+Smith> .
+	rdfs:seeAlso <http://www.owensmithmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/54340.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Owen+Smith> .
 
 <http://www.bbc.co.uk/things/g51eea1d6-6a62-428d-8a41-61eae6b4e686#id> a news:Person ;
 	bbc:preferredLabel "Robert Smith" ;
 	bbc:sameAs <http://dbpedia.org/resource/Sir_Robert_Smith,_3rd_Baronet> , <http://www.wikidata.org/wiki/Q390317> , <http://rdf.freebase.com/ns/m.025lrh> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25313.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Robert+Smith> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25313.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Robert+Smith> .
 
 <http://www.bbc.co.uk/things/g5c59148c-0862-4e52-9e04-d4330dc42a6a#id> a news:Person ;
 	bbc:preferredLabel "Nicholas Soames" ;
 	bbc:sameAs <http://dbpedia.org/resource/Nicholas_Soames> , <http://www.wikidata.org/wiki/Q390192> , <http://rdf.freebase.com/ns/m.025rj2> ;
-	rdfs:seeAlso <http://www.nicholassoames.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25208.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Nicholas+Soames> .
+	rdfs:seeAlso <http://www.nicholassoames.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25208.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Nicholas+Soames> .
 
 <http://www.bbc.co.uk/things/g06b67d0a-e651-4abf-ba66-cb16d7860c06#id> a news:Person ;
 	bbc:preferredLabel "Anna Soubry" ;
 	bbc:sameAs <http://dbpedia.org/resource/Anna_Soubry> , <http://www.wikidata.org/wiki/Q389855> , <http://rdf.freebase.com/ns/m.02qrzk8> ;
-	rdfs:seeAlso <http://www.annasoubry.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35353.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Anna+Soubry> .
+	rdfs:seeAlso <http://www.annasoubry.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35353.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Anna+Soubry> .
 
 <http://www.bbc.co.uk/things/g7fa9833d-d86c-47e5-bc13-df95e9d1a355#id> a news:Person ;
 	bbc:preferredLabel "John Spellar" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Spellar> , <http://www.wikidata.org/wiki/Q389677> , <http://rdf.freebase.com/ns/m.029yx8> ;
-	rdfs:seeAlso <http://www.johnspellar.labour.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25322.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Spellar> .
+	rdfs:seeAlso <http://www.johnspellar.labour.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25322.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Spellar> .
 
 <http://www.bbc.co.uk/things/g7e8197b7-796f-47c5-a125-5fef67b4faec#id> a news:Person ;
 	bbc:preferredLabel "Caroline Spelman" ;
 	bbc:sameAs <http://dbpedia.org/resource/Caroline_Spelman> , <http://www.wikidata.org/wiki/Q332954> , <http://rdf.freebase.com/ns/m.027k2b> ;
-	rdfs:seeAlso <http://www.carolinespelman.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25318.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Caroline+Spelman> .
+	rdfs:seeAlso <http://www.carolinespelman.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25318.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Caroline+Spelman> .
 
 <http://www.bbc.co.uk/things/g30f4e1d6-810a-410b-b909-d24f6af7882c#id> a news:Person ;
 	bbc:preferredLabel "Mark Spencer" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mark_Spencer_(politician)> , <http://www.wikidata.org/wiki/Q389189> , <http://rdf.freebase.com/ns/m.0bxzz78> ;
-	rdfs:seeAlso <http://www.markspencermp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72306.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mark+Spencer> .
+	rdfs:seeAlso <http://www.markspencermp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72306.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mark+Spencer> .
 
 <http://www.bbc.co.uk/things/g94986490-769d-4b29-a9dc-b8846d39282c#id> a news:Person ;
 	bbc:preferredLabel "John Stanley" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Stanley_(Conservative_politician)> , <http://www.wikidata.org/wiki/Q389109> , <http://rdf.freebase.com/ns/m.025jzg> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25325.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Stanley> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25325.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Stanley> .
 
 <http://www.bbc.co.uk/things/g6b8a5475-e00e-479e-a03a-e9f1635a40f2#id> a news:Person ;
 	bbc:preferredLabel "Andrew Stephenson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Stephenson> , <http://www.wikidata.org/wiki/Q341570> , <http://rdf.freebase.com/ns/m.0bwl5g2> ;
-	rdfs:seeAlso <http://www.andrewstephensonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62783.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Stephenson> .
+	rdfs:seeAlso <http://www.andrewstephensonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62783.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Stephenson> .
 
 <http://www.bbc.co.uk/things/g8cea202e-fd45-435a-97de-fcafd9aaf212#id> a news:Person ;
 	bbc:preferredLabel "John Stevenson" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Stevenson_(British_politician)> , <http://www.wikidata.org/wiki/Q341538> , <http://rdf.freebase.com/ns/m.0bx_y21> ;
-	rdfs:seeAlso <http://www.johnstevensonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62784.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Stevenson> .
+	rdfs:seeAlso <http://www.johnstevensonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62784.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Stevenson> .
 
 <http://www.bbc.co.uk/things/g0cbda146-cf28-48a9-97b1-18abc87cb0fc#id> a news:Person ;
 	bbc:preferredLabel "Bob Stewart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Bob_Stewart_(British_Army_officer)> , <http://www.wikidata.org/wiki/Q341511> , <http://rdf.freebase.com/ns/m.076vn96> ;
-	rdfs:seeAlso <http://www.bobstewartmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83527.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Bob+Stewart> .
+	rdfs:seeAlso <http://www.bobstewartmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83527.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Bob+Stewart> .
 
 <http://www.bbc.co.uk/things/g9f01be9c-6165-4b4e-b7b1-f1c5e8bf2cd8#id> a news:Person ;
 	bbc:preferredLabel "Iain Stewart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Iain_Stewart_(politician)> , <http://www.wikidata.org/wiki/Q328953> , <http://rdf.freebase.com/ns/m.0by1vd5> ;
-	rdfs:seeAlso <http://www.ias4mks.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31728.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Iain+Stewart> .
+	rdfs:seeAlso <http://www.ias4mks.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31728.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Iain+Stewart> .
 
 <http://www.bbc.co.uk/things/g7fad95a3-9b95-43dc-8e10-5b1bfaae6f43#id> a news:Person ;
 	bbc:preferredLabel "Rory Stewart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Rory_Stewart> , <http://www.wikidata.org/wiki/Q328892> , <http://rdf.freebase.com/ns/m.07vt3h> ;
-	rdfs:seeAlso <http://www.rorystewart.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83410.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Rory+Stewart> .
+	rdfs:seeAlso <http://www.rorystewart.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/83410.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Rory+Stewart> .
 
 <http://www.bbc.co.uk/things/g502cec34-382c-4fdb-bc2d-4159c1bc645d#id> a news:Person ;
 	bbc:preferredLabel "Jack Straw" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jack_Straw> , <http://www.wikidata.org/wiki/Q311278> , <http://rdf.freebase.com/ns/m.01k5rw> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25353.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jack+Straw> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25353.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jack+Straw> .
 
 <http://www.bbc.co.uk/things/g6458150d-6c40-40d9-93d5-9334285b574f#id> a news:Person ;
 	bbc:preferredLabel "Gary Streeter" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gary_Streeter> , <http://www.wikidata.org/wiki/Q328791> , <http://rdf.freebase.com/ns/m.029z13> ;
-	rdfs:seeAlso <http://www.garystreeter.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25211.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gary+Streeter> .
+	rdfs:seeAlso <http://www.garystreeter.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25211.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gary+Streeter> .
 
 <http://www.bbc.co.uk/things/g945d7af3-6e22-4b52-bca8-50f93c6ac592#id> a news:Person ;
 	bbc:preferredLabel "Mel Stride" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mel_Stride> , <http://www.wikidata.org/wiki/Q328769> , <http://rdf.freebase.com/ns/m.0bxzf2p> ;
-	rdfs:seeAlso <http://www.melstridemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62786.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mel+Stride> .
+	rdfs:seeAlso <http://www.melstridemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62786.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mel+Stride> .
 
 <http://www.bbc.co.uk/things/g40789a63-01f9-4c5b-9c6b-9530e9174d6b#id> a news:Person ;
 	bbc:preferredLabel "Graham Stringer" ;
 	bbc:sameAs <http://dbpedia.org/resource/Graham_Stringer> , <http://www.wikidata.org/wiki/Q328737> , <http://rdf.freebase.com/ns/m.029z1g> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25259.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Graham+Stringer> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25259.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Graham+Stringer> .
 
 <http://www.bbc.co.uk/things/g9a61ac82-0ffe-4868-9190-61f2eec85f4d#id> a news:Person ;
 	bbc:preferredLabel "Gisela Stuart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gisela_Stuart> , <http://www.wikidata.org/wiki/Q328682> , <http://rdf.freebase.com/ns/m.025m57> ;
-	rdfs:seeAlso <http://www.giselastuartmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25260.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gisela+Stuart> .
+	rdfs:seeAlso <http://www.giselastuartmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25260.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gisela+Stuart> .
 
 <http://www.bbc.co.uk/things/g221f1442-2a01-4a55-acb9-3a5eb032b473#id> a news:Person ;
 	bbc:preferredLabel "Graham Stuart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Graham_Stuart_(politician)> , <http://www.wikidata.org/wiki/Q328641> , <http://rdf.freebase.com/ns/m.06208_> ;
-	rdfs:seeAlso <http://www.grahamstuart.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31707.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Graham+Stuart> .
+	rdfs:seeAlso <http://www.grahamstuart.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31707.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Graham+Stuart> .
 
 <http://www.bbc.co.uk/things/geb8484e3-0080-4b3b-8343-e91f68cf4be7#id> a news:Person ;
 	bbc:preferredLabel "Andrew Stunell" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Stunell> , <http://www.wikidata.org/wiki/Q328626> , <http://rdf.freebase.com/ns/m.029z27> ;
-	rdfs:seeAlso <http://www.andrewstunell.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25261.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Stunell> .
+	rdfs:seeAlso <http://www.andrewstunell.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25261.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Stunell> .
 
 <http://www.bbc.co.uk/things/gc3818682-8e8e-4dfd-864f-9004a0e59eff#id> a news:Person ;
 	bbc:preferredLabel "Julian Sturdy" ;
 	bbc:sameAs <http://dbpedia.org/resource/Julian_Sturdy> , <http://www.wikidata.org/wiki/Q328608> , <http://rdf.freebase.com/ns/m.0bwg169> ;
-	rdfs:seeAlso <http://www.juliansturdy.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35437.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Julian+Sturdy> .
+	rdfs:seeAlso <http://www.juliansturdy.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35437.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Julian+Sturdy> .
 
 <http://www.bbc.co.uk/things/gbdbd12cb-9eda-4c2f-98d7-38c30f9f732d#id> a news:Person ;
 	bbc:preferredLabel "Gerry Sutcliffe" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gerry_Sutcliffe> , <http://www.wikidata.org/wiki/Q328557> , <http://rdf.freebase.com/ns/m.029z2l> ;
-	rdfs:seeAlso <http://www.gerrysutcliffe.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25257.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gerry+Sutcliffe> .
+	rdfs:seeAlso <http://www.gerrysutcliffe.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25257.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gerry+Sutcliffe> .
 
 <http://www.bbc.co.uk/things/g6e21e260-cb37-4694-907c-13755782671c#id> a news:Person ;
 	bbc:preferredLabel "Ian Swales" ;
 	bbc:sameAs <http://dbpedia.org/resource/Ian_Swales> , <http://www.wikidata.org/wiki/Q328019> , <http://rdf.freebase.com/ns/m.0bwhznr> ;
-	rdfs:seeAlso <http://www.ianswales.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/38504.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Ian+Swales> .
+	rdfs:seeAlso <http://www.ianswales.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/38504.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Ian+Swales> .
 
 <http://www.bbc.co.uk/things/g60481485-f91b-4f75-8abb-bc44221e4c4d#id> a news:Person ;
 	bbc:preferredLabel "Desmond Swayne" ;
 	bbc:sameAs <http://dbpedia.org/resource/Desmond_Swayne> , <http://www.wikidata.org/wiki/Q327823> , <http://rdf.freebase.com/ns/m.029z38> ;
-	rdfs:seeAlso <http://www.desmondswaynemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25258.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Desmond+Swayne> .
+	rdfs:seeAlso <http://www.desmondswaynemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25258.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Desmond+Swayne> .
 
 <http://www.bbc.co.uk/things/g93caab24-2fc9-4f3a-8573-ebf4ea5464df#id> a news:Person ;
 	bbc:preferredLabel "Jo Swinson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jo_Swinson> , <http://www.wikidata.org/wiki/Q327790> , <http://rdf.freebase.com/ns/m.061_zk> ;
-	rdfs:seeAlso <http://www.joswinson.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31661.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jo+Swinson> .
+	rdfs:seeAlso <http://www.joswinson.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31661.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jo+Swinson> .
 
 <http://www.bbc.co.uk/things/ga20f2b8d-7dac-498c-b483-a294792ca4eb#id> a news:Person ;
 	bbc:preferredLabel "Hugo Swire" ;
 	bbc:sameAs <http://dbpedia.org/resource/Hugo_Swire> , <http://www.wikidata.org/wiki/Q327716> , <http://rdf.freebase.com/ns/m.029z3m> ;
-	rdfs:seeAlso <http://www.hugoswire.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25212.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Hugo+Swire> .
+	rdfs:seeAlso <http://www.hugoswire.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25212.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Hugo+Swire> .
 
 <http://www.bbc.co.uk/things/g0f7edfd0-59c7-4b61-8654-8703c5cbe339#id> a news:Person ;
 	bbc:preferredLabel "Robert Syms" ;
 	bbc:sameAs <http://dbpedia.org/resource/Robert_Syms> , <http://www.wikidata.org/wiki/Q306250> , <http://rdf.freebase.com/ns/m.029z49> ;
-	rdfs:seeAlso <http://www.robertsymsmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25262.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Robert+Syms> .
+	rdfs:seeAlso <http://www.robertsymsmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25262.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Robert+Syms> .
 
 <http://www.bbc.co.uk/things/g10a69ea2-a598-4f30-87ee-78e0fbc54638#id> a news:Person ;
 	bbc:preferredLabel "Mark Tami" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mark_Tami> , <http://www.wikidata.org/wiki/Q272569> , <http://rdf.freebase.com/ns/m.0287bn> ;
-	rdfs:seeAlso <http://www.marktami.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25263.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mark+Tami> .
+	rdfs:seeAlso <http://www.marktami.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25263.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mark+Tami> .
 
 <http://www.bbc.co.uk/things/g5b2f0bb4-f866-4086-9b30-0c921e385562#id> a news:Person ;
 	bbc:preferredLabel "Peter Tapsell" ;
 	bbc:sameAs <http://dbpedia.org/resource/Peter_Tapsell_(British_politician)> , <http://www.wikidata.org/wiki/Q272526> , <http://rdf.freebase.com/ns/m.0287b_> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25264.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Peter+Tapsell> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25264.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Peter+Tapsell> .
 
 <http://www.bbc.co.uk/things/g664cecd2-1254-4f6a-880a-cc547aefb0c0#id> a news:Person ;
 	bbc:preferredLabel "Sarah Teather" ;
 	bbc:sameAs <http://dbpedia.org/resource/Sarah_Teather> , <http://www.wikidata.org/wiki/Q272500> , <http://rdf.freebase.com/ns/m.01vnl5> ;
-	rdfs:seeAlso <http://www.sarahteather.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25227.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Sarah+Teather> .
+	rdfs:seeAlso <http://www.sarahteather.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25227.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Sarah+Teather> .
 
 <http://www.bbc.co.uk/things/g9a5a58c8-7e6f-4ada-b651-0de8f47c8ff8#id> a news:Person ;
 	bbc:preferredLabel "Gareth Thomas" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gareth_Thomas_(English_politician)> , <http://www.wikidata.org/wiki/Q272452> , <http://rdf.freebase.com/ns/m.029xz6> ;
-	rdfs:seeAlso <http://www.gareththomas.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25273.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gareth+Thomas> .
+	rdfs:seeAlso <http://www.gareththomas.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25273.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gareth+Thomas> .
 
 <http://www.bbc.co.uk/things/g98b98266-1247-4e0e-bf09-2bdd79a1f481#id> a news:Person ;
 	bbc:preferredLabel "Emily Thornberry" ;
 	bbc:sameAs <http://dbpedia.org/resource/Emily_Thornberry> , <http://www.wikidata.org/wiki/Q272408> , <http://rdf.freebase.com/ns/m.05xkwv> ;
-	rdfs:seeAlso <http://www.emilythornberry.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35925.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Emily+Thornberry> .
+	rdfs:seeAlso <http://www.emilythornberry.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35925.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Emily+Thornberry> .
 
 <http://www.bbc.co.uk/things/g35f7654c-7390-4cf7-8a8f-b36f05901452#id> a news:Person ;
 	bbc:preferredLabel "John Thurso" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Thurso> , <http://www.wikidata.org/wiki/Q272384> , <http://rdf.freebase.com/ns/m.01p6kj> ;
-	rdfs:seeAlso <http://www.johnthurso.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25277.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Thurso> .
+	rdfs:seeAlso <http://www.johnthurso.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25277.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Thurso> .
 
 <http://www.bbc.co.uk/things/g1496171a-48f3-456a-8c74-39a2ff361972#id> a news:Person ;
 	bbc:preferredLabel "Stephen Timms" ;
 	bbc:sameAs <http://dbpedia.org/resource/Stephen_Timms> , <http://www.wikidata.org/wiki/Q272346> , <http://rdf.freebase.com/ns/m.029xzx> ;
-	rdfs:seeAlso <http://www.stephentimms.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25278.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Stephen+Timms> .
+	rdfs:seeAlso <http://www.stephentimms.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25278.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Stephen+Timms> .
 
 <http://www.bbc.co.uk/things/gfce2302b-5e9a-4d06-be44-d1b8946f1ad8#id> a news:Person ;
 	bbc:preferredLabel "Edward Timpson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Edward_Timpson> , <http://www.wikidata.org/wiki/Q272318> , <http://rdf.freebase.com/ns/m.043n577> ;
-	rdfs:seeAlso <http://www.edwardtimpsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62790.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Edward+Timpson> .
+	rdfs:seeAlso <http://www.edwardtimpsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62790.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Edward+Timpson> .
 
 <http://www.bbc.co.uk/things/gaeb0bfa2-6718-495c-82c4-20dd86f3d6ad#id> a news:Person ;
 	bbc:preferredLabel "Justin Tomlinson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Justin_Tomlinson> , <http://www.wikidata.org/wiki/Q272288> , <http://rdf.freebase.com/ns/m.0by0s44> ;
-	rdfs:seeAlso <http://www.justintomlinson.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35402.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Justin+Tomlinson> .
+	rdfs:seeAlso <http://www.justintomlinson.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35402.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Justin+Tomlinson> .
 
 <http://www.bbc.co.uk/things/g5820e5f0-57be-4310-a89a-125eef37d5ea#id> a news:Person ;
 	bbc:preferredLabel "David Tredinnick" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Tredinnick_(politician)> , <http://www.wikidata.org/wiki/Q272259> , <http://rdf.freebase.com/ns/m.026c8n> ;
-	rdfs:seeAlso <http://davidtredinnickmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25288.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Tredinnick> .
+	rdfs:seeAlso <http://davidtredinnickmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25288.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Tredinnick> .
 
 <http://www.bbc.co.uk/things/gafb5fadb-7913-4bf8-a7ba-17e56078b9ce#id> a news:Person ;
 	bbc:preferredLabel "Jon Trickett" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jon_Trickett> , <http://www.wikidata.org/wiki/Q272234> , <http://rdf.freebase.com/ns/m.029y1d> ;
-	rdfs:seeAlso <http://www.jontrickett.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25290.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jon+Trickett> .
+	rdfs:seeAlso <http://www.jontrickett.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25290.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jon+Trickett> .
 
 <http://www.bbc.co.uk/things/ga02f0d3d-d857-4fb1-883a-0859f220bd48#id> a news:Person ;
 	bbc:preferredLabel "Elizabeth Truss" ;
 	bbc:sameAs <http://dbpedia.org/resource/Elizabeth_Truss> , <http://www.wikidata.org/wiki/Q272201> , <http://rdf.freebase.com/ns/m.0bwmcw7> ;
-	rdfs:seeAlso <http://www.elizabethtruss.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40370.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Elizabeth+Truss> .
+	rdfs:seeAlso <http://www.elizabethtruss.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40370.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Elizabeth+Truss> .
 
 <http://www.bbc.co.uk/things/g6609e758-f770-4ebe-8f55-ac9368771a19#id> a news:Person ;
 	bbc:preferredLabel "Andrew Turner" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Turner_(politician)> , <http://www.wikidata.org/wiki/Q272155> , <http://rdf.freebase.com/ns/m.029y6l> ;
-	rdfs:seeAlso <http://www.islandmp.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25287.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Turner> .
+	rdfs:seeAlso <http://www.islandmp.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25287.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Turner> .
 
 <http://www.bbc.co.uk/things/ge867abfe-cf03-4065-963e-121d56bcf491#id> a news:Person ;
 	bbc:preferredLabel "Karl Turner" ;
 	bbc:sameAs <http://dbpedia.org/resource/Karl_Turner_(politician)> , <http://www.wikidata.org/wiki/Q272123> , <http://rdf.freebase.com/ns/m.0bwkwdq> ;
-	rdfs:seeAlso <http://www.karlturnermp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72313.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Karl+Turner> .
+	rdfs:seeAlso <http://www.karlturnermp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72313.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Karl+Turner> .
 
 <http://www.bbc.co.uk/things/gec731341-1e0a-4fe7-9ef7-7b08ab59c7ad#id> a news:Person ;
 	bbc:preferredLabel "Derek Twigg" ;
 	bbc:sameAs <http://dbpedia.org/resource/Derek_Twigg> , <http://www.wikidata.org/wiki/Q272098> , <http://rdf.freebase.com/ns/m.029y9q> ;
-	rdfs:seeAlso <http://www.derektwigg.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25293.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Derek+Twigg> .
+	rdfs:seeAlso <http://www.derektwigg.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25293.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Derek+Twigg> .
 
 <http://www.bbc.co.uk/things/g67def837-429f-4d71-8884-e3ded3d41c2d#id> a news:Person ;
 	bbc:preferredLabel "Stephen Twigg" ;
 	bbc:sameAs <http://dbpedia.org/resource/Stephen_Twigg> , <http://www.wikidata.org/wiki/Q272041> , <http://rdf.freebase.com/ns/m.025d7b> ;
-	rdfs:seeAlso <http://www.stephentwiggmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25294.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Stephen+Twigg> .
+	rdfs:seeAlso <http://www.stephentwiggmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25294.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Stephen+Twigg> .
 
 <http://www.bbc.co.uk/things/ge3d5d63d-aa89-48bf-ae26-e679e88c8a40#id> a news:Person ;
 	bbc:preferredLabel "Andrew Tyrie" ;
 	bbc:sameAs <http://dbpedia.org/resource/Andrew_Tyrie> , <http://www.wikidata.org/wiki/Q272008> , <http://rdf.freebase.com/ns/m.029yck> ;
-	rdfs:seeAlso <http://www.andrewtyrie.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25231.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Andrew+Tyrie> .
+	rdfs:seeAlso <http://www.andrewtyrie.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25231.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Andrew+Tyrie> .
 
 <http://www.bbc.co.uk/things/ga320d70c-468e-48ea-bc10-cd9ce855a6ab#id> a news:Person ;
 	bbc:preferredLabel "Chuka Umunna" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chuka_Umunna> , <http://www.wikidata.org/wiki/Q267648> , <http://rdf.freebase.com/ns/m.03cnty6> ;
-	rdfs:seeAlso <http://www.chuka.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72314.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chuka+Umunna> .
+	rdfs:seeAlso <http://www.chuka.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/72314.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chuka+Umunna> .
 
 <http://www.bbc.co.uk/things/g20381729-6a2d-4c9e-ad13-409707074767#id> a news:Person ;
 	bbc:preferredLabel "Paul Uppal" ;
 	bbc:sameAs <http://dbpedia.org/resource/Paul_Uppal> , <http://www.wikidata.org/wiki/Q267594> , <http://rdf.freebase.com/ns/m.0by0cxb> ;
-	rdfs:seeAlso <http://www.pauluppal.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/41292.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Paul+Uppal> .
+	rdfs:seeAlso <http://www.pauluppal.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/41292.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Paul+Uppal> .
 
 <http://www.bbc.co.uk/things/gcd236754-d635-42ca-87d0-72f0fed18f57#id> a news:Person ;
 	bbc:preferredLabel "Ed Vaizey" ;
 	bbc:sameAs <http://dbpedia.org/resource/Ed_Vaizey> , <http://www.wikidata.org/wiki/Q267485> , <http://rdf.freebase.com/ns/m.04ptqp> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35502.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Ed+Vaizey> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35502.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Ed+Vaizey> .
 
 <http://www.bbc.co.uk/things/g84fb4386-639f-42de-aef6-03b8f62ec047#id> a news:Person ;
 	bbc:preferredLabel "Shailesh Vara" ;
 	bbc:sameAs <http://dbpedia.org/resource/Shailesh_Vara> , <http://www.wikidata.org/wiki/Q267234> , <http://rdf.freebase.com/ns/m.062rwj> ;
-	rdfs:seeAlso <http://www.shaileshvara.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31684.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Shailesh+Vara> .
+	rdfs:seeAlso <http://www.shaileshvara.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31684.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Shailesh+Vara> .
 
 <http://www.bbc.co.uk/things/gf487b7c6-e311-4017-ab8c-7741081f765b#id> a news:Person ;
 	bbc:preferredLabel "Keith Vaz" ;
 	bbc:sameAs <http://dbpedia.org/resource/Keith_Vaz> , <http://www.wikidata.org/wiki/Q267105> , <http://rdf.freebase.com/ns/m.01zn3n> ;
-	rdfs:seeAlso <http://www.keithvazmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25232.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Keith+Vaz> .
+	rdfs:seeAlso <http://www.keithvazmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25232.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Keith+Vaz> .
 
 <http://www.bbc.co.uk/things/gb1dd4160-41f7-49c2-b3ff-79d0da7c1a04#id> a news:Person ;
 	bbc:preferredLabel "Valerie Vaz" ;
 	bbc:sameAs <http://dbpedia.org/resource/Valerie_Vaz> , <http://www.wikidata.org/wiki/Q266978> , <http://rdf.freebase.com/ns/m.0bwfzyw> ;
-	rdfs:seeAlso <http://www.valerievazmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84905.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Valerie+Vaz> .
+	rdfs:seeAlso <http://www.valerievazmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84905.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Valerie+Vaz> .
 
 <http://www.bbc.co.uk/things/gba1cb51c-745a-4bee-b482-291bac603347#id> a news:Person ;
 	bbc:preferredLabel "Martin Vickers" ;
 	bbc:sameAs <http://dbpedia.org/resource/Martin_Vickers> , <http://www.wikidata.org/wiki/Q266905> , <http://rdf.freebase.com/ns/m.0bwh_vg> ;
-	rdfs:seeAlso <http://www.martinvickers.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40371.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Martin+Vickers> .
+	rdfs:seeAlso <http://www.martinvickers.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/40371.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Martin+Vickers> .
 
 <http://www.bbc.co.uk/things/gd52a204b-7408-4494-9ca1-ba93c3b0b230#id> a news:Person ;
 	bbc:preferredLabel "Theresa Villiers" ;
 	bbc:sameAs <http://dbpedia.org/resource/Theresa_Villiers> , <http://www.wikidata.org/wiki/Q266793> , <http://rdf.freebase.com/ns/m.035v3_> ;
-	rdfs:seeAlso <http://www.theresavilliers.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/29179.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Theresa+Villiers> .
+	rdfs:seeAlso <http://www.theresavilliers.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/29179.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Theresa+Villiers> .
 
 <http://www.bbc.co.uk/things/g02c131ec-16bb-45c6-83ca-a065eac7cdff#id> a news:Person ;
 	bbc:preferredLabel "Charles Walker" ;
 	bbc:sameAs <http://dbpedia.org/resource/Charles_Walker_(British_politician)> , <http://www.wikidata.org/wiki/Q262539> , <http://rdf.freebase.com/ns/m.066fcq> ;
-	rdfs:seeAlso <http://www.charleswalker.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/37676.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Charles+Walker> .
+	rdfs:seeAlso <http://www.charleswalker.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/37676.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Charles+Walker> .
 
 <http://www.bbc.co.uk/things/g084b15b2-6c7e-43e1-8d8f-877011555ef3#id> a news:Person ;
 	bbc:preferredLabel "Robin Walker" ;
 	bbc:sameAs <http://dbpedia.org/resource/Robin_Walker> , <http://www.wikidata.org/wiki/Q263076> , <http://rdf.freebase.com/ns/m.0g06kz> ;
-	rdfs:seeAlso <http://www.walker4worcester.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62794.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Robin+Walker> .
+	rdfs:seeAlso <http://www.walker4worcester.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62794.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Robin+Walker> .
 
 <http://www.bbc.co.uk/things/g62f30328-5ace-402e-b988-ae7172a46b47#id> a news:Person ;
 	bbc:preferredLabel "Ben Wallace" ;
 	bbc:sameAs <http://dbpedia.org/resource/Ben_Wallace_(politician)> , <http://www.wikidata.org/wiki/Q263166> , <http://rdf.freebase.com/ns/m.062l2q> ;
-	rdfs:seeAlso <http://www.benwallacemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35379.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Ben+Wallace> .
+	rdfs:seeAlso <http://www.benwallacemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35379.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Ben+Wallace> .
 
 <http://www.bbc.co.uk/things/g9a43c726-f07e-48bf-ad3a-bead6ccf631a#id> a news:Person ;
 	bbc:preferredLabel "Joan Walley" ;
 	bbc:sameAs <http://dbpedia.org/resource/Joan_Walley> , <http://www.wikidata.org/wiki/Q263416> , <http://rdf.freebase.com/ns/m.02843x> ;
-	rdfs:seeAlso <http://www.joanwalleymp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25330.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Joan+Walley> .
+	rdfs:seeAlso <http://www.joanwalleymp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25330.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Joan+Walley> .
 
 <http://www.bbc.co.uk/things/ga3bfdf3b-77bf-4aa7-a04c-792cf58c05cc#id> a news:Person ;
 	bbc:preferredLabel "Robert Walter" ;
 	bbc:sameAs <http://dbpedia.org/resource/Robert_Walter_(politician)> , <http://www.wikidata.org/wiki/Q263532> , <http://rdf.freebase.com/ns/m.028447> ;
-	rdfs:seeAlso <http://www.bobwaltermp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25331.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Robert+Walter> .
+	rdfs:seeAlso <http://www.bobwaltermp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25331.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Robert+Walter> .
 
 <http://www.bbc.co.uk/things/gffe8849b-92df-42b3-a378-976106a61fea#id> a news:Person ;
 	bbc:preferredLabel "David Ward" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Ward_(politician)> , <http://www.wikidata.org/wiki/Q263589> , <http://rdf.freebase.com/ns/m.0bwgwj_> ;
-	rdfs:seeAlso <http://davidward4bradford.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/37625.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Ward> .
+	rdfs:seeAlso <http://davidward4bradford.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/37625.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Ward> .
 
 <http://www.bbc.co.uk/things/ge3141dbe-e908-4f59-bcaa-d8c30deb4563#id> a news:Person ;
 	bbc:preferredLabel "Angela Watkinson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Angela_Watkinson> , <http://www.wikidata.org/wiki/Q263653> , <http://rdf.freebase.com/ns/m.028458> ;
-	rdfs:seeAlso <http://www.angelawatkinsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25236.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Angela+Watkinson> .
+	rdfs:seeAlso <http://www.angelawatkinsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25236.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Angela+Watkinson> .
 
 <http://www.bbc.co.uk/things/gd97ff7c7-6654-46bb-ade2-16db16f5712a#id> a news:Person ;
 	bbc:preferredLabel "Tom Watson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Tom_Watson_(politician)> , <http://www.wikidata.org/wiki/Q263802> , <http://rdf.freebase.com/ns/m.02845z> ;
-	rdfs:seeAlso <http://www.tom-watson.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25228.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Tom+Watson> .
+	rdfs:seeAlso <http://www.tom-watson.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25228.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Tom+Watson> .
 
 <http://www.bbc.co.uk/things/g61039405-9add-4bfd-8091-1c6f5fb2a7cf#id> a news:Person ;
 	bbc:preferredLabel "Dave Watts" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Watts_(politician)> , <http://www.wikidata.org/wiki/Q263882> , <http://rdf.freebase.com/ns/m.028469> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25229.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Dave+Watts> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25229.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Dave+Watts> .
 
 <http://www.bbc.co.uk/things/g27dc2451-f1ae-4c63-bf36-8855216f8e3c#id> a news:Person ;
 	bbc:preferredLabel "Mike Weatherley" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mike_Weatherley> , <http://www.wikidata.org/wiki/Q264000> , <http://rdf.freebase.com/ns/m.0by06vj> ;
-	rdfs:seeAlso <http://www.mikeweatherleymp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31588.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mike+Weatherley> .
+	rdfs:seeAlso <http://www.mikeweatherleymp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31588.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mike+Weatherley> .
 
 <http://www.bbc.co.uk/things/ga66d44bf-5b51-4773-8a44-5fee9e3a035a#id> a news:Person ;
 	bbc:preferredLabel "Steve Webb" ;
 	bbc:sameAs <http://dbpedia.org/resource/Steve_Webb> , <http://www.wikidata.org/wiki/Q264116> , <http://rdf.freebase.com/ns/m.0277g9> ;
-	rdfs:seeAlso <http://www.stevewebb.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25230.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Steve+Webb> .
+	rdfs:seeAlso <http://www.stevewebb.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25230.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Steve+Webb> .
 
 <http://www.bbc.co.uk/things/g57e544fd-9a0b-404a-a699-0926522beb26#id> a news:Person ;
 	bbc:preferredLabel "Michael Weir" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mike_Weir_(politician)> , <http://www.wikidata.org/wiki/Q264220> , <http://rdf.freebase.com/ns/m.0283vv> ;
-	rdfs:seeAlso <http://www.angussnp.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25219.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Michael+Weir> .
+	rdfs:seeAlso <http://www.angussnp.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25219.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Michael+Weir> .
 
 <http://www.bbc.co.uk/things/ga63fa6a5-5389-4a11-92c5-a0b805c7cde8#id> a news:Person ;
 	bbc:preferredLabel "James Wharton" ;
 	bbc:sameAs <http://dbpedia.org/resource/James_Wharton> , <http://www.wikidata.org/wiki/Q264337> , <http://rdf.freebase.com/ns/m.0by0n0x> ;
-	rdfs:seeAlso <http://www.jameswharton.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62797.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+James+Wharton> .
+	rdfs:seeAlso <http://www.jameswharton.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62797.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+James+Wharton> .
 
 <http://www.bbc.co.uk/things/gaa278aab-0ed2-4d2f-bd65-d19e232db0e7#id> a news:Person ;
 	bbc:preferredLabel "Heather Wheeler" ;
 	bbc:sameAs <http://dbpedia.org/resource/Heather_Wheeler> , <http://www.wikidata.org/wiki/Q264374> , <http://rdf.freebase.com/ns/m.0bwmdtp> ;
-	rdfs:seeAlso <http://www.heatherwheeler.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35319.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Heather+Wheeler> .
+	rdfs:seeAlso <http://www.heatherwheeler.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35319.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Heather+Wheeler> .
 
 <http://www.bbc.co.uk/things/ga5afc567-08a7-4b24-ace3-4480802576fa#id> a news:Person ;
 	bbc:preferredLabel "Chris White" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chris_White_(politician)> , <http://www.wikidata.org/wiki/Q264420> , <http://rdf.freebase.com/ns/m.0bxzcry> ;
-	rdfs:seeAlso <http://www.chriswhitemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31580.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chris+White> .
+	rdfs:seeAlso <http://www.chriswhitemp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31580.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chris+White> .
 
 <http://www.bbc.co.uk/things/g78b51b06-3f44-40ef-9127-a6797afbfb17#id> a news:Person ;
 	bbc:preferredLabel "Eilidh Whiteford" ;
 	bbc:sameAs <http://dbpedia.org/resource/Eilidh_Whiteford> , <http://www.wikidata.org/wiki/Q264510> , <http://rdf.freebase.com/ns/m.0bwm66d> ;
-	rdfs:seeAlso <http://www.eilidhwhiteford.info/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/74736.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Eilidh+Whiteford> .
+	rdfs:seeAlso <http://www.eilidhwhiteford.info/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/74736.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Eilidh+Whiteford> .
 
 <http://www.bbc.co.uk/things/gbbc460a1-6167-4c04-bd7d-4f1ca9694bd4#id> a news:Person ;
 	bbc:preferredLabel "Alan Whitehead" ;
 	bbc:sameAs <http://dbpedia.org/resource/Alan_Whitehead> , <http://www.wikidata.org/wiki/Q264585> , <http://rdf.freebase.com/ns/m.02847c> ;
-	rdfs:seeAlso <http://www.alan-whitehead.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25238.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Alan+Whitehead> .
+	rdfs:seeAlso <http://www.alan-whitehead.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25238.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Alan+Whitehead> .
 
 <http://www.bbc.co.uk/things/gf6c6e984-00a0-4413-b2b0-4b3652ca32e5#id> a news:Person ;
 	bbc:preferredLabel "Craig Whittaker" ;
 	bbc:sameAs <http://dbpedia.org/resource/Craig_Whittaker> , <http://www.wikidata.org/wiki/Q264636> , <http://rdf.freebase.com/ns/m.0by1rs8> ;
-	rdfs:seeAlso <http://www.craigwhittakermp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62798.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Craig+Whittaker> .
+	rdfs:seeAlso <http://www.craigwhittakermp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62798.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Craig+Whittaker> .
 
 <http://www.bbc.co.uk/things/g9d235035-ba54-4ca8-a37b-52267d41dccb#id> a news:Person ;
 	bbc:preferredLabel "John Whittingdale" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Whittingdale> , <http://www.wikidata.org/wiki/Q264684> , <http://rdf.freebase.com/ns/m.027k1l> ;
-	rdfs:seeAlso <http://www.johnwhittingdale.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25239.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Whittingdale> .
+	rdfs:seeAlso <http://www.johnwhittingdale.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25239.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Whittingdale> .
 
 <http://www.bbc.co.uk/things/gff081a5e-5d47-47b2-813d-084d125f1fb9#id> a news:Person ;
 	bbc:preferredLabel "Malcolm Wicks" ;
 	bbc:sameAs <http://dbpedia.org/resource/Malcolm_Wicks> , <http://www.wikidata.org/wiki/Q264761> , <http://rdf.freebase.com/ns/m.02847q> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25824.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Malcolm+Wicks> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25824.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Malcolm+Wicks> .
 
 <http://www.bbc.co.uk/things/gf47b4085-364e-4a4e-a6bb-589a41166b8f#id> a news:Person ;
 	bbc:preferredLabel "Bill Wiggin" ;
 	bbc:sameAs <http://dbpedia.org/resource/Bill_Wiggin> , <http://www.wikidata.org/wiki/Q265900> , <http://rdf.freebase.com/ns/m.027k2p> ;
-	rdfs:seeAlso <http://bwmp.wordpress.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25244.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Bill+Wiggin> .
+	rdfs:seeAlso <http://bwmp.wordpress.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25244.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Bill+Wiggin> .
 
 <http://www.bbc.co.uk/things/gd035647a-a3d0-4626-8c37-359c5d7617d2#id> a news:Person ;
 	bbc:preferredLabel "David Willetts" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Willetts> , <http://www.wikidata.org/wiki/Q266064> , <http://rdf.freebase.com/ns/m.025mfz> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25241.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Willetts> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25241.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Willetts> .
 
 <http://www.bbc.co.uk/things/g6f2f12ef-0977-4a4b-b1c5-ebc4c184ee97#id> a news:Person ;
 	bbc:preferredLabel "Hywel Williams" ;
 	bbc:sameAs <http://dbpedia.org/resource/Hywel_Williams> , <http://www.wikidata.org/wiki/Q266189> , <http://rdf.freebase.com/ns/m.025z0t> ;
-	rdfs:seeAlso <http://www.hywelwilliams.plaidcymru.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25221.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Hywel+Williams> .
+	rdfs:seeAlso <http://www.hywelwilliams.plaidcymru.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25221.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Hywel+Williams> .
 
 <http://www.bbc.co.uk/things/gd58a3211-ddbd-43c9-ad66-8d8f72aeb3d2#id> a news:Person ;
 	bbc:preferredLabel "Mark Williams" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mark_Williams_(politician)> , <http://www.wikidata.org/wiki/Q266357> , <http://rdf.freebase.com/ns/m.061pd6> ;
-	rdfs:seeAlso <http://www.markwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31723.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mark+Williams> .
+	rdfs:seeAlso <http://www.markwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31723.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mark+Williams> .
 
 <http://www.bbc.co.uk/things/gc17b6b2b-43fc-4de6-ba7c-6e10b89a35fe#id> a news:Person ;
 	bbc:preferredLabel "Roger Williams" ;
 	bbc:sameAs <http://dbpedia.org/resource/Roger_Williams_(British_politician)> , <http://www.wikidata.org/wiki/Q266434> , <http://rdf.freebase.com/ns/m.0247tp> ;
-	rdfs:seeAlso <http://www.rogerwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25249.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Roger+Williams> .
+	rdfs:seeAlso <http://www.rogerwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25249.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Roger+Williams> .
 
 <http://www.bbc.co.uk/things/g7d20c44e-02fd-4c37-a45e-cf0d010c9335#id> a news:Person ;
 	bbc:preferredLabel "Stephen Williams" ;
 	bbc:sameAs <http://dbpedia.org/resource/Stephen_Williams_(politician)> , <http://www.wikidata.org/wiki/Q266548> , <http://rdf.freebase.com/ns/m.060q82> ;
-	rdfs:seeAlso <http://www.stephenwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31736.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Stephen+Williams> .
+	rdfs:seeAlso <http://www.stephenwilliams.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31736.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Stephen+Williams> .
 
 <http://www.bbc.co.uk/things/g86aa97ac-cd0a-4a40-ad66-2330f3775728#id> a news:Person ;
 	bbc:preferredLabel "Chris Williamson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Chris_Williamson_(politician)> , <http://www.wikidata.org/wiki/Q266647> , <http://rdf.freebase.com/ns/m.0by0nt8> ;
-	rdfs:seeAlso <http://chriswilliamson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84368.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Chris+Williamson> .
+	rdfs:seeAlso <http://chriswilliamson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/84368.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Chris+Williamson> .
 
 <http://www.bbc.co.uk/things/g1f2f7f5e-7f28-4b18-9307-78f7d73c8366#id> a news:Person ;
 	bbc:preferredLabel "Gavin Williamson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Gavin_Williamson> , <http://www.wikidata.org/wiki/Q262409> , <http://rdf.freebase.com/ns/m.0bxzvzl> ;
-	rdfs:seeAlso <http://www.gavinwilliamson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35247.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Gavin+Williamson> .
+	rdfs:seeAlso <http://www.gavinwilliamson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35247.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Gavin+Williamson> .
 
 <http://www.bbc.co.uk/things/gf852b9b1-04ab-4d69-8dcc-ff127bbc9733#id> a news:Person ;
 	bbc:preferredLabel "Jennifer Willott" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jenny_Willott> , <http://www.wikidata.org/wiki/Q262335> , <http://rdf.freebase.com/ns/m.0686py> ;
-	rdfs:seeAlso <http://www.jennywillott.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35533.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jennifer+Willott> .
+	rdfs:seeAlso <http://www.jennywillott.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35533.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jennifer+Willott> .
 
 <http://www.bbc.co.uk/things/gf20b44b9-d29c-4834-97c5-0abcf9789eb6#id> a news:Person ;
 	bbc:preferredLabel "Phil Wilson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Phil_Wilson_(British_politician)> , <http://www.wikidata.org/wiki/Q262201> , <http://rdf.freebase.com/ns/m.02vqb0r> ;
-	rdfs:seeAlso <http://www.philwilsonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/61609.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Phil+Wilson> .
+	rdfs:seeAlso <http://www.philwilsonmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/61609.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Phil+Wilson> .
 
 <http://www.bbc.co.uk/things/ga25ac856-060e-4698-ac0b-6535c049c682#id> a news:Person ;
 	bbc:preferredLabel "Rob Wilson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Rob_Wilson> , <http://www.wikidata.org/wiki/Q262108> , <http://rdf.freebase.com/ns/m.060sjd> ;
-	rdfs:seeAlso <http://www.robwilsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31582.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Rob+Wilson> .
+	rdfs:seeAlso <http://www.robwilsonmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/31582.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Rob+Wilson> .
 
 <http://www.bbc.co.uk/things/ge7a78b64-2cd7-4306-bd70-3da895dfbe65#id> a news:Person ;
 	bbc:preferredLabel "Sammy Wilson" ;
 	bbc:sameAs <http://dbpedia.org/resource/Sammy_Wilson> , <http://www.wikidata.org/wiki/Q262040> , <http://rdf.freebase.com/ns/m.061948> ;
-	rdfs:seeAlso <http://www.sammywilson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33564.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Sammy+Wilson> .
+	rdfs:seeAlso <http://www.sammywilson.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/33564.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Sammy+Wilson> .
 
 <http://www.bbc.co.uk/things/g6ed32e98-bc6c-4068-a5ef-cf63c0a6e55a#id> a news:Person ;
 	bbc:preferredLabel "David Winnick" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Winnick> , <http://www.wikidata.org/wiki/Q261900> , <http://rdf.freebase.com/ns/m.02849s> ;
-	rdfs:seeAlso <http://www.davidwinnick.webs.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25248.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Winnick> .
+	rdfs:seeAlso <http://www.davidwinnick.webs.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25248.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Winnick> .
 
 <http://www.bbc.co.uk/things/ge42cca0c-2bd6-4ae9-928e-6bd4527c0dc2#id> a news:Person ;
 	bbc:preferredLabel "Rosie Winterton" ;
 	bbc:sameAs <http://dbpedia.org/resource/Rosie_Winterton> , <http://www.wikidata.org/wiki/Q261773> , <http://rdf.freebase.com/ns/m.0265h3> ;
-	rdfs:seeAlso <http://www.rosiewinterton.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25253.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Rosie+Winterton> .
+	rdfs:seeAlso <http://www.rosiewinterton.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25253.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Rosie+Winterton> .
 
 <http://www.bbc.co.uk/things/gbc13070b-103b-41bd-a952-c297c981f3bf#id> a news:Person ;
 	bbc:preferredLabel "Pete Wishart" ;
 	bbc:sameAs <http://dbpedia.org/resource/Pete_Wishart> , <http://www.wikidata.org/wiki/Q261675> , <http://rdf.freebase.com/ns/m.0283wx> ;
-	rdfs:seeAlso <http://www.petewishartmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25254.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Pete+Wishart> .
+	rdfs:seeAlso <http://www.petewishartmp.com/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25254.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Pete+Wishart> .
 
 <http://www.bbc.co.uk/things/gb9a286c0-3caf-4371-948e-88eeef29175f#id> a news:Person ;
 	bbc:preferredLabel "Sarah Wollaston" ;
 	bbc:sameAs <http://dbpedia.org/resource/Sarah_Wollaston> , <http://www.wikidata.org/wiki/Q261553> , <http://rdf.freebase.com/ns/m.0bwl2bm> ;
-	rdfs:seeAlso <http://www.drsarah.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/81217.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Sarah+Wollaston> .
+	rdfs:seeAlso <http://www.drsarah.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/81217.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Sarah+Wollaston> .
 
 <http://www.bbc.co.uk/things/gdda29c1f-9f08-4bcc-a257-91b60eb16274#id> a news:Person ;
 	bbc:preferredLabel "Mike Wood" ;
 	bbc:sameAs <http://dbpedia.org/resource/Mike_Wood_(politician)> , <http://www.wikidata.org/wiki/Q261323> , <http://rdf.freebase.com/ns/m.025mmt> ;
-	rdfs:seeAlso <http://www.mikewood.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25255.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Mike+Wood> .
+	rdfs:seeAlso <http://www.mikewood.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25255.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Mike+Wood> .
 
 <http://www.bbc.co.uk/things/gaa763152-57e0-4028-b67d-0d6a92b92912#id> a news:Person ;
 	bbc:preferredLabel "John Woodcock" ;
 	bbc:sameAs <http://dbpedia.org/resource/John_Woodcock_(politician)> , <http://www.wikidata.org/wiki/Q261214> , <http://rdf.freebase.com/ns/m.0bwg7xp> ;
-	rdfs:seeAlso <http://www.johnwoodcock.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/32028.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+John+Woodcock> .
+	rdfs:seeAlso <http://www.johnwoodcock.org/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/32028.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+John+Woodcock> .
 
 <http://www.bbc.co.uk/things/g5e903c63-dca3-45a3-b90c-8c79568fef0f#id> a news:Person ;
 	bbc:preferredLabel "Shaun Woodward" ;
 	bbc:sameAs <http://dbpedia.org/resource/Shaun_Woodward> , <http://www.wikidata.org/wiki/Q261001> , <http://rdf.freebase.com/ns/m.025v66> ;
-	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25256.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Shaun+Woodward> .
+	rdfs:seeAlso <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25256.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Shaun+Woodward> .
 
 <http://www.bbc.co.uk/things/g5c6a0660-831c-42f4-b496-7eabe97a7e29#id> a news:Person ;
 	bbc:preferredLabel "David Wright" ;
 	bbc:sameAs <http://dbpedia.org/resource/David_Wright_(politician)> , <http://www.wikidata.org/wiki/Q260844> , <http://rdf.freebase.com/ns/m.026jqx> ;
-	rdfs:seeAlso <http://www.davidwrightmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25269.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+David+Wright> .
+	rdfs:seeAlso <http://www.davidwrightmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25269.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+David+Wright> .
 
 <http://www.bbc.co.uk/things/g129e43d4-992d-4396-a31e-ba184b848d8c#id> a news:Person ;
 	bbc:preferredLabel "Iain Wright" ;
 	bbc:sameAs <http://dbpedia.org/resource/Iain_Wright> , <http://www.wikidata.org/wiki/Q260618> , <http://rdf.freebase.com/ns/m.03lk7s> ;
-	rdfs:seeAlso <http://www.iainwrightmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/34603.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Iain+Wright> .
+	rdfs:seeAlso <http://www.iainwrightmp.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/34603.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Iain+Wright> .
 
 <http://www.bbc.co.uk/things/g5978e152-24ac-4d53-9740-e4353618b179#id> a news:Person ;
 	bbc:preferredLabel "Jeremy Wright" ;
 	bbc:sameAs <http://dbpedia.org/resource/Jeremy_Wright> , <http://www.wikidata.org/wiki/Q260489> , <http://rdf.freebase.com/ns/m.060wsl> ;
-	rdfs:seeAlso <http://www.jeremywrightmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35436.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Jeremy+Wright> .
+	rdfs:seeAlso <http://www.jeremywrightmp.co.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/35436.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Jeremy+Wright> .
 
 <http://www.bbc.co.uk/things/g7e6edcec-7c66-463f-a46b-fb15a3d59265#id> a news:Person ;
 	bbc:preferredLabel "Simon Wright" ;
 	bbc:sameAs <http://dbpedia.org/resource/Simon_Wright_(politician)> , <http://www.wikidata.org/wiki/Q260441> , <http://rdf.freebase.com/ns/m.0bwhtrl> ;
-	rdfs:seeAlso <http://www.simonwright.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62804.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Simon+Wright> .
+	rdfs:seeAlso <http://www.simonwright.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/62804.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Simon+Wright> .
 
 <http://www.bbc.co.uk/things/g4fc34722-dca4-4485-af42-da3ad606d0bc#id> a news:Person ;
 	bbc:preferredLabel "Tim Yeo" ;
 	bbc:sameAs <http://dbpedia.org/resource/Tim_Yeo> , <http://www.wikidata.org/wiki/Q259961> , <http://rdf.freebase.com/ns/m.01zgqq> ;
-	rdfs:seeAlso <http://www.timyeo.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25224.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+Tim+Yeo> .
+	rdfs:seeAlso <http://www.timyeo.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25224.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+Tim+Yeo> .
 
 <http://www.bbc.co.uk/things/g025fc9f5-0bda-4031-bd8b-632caab16907#id> a news:Person ;
 	bbc:preferredLabel "George Young" ;
 	bbc:sameAs <http://dbpedia.org/resource/Sir_George_Young,_6th_Baronet> , <http://www.wikidata.org/wiki/Q259836> , <http://rdf.freebase.com/ns/m.025jv_> ;
-	rdfs:seeAlso <http://www.sirgeorgeyoung.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25225.stm> , <http://google.com/search?btnI&q=site:http://www.guardian.co.uk/politics/person/+George+Young> .
+	rdfs:seeAlso <http://www.sirgeorgeyoung.org.uk/> , <http://news.bbc.co.uk/democracylive/hi/representatives/profiles/25225.stm> , <http://google.com/search?btnIq=site:http://www.guardian.co.uk/politics/person/+George+Young> .
 
 <http://www.bbc.co.uk/things/geab275e0-57b1-4236-8d32-d5cabdd3b128#id> a news:Person ;
 	bbc:preferredLabel "Nadhim Zahawi" ;

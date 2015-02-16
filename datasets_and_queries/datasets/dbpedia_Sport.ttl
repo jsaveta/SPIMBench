@@ -72,7 +72,7 @@ dbpprop:olympic "Proposed for 2010" ;
 dbpprop:team "Single opponents, doubles or teams" ;
 dbpprop:equipment "http://dbpedia.org/resource/Billiard_ball" .
 
-<http://dbpedia.org/resource/Pes%C3%A4pallo> a <http://dbpedia.org/ontology/Sport> ;
+<http://dbpedia.org/resource/PesC3A4pallo> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Pespallo (Swedish: Boboll, also referred to as Finnish baseball) is a fast-moving bat-and-ball sport that is quite often referred to as the national sport of Finland and has some presence in other countries, such as Germany, Sweden, Switzerland, Australia, and Northern Ontario in Canada (Both Canada and Australia have high Scandinavian populations). The game is similar to brnnboll, rounders, baseball and lapta." ;
 dbpprop:caption "Girls playing pespallo in Siilinjrvi in 2006." ;
 dbpprop:equipment "Ball, bat, gloves, helmet, bases" ;
@@ -132,7 +132,7 @@ dbpprop:equipment "http://dbpedia.org/resource/Snorkeling12" .
 <http://dbpedia.org/resource/Underwater_hockey> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Underwater hockey (UWH; also called Octopush and Water Hockey) is a global non-contact sport in which two teams compete to maneuver a puck across the bottom of a swimming pool into goals." ;
 dbpprop:caption "Two players competing for the puck at GB Student Nationals, Bangor in 2009." ;
-dbpprop:equipment "diving mask, snorkel,  fins, water polo cap, stick & puck.up to 10" .
+dbpprop:equipment "diving mask, snorkel,  fins, water polo cap, stick  puck.up to 10" .
 
 <http://dbpedia.org/resource/Inline_hockey> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Inline hockey, also known as roller hockey or inline roller hockey, is a team sport played on an appropriate smooth surface, in which skaters use wooden or composite sticks to shoot a hard plastic puck into their opponents net. The game is played between two teams with five players (Four Skaters and a Goal tender) on the floor. A team usually consists of three lines of two forwards, three pairs of defencemen, and two goalies." ;
@@ -353,21 +353,15 @@ dbpprop:caption "The Olympic roque competition in 1904." ;
 dbpprop:equipment "Mallets, balls" ;
 dbpprop:olympic "http://dbpedia.org/resource/1904_Summer_Olympics,1" .
 
-<http://dbpedia.org/resource/American_football> dbpprop:equipment "http://dbpedia.org/resource/Football_helmet" .
-
 <http://dbpedia.org/resource/Field_hockey> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Field hockey, usually referred to simply as hockey, is a team sport of the hockey family which is played between two teams of eleven players with hockey sticks and a hard, solid plastic ball. At the turn of the 21st century, the game is played globally, with particular popularity throughout Europe, Asia, Oceania, and South America  in addition to being the national sport of Pakistan and India." ;
 dbpprop:caption "A game of field hockey" ;
 dbpprop:equipment "Hockey ball, Hockey stick, mouthguard, shinpads,190819201928,11" .
 
-<http://dbpedia.org/resource/Baseball> dbpprop:equipment "http://dbpedia.org/resource/Baseball_field" , "Baseball glove" .
-
 <http://dbpedia.org/resource/Biathlon> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Biathlon is any sporting event made up of two disciplines. However, biathlon usually refers specifically to the winter sport that combines cross-country skiing and rifle shooting. Other popular variants include summer biathlon, which combines cross-country running with rifle, and biathle (also known as modern biathlon), which combines running with swimming." ;
 dbpprop:caption "Several biathletes in the shooting area of a competition" ;
 dbpprop:equipment "Skis, Poles, Rifle,1924,Single competitors or relay teams" , "Skis, Poles, Rifle,1960,Single competitors or relay teams" .
-
-<http://dbpedia.org/resource/Figure_skating> dbpprop:caption "Part of the Summer Olympics in 1908 and 1920;" .
 
 <http://dbpedia.org/resource/Tennis> dbpprop:equipment "http://dbpedia.org/resource/Tennis_ball" ;
 dbpprop:olympic "Part of Summer Olympic programme since 1988" .
@@ -394,7 +388,7 @@ dbpprop:team "Five on-court players per team" .
 
 <http://dbpedia.org/resource/Carom_billiards> dbpprop:equipment "http://dbpedia.org/resource/Cue_stick" .
 
-<http://dbpedia.org/resource/Pes%C3%A4pallo> dbpprop:olympic "Demonstrated 1952,12" .
+<http://dbpedia.org/resource/PesC3A4pallo> dbpprop:olympic "Demonstrated 1952,12" .
 
 <http://dbpedia.org/resource/Luge> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "A Luge is a small one- or two-person sled on which one sleds supine (face up) and feet-first. Steering is done by flexing the sleds runners with the calf of each leg or exerting opposite shoulder pressure to the seat. Racing sleds weigh 21-25 kilograms (46-55 lbs. ) for singles and 25-30 kilograms (55-66 lbs. ) for doubles. Luge is also the name of an Olympic sport. Of the three Olympic sliding sports, which include bobsleigh and skeleton, luge is the fastest and most dangerous." ;
@@ -409,27 +403,15 @@ dbpprop:caption "South African Victor Matfield takes a line-out against New Zeal
 dbpprop:equipment "http://dbpedia.org/resource/Football_(ball)" ;
 dbpprop:olympic "Part of the Summer Olympic programme in 1900, 1908, 1920 and 1924,15" , "Rugby Sevens reinstated 2016,15" .
 
-<http://dbpedia.org/resource/Cue_sports> dbpprop:equipment "http://dbpedia.org/resource/Billiard_tableSingle opponents, doubles or teams" .
-
-<http://dbpedia.org/resource/Underwater_rugby> dbpprop:equipment "http://dbpedia.org/resource/Swimfin12" .
-
-<http://dbpedia.org/resource/Inline_hockey> dbpprop:equipment "Hockey stick5" .
-
 <http://dbpedia.org/resource/Russian_four_square> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Russian four square was started in Soviet Russia. Russian four square is a variation of the Russian game  (square)." ;
 dbpprop:caption "A schematic layout of Russian four square." ;
 dbpprop:equipment "Soccer ball, or volleyballnone, players fly solo" .
 
-<http://dbpedia.org/resource/Sport_diving_(sport)> dbpprop:equipment "http://dbpedia.org/resource/Swimfinindividual and teams of 2 and 4" .
-
-<http://dbpedia.org/resource/Underwater_target_shooting> dbpprop:equipment "http://dbpedia.org/resource/Speargunyes" , "http://dbpedia.org/resource/Diving_maskyes" .
-
 <http://dbpedia.org/resource/Trail_orienteering> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Trail orienteering (trail-O, also precision orienteering or Pre-O) is an orienteering sport that involves precise reading of an orienteering map and the corresponding terrain. Trail orienteers must identify, in the terrain and in the presence of decoys, control points shown on the map. Trail-O involves navigation skills but unlike most other forms of orienteering, it involves no point to point racing and little or no route choice." ;
 dbpprop:caption "Trail orienteering logoNo" ;
 dbpprop:equipment "Individual" .
-
-<http://dbpedia.org/resource/Basketball> dbpprop:caption "Michael Jordan goes for a slam dunk at the old Boston GardenDemonstrated in the 1904 and 1924 Summer Olympics,10" .
 
 <http://dbpedia.org/resource/Volleyball> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Volleyball is a team sport in which two teams of six players are separated by a net. Each team tries to score points by grounding a ball on the other teams court under organized rules. It has been a part of the official program of the Summer Olympic Games since 1964. The complete rules are extensive." ;
@@ -440,7 +422,7 @@ rdfs:comment "Horseshoes is an outdoor game played between two people (or two te
 dbpprop:caption "Horseshoesnon-Olympic" ;
 dbpprop:equipment "individual" .
 
-<http://dbpedia.org/resource/Oin%C4%83> a <http://dbpedia.org/ontology/Sport> ;
+<http://dbpedia.org/resource/OinC483> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Oin is a Romanian traditional sport, similar in many ways to baseball and lapta." ;
 dbpprop:caption "Oin pitch animationNo,11" .
 
@@ -476,8 +458,6 @@ dbpprop:caption "Boy playing on an American Wheelchair Football Team.,6" .
 <http://dbpedia.org/resource/Woodsball> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Woodsball (also known as woods paintball, hillball or bushball) is a format of paintball gaming, in which players compete in a natural outdoors area (contrasting with inflatable bunker-based Speedball format) using paintball markers to tag opponents. It is recognized as the first format of Paintball ever played, and is often used in conjunction with Scenario paintball, allowing players to enact parts in a story or historical battle." ;
 dbpprop:caption "Woodsball marksman in combat,Varies depending on game format and level of play" .
-
-<http://dbpedia.org/resource/Camogie> dbpprop:caption "A junior camogie match being played in Croke Park, Dublin,15" .
 
 <http://dbpedia.org/resource/Canoe_orienteering> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Canoe orienteering (canoe-O) is an orienteering sport using a canoe, kayak, or other small boat. Usually, a canoe-O is a timed race in which one- or two-person boats start at staggered intervals, are timed, and are expected to perform all navigation on their own. Portages are allowed. The control points, shown on an orienteering map, may be visited in any order. Standings are determined first by successful completion of the course, then by shortest time on course." ;
@@ -550,10 +530,6 @@ dbpprop:caption "Ball hockey game between USA  and Slovakia  at 2011 World Ball 
 rdfs:comment "The highest paid NBA players by season over the past twelve seasons have received contracts with salaries noted in the twenty-million-dollar range. In this twelve-year span, Kevin Garnett received $28,000,000, which was the highest salary payment of any NBA player, during the 20032004 season. Garnett has been the highest paid NBA player per year in seven of the past twelve NBA seasons. Michael Jordan is the only NBA player to sign a contract worth over thirty million dollars in a season." ;
 dbpprop:caption "The NBA operated under a $56.1-million-dollar salary cap during the 201011 NBA season.," .
 
-<http://dbpedia.org/resource/Cycle_polo> dbpprop:equipment "http://dbpedia.org/resource/Bicycle" , "http://dbpedia.org/resource/Mallet" .
-
-<http://dbpedia.org/resource/Ice_hockey> dbpprop:equipment "Hockey puck, Hockey stick, Hockey skates, Hockey Helmet, Shoulder Pads, Elbow Pads, Hockey Pants, Jock Shorts, Shin pads,1920,6" .
-
 <http://dbpedia.org/resource/Tug_of_war> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Tug of war, also known as tug o war, tug war, rope war, rope pulling, or tugging war, is a sport that directly pits two teams against each other in a test of strength." ;
 dbpprop:caption "Ireland 600kg team in the European Championships 2009" ;
@@ -572,18 +548,11 @@ rdfs:comment "Field Lacrosse, sometimes referred to as the fastest sport on two 
 dbpprop:caption "A lacrosse player advancing, pursued by an opponent" ;
 dbpprop:equipment "Lacrosse stick, helmet, shoulder pads, arm pads, gloves,1904,10" .
 
-<http://dbpedia.org/resource/Baseball> dbpprop:equipment "Baseball bat" .
-
-<http://dbpedia.org/resource/Tennis> dbpprop:olympic "Demonstration sport in the 1968 and 1984 Summer Olympics" .
 
 <http://dbpedia.org/resource/Rugby_sevens> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Rugby sevens, also known as seven-a-side or VIIs, is a variant of rugby union in which teams are made up of seven players, instead of the usual 15, with shorter matches. Rugby sevens is administered by the International Rugby Board (IRB), the body responsible for rugby union worldwide. The game originated in Melrose, Scotland, where the Melrose Sevens tournament is still played annually. The game is popular at all levels, with amateur and club tournaments generally held in the summer months." ;
 dbpprop:caption "Kenya scores a try against Tonga during the 2006 Commonwealth Games" ;
 dbpprop:equipment "http://dbpedia.org/resource/Football_(ball),2016,Seven" .
-
-<http://dbpedia.org/resource/Lacrosse> dbpprop:olympic "Part in the Summer Olympic programme in 1904 and 1908,10" .
-
-<http://dbpedia.org/resource/Netball> dbpprop:caption "at the 2006 Commonwealth Games" .
 
 <http://dbpedia.org/resource/Ice_dancing> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Ice dancing is a discipline of figure skating which draws from the world of ballroom dancing. It joined the World Figure Skating Championships in 1952 and became a Winter Olympic Games medal sport in 1976. As in pair skating, dancers compete as a couple consisting of a man and a woman. Ice dance differs from pair skating by having different requirements for lifts, requiring spins to be performed as a team in a dance hold, and by disallowing throws and jumps." ;
@@ -591,10 +560,6 @@ dbpprop:caption "Ice dancing in its first year as an official Olympic sport" ;
 dbpprop:equipment "Figure skates" ;
 dbpprop:olympic "Part of the Winter Olympics from 1976" ;
 dbpprop:team "Duos" .
-
-<http://dbpedia.org/resource/Curling> dbpprop:olympic "Demonstration sport in 1932, 1988 and 1992.,4" .
-
-<http://dbpedia.org/resource/Pair_skating> dbpprop:olympic "Part of the first Winter Olympics in 1924 to today" .
 
 <http://dbpedia.org/resource/Roller_derby> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Roller derby is a contact sport played by two teams of five members roller skating in the same direction around a track. Game play consists of a series of short matchups (jams) in which both teams designate a scoring player (the jammer) who scores points by lapping members of the opposing team. The teams attempt to assist their own jammer whilst hindering the opposing jammerin effect, playing both offense and defense simultaneously." ;
@@ -607,18 +572,10 @@ rdfs:comment "Paintball is a sport in which players compete, in teams or individ
 dbpprop:caption "A paintball player taking part in a popular style of paintball known as Woodsball." ;
 dbpprop:equipment "Paintball mask, Paintball marker, body armour , paint grenades,  Compressed air or CO2 canister, paintballs, hopperVaries depending on game format and level of play, recreational or competition" .
 
-<http://dbpedia.org/resource/Underwater_rugby> dbpprop:equipment "http://dbpedia.org/resource/Water_polo_cap12" , "http://dbpedia.org/resource/Diving_mask12" .
-
-<http://dbpedia.org/resource/Inline_hockey> dbpprop:equipment "http://dbpedia.org/resource/Inline_hockey_puck5" .
-
-<http://dbpedia.org/resource/Sport_diving_(sport)> dbpprop:equipment "http://dbpedia.org/resource/Scuba_setindividual and teams of 2 and 4" .
-
 <http://dbpedia.org/resource/Para-alpine_skiing> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Paralympic alpine skiing is an adaptation of alpine skiing for athletes with a disability. The sport evolved from the efforts of disabled veterans in Germany and Austria during and after the Second World War. The sport is governed by the International Paralympic Committee Sports Committee. The primary equipment used includes outrigger skis, sit-skis, and mono-skis. Para-alpine skiing disciplines include the Downhill, Super-G, Giant Slalom, Slalom, Super Combined and Snowboard." ;
 dbpprop:caption "Alan Skeels-Piggins from Great Britain in the first run for the Mens Slalom , at the Winter Paralympics 2010 in Vancouver, Canada." ;
 dbpprop:equipment "skis, sit-skis or mono-skis, poles or outrigger skis, and boots, helmet, gogglesNo" .
-
-<http://dbpedia.org/resource/Underwater_target_shooting> dbpprop:equipment "http://dbpedia.org/resource/Swimfinyes" .
 
 <http://dbpedia.org/resource/Badminton> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Badminton is a racquet sport played by either two opposing players (singles) or two opposing pairs (doubles), who take positions on opposite halves of a rectangular court that is divided by a net. Players score points by striking a shuttlecock with their racquet so that it passes over the net and lands in their opponents half of the court. Each side may only strike the shuttlecock once before it passes over the net." ;
@@ -631,10 +588,6 @@ dbpprop:caption "A mens FIVB World Tour game in progress.Since 1996,2" .
 <http://dbpedia.org/resource/Roller_hockey_(Quad)> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Roller Hockey (Quad) or just roller hockey or rink hockey, is a team sport that enjoys significant popularity in a number of Latin countries. Roller Hockey was a demonstration rollersport in the 1992 Summer Olympics in Barcelona. There have been many world championships, Latin countries dominating the sport since the 1940s: Portugal (15 World titles), Spain (15 World titles), Italy (4 World titles) and Argentina (4 World titles)." ;
 dbpprop:caption "Argentine player during the 2007 Rink Hockey World Championship.Demonstration sport at 1992 Summer Olympics.,5" .
-
-<http://dbpedia.org/resource/Skeleton_(sport)> dbpprop:caption "USAF Major Brady Canfield, 2003 canada skeleton champion, shows off his takeoff form.Returned to the Winter Olympic programme in 2002 to today,1" .
-
-<http://dbpedia.org/resource/Team_handball> dbpprop:caption "Handball player moves towards the goal prior to throwing the ball, while the goalkeeper waits to stop it.Part of Summer Olympic programme in 1936.,7" .
 
 <http://dbpedia.org/resource/Table_tennis> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Table tennis, is a sport in which two or four players hit a lightweight ball back and forth using table tennis rackets. The game takes place on a hard table divided by a net. Except for the initial serve, players must allow a ball played toward them only one bounce on their side of the table and must return it so that it bounces on the opposite side. Points are scored when a player fails to return the ball within the rules. Play is fast and demands quick reactions." ;
@@ -677,53 +630,3 @@ dbpprop:caption "Playing Gateball,Yes" .
 <http://dbpedia.org/resource/Tennis_polo> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Tennis polo (or toccer) is a field sport where two teams of ten players (nine field players, 1 goalkeeper) use a tennis ball to score goals. Two teams of ten players attempt to throw the ball into a goal defended by a keeper who holds a racquet. Tennis Polo shares elements of sports such as field handball, the Gaelic sport of hurling and football. The game may also be played where all field players have racquets including the goalkeeper." ;
 dbpprop:caption "A player throws the ball, while being defended during a tennis polo match,2" .
-
-<http://dbpedia.org/resource/Foot_orienteering> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Foot orienteering (foot-O) is the oldest formal orienteering sport, and the one with the most starts per year. Usually, a foot-O is a timed race in which participants start at staggered intervals, are individually timed, and are expected to perform all navigation on their own. The control points are shown on the orienteering map and must be visited in the specified order. Standings are determined first by successful completion of the course, then by shortest time on course." ;
-dbpprop:caption "The international orienteering symbol,Individual" .
-
-<http://dbpedia.org/resource/Shinty> dbpprop:caption "A shinty game in progress,12" .
-
-<http://dbpedia.org/resource/Stock_car_racing> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Stock car racing is a form of automobile racing found mainly in the United States, Canada, New Zealand, Great Britain, Mexico, Brazil and Argentina. Traditionally, races are run on oval tracks measuring approximately 0.25 to 2.66 miles (to). NASCAR is the worlds largest governing body for stock car racing, and its Sprint Cup Series is the de facto premier series of stock car racing. Top level races are 200 to 600 miles (to km) in length." ;
-dbpprop:caption "Sprint Cup Series drivers race at Talladega Superspeedway in 2008,Yes" .
-
-<http://dbpedia.org/resource/Snooker> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Snooker is a cue sport that is typically played on a table covered with a green cloth or baize, with pockets situated in each of the four corners and a further two, commonly referred to as the middle, or side pockets, that sit in the middle of each of the long side cushions. The (baize) cloth on a snooker table has a directional nap running from the balk end of the table towards the end with the (black ball) spot. This affects how a ball rolls depending on which direction it is hit or shot." ;
-dbpprop:caption "Snooker player Mark Selby playing a practice gameNo," , "Snooker player Mark Selby playing a practice gameBut has IOC recognition," .
-
-<http://dbpedia.org/resource/Powerlifting> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. It resembles the sport of Olympic weightlifting, as both disciplines involve lifting weights in three attempts. Powerlifting evolved from a sport known as odd lifts, which followed the same three-attempt format but used a wider variety of events, akin to strongman competition. Eventually odd lifts became standardized to the current three." ;
-dbpprop:caption "Squat MovementInclusion in process," .
-
-<http://dbpedia.org/resource/Short_track_speed_skating> rdfs:comment "Short track speed skating is a form of competitive ice speed skating. In competitions, multiple skaters (typically between four and six) skate on an oval ice track with a circumference of 111.12 m. The rink itself is 60 m by 30 m, which is the same size as an international-sized ice hockey rink.,5001992," .
-
-<http://dbpedia.org/resource/Auto_racing> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Auto racing (also known as automobile racing or car racing) is a motorsport involving the racing of automobiles for competition." ;
-dbpprop:caption "The start of the Formula One 2008 Canadian Grand Prix.," .
-
-<http://dbpedia.org/resource/Russell_Mark_Tanner> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Russell Mark Tanner (born November 13, 1977) is an American volleyball player. Tanner grew up playing beach volleyball in Northern California with his father, Mark Tanner. Tanners uncle, Troy Tanner, is an Olympic gold medalist. Tanner was a Junior Olympic All-American, high school and league MVP, and an all-state selection out of high school. Tanner played Division I (NCAA) volleyball at Brigham Young University in Provo, Utah from 1999-2001." ;
-dbpprop:caption "Russell Tanner and Mark Tanner Breaking AAA Beach Volleyball Record," .
-
-<http://dbpedia.org/resource/Cheerleading> dbpprop:caption "College cheerleaders performing a liberty stunt," .
-
-<http://dbpedia.org/resource/Asia_Pacific_Activities_Conference> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "The Asia Pacific Activities Conference, or APAC, is an extracurricular athletics and arts program for international schools in the Asia-Pacific area. APAC was founded in 1995 with the purpose of providing an interesting, well-rounded extra-curricular program for international schools in the Asia-Pacific area (iweb. saschina. com)." ;
-dbpprop:caption "An APAC Track" .
-
-<http://dbpedia.org/resource/Vinkensport> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Vinkensport (Dutch for finch sport) is a competitive animal sport in which male Common Chaffinches are made to compete for the highest number of bird calls in an hour. Also called vinkenzetting (Dutch finch sitting), it is primarily active in the Dutch-speaking Flanders region of Belgium. Vinkensport traces its origins to competitions held by Flemish merchants in 1596, and is considered part of traditional Flemish culture." ;
-dbpprop:caption "A male Chaffinch" .
-
-<http://dbpedia.org/resource/Quoits> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Quoits (koits, kwoits, kwaits) is a traditional game which involves the throwing of metal, rope or rubber rings over a set distance, usually to land over or near a spike (sometimes called a hob, mott or pin). The sport of quoits encompasses several distinct variations." ;
-dbpprop:caption "Newcastle pit men playing quoits" .
-
-<http://dbpedia.org/resource/Rodeo> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "Rodeo is a competitive sport which arose out of the working practices of cattle herding in Spain, Mexico, and later the United States, Canada, South America and Australia. It was based on the skills required of the working vaqueros and later, cowboys, in what today is the western United States, western Canada, and northern Mexico." ;
-dbpprop:caption "Bucking horse at the Calgary Stampede," .
-
-<http://dbpedia.org/resource/KNSB_Dutch_Marathon_Championships> a <http://dbpedia.org/ontology/Sport> ;
-rdfs:comment "The Dutch Marathon championships is a speed skating Championship that has two championships. A Marathon championship on natural ice and one at artificial ice" ;
-dbpprop:caption "Sjoerd Huisman Champion 2009" .

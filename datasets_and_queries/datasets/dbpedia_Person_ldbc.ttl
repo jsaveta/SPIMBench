@@ -412,7 +412,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1932-01-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Mexico_City> , <http://dbpedia.org/resource/Mexico> .
 
-<http://dbpedia.org/resource/Alfonso_Cuarón> <http://xmlns.com/foaf/0.1/name> "Alfonso Cuaron"@en ;
+<http://dbpedia.org/resource/Alfonso_Cuaron> <http://xmlns.com/foaf/0.1/name> "Alfonso Cuaron"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Cuaron"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Alfonso"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -661,9 +661,9 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Sculptor"@en .
 
-<http://dbpedia.org/resource/Afonso_de_Albuquerque> <http://xmlns.com/foaf/0.1/name> "Alfonso D' Albuquerque"@en ;
+<http://dbpedia.org/resource/Afonso_de_Albuquerque> <http://xmlns.com/foaf/0.1/name> "Alfonso D Albuquerque"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Albuquerque"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Alfonso D'"@en ;
+	<http://xmlns.com/foaf/0.1/givenName> "Alfonso D"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Nobleman"@en ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Vila_Franca_de_Xira> , <http://dbpedia.org/resource/Kingdom_of_Portugal> ;
@@ -695,7 +695,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "King of Poland"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1461-08-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Kraków> , <http://dbpedia.org/resource/Poland> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Krakow> , <http://dbpedia.org/resource/Poland> ;
 	<http://dbpedia.org/ontology/deathDate> "1506-08-19"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Vilnius> , <http://dbpedia.org/resource/Lithuania> .
 
@@ -865,7 +865,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "King of Portugal"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1109-07-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Coimbra> , <http://dbpedia.org/resource/County_of_Portugal> , <http://dbpedia.org/resource/Kingdom_of_León> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Coimbra> , <http://dbpedia.org/resource/County_of_Portugal> , <http://dbpedia.org/resource/Kingdom_of_Leon> ;
 	<http://dbpedia.org/ontology/deathDate> "1185-12-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Coimbra> , <http://dbpedia.org/resource/Portugal> .
 
@@ -1754,9 +1754,9 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Abba"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> .
 
-<http://dbpedia.org/resource/Antoine_Thomson_dAbbadie> <http://xmlns.com/foaf/0.1/name> "Antoine Thomson D' Abbadie"@en ;
+<http://dbpedia.org/resource/Antoine_Thomson_dAbbadie> <http://xmlns.com/foaf/0.1/name> "Antoine Thomson D Abbadie"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Abbadie"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Antoine Thomson D'"@en ;
+	<http://xmlns.com/foaf/0.1/givenName> "Antoine Thomson D"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Explorer, geography, ethnologue, linguist and astronomer"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1810-01-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -1813,7 +1813,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Abd"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Toledo,_Spain> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Córdoba,_Andalusia> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Cordoba,_Andalusia> .
 
 <http://dbpedia.org/resource/Abd_al-Rahman_I> <http://xmlns.com/foaf/0.1/name> "Abd Al-Rahman I"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Al-Rahman I"@en ;
@@ -1821,7 +1821,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Royalty"@en ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Damascus> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Córdoba,_Andalusia> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Cordoba,_Andalusia> .
 
 <http://dbpedia.org/resource/Abd_ar-Rahman_IV> <http://xmlns.com/foaf/0.1/name> "Abd Ar-Rahman IV"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -1951,7 +1951,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Novelist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1948-06-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Łódź> , <http://dbpedia.org/resource/Poland> .
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Łodź> , <http://dbpedia.org/resource/Poland> .
 
 <http://dbpedia.org/resource/Amanda_Hesser> <http://xmlns.com/foaf/0.1/name> "Amanda Hesser"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Hesser"@en ;
@@ -2596,7 +2596,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Charlton"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Sir Robert"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "English footballer & football manager"@en ;
+	<http://purl.org/dc/elements/1.1/description> "English footballer  football manager"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1937-10-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Ashington> , <http://dbpedia.org/resource/Northumberland> , <http://dbpedia.org/resource/England_national_football_team> .
 
@@ -2672,7 +2672,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Potter"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Beatrix"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Children's author, illustrator, and botanist"@en ;
+	<http://purl.org/dc/elements/1.1/description> "Childrens author, illustrator, and botanist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1866-07-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Kensington> ;
 	<http://dbpedia.org/ontology/deathDate> "1943-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -2693,8 +2693,8 @@
 	<http://dbpedia.org/ontology/deathDate> "1981-02-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Harlingen,_Texas> .
 
-<http://dbpedia.org/resource/Bela_Bartók> <http://xmlns.com/foaf/0.1/name> "Bela Viktor Jnos Bartók"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Bartók"@en ;
+<http://dbpedia.org/resource/Bela_Bartok> <http://xmlns.com/foaf/0.1/name> "Bela Viktor Jnos Bartok"@en ;
+	<http://xmlns.com/foaf/0.1/surname> "Bartok"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Bela Viktor Jnos"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Hungarian composer, pianist, and collector of Eastern European and Middle Eastern folk music"@en ;
@@ -3228,7 +3228,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Lewis"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Clive Staples"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Author, academic & Christian apologist"@en ;
+	<http://purl.org/dc/elements/1.1/description> "Author, academic  Christian apologist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1898-11-29"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Belfast> , <http://dbpedia.org/resource/Northern_Ireland> ;
 	<http://dbpedia.org/ontology/deathDate> "1963-11-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -3511,7 +3511,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1911-06-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Šeteniai> , <http://dbpedia.org/resource/Kėdainiai> , <http://dbpedia.org/resource/Russian_Empire> , <http://dbpedia.org/resource/Lithuania> ;
 	<http://dbpedia.org/ontology/deathDate> "2004-08-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Kraków> , <http://dbpedia.org/resource/Poland> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Krakow> , <http://dbpedia.org/resource/Poland> .
 
 <http://dbpedia.org/resource/Claude_Monet> <http://xmlns.com/foaf/0.1/name> "Claude Oscar Monet"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Monet"@en ;
@@ -3872,7 +3872,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1310-04-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Kowal> , <http://dbpedia.org/resource/Poland> ;
 	<http://dbpedia.org/ontology/deathDate> "1370-11-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Kraków> , <http://dbpedia.org/resource/Poland> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Krakow> , <http://dbpedia.org/resource/Poland> .
 
 <http://dbpedia.org/resource/Cyril_of_Alexandria> <http://xmlns.com/foaf/0.1/name> "Cyril of Alexandria"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -4279,7 +4279,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Adams"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Douglas Noël"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Author of The Hitchhiker's Guide to the Galaxy series"@en ;
+	<http://purl.org/dc/elements/1.1/description> "Author of The Hitchhikers Guide to the Galaxy series"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1952-03-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Cambridge> , <http://dbpedia.org/resource/England> ;
 	<http://dbpedia.org/ontology/deathDate> "2001-05-11"^^<http://www.w3.org/2001/XMLSchema#date> .
@@ -4782,7 +4782,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Seuss"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Dr."@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "American cartoonist, children's animator and writer"@en ;
+	<http://purl.org/dc/elements/1.1/description> "American cartoonist, childrens animator and writer"@en ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/California> .
 
 <http://dbpedia.org/resource/Denis_Leary> <http://xmlns.com/foaf/0.1/name> "Denis Leary"@en ;
@@ -5751,7 +5751,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Blyton"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Enid"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "English children's novelist"@en ;
+	<http://purl.org/dc/elements/1.1/description> "English childrens novelist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1897-08-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/East_Dulwich> ;
 	<http://dbpedia.org/ontology/deathDate> "1968-11-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -6193,7 +6193,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Aragonese Spanish painter and printmaker"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1746-03-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Fuendetodos,_Aragón,_Spain> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Fuendetodos,_Aragon,_Spain> ;
 	<http://dbpedia.org/ontology/deathDate> "1828-04-16"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Bordeaux> .
 
@@ -6270,9 +6270,9 @@
 	<http://dbpedia.org/ontology/deathDate> "1942-01-26"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Bonn> , <http://dbpedia.org/resource/Germany> .
 
-<http://dbpedia.org/resource/Francois_dAguilon> <http://xmlns.com/foaf/0.1/name> "Francois D' Aguilon"@en ;
+<http://dbpedia.org/resource/Francois_dAguilon> <http://xmlns.com/foaf/0.1/name> "Francois D Aguilon"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Aguilon"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Francois D'"@en ;
+	<http://xmlns.com/foaf/0.1/givenName> "Francois D"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "architect, mathematician, physicist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1567-01-04"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -6597,7 +6597,7 @@
 	<http://purl.org/dc/elements/1.1/description> "Privateer; circumnavigator of the world"@en ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Devon> ;
 	<http://dbpedia.org/ontology/deathDate> "1596-01-27"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Portobelo,_Colón> , <http://dbpedia.org/resource/Panama> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Portobelo,_Colon> , <http://dbpedia.org/resource/Panama> .
 
 <http://dbpedia.org/resource/Fred_Savage> <http://xmlns.com/foaf/0.1/name> "Fred Savage"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Savage"@en ;
@@ -7713,7 +7713,7 @@
 	<http://dbpedia.org/ontology/deathDate> "1375-12-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Certaldo> .
 
-<http://dbpedia.org/resource/George_Pólya> <http://xmlns.com/foaf/0.1/name> "George Polya"@en ;
+<http://dbpedia.org/resource/George_Polya> <http://xmlns.com/foaf/0.1/name> "George Polya"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Polya"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "George"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -8452,7 +8452,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1922-05-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathDate> "2003-10-29"^^<http://www.w3.org/2001/XMLSchema#date> .
 
-<http://dbpedia.org/resource/Halldór_Laxness> <http://xmlns.com/foaf/0.1/name> "Halldór Laxness"@en ;
+<http://dbpedia.org/resource/Halldor_Laxness> <http://xmlns.com/foaf/0.1/name> "Halldor Laxness"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Icelandic writer"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1902-04-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -8607,7 +8607,7 @@
 	<http://xmlns.com/foaf/0.1/surname> "Binning"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Hugh"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Philosopher and Theologian who opposed Cromwell's attempts to establish the Church of England in Scotland"@en ;
+	<http://purl.org/dc/elements/1.1/description> "Philosopher and Theologian who opposed Cromwells attempts to establish the Church of England in Scotland"@en ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Govan> .
 
 <http://dbpedia.org/resource/Hendrick_Avercamp> <http://xmlns.com/foaf/0.1/name> "Hendrick Avercamp"@en ;
@@ -9101,8 +9101,8 @@
 	<http://dbpedia.org/ontology/deathDate> "1957-08-16"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Woods_Hole,_Massachusetts> .
 
-<http://dbpedia.org/resource/Isabella_dEste> <http://xmlns.com/foaf/0.1/name> "Isabella D'este"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "D'este"@en ;
+<http://dbpedia.org/resource/Isabella_dEste> <http://xmlns.com/foaf/0.1/name> "Isabella Deste"@en ;
+	<http://xmlns.com/foaf/0.1/surname> "Deste"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Isabella"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/birthDate> "1474-05-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -9311,7 +9311,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Novelist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1933-06-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Łódź> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Łodź> ;
 	<http://dbpedia.org/ontology/deathDate> "1991-05-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Manhattan> .
 

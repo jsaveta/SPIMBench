@@ -140,7 +140,7 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
-<http://dbpedia.org/resource/Queen's_Park_F.C.>
+<http://dbpedia.org/resource/Queens_Park_F.C.>
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
@@ -812,7 +812,7 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
 <http://www.bbc.co.uk/things/e870971d-d6e3-504d-888f-d8558d4a4817#id>
     domain:canonicalName "Queens Park"^^xsd:string ;
     domain:document <http://www.bbc.co.uk/sport/football/teams/queens-park>, <http://www.queensparkfc.co.uk/> ;
-    domain:externalId <http://dbpedia.org/resource/Queen's_Park_F.C.>, <urn:sports-stats:137365276> ;
+    domain:externalId <http://dbpedia.org/resource/Queens_Park_F.C.>, <urn:sports-stats:137365276> ;
     domain:name "Queens Park"^^xsd:string ;
     domain:shortName "Queens Park"^^xsd:string ;
     domain:slug "queens-park"^^xsd:string ;

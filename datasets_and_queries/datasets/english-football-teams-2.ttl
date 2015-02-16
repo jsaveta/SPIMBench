@@ -84,7 +84,7 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
-<http://dbpedia.org/resource/Brighton_%2526_Hove_Albion_F.C.>
+<http://dbpedia.org/resource/Brighton_2526_Hove_Albion_F.C.>
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
@@ -156,7 +156,7 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
-<http://dbpedia.org/resource/Dagenham_%2526_Redbridge_F.C.>
+<http://dbpedia.org/resource/Dagenham_2526_Redbridge_F.C.>
     domain:externalIdType <http://www.bbc.co.uk/things/external-id-types/dbpedia> ;
     a domain:ExternalId .
 
@@ -1252,10 +1252,10 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
     a sport:CompetitiveSportingOrganisation .
 
 <http://www.bbc.co.uk/things/3d814d88-1f22-d042-a9a6-87fd9216a50a#id>
-    domain:canonicalName "Brighton & Hove Albion"^^xsd:string ;
+    domain:canonicalName "Brighton  Hove Albion"^^xsd:string ;
     domain:document <http://www.bbc.co.uk/sport/football/teams/brighton-and-hove-albion>, <http://www.seagulls.co.uk/> ;
-    domain:externalId <http://dbpedia.org/resource/Brighton_%2526_Hove_Albion_F.C.>, <urn:sports-stats:138979972> ;
-    domain:name "Brighton & Hove Albion"^^xsd:string ;
+    domain:externalId <http://dbpedia.org/resource/Brighton_2526_Hove_Albion_F.C.>, <urn:sports-stats:138979972> ;
+    domain:name "Brighton  Hove Albion"^^xsd:string ;
     domain:shortName "Brighton"^^xsd:string ;
     domain:slug "brighton-and-hove-albion"^^xsd:string ;
     sport:competesIn <http://www.bbc.co.uk/things/01fc0bf8-65fd-430c-b6b7-2ed05555a8f4#id>, <http://www.bbc.co.uk/things/588d9527-8cbc-464d-9ba9-7949997e8599#id> ;
@@ -1956,11 +1956,11 @@ provenance:provider <mailto:tom.grahame@bbc.co.uk> .
     a sport:CompetitiveSportingOrganisation .
 
 <http://www.bbc.co.uk/things/c41395c3-d459-a14c-a4dd-11f9d95121fe#id>
-    domain:canonicalName "Dagenham & Redbridge"^^xsd:string ;
+    domain:canonicalName "Dagenham  Redbridge"^^xsd:string ;
     domain:document <http://www.bbc.co.uk/sport/football/teams/dagenham-and-redbridge>, <http://www.daggers.co.uk/> ;
-    domain:externalId <http://dbpedia.org/resource/Dagenham_%2526_Redbridge_F.C.>, <urn:sports-stats:137365434> ;
-    domain:name "Dagenham & Redbridge"^^xsd:string ;
-    domain:shortName "Dag & Red"^^xsd:string ;
+    domain:externalId <http://dbpedia.org/resource/Dagenham_2526_Redbridge_F.C.>, <urn:sports-stats:137365434> ;
+    domain:name "Dagenham  Redbridge"^^xsd:string ;
+    domain:shortName "Dag  Red"^^xsd:string ;
     domain:slug "dagenham-and-redbridge"^^xsd:string ;
     sport:competesIn <http://www.bbc.co.uk/things/417e5dd8-8572-4af1-a08b-dd5b678699af#id>, <http://www.bbc.co.uk/things/aec46c15-041a-4519-86d1-7c97d505f429#id> ;
     sport:discipline <http://www.bbc.co.uk/things/ba6e1118-f874-054e-b159-b797c16e9250#id> ;
