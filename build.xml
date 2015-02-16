@@ -180,6 +180,7 @@
 	<target name="copy-config-files-to-dist" >
 		<delete file="${dir.dist}\readme.txt"/>
 		<delete file="${dir.dist}\test.properties"/>
+		<delete file="${dir.dist}\app.log"/>
 		<!--<delete file="${dir.dist}\definitions.properties"/>-->
 		<delete file="${dir.dist}\config.ini"/>
 	
