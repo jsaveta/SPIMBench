@@ -1,5 +1,5 @@
 ![LDBC Logo](ldbc_logo.png)
-Semantic Publishing Benchmark
+Semantic Publishing Instance Matching Benchmark
 -----------------------------
 
 ###Description
