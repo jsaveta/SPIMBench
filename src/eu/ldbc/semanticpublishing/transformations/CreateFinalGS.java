@@ -231,11 +231,11 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 	Matrix T = InverseMarray.times(Ymatrix); 
 	double[] T_array = T.getRowPackedCopy();//row or column, contain the same nums
 	
-	System.out.print("\nT\n");
-	for (int i = 0; i < T_array.length; i++) {
-		System.out.print(T_array[i] + " ");
-	}
-	System.out.print("\n");
+//	System.out.print("\nT\n");
+//	for (int i = 0; i < T_array.length; i++) {
+//		System.out.print(T_array[i] + " ");
+//	}
+//	System.out.print("\n");
 	
 	ArrayList<Double> specificWeights = new ArrayList<Double>();
 	specificWeights.add(0,0.0);
@@ -252,9 +252,9 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 		}
 		specificWeights.add(Math.abs(weight));
 	}
-	for(int i = 0; i < specificWeights.size(); i++) {   
-	    System.out.println("i: "+ i+ "  specificWeight: "+specificWeights.get(i));
-	}
+//	for(int i = 0; i < specificWeights.size(); i++) {   
+//	    System.out.println("i: "+ i+ "  specificWeight: "+specificWeights.get(i));
+//	}
 
 	return specificWeights;
 }
