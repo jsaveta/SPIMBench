@@ -32,6 +32,7 @@ import Jama.Matrix;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.rescal.turtleRescalTripleFinder.RescalStarter;
 import eu.ldbc.semanticpublishing.util.CleanZeros;
+import eu.ldbc.semanticpublishing.util.Matrices;
 import eu.ldbc.semanticpublishing.util.SesameUtils;
 
 
@@ -223,8 +224,8 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 	Matrix Ymatrix = new Matrix(Yarray);
 	
 	/*pseudo inverse Marray*/
-	//Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
-	Matrix InverseMarray = new Matrix(Marray).inverse();
+	Matrix InverseMarray = Matrices.pinv2(new Matrix(Marray));
+	//Matrix InverseMarray = new Matrix(Marray).inverse();
 
 	
 	/*Calculate final weight*/

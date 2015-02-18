@@ -732,7 +732,7 @@ public class TransformationsCall {
 					i--;
 				}
 				//14-16 (rand.nextInt((15 - 13) + 1) + 15));
-				//einai kai to 17 alla oxi gia ton format pou exw edw
+				//einai kai to 17 alla oxi gia to format pou exw edw
 				break;
 			case CHANGELANGUAGE : 
 				if(!lexicalArrayList.get(i).equals(cworkNamespace + "dateCreated") && !lexicalArrayList.get(i).equals(cworkNamespace + "dateModified") && !lexicalArrayList.get(i).equals(travel + "hasArea") && !lexicalArrayList.get(i).equals(cworkNamespace + "liveCoverage")){
@@ -995,13 +995,7 @@ public class TransformationsCall {
 		structuralArrayList = getStructuralList();
 		setLogicalList();
 		logicalArrayList = getLogicalList();
-		
-		// 	na valw auta pou einai sto string sto map se ena array
-		//diatrexw to array kai kalw tin antistoixi initialize gia kathe case
-		//se kathe case lew : 
-		// predicatesObjectsMap.put(array[i],transformationsArrayList.get(num of transformation selected));
-		//kai elegxw kai sugkekrimenes periptoseis
-		
+	
 		initializeTransformationsEntity();
 		switch (transfPerc) { 
 		//prosoxi otan allazoun tanoumera sto transformationsArrayList
@@ -1056,108 +1050,85 @@ public class TransformationsCall {
 				
 				case LEXICAL_STRUCTURAL:
 //					System.out.println("LEXICAL_STRUCTURAL");
-					transformation = new ArrayList<Transformation>();
-					
-					if(getComplexList().get(i).equals(foaf + "name") || getComplexList().get(i).equals(cworkNamespace + "title")){ 
-						pick = new Random().nextInt(Lexical.values().length);
-						transformation.add(transformationsArrayList.get(pick)); //lexical
-						transformation.add(transformationsArrayList.get(23)); //aggr
-						
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					}
-					else if(i<10){ //10 first  elements
-						pick = new Random().nextInt(Lexical.values().length);
-
-						transformation.add(transformationsArrayList.get(pick)); //lexical
-						int pick_str = rand.nextInt((19 - 18) + 1) + 19;
-						
-						transformation.add(transformationsArrayList.get(pick_str)); //extract
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					}
+//					transformation = new ArrayList<Transformation>();
+//					
+//					if(getComplexList().get(i).equals(foaf + "name") || getComplexList().get(i).equals(cworkNamespace + "title")){ 
+//						pick = new Random().nextInt(Lexical.values().length);
+//						transformation.add(transformationsArrayList.get(pick)); //lexical
+//						transformation.add(transformationsArrayList.get(23)); //aggr
+//						
+//						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+//					}
+//					else if(i<10){ //10 first  elements
+//						pick = new Random().nextInt(Lexical.values().length);
+//
+//						transformation.add(transformationsArrayList.get(pick)); //lexical
+//						int pick_str = rand.nextInt((19 - 18) + 1) + 19;
+//						
+//						transformation.add(transformationsArrayList.get(pick_str)); //extract
+//						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+//					}
 				
 
 					
-//					transformation = new ArrayList<Transformation>();			
-//					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
-//					lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(lexvalue);
-//					predicatesObjectsMapTemp = structuralCases(complexArrayList); 
-//					structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(structvalue);
-//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					
-
+					transformation = new ArrayList<Transformation>();			
+					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
+					if(predicatesObjectsMapTemp.values().toArray().length != 0){
+						lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+						//System.out.println("lexvalue " +lexvalue.toString());
+						transformation.add(lexvalue);
+						predicatesObjectsMapTemp = structuralCases(complexArrayList); 
+					}
+					if(predicatesObjectsMapTemp.values().toArray().length != 0){
+						structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+						//System.out.println("structvalue " +structvalue.toString());
+						transformation.add(structvalue);
+						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+					}	
 					break;
 					
 				case LEXICAL_LOGICAL:
 //					System.out.println("LEXICAL_LOGICAL");
-					transformation = new ArrayList<Transformation>();
-					int pick_ [] = {29,33,34};
-					if(i>=10){ //after 10 first  elements
-						pick = new Random().nextInt(Lexical.values().length);
-
-						transformation.add(transformationsArrayList.get(pick)); //lexical
-						transformation.add(transformationsArrayList.get(29)); //equiv prop
-
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					}
-					else if(getComplexList().get(i).equals(core + "officialHomepage") || getComplexList().get(i).equals(core + "facebook") || getComplexList().get(i).equals(core + "twitter")){ //10 first  elements
-						pick = new Random().nextInt(Lexical.values().length);
-						
-						transformation.add(transformationsArrayList.get(pick)); //lexical
-						int pick_log = pick_[rand.nextInt(pick_.length)];
-
-						transformation.add(transformationsArrayList.get(pick_log)); // equiv pr or sub pro or disj prop 
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					}
-
 //					transformation = new ArrayList<Transformation>();
-//					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
-//					lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(lexvalue); 
-//					predicatesObjectsMapTemp = logicalCases(complexArrayList); 
-//					logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(logvalue);
-//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+//					int pick_ [] = {29,33,34};
+//					if(i>=10){ //after 10 first  elements
+//						pick = new Random().nextInt(Lexical.values().length);
+//
+//						transformation.add(transformationsArrayList.get(pick)); //lexical
+//						transformation.add(transformationsArrayList.get(29)); //equiv prop
+//
+//						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+//					}
+//					else if(getComplexList().get(i).equals(core + "officialHomepage") || getComplexList().get(i).equals(core + "facebook") || getComplexList().get(i).equals(core + "twitter")){ //10 first  elements
+//						pick = new Random().nextInt(Lexical.values().length);
+//						
+//						transformation.add(transformationsArrayList.get(pick)); //lexical
+//						int pick_log = pick_[rand.nextInt(pick_.length)];
+//
+//						transformation.add(transformationsArrayList.get(pick_log)); // equiv pr or sub pro or disj prop 
+//						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+//					}
 
+					transformation = new ArrayList<Transformation>();
+					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
+					if(predicatesObjectsMapTemp.values().toArray().length != 0){
+						lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+						//System.out.println("lexvalue " +lexvalue.toString());
+						transformation.add(lexvalue); 
+						predicatesObjectsMapTemp = logicalCases(complexArrayList); 
+					}
+					if(predicatesObjectsMapTemp.values().toArray().length != 0){
+						logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
+						//System.out.println("logvalue " +logvalue.toString());
+						transformation.add(logvalue);
+						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+					}
 					break;
 					
 				case STRUCTURAL_LOGICAL:
-//					//System.out.println("STRUCTURAL_LOGICAL");
-//					transformation = new ArrayList<Transformation>();
-//					
-//					predicatesObjectsMapTemp = logicalCases(complexArrayList); 
-//					logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(logvalue);
-//					
-//					predicatesObjectsMapTemp = structuralCases(complexArrayList); 
-//					structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(structvalue);
-//					
-//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-					
-
 					break;
 					
 				case LEXICAL_STRUCTURAL_LOGICAL:
-//					//System.out.println("LEXICAL_STRUCTURAL_LOGICAL");
-//					transformation = new ArrayList<Transformation>();
-//					
-//					predicatesObjectsMapTemp = lexicalCases(complexArrayList); 
-//					lexvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(lexvalue);
-//					
-//					predicatesObjectsMapTemp = logicalCases(complexArrayList); 
-//					logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(logvalue);
-//					
-//					predicatesObjectsMapTemp = structuralCases(complexArrayList); 
-//					structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
-//					transformation.add(structvalue);
-//					
-//					predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
-//					
-
 					break;
 					
 				case NOTRANSFORMATION:
