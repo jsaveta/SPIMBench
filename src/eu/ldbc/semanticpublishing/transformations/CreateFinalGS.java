@@ -130,7 +130,7 @@ public static  List<ArrayList<Object>> GSScores(String file_) throws IOException
 			    }
 			    
 			    if(st.getPredicate().stringValue().equals("http://www.type")){
-			    	int indexToReplace = Integer.parseInt(st.getObject().toString().replace("\"", ""))+1;
+			    	int indexToReplace = Integer.parseInt(st.getObject().stringValue())+1;
 			    	int transf = (Integer)TypeTemp.get(indexToReplace) +1;
 			    	TypeTemp.remove(indexToReplace);
 			    	TypeTemp.add(indexToReplace,transf);
@@ -332,7 +332,7 @@ File[] listOfFiles = folder.listFiles();
 			    }
 			    
 			    if(st.getPredicate().stringValue().equals("http://www.type")){
-			    	indexToReplace = Integer.parseInt(st.getObject().toString().replace("\"", ""))+1;
+			    	indexToReplace = Integer.parseInt(st.getObject().stringValue())+1;
 			    	//System.out.println("indexToReplace " + indexToReplace);
 			    	int transf = (Integer)TypeTemp.get(indexToReplace) +1;
 			    	TypeTemp.remove(indexToReplace);
