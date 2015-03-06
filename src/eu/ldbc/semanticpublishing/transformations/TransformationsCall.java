@@ -1083,7 +1083,7 @@ public class TransformationsCall {
 						structvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
 						//System.out.println("structvalue " +structvalue.toString());
 						transformation.add(structvalue);
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+						if(transformation.size() == 2) predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
 					}	
 					break;
 					
@@ -1121,7 +1121,7 @@ public class TransformationsCall {
 						logvalue = (Transformation) predicatesObjectsMapTemp.values().toArray()[0];
 						//System.out.println("logvalue " +logvalue.toString());
 						transformation.add(logvalue);
-						predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
+						if(transformation.size() == 2)  predicatesObjectsComplexMap.put(getComplexList().get(i), transformation);
 					}
 					break;
 					

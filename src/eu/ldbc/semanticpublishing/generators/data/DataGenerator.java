@@ -296,21 +296,27 @@ public class DataGenerator {
 		
 		double js = DivergenceUtil.jsDivergence(ProbabilisticEk, ProbabilisticE, ProbabilisticEandEkAverage);
 		System.out.println("\n\tIs suggested to select more than 2 files for rescalSampling.\n");	
-		if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > 0/*1*/){ //TODO also check if k is too low or too high (more files thba)
+		if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > 0){ 
 			long triplesPerFile = configuration.getLong(Configuration.GENERATED_TRIPLES_PER_FILE);
 			long totalTriples = configuration.getLong(Configuration.DATASET_SIZE_TRIPLES);
 			int files = (int) (totalTriples/triplesPerFile);
-			double k = (0.1 * Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)))/js;
-			if(k > files || k <= Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING))){
+			//double k = (0.1 * Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)))/js;
+			double k = js*files + Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)); //TODO fix this!
+			
+			int times = Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING));
+			
+			if((int)k <= Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING))){
 				System.out.println("\tThe rescalSampling you chose is satisfactory.");
 			}
 			else{
-				System.out.println("\tThe suggested rescalSampling is : " + (int)k);
+				if(k>files) k = files;
+				System.out.println("\tThe suggested rescalSampling is : " + (int)k); 
+				times = (int)k; 
 			}
-			
-			
+			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
+				times = files;
+			}
 			List<String> list = new ArrayList<String>();
-			int times = Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING));
 			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
 				times = files;
 			}
