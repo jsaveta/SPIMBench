@@ -488,8 +488,6 @@ dbpprop:name <http://www.marineacademy.edu.pk> .
 rdfs:label "The Australian International Performing Arts High School" ;
 rdfs:comment "The Australian International Performing Arts High School is the newest performing arts high school in New South Wales, Australia. AIPAH was founded in 2005 by Kyung-hee Lee.,The Australian International Performing Arts High School,http://www.aipah.com/" .
 
-<http://dbpedia.org/resource/PSV_Eindhoven> dbpprop:name <http://dbpedia.org/resource/Ola_Toivonen> .
-
 <http://dbpedia.org/resource/1._FC_Magdeburg> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "1. FC Magdeburg" ;
 rdfs:comment "1. FC Magdeburg is a German association football club playing in Magdeburg, Saxony-Anhalt." ;
@@ -642,7 +640,7 @@ rdfs:comment "Ajay Kumar Garg Engineering College (AKGEC) is an engineering coll
 
 <http://dbpedia.org/resource/FC_Dunav_Ruse> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Dunav Ruse" ;
-rdfs:comment "FC Dunav Ruse (Bulgarian:   ) is a Bulgarian football club from the city of Ruse. Founded in 1949, they were participate in the North-East V AFG, the third division of Bulgarian football. Dunav Rousses team colours was blue and white. The team were named after the Danube River. They played their home matches at the Gradski Stadium, which has a capacity of around 22,000." ;
+rdfs:comment "FC Dunav Ruse is a Bulgarian football club from the city of Ruse. Founded in 1949, they were participate in the North-East V AFG, the third division of Bulgarian football. Dunav Rousses team colours was blue and white. The team were named after the Danube River. They played their home matches at the Gradski Stadium, which has a capacity of around 22,000." ;
 dbpprop:manager "http://dbpedia.org/resource/Dian_Bozhilov" ;
 dbpprop:name <http://dbpedia.org/resource/Adnyan_Dzhelilov,http://www.fcdunav.com/> .
 
@@ -658,10 +656,6 @@ dbpprop:name <http://dbpedia.org/resource/Tiago_FranC3A7a> ;
 dbpprop:nickname "Rubro" ;
 dbpprop:website <http://www.saoluizdeijui.com.br/> .
 
-<http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> dbpprop:manager "Gregg Harries" ;
-dbpprop:name "Marni Bocking" ;
-dbpprop:nickname "Llani Daffs" ;
-dbpprop:website <http://www.freewebs.com/llaniladiesfc/> .
 
 <http://dbpedia.org/resource/KEDG> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KEDG" ;
@@ -759,7 +753,6 @@ dbpprop:name <http://dbpedia.org/resource/Luigi_Giorgi_(footballer)> ;
 dbpprop:nickname "Biancoazzurri" ;
 dbpprop:website <http://www.novaracalcio.com/> .
 
-<http://dbpedia.org/resource/Al-Ittihad_SC_Aleppo> dbpprop:name <http://dbpedia.org/resource/Adib_Issa> .
 
 <http://dbpedia.org/resource/KEJJ> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KEJJ" ;
@@ -777,8 +770,6 @@ rdfs:comment "DKay. com is an industrial band formed by Jrgen Engler in the late
 rdfs:label "International Union of Socialist Youth" ;
 rdfs:comment "The International Union of Socialist Youth, founded in 1907, is the biggest political youth organization in the world representing about 140 member organizations from more than 100 countries. IUSY is the Youth of the Socialist International (SI).,International Union of Socialist Youth,http://www.iusy.org" .
 
-<http://dbpedia.org/resource/F.C._United_of_Manchester> dbpprop:name "Astley Mulholland" .
-
 <http://dbpedia.org/resource/The_Red_Maids_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "The Red Maids School" ;
 rdfs:comment "The Red Maids School is an independent school for girls in Westbury-on-Trym, Bristol, England. The school is a member of the Girls Schools Association.,The Red Maids School,http://www.redmaids.bristol.sch.uk/" .
@@ -786,7 +777,7 @@ rdfs:comment "The Red Maids School is an independent school for girls in Westbur
 <http://dbpedia.org/resource/48th_Highlanders_of_Canada> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "48th Highlanders of Canada" ;
 rdfs:comment "The 48th Highlanders of Canada is a Canadian Forces Primary Reserve infantry regiment based in Toronto, parading out of Moss Park Armoury. The regiment is part of Land Force Central Areas 32 Canadian Brigade Group. Ever since its formation in 1891, the 48th Highlanders have had a longstanding tradition of participation in the life of its parent city, Toronto.,48,The Glamour Boys, The Four Dozen, The Famous 48th" ;
-dbpprop:manager "http:\\\\www.48highlanders.com/04_03.html" .
+dbpprop:manager "http:\\www.48highlanders.com/04_03.html" .
 
 <http://dbpedia.org/resource/World_Chess_Boxing_Organisation> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "World Chess Boxing Organisation" ;
@@ -1042,7 +1033,7 @@ dbpprop:website <http://www.clubbolivar.com> .
 
 <http://dbpedia.org/resource/PFC_Lokomotiv_Sofia> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "PFC Lokomotiv Sofia" ;
-rdfs:comment "PFC Lokomotiv Sofia (Bulgarian:   ) is a Bulgarian football club from the capital city of Sofia, which currently competes in Bulgarias top football league, the A PFG. It was founded on September 2, 1929 by a group of railway workers under the name Railway Sports Club (or simply RSC). The clubs home ground is the Lokomotiv Stadium in Sofia, which has a capacity of 22,000 spectators." ;
+rdfs:comment "PFC Lokomotiv Sofia  is a Bulgarian football club from the capital city of Sofia, which currently competes in Bulgarias top football league, the A PFG. It was founded on September 2, 1929 by a group of railway workers under the name Railway Sports Club (or simply RSC). The clubs home ground is the Lokomotiv Stadium in Sofia, which has a capacity of 22,000 spectators." ;
 dbpprop:manager "Emil Velev" ;
 dbpprop:name <http://dbpedia.org/resource/Everton_Fernando_Gilio> ;
 dbpprop:nickname "" ;
@@ -1141,9 +1132,6 @@ dbpprop:website <http://www.jssaoura.com> .
 <http://dbpedia.org/resource/National_University_of_Misiones> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "National University of Misiones" ;
 rdfs:comment "The National University of Misiones is a public university in Argentina; founded by the law 20.286 on April 16, 1973, as part of the Taquini plan, a program of reorganization of the top education that would take the foundation of universities of Jujuy, La Pampa, Lomas de Zamora, Entre Ros, Lujn, Catamarca, Salta, San Juan, San Luis y Santiago del Estero, form to more than 11.000 pupils, between them numerous foreigners, given their border location with Paraguay and Brazil.,National University of Misiones,http://www.unam.edu.ar/" .
-
-<http://dbpedia.org/resource/FC_Rapid_BucureC899ti> dbpprop:name <http://dbpedia.org/resource/Andrei_Matei> ;
-dbpprop:nickname "Alb-Viinii" .
 
 <http://dbpedia.org/resource/Birmingham_Business_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Birmingham Business School" ;
@@ -1285,7 +1273,7 @@ dbpprop:name <http://dbpedia.org/resource/Marzouq_Zaki,http://www.arabiclub.net/
 
 <http://dbpedia.org/resource/FC_Kremin_Kremenchuk> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Kremin Kremenchuk" ;
-rdfs:comment "MFC Kremin Kremenchuk (Ukrainian: M  ; Russian:  , Kremen Kremenchug) is a football club based in Kremenchuk, Ukraine. The current club was established in 2003, but it traces its heritage to the previously existing Soviet club of 1959. Since the 200506 season, the citys club has taken part in the Ukrainian Second League replacing another team Vorskla-2 Poltava." ;
+rdfs:comment "MFC Kremin Kremenchuk  is a football club based in Kremenchuk, Ukraine. The current club was established in 2003, but it traces its heritage to the previously existing Soviet club of 1959. Since the 200506 season, the citys club has taken part in the Ukrainian Second League replacing another team Vorskla-2 Poltava." ;
 dbpprop:manager "http://dbpedia.org/resource/Yuriy_Chumak" ;
 dbpprop:name <http://dbpedia.org/resource/Roman_Chumak> ;
 dbpprop:nickname "Dnipro" ;
@@ -1355,8 +1343,6 @@ rdfs:comment "WCOL-FM is a country music radio station in Columbus, Ohio owned b
 rdfs:label "West Lancashire College" ;
 rdfs:comment "West Lancashire College (formerly Skelmersdale  Ormskirk College) is a further education college located over three sites in West Lancashire, England. It is a constituent college of Newcastle College.,West Lancashire College,http://www.westlancs.ac.uk/" .
 
-<http://dbpedia.org/resource/FC_Rapid_BucureC899ti> dbpprop:name <http://dbpedia.org/resource/Nicolae_Grigore> .
-
 <http://dbpedia.org/resource/ConfederaciC3B3n_de_Trabajadores_de_Venezuela> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Confederacin de Trabajadores de Venezuela" ;
 rdfs:comment "The Confederacin de Trabajadores de Venezuela is a federation of labor unions in Venezuela. It has close links to the Democratic Action party. The union federation has been a consistent and key opponent of Venezulean President Hugo Chvez. In the year 2001, two years after his first election to President, Chvezs government ordered the union federation to undertake its first-ever direct leadership elections.,CTV,http://www.ctv.org.ve" .
@@ -1409,9 +1395,6 @@ dbpprop:name <http://dbpedia.org/resource/Carlos_Eduardo_de_Oliveira_Alves> ;
 dbpprop:nickname "Equipa da Linha" ;
 dbpprop:website <http://www.estorilpraia.pt/> .
 
-<http://dbpedia.org/resource/Sociedade_Esportiva_Palmeiras> dbpprop:name <http://dbpedia.org/resource/Luiz_Gustavo_(1994_footballer)> ;
-dbpprop:nickname "Academia de Futebol" .
-
 <http://dbpedia.org/resource/WDIC_(AM)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WDIC (AM)" ;
 rdfs:comment "WDIC is a Country formatted broadcast radio station licensed to Clinchco, Virginia, serving Clinchco and Dickenson County, Virginia. WDIC is owned and operated by Dickenson County Broadcasting Corp.,WDIC,http://www.wdicradio.com/" .
@@ -1455,8 +1438,6 @@ rdfs:comment "World Series Hockey (WSH) is a professional league for field hocke
 <http://dbpedia.org/resource/WERQ-FM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WERQ-FM" ;
 rdfs:comment "WERQ-FM is a commercial radio station located in Baltimore, Maryland. It features an Urban music format and is known by its listeners as, 92Q. It is operated by Radio One of Lanham, Maryland, which operates 53 radio stations in 16 metropolitan areas in the United States and is the largest broadcasting company serving African American audiences in the United States. 92Q is one of the few Radio One Urban music stations which uses the on-the-air slogan The Peoples Station.,WERQ-FM,http://www.92q.com/" .
-
-<http://dbpedia.org/resource/S.S._Lazio> dbpprop:name "Luca Crecco" .
 
 <http://dbpedia.org/resource/Division_of_Global_Affairs,_Rutgers_University_E28093_Newark> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Division of Global Affairs, Rutgers University  Newark" ;
@@ -1542,7 +1523,7 @@ dbpprop:website <http://www.csmaritimo.pt/> .
 
 <http://dbpedia.org/resource/Hellenic_Broadcasting_Corporation> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Hellenic Broadcasting Corporation" ;
-rdfs:comment "The Hellenic Broadcasting Corporation (Greek:   , Ellinik Radiofona Tilerasi or ERT, literally Greek Radio-Television) is the Greek state-owned public radio and television broadcasting corporation. It is a member of EBU. Since 70s ERT is part of the Eurovision Song Contest, organized by EBU. Around 88 of ERTs funding comes from television licence fees http://www. circom-regional. org/crdocs/european-benchmarking2002. pdf.,  ,http://www.ert.gr/" .
+rdfs:comment "The Hellenic Broadcasting Corporation (Ellinik Radiofona Tilerasi or ERT, literally Greek Radio-Television) is the Greek state-owned public radio and television broadcasting corporation. It is a member of EBU. Since 70s ERT is part of the Eurovision Song Contest, organized by EBU. Around 88 of ERTs funding comes from television licence fees http://www. circom-regional. org/crdocs/european-benchmarking2002. pdf.,  ,http://www.ert.gr/" .
 
 <http://dbpedia.org/resource/FC_C5A0TK_1914_C5A0amorC3ADn> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC TK 1914 amorn" ;
@@ -1562,7 +1543,6 @@ dbpprop:website <http://www.kozarmislenyse.hu/> .
 rdfs:label "Leones Regios de Monterrey" ;
 rdfs:comment "Leones Regios de Monterrey is a Mexican professional basketball team based in Monterrey, Nuevo Len, playing in the Cibane league.,Leones Regios de Monterrey,http://www.leonesregios.com.mx" .
 
-<http://dbpedia.org/resource/PSV_Eindhoven> dbpprop:name <http://dbpedia.org/resource/Wilfred_Bouma> .
 
 <http://dbpedia.org/resource/Argentine_Primera_DivisiC3B3n> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Argentine Primera Divisin" ;
@@ -1668,7 +1648,7 @@ dbpprop:website <http://www.nk-rijeka.hr> .
 
 <http://dbpedia.org/resource/Asansol_Engineering_College> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Asansol Engineering College" ;
-rdfs:comment "{{#invoke:Coordinates|coord}}{{#coordinates:23|41|N|86|59|E|type:edu|| |primary |name= }} Asansol Engineering College {{#invoke:InfoboxImage|InfoboxImage|image=|size=|sizedefault=frameless|alt=}}Established 1998Type Funded; aided by World Bank under TEQIP (Government of India)Principal Dr. PK PrasadAdvisor Mr.,Asansol Engineering College" ;
+rdfs:comment "Asansol Engineering College Established 1998Type Funded; aided by World Bank under TEQIP (Government of India)Principal Dr. PK PrasadAdvisor Mr.,Asansol Engineering College" ;
 dbpprop:manager "AEC" ;
 dbpprop:name <http://www.aecwb.edu.in,> .
 
@@ -1687,8 +1667,6 @@ rdfs:comment "Los Fantasmas are a five-piece band from the Isle of Wight. Their 
 <http://dbpedia.org/resource/St._Xaviers_Senior_Secondary_School,_Bathinda> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "St. Xaviers Senior Secondary School, Bathinda" ;
 rdfs:comment "St. Xaviers Senior Secondary School, Bathinda, Punjab, India, is an affiliate of the registered society of Pilar, Punjab-Haryana, a branch of the society of Pilar, Goa. Opened in 1983, it is a Catholic institute located at Model Town Phase-2 Bathinda. The schools patron is St. Francis Xavier. The first principal of the school was Father Theodre. The school provides KG, primary and secondary education. It is one of the most prestigious institutes of the city.,St. Xaviers Senior Secondary School,http://www.xavierbathinda.com" .
-
-<http://dbpedia.org/resource/Parma_F.C.> dbpprop:name <http://dbpedia.org/resource/Filippo_Boniperti> .
 
 <http://dbpedia.org/resource/N.F.-Board> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "N.F.-Board" ;
@@ -1731,9 +1709,6 @@ dbpprop:website <http://www.nk-slaven-belupo.hr> .
 <http://dbpedia.org/resource/Umm_al-Qura_University> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Umm al-Qura University" ;
 rdfs:comment "Umm al-Qura University may also refer to a calendar of Saudi Arabia or the City of Mecca. See Islamic calendar or Mecca. Umm Al-Qura University   Jmiat Ummi l-Qur Image:Ummalqurauniversity.,  ,http://www.uquni.com" .
-
-<http://dbpedia.org/resource/PSV_Eindhoven> dbpprop:name "Turfan zbozkurt" ;
-dbpprop:nickname "Rood-witten" .
 
 <http://dbpedia.org/resource/Mangosuthu_University_of_Technology> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Mangosuthu University of Technology" ;
@@ -1843,8 +1818,6 @@ dbpprop:name "Milo Malivojevi" ;
 dbpprop:nickname "I Crociatini" ;
 dbpprop:website <http://fcparma.com/index.php/giovanili/primavera/?lang=en> .
 
-<http://dbpedia.org/resource/Juventus_F.C.> dbpprop:name <http://dbpedia.org/resource/MartC3ADn_CC3A1ceres> .
-
 <http://dbpedia.org/resource/KMSA> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KMSA" ;
 rdfs:comment "KMSA is a college radio station broadcasting an adult album alternative format. Licensed to Grand Junction, Colorado, USA, it serves the Grand Junction area. The station is currently owned by Colorado Mesa University . KMSA is student operated, and student managed and has been since its creation in 1975. It prides itself in bringing good Alternative music to the grand valley.,KMSA 91.3 FM,http://www.kmsa913.com" .
@@ -1875,7 +1848,7 @@ rdfs:comment "WMCL is a radio station licensed to McLeansboro, Illinois, USA. Th
 
 <http://dbpedia.org/resource/FC_Dynamo_Kyiv> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Dynamo Kyiv" ;
-rdfs:comment "Football Club Dynamo Kyiv (Ukrainian:    ) is a Ukrainian professional football club based in Kiev. Founded in 1927, the club currently plays in the Ukrainian Premier League. Their home is the 70,050 capacity Olimpiyskiy National Sports Complex. Dynamo has spent its entire history in the top league of Soviet and later Ukrainian football." ;
+rdfs:comment "Football Club Dynamo Kyiv is a Ukrainian professional football club based in Kiev. Founded in 1927, the club currently plays in the Ukrainian Premier League. Their home is the 70,050 capacity Olimpiyskiy National Sports Complex. Dynamo has spent its entire history in the top league of Soviet and later Ukrainian football." ;
 dbpprop:manager "http://dbpedia.org/resource/Oleh_Blokhin" ;
 dbpprop:name <http://dbpedia.org/resource/Kyrylo_Petrov,http://www.fcdynamo.kiev.ua/> .
 
@@ -1914,7 +1887,7 @@ dbpprop:name "Tricia Turner" .
 
 <http://dbpedia.org/resource/Real_Betis> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Real Betis" ;
-rdfs:comment "Real Betis Balompi, S.A.D. , more commonly referred to as Real Betis, is a Spanish football club based in Seville, in the autonomous community of Andalusia. Founded on 12 September 1907, it currently plays in La Liga, holding home games at Estadio Benito Villamarn in the south of the city. Among other titles, the club  which in 1932 became the first Andalusian team to play in La Liga  won the Primera Divisin in 1935 and the Copa del Rey in 1977 and 2005." ;
+rdfs:comment "Real Betis Balompi, S.A.D., more commonly referred to as Real Betis, is a Spanish football club based in Seville, in the autonomous community of Andalusia. Founded on 12 September 1907, it currently plays in La Liga, holding home games at Estadio Benito Villamarn in the south of the city. Among other titles, the club  which in 1932 became the first Andalusian team to play in La Liga  won the Primera Divisin in 1935 and the Copa del Rey in 1977 and 2005." ;
 dbpprop:manager "http://dbpedia.org/resource/Pepe_Mel" ;
 dbpprop:name <http://dbpedia.org/resource/Antonio_Amaya> ;
 dbpprop:nickname "Heliopolitanos" ;
@@ -2008,7 +1981,7 @@ dbpprop:website <http://www.khnp.co.kr/khnpfc/> .
 
 <http://dbpedia.org/resource/PFC_Slavia_Sofia> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "PFC Slavia Sofia" ;
-rdfs:comment "PFC Slavia Sofia (Bulgarian:   ) is a Bulgarian football club founded on 10 April 1913 in Sofia. Slavias ground is Slavia Stadium with a capacity of 15,992. The teams colours are white and black. The club has won the Bulgarian Championship 7 times and the Bulgarian Cup 7 times. It has also come second in the championship nine times and reached the cup final 7 more times." ;
+rdfs:comment "PFC Slavia Sofia is a Bulgarian football club founded on 10 April 1913 in Sofia. Slavias ground is Slavia Stadium with a capacity of 15,992. The teams colours are white and black. The club has won the Bulgarian Championship 7 times and the Bulgarian Cup 7 times. It has also come second in the championship nine times and reached the cup final 7 more times." ;
 dbpprop:manager "Velislav Vutsov" ;
 dbpprop:name <http://dbpedia.org/resource/Nikolay_Dyulgerov> ;
 dbpprop:nickname " " ;
@@ -2090,8 +2063,6 @@ dbpprop:website <http://www.hajduk.hr/> .
 rdfs:label "PlatEAU (band)" ;
 rdfs:comment "PlatEAU is an electronic music project featuring cEvin Key and Phil Western. The project resembles a very loose approach to the Download project featuring the same members. The song names and album titles refer to the coffeeshop culture of Amsterdam in The Netherlands implying a trip through their musical voyages. The album art also reflects this concept with imagery on their first release on Hypnotic Records in 1997, Music for Grass Bars.,PlatEAU,http://www.subconsciousstudios.com/plateau/" .
 
-<http://dbpedia.org/resource/JK_NC3B5mme_Kalju> dbpprop:name "Henrik Prg" .
-
 <http://dbpedia.org/resource/Bachelorette_(singer)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Bachelorette (singer)" ;
 rdfs:comment "Bachelorette is the musical project of New Zealander Annabel Alpers. Formed in 2004 in Christchurch, Bachelorette mixes '60s psychedelia and girl-group pop with folk and vintage electronics. Prior to Bachelorette, Alpers played in Christchurch surf-band Hawaii Five-O and Hiss Explosion.,Bachelorette,http://particletracks.com/category/news/" .
@@ -2155,8 +2126,6 @@ dbpprop:website <http://www.hawickroyalalbert.co.uk/> .
 <http://dbpedia.org/resource/Culcha_Candela> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Culcha Candela" ;
 rdfs:comment "Culcha Candela is a Dancehall group from Berlin, Germany, formed in 2001. Their lyrics range from political issues, such as Una Cosa or Schne, neue Welt to party songs, such as Partybus. The name Culcha Candela can be translated into English roughly as hot or bright culture.,Culcha Candela,http://www.culchacandela.de" .
-
-<http://dbpedia.org/resource/Albirex_Niigata_Ladies> dbpprop:name <http://dbpedia.org/resource/Mayu_Kubota> .
 
 <http://dbpedia.org/resource/WJRV> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WJRV" ;
@@ -2254,8 +2223,6 @@ rdfs:comment "KWYR is a radio station broadcasting a Country music format. Licen
 rdfs:label "KGLI" ;
 rdfs:comment "KGLI is a radio station broadcasting an Adult Contemporary format. The station serves Sioux City, Iowa, USA, and is owned by Clear Channel Communications.,KGLI,http://www.kg95.com/" .
 
-<http://dbpedia.org/resource/Blackpool_F.C._Ladies> dbpprop:name "Becky Sullivan" .
-
 <http://dbpedia.org/resource/San_MartC3ADn_de_Burzaco> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "San Martn de Burzaco" ;
 rdfs:comment "Club Social y Deportivo San Martn (usually referred to as San Martn de Burzaco) is a sports club based in Burzaco, Buenos Aires Province. Its football team currently plays in Primera D Metropolitana, which is the regionalised fifth tier of the Argentine Football Association league system.,http://dbpedia.org/resource/Daniel_Soza" ;
@@ -2271,8 +2238,6 @@ dbpprop:name <http://dbpedia.org/resource/Jay_Lee_Harris,http://www.chicagomusta
 <http://dbpedia.org/resource/Fort_St._John_Huskies> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Fort St. John Huskies" ;
 rdfs:comment "The Fort St. John Huskies are a Canadian Junior B Ice Hockey team based in Fort St. John, British Columbia, Canada. They are former members of the Peace-Cariboo Jr. B, Jr. A, and Rocky Mountain Junior Hockey League and current members of the Jr. B North West Junior Hockey League of Hockey Alberta.,Fort St. John Golden Hawks,http://www.fsjhuskies.com/" .
-
-<http://dbpedia.org/resource/NK_Slaven_Belupo> dbpprop:name <http://dbpedia.org/resource/Mario_BariC487> .
 
 <http://dbpedia.org/resource/KBLD> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KBLD" ;
@@ -2313,9 +2278,6 @@ rdfs:comment "The University Luigj Gurakuqi of Shkodr in Albania was established
 <http://dbpedia.org/resource/Guildford_High_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Guildford High School" ;
 rdfs:comment "Guildford High School is an all-girls independent school not far from Guildford High Street, on London Road, Guildford, Surrey. It works closely with the local independent boys school Royal Grammar School. There are approximately 930 students from junior school to sixth form.,Guildford High School,http://www.guildfordhigh.surrey.sch.uk/" .
-
-<http://dbpedia.org/resource/S.S._Lazio> dbpprop:name "Tommaso Mazzei" ;
-dbpprop:nickname "La prima squadra della capitale" .
 
 <http://dbpedia.org/resource/Supreme_Council_of_Crimea> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Supreme Council of Crimea" ;
@@ -2413,7 +2375,7 @@ rdfs:comment "Share Our Strength is a national organization working to end child
 
 <http://dbpedia.org/resource/OFC_Sliven_2000> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "OFC Sliven 2000" ;
-rdfs:comment "OFC Sliven 2000 (  2000) is a Bulgarian football club from the town of Sliven, currently playing in the B PFG, the second division of Bulgarian football. The clubs home ground is the Hadzhi Dimitar Stadium in Sliven with a capacity of 15,000. OFC Slivens team colours are orange and blue." ;
+rdfs:comment "OFC Sliven 2000 is a Bulgarian football club from the town of Sliven, currently playing in the B PFG, the second division of Bulgarian football. The clubs home ground is the Hadzhi Dimitar Stadium in Sliven with a capacity of 15,000. OFC Slivens team colours are orange and blue." ;
 dbpprop:manager "Lachezar Doychev" ;
 dbpprop:name "Boyan Nikolov" ;
 dbpprop:nickname "" ;
@@ -2455,7 +2417,7 @@ rdfs:comment "WDDV is a radio station broadcasting an Adult Standards/Middle of 
 
 <http://dbpedia.org/resource/University_of_Macedonia> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "University of Macedonia" ;
-rdfs:comment "The University of Macedonia (Greek:   or Panepistmio Makedonas) is located in Thessaloniki, Macedonia, Greece. It is the second largest university in Thessaloniki. It currently consists of ten departments which deal mainly with social, political and economic sciences. Before 1991, it was known as School of Higher Industrial Studies of Thessaloniki (Anotati Viomihaniki Sholi Thessalonikis).,University of Macedonia" ;
+rdfs:comment "The University of Macedonia (Greek: Panepistmio Makedonias) is located in Thessaloniki, Macedonia, Greece. It is the second largest university in Thessaloniki. It currently consists of ten departments which deal mainly with social, political and economic sciences. Before 1991, it was known as School of Higher Industrial Studies of Thessaloniki (Anotati Viomihaniki Sholi Thessalonikis).,University of Macedonia" ;
 dbpprop:manager "PA.MAK." ;
 dbpprop:name <http://www.uom.gr> .
 
@@ -2505,7 +2467,7 @@ dbpprop:website <http://www.santosfc.com.br> .
 
 <http://dbpedia.org/resource/First_Macedonian_Football_League> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "First Macedonian Football League" ;
-rdfs:comment "The First Macedonian Football League (Macedonian:    , Prva akedonska Fudbalska Liga; also called 1. MFL and Prva Liga) is the highest professional football competition in the Republic of Macedonia. It is a professional league competition for football clubs located at the top of the Macedonian football league system and has been operating for about twenty years since the 1992-1993 season. It is organized by the Football Federation of Macedonia (FFM).,   ,http://www.ffm.com.mk" .
+rdfs:comment "The First Macedonian Football League (Prva akedonska Fudbalska Liga; also called 1. MFL and Prva Liga) is the highest professional football competition in the Republic of Macedonia. It is a professional league competition for football clubs located at the top of the Macedonian football league system and has been operating for about twenty years since the 1992-1993 season. It is organized by the Football Federation of Macedonia (FFM).,   ,http://www.ffm.com.mk" .
 
 <http://dbpedia.org/resource/AEK_Athens_Futsal> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "AEK Athens Futsal" ;
@@ -2610,8 +2572,6 @@ dbpprop:website <http://www.dvsc.hu/> .
 rdfs:label "WNFA" ;
 rdfs:comment "WNFA is a contemporary Christian radio station in Port Huron, Michigan, USA, branded as Bluewater Christian Hit Radio. WNFA broadcasts on 88.3 FM with 1,300 watts.,WNFA,http://www.power883.com/" .
 
-<http://dbpedia.org/resource/BeC59FiktaC59F_J.K.> dbpprop:name <http://dbpedia.org/resource/Manuel_Fernandes_(footballer_born_1986)> .
-
 <http://dbpedia.org/resource/FC_Metalist_Kharkiv> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Metalist Kharkiv" ;
 rdfs:comment "Football Club Metalist Kharkiv (Ukrainian:    ) is a Ukrainian professional football club based in Kharkiv. It competes in the Ukrainian Premier League, the top football league in the country. Founded in 1925, the team worked its way up the rungs of the Soviet football system, eventually being promoted to the Soviet Top League in 1960." ;
@@ -2657,9 +2617,6 @@ rdfs:label "Puerto Rico United" ;
 rdfs:comment "Puerto Rico United is a Puerto Rican professional association football team based in Aguada, Puerto Rico. Founded in 2007, the team plays The team competes in the Puerto Rico Soccer League. The team currently plays its home games at Aguada Stadium. The teams colors are lime green, silver, white and black. Their current head coach is Brazilian Raimundo C. Gatinho." ;
 dbpprop:manager "Raimundo C. Gatinho" ;
 dbpprop:name <http://dbpedia.org/resource/Guimareas,http://prunited.net/> .
-
-<http://dbpedia.org/resource/C5A0K_Slovan_Bratislava> rdfs:comment "K Slovan Bratislava is a football club based in Bratislava, Slovakia, that plays in the Slovak Super Liga. Founded as 1. sK Bratislava in 1919, the club changed its name to Slovan Bratislava in 1953. Slovan is the most successful team in Slovakia with the most titles in both league and cup in the country.,Facundo Serra" ;
-dbpprop:manager "Krli Bratislavy" .
 
 <http://dbpedia.org/resource/Xavier_University_of_Louisiana> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Xavier University of Louisiana" ;
@@ -2713,8 +2670,6 @@ dbpprop:website <http://www.fctwente.nl/en/> .
 <http://dbpedia.org/resource/We_Are_the_Fury> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "We Are the Fury" ;
 rdfs:comment "We Are the Fury is an American rock band.,We Are the Fury,http://www.wearethefury.net/" .
-
-<http://dbpedia.org/resource/Virginia_Union_University> rdfs:comment "Virginia Union University (VUU) is a historically black university located in Richmond, Virginia, United States. It took its present name in 1899 upon the merger of two older schools, Richmond Theological Institute and Wayland Seminary, each founded after the end of American Civil War by the American Baptist Home Mission Society. VUUs 84-acre campus is located at 1500 North Lombardy Street in RichmonDs North Side.,http://dbpedia.org/resource/Samuel_L._Gravely,_Jr." .
 
 <http://dbpedia.org/resource/Spartak_Myjava> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Spartak Myjava" ;
@@ -3001,7 +2956,7 @@ rdfs:comment "Ajay-Atul is the music alias of Indian music director-composer duo
 
 <http://dbpedia.org/resource/AC_Omonia> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "AC Omonia" ;
-rdfs:comment "Athletic Club Omonia Nicosia (Greek:    ) is a professional football club that plays in the Cyprus capital city Nicosia. The club was established in 1948 and became a member of the Cyprus Football Association in 1953. Omonia, which means 'ConcorD in Greek, has won 20 League Championships, 14 Cypriot Cups and 16 Super Cups and 5 domestic doubles  in 1972, 1974, 1981, 1982 and 1983 all since 1948. Omonias history speaks for itself." ;
+rdfs:comment "Athletic Club Omonia Nicosia is a professional football club that plays in the Cyprus capital city Nicosia. The club was established in 1948 and became a member of the Cyprus Football Association in 1953. Omonia, which means 'ConcorD in Greek, has won 20 League Championships, 14 Cypriot Cups and 16 Super Cups and 5 domestic doubles  in 1972, 1974, 1981, 1982 and 1983 all since 1948. Omonias history speaks for itself." ;
 dbpprop:manager "Toni Savevski" ;
 dbpprop:name "Marios Demetriou,http://www.omonoia.com.cy/" .
 
@@ -3157,11 +3112,6 @@ dbpprop:website <http://www.vfl-wolfsburg.de> .
 rdfs:label "College of Horticulture" ;
 rdfs:comment "The College of Horticulture, is a constituent college of Kerala Agricultural University, situated in Thrissur of Kerala state in India. The College of Horticulture imparts agricultural education at undergraduate, graduate and doctoral levels. The college has 16 departments and 7 centres undertaking the multiple activities of teaching, research and extension. The college is located in the picturesque central campus of Kerala Agricultural University in Vellanikkara, Thrissur.,College of Horticulture,http://www.kauhort.in/" .
 
-<http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> dbpprop:name "Sioned Jones" ;
-dbpprop:nickname "Llani Ladies" .
-
-<http://dbpedia.org/resource/FC_Green_Boys_77_Harlange-Tarchamps> dbpprop:name <http://dbpedia.org/resource/Kieffer_Tom,http://www.greenboys.net/> .
-
 <http://dbpedia.org/resource/Mining_Association_of_the_United_Kingdom> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Mining Association of the United Kingdom" ;
 rdfs:comment "The Mining Association of the United Kingdom is a trade association for all kinds of mining undertaken by UK companies.,Mining Association of the United Kingdom,http://www.mauk.org.uk" .
@@ -3238,9 +3188,6 @@ dbpprop:website <http://www.blackpoolfc.co.uk/> .
 rdfs:label "Middlesex Community College (Connecticut)" ;
 rdfs:comment "Middlesex Community College (also known as MxCC) is a public community college in Middletown, Connecticut. As measured by enrollment it is the eighth-largest of the twelve colleges in the Connecticut Community Colleges system. The school has an open admissions policy. MxCC has about 4,400 full- and part-time students enrolled. It is a commuter school with no dormitories.,Middlesex Community College,http//.mxcc.edu" .
 
-<http://dbpedia.org/resource/Santos_FC> dbpprop:name <http://dbpedia.org/resource/Alison_Lopes_Ferreira> ;
-dbpprop:nickname "Peixe" .
-
 <http://dbpedia.org/resource/Kyungpook_National_University_School_of_Medicine> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Kyungpook National University School of Medicine" ;
 rdfs:comment "Kyungpook National University School of Medicine (commonly referred to as KNU Med or KNU School of Medicine) is the medical school of Kyungpook National University in Daegu, South Korea. Founded in 1923, it is the second-oldest medical school in South Korea after Yonsei University College of Medicine. It is widely regarded as one of the most selective and prestigious medical schools in the nation. KNU Med offers the M.D. , M.D. /Ph.D. , M.S. and Ph.D. degrees in medicine.,KNU School of Medicine,http://med.knu.ac.kr" .
@@ -3287,8 +3234,6 @@ rdfs:comment "Founded as Rakhine United FC Football Club is a professional footb
 dbpprop:manager "U Aung Naing" ;
 dbpprop:name <http://dbpedia.org/resource/Alexandre_(footballer_born_1985),http://www.rakhineunitedfc.com/> .
 
-<http://dbpedia.org/resource/TRAX_(band)> rdfs:comment "TRAX (originally The TRAX) is a South Korean rock band formed in the summer of 2004 by S.M. Entertainment and formerly produced by X Japans co-founder Yoshiki. The name TRAX refers to recording tracks, but also stands for the first letter of each original members stage name, Typhoon of the Rose Attack on X-Mas. Originally a nu metal and alternative rock band, they changed to a straight pop rock sound when drummer Rose left in 2006.,http://dbpedia.org/resource/Let_You_Go_(Trax_album),http://trax.smtown.com/" .
-
 <http://dbpedia.org/resource/FC_Ripensia_TimiC899oara> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Ripensia Timioara" ;
 rdfs:comment "Fotbal Club Ripensia Timioara is a football team from the Romanian city of Timioara. It was founded in 1928 by Dr. Cornel Lazr and it lasted only twenty years before folding due to lack of funds in 1948. In 2012, the club was brought back to life in the Timi County League. Ripensia was the first Romanian football club to turn professional, and because of this status they were unable to compete in the national league until the 1932-33 season." ;
@@ -3310,8 +3255,6 @@ dbpprop:manager "http://dbpedia.org/resource/Juan_Carlos_Kopriva" ;
 dbpprop:name <http://dbpedia.org/resource/Sebastian_Matos> ;
 dbpprop:nickname "Baraqueos" ;
 dbpprop:website <http://www.barracascentral.com> .
-
-<http://dbpedia.org/resource/FC_Hoverla_Uzhhorod> dbpprop:name <http://dbpedia.org/resource/Serhiy_Boyko,http://fcgoverla.uz.ua/> .
 
 <http://dbpedia.org/resource/FK_LiepC481jas_Metalurgs> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FK Liepjas Metalurgs" ;
@@ -3338,8 +3281,6 @@ dbpprop:website <http://samsunspor.org.tr> .
 <http://dbpedia.org/resource/Beechwood_Park_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Beechwood Park School" ;
 rdfs:comment "Beechwood Park School, also familiarly referred to as Beechwood, is a co-educational independent day and boarding school in Hertfordshire in England, UK for reception to year 8. It is set on the site of an old Mansion house with extensions put in over the last 50 years including the junior school, middle school, sports hall and performance hall. The school was founded in 1964 with the merge of two other local prep schools.,Beechwood Park School,http://www.beechwoodpark.herts.sch.uk" .
-
-<http://dbpedia.org/resource/Parma_F.C.> dbpprop:name <http://dbpedia.org/resource/Davide_Colomba> .
 
 <http://dbpedia.org/resource/WRVV> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WRVV" ;
@@ -3415,9 +3356,6 @@ dbpprop:website <http://www.fck.de/> .
 rdfs:label "KEBR" ;
 rdfs:comment "For the NPR station with the same call letters, see KQED-FM (KEBR-FM) For the station at 100.5 FM formerly known as KEBR, see KZZO KEBRCity of license Rocklin, CaliforniaBroadcast area Rocklin, California/Sacramento, CaliforniaBranding Family RadioFrequency 1210First air date April 22, 1988Format Christian radioPower 5,000 watts day500 watts nightClass BFacility ID 20930Owner Family Stations Inc. Website familyradio.,KEBR,http://www.familyradio.com/" .
 
-<http://dbpedia.org/resource/Juventus_F.C.> dbpprop:name <http://dbpedia.org/resource/Carlo_Pinsoglio> ;
-dbpprop:nickname "La Fidanzata DItalia" .
-
 <http://dbpedia.org/resource/Torrance_High_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Torrance High School" ;
 rdfs:comment "Torrance High School is a high school located in Torrance, California. Founded in 1917, it is one of the oldest high schools in continuous use in California and is the oldest of the four high schools in the Torrance Unified School District. Four of its buildings are listed on the U.S. National Register of Historic Places. Torrance High School is a popular filming location for television and motion picture production.,Torrance High School,www.ths.tusd.org" .
@@ -3434,8 +3372,6 @@ rdfs:comment "The Penang State Legislative Assembly is the state legislature of 
 rdfs:label "Western Australian National Training Centre" ;
 rdfs:comment "Western Australian National Training Centre or simply WA NTC is a football (soccer) academy based in Perth, Western Australia. The WA NTC runs both Male and Female training programs. The academy was established by Football West in conjunction with FFA and DRS in 2006 to operate as a establishment were young players can be assisted to prepare for the game at the highest level.,Daniel Moss,http://www.footballwest.com.au/index.php?id=94" .
 
-<http://dbpedia.org/resource/FC_Rapid_BucureC899ti> dbpprop:name <http://dbpedia.org/resource/Cristian_Oros> ;
-dbpprop:nickname "Feroviarii" .
 
 <http://dbpedia.org/resource/Titanium_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Titanium (band)" ;
@@ -3470,8 +3406,6 @@ dbpprop:manager "http://dbpedia.org/resource/Gurban_Gurbanov" ;
 dbpprop:name <http://dbpedia.org/resource/Gara_Garayev_(footballer)> ;
 dbpprop:nickname "Atllar" ;
 dbpprop:website <http://www.qarabagh.com> .
-
-<http://dbpedia.org/resource/Panionios_G.S.S.> dbpprop:name <http://dbpedia.org/resource/Dimitris_Kolovos> .
 
 <http://dbpedia.org/resource/IMG_Academy_Bradenton> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "IMG Academy Bradenton" ;
@@ -3565,7 +3499,7 @@ rdfs:comment "The National Institute of Banking and Finance (NIBAF) is a subsidi
 
 <http://dbpedia.org/resource/FC_Shakhtar_Donetsk> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Shakhtar Donetsk" ;
-rdfs:comment "FC Shakhtar Donetsk (Ukrainian:   ) is a Ukrainian professional football club from the city of Donetsk. Shakhtar has appeared in several European competitions and currently is often a participant of the UEFA Champions League. The club became the first Ukrainian club to win the UEFA Cup in 2009, the last year before the competition was revamped as the Europa League. They are one of only two Ukrainian clubs, the other being Dynamo Kyiv, to have won a major UEFA competition." ;
+rdfs:comment "FC Shakhtar Donetsk is a Ukrainian professional football club from the city of Donetsk. Shakhtar has appeared in several European competitions and currently is often a participant of the UEFA Champions League. The club became the first Ukrainian club to win the UEFA Cup in 2009, the last year before the competition was revamped as the Europa League. They are one of only two Ukrainian clubs, the other being Dynamo Kyiv, to have won a major UEFA competition." ;
 dbpprop:manager "http://dbpedia.org/resource/Mircea_Lucescu" ;
 dbpprop:name <http://dbpedia.org/resource/Darijo_Srna> ;
 dbpprop:nickname "Hirnyky , Kroty" ;
@@ -3582,9 +3516,6 @@ rdfs:comment "Celestiial is a one-man funeral doom metal band from Minnesota. Th
 <http://dbpedia.org/resource/KULY> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KULY" ;
 rdfs:comment "KULY is a radio station broadcasting a Classic Country format. Licensed to Ulysses, Kansas, USA. The station is currently owned by KBUF Partnership and features programing from ABC Radio.,KULY,http://www.wksradio.com" .
-
-<http://dbpedia.org/resource/Santos_FC> dbpprop:name <http://dbpedia.org/resource/Edu_Dracena> ;
-dbpprop:nickname "Alvinegro Praiano" .
 
 <http://dbpedia.org/resource/DWFM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "DWFM" ;
@@ -3605,9 +3536,6 @@ dbpprop:website <http://www.alkharaitiyat.com> .
 <http://dbpedia.org/resource/Governor-General_of_Jamaica> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Governor-General of Jamaica" ;
 rdfs:comment "The Governor-General of Jamaica represents the Jamaican monarch, and head of state, who holds the title of King or Queen of Jamaica (as of 1952, Queen Elizabeth II). The Queen, on the advice of the Prime Minister, appoints a Governor-General to be her representative in Jamaica. Both the Queen and the Governor-General hold much power of the country it is rarely used, it is usually only used in emergencies and in some cases war.,Governor-General Of Jamaica,http://kingshouse.gov.jm/" .
-
-<http://dbpedia.org/resource/Tractor_Sazi_F.C.> dbpprop:name <http://dbpedia.org/resource/Milad_Fakhreddini> ;
-dbpprop:nickname "TIRAXTUR" .
 
 <http://dbpedia.org/resource/New_Orleans_Jesters> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "New Orleans Jesters" ;
@@ -3636,8 +3564,6 @@ dbpprop:name <http://dbpedia.org/resource/Kieran_Frend,http://www.seankellycycli
 <http://dbpedia.org/resource/The_Movement_(reggae_band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "The Movement (reggae band)" ;
 rdfs:comment "The Movement is an American band originally formed in Columbia, South Carolina, in 2004. The two founding members, Josh Swain and Jordan Miller, have since relocated to Philadelphia, Pennsylvania, where they acquired a live rhythm section in the form of local Philadelphia musicians Jay Schmidt and Gary Jackson. Their music is commonly described as a fusion of rock, reggae, hip hop and acoustic. In March 2012, The Movement released their third studio album, One More Night.,The Movement,http://www.themovementvibe.com/" .
-
-<http://dbpedia.org/resource/FBC_Melgar> dbpprop:name <http://dbpedia.org/resource/C381ngel_Ojeda> .
 
 <http://dbpedia.org/resource/Baghdad_FC> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Baghdad FC" ;
@@ -3734,8 +3660,6 @@ rdfs:comment "FB Gulbene (formerly FB Gulbene-2005) is a Latvian football club b
 dbpprop:manager "Mihails Koevs" ;
 dbpprop:name "Igors Labuts,http://www.fbgulbene.com/" .
 
-<http://dbpedia.org/resource/FC_Shakhtar_Donetsk> dbpprop:name "Valeriy Hryshyn" .
-
 <http://dbpedia.org/resource/Darlington_College> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Darlington College" ;
 rdfs:comment "Darlington College is a further education college in Darlington, County Durham, England. The college campus is located at Central Park, Haughton Road. With support from Darlington Borough Council and Tees Valley Regeneration the college was built by Shepard Construction, starting in 2004. It was opened in September 2006 and officially opened by the then-Prime Minister, Tony Blair, on 22 December 2006.,Darlington College,http://www.darlington.ac.uk" .
@@ -3744,7 +3668,6 @@ rdfs:comment "Darlington College is a further education college in Darlington, C
 rdfs:label "WSBA (AM)" ;
 rdfs:comment "WSBA (910 AM, News Talk 910) is a radio station in York, Pennsylvania. The station used to be owned by Susquehanna Radio until 2005, when it was purchased by Cumulus Media. During the 1960s and 1970s, WSBA was a leading top 40 music station in the Harrisburg-York-Lancaster area; it was also the flagship station of Susquehanna Radios top 40 stations (which also included WHLO, WARM, and WICE).,WSBA,http://www.wsba910.com/" .
 
-<http://dbpedia.org/resource/FC_Sochaux-MontbC3A9liard> dbpprop:name <http://dbpedia.org/resource/CC3A9dric_Bakambu> .
 
 <http://dbpedia.org/resource/Ottawa_Senators_(CWHL)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Ottawa Senators (CWHL)" ;
@@ -3766,12 +3689,9 @@ rdfs:comment "The Cornwall Wildlife Trust is a charitable organisation founded i
 rdfs:label "SV Neulengbach" ;
 rdfs:comment "SV Neulengbach is an Austrian association football club from Neulengbach. The club was founded in 1923 but is most notably for its womens football section which was founded in 1996. While the men always played in the lower leagues of Austria, the women are a success story. In their first season in 199697 they started in the second division which they won instantly and so they got promoted to the FB-Frauenliga, the first division.,http://dbpedia.org/resource/Gillian_MacPherson,http://www.neulengbach.at/" .
 
-<http://dbpedia.org/resource/Maccabi_Haifa_F.C.> dbpprop:name <http://dbpedia.org/resource/Habshi_Eied> ;
-dbpprop:nickname "" .
-
 <http://dbpedia.org/resource/Athens_University_of_Economics_and_Business> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Athens University of Economics and Business" ;
-rdfs:comment "Athens University of Economics and Business (AUEB) (Greek:   , Oikonomiko Panepistimio Athinon, abbrev. . . . , OPA) was founded in 1920 in Athens, Greece. Its buildings are housed on Patision Street. Before 1989, the university was known in Greek as the Supreme School of Economics and Business (     , Anotati Scholi Oikonomikon kai Emborikon Epistimon, abbrev. . . . . .,Athens University of Economics and Business,http://www.aueb.gr/" .
+rdfs:comment "Athens University of Economics and Business (AUEB) (Oikonomiko Panepistimio Athinon, abbrev , OPA) was founded in 1920 in Athens, Greece. Its buildings are housed on Patision Street. Before 1989, the university was known in Greek as the Supreme School of Economics and Business (     , Anotati Scholi Oikonomikon kai Emborikon Epistimon, abbrev. . . . . .,Athens University of Economics and Business,http://www.aueb.gr/" .
 
 <http://dbpedia.org/resource/Deutscher_Journalisten_Verband> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Deutscher Journalisten Verband" ;
@@ -3811,14 +3731,9 @@ dbpprop:name <http://dbpedia.org/resource/Adriana_Leon> ;
 dbpprop:nickname "Breakers" ;
 dbpprop:website <http://www.bostonbreakerssoccer.com/index.html> .
 
-<http://dbpedia.org/resource/1._FSV_Mainz_05> dbpprop:name "Lucas Rser" ;
-dbpprop:nickname "Die Nullfnfer ," .
-
 <http://dbpedia.org/resource/Seikei_University> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Seikei University" ;
 rdfs:comment "Seikei University is a private university in the Kichijji neighborhood of the city of Musashino, Tokyo, Japan. Its name derives from a passage in the Records of the Grand Historian by Sima Qian. Its campus is noted for its beautiful rows of zelkova trees.,Seikei University,http://www.seikei.ac.jp/university/index.html" .
-
-<http://dbpedia.org/resource/Northern_Virginia_Royals> dbpprop:name <http://dbpedia.org/resource/Calle_Brown> .
 
 <http://dbpedia.org/resource/KSKR_(AM)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KSKR (AM)" ;
@@ -3827,9 +3742,6 @@ rdfs:comment "KSKR (1490 AM, The Score) is a radio station licensed to serve Ros
 <http://dbpedia.org/resource/WMFS_(AM)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WMFS (AM)" ;
 rdfs:comment "WMFS is a commercial radio station located in Memphis, Tennessee. WMFS airs sports radio programming branded as ESPN 680AM Sports Radio Memphis. The station simulcasts with WMFS-FM 92.9. WMFS is home to the Jim Rome Show and the Gary Parrish Show with Geoff Calkins. As of the 2007 baseball season, WMFS has become the home of St. Louis Cardinals broadcasts in the Memphis area. It also broadcasts Tennessee Volunteers football and basketball games.,WMFS,http://www.espn929.com/" .
-
-<http://dbpedia.org/resource/Tartu_JK_Welco_Elekter> dbpprop:name "Mrt Soplepmann" ;
-dbpprop:nickname "Vangid" .
 
 <http://dbpedia.org/resource/Ventura_County_Fusion> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Ventura County Fusion" ;
@@ -3905,15 +3817,9 @@ dbpprop:manager "Kontantn imo" .
 rdfs:label "Scottish Arbitration Centre" ;
 rdfs:comment "The Scottish Arbitration Centre is the home of domestic and international arbitration in Scotland. Its members comprise the Scottish Government, the Law Society of Scotland, the Faculty of Advocates, the Royal Institution of Chartered Surveyors and the Chartered Institute of Arbitrators. The Centres Honorary President is Sir David Edward QC. It has two Honorary Vice Presidents, Lord John Dervaird, and Hew Dundas.,Scottish Arbitration Centre,http://www.scottisharbitrationcentre.org/" .
 
-<http://dbpedia.org/resource/AtlC3A9tico_Nacional> dbpprop:name <http://dbpedia.org/resource/Macnelly_Torres> ;
-dbpprop:nickname "Rey de Copas ," .
-
 <http://dbpedia.org/resource/Ormiston_Rivers_Academy> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Ormiston Rivers Academy" ;
 rdfs:comment "Ormiston Rivers Academy is a secondary academy school in Burnham-on-Crouch, Essex which was opened in 2011. The school replaced St Peters High School which was closed in the same year to make way for the new academy. The school is one of many in the UK that is operated and funded by the Ormiston Trust, an organisation for education in the UK.,Ormiston Rivers Academy,http://www.ormistonriversacademy.co.uk/" .
-
-<http://dbpedia.org/resource/GuaratinguetC3A1_Futebol> dbpprop:name <http://dbpedia.org/resource/Saulo_Squarsone_Rodrigues_dos_Santos> ;
-dbpprop:nickname "O Orgulho do Vale" .
 
 <http://dbpedia.org/resource/KNSI> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KNSI" ;
@@ -4204,7 +4110,7 @@ rdfs:comment "The Piper Downs are a four piece rock band from Los Angeles, Calif
 
 <http://dbpedia.org/resource/PFC_Pirin_Gotse_Delchev> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "PFC Pirin Gotse Delchev" ;
-rdfs:comment "Professional Football Club Pirin (Bulgarian:    ) is a Bulgarian professional football club, based in Gotse Delchev. As the 201112 West B PFG champions, they now play in the top tier of Bulgarian football, the A Professional Football Group, for the first time in the clubs history." ;
+rdfs:comment "Professional Football Club Pirin is a Bulgarian professional football club, based in Gotse Delchev. As the 201112 West B PFG champions, they now play in the top tier of Bulgarian football, the A Professional Football Group, for the first time in the clubs history." ;
 dbpprop:manager "Tencho Tenev" ;
 dbpprop:name <http://dbpedia.org/resource/Georgi_Petrov_(footballer_born_1991)> ;
 dbpprop:nickname "Nevrokopchani" ;
@@ -4222,9 +4128,6 @@ dbpprop:website <http://www.genoacfc.it/> .
 <http://dbpedia.org/resource/Timeless_Miracle> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Timeless Miracle" ;
 rdfs:comment "Timeless Miracle is a power metal band from Malm, Sweden, formed in late 1995. Originally named Trapped, the band soon broke up without releasing any materials. The collective re-formed in 2001 and recorded three demos. Having changed their name to Timeless Miracle, the band released their dbut album Into the Enchanted Chamber through Massacre Records in 2005.,Timeless Miracle,http://web.archive.org/web/20090501204105/http:/hem.bredband.net/trapped01/News1.htm" .
-
-<http://dbpedia.org/resource/Deportivo_de_La_CoruC3B1a> dbpprop:name <http://dbpedia.org/resource/Carlos_Marchena> ;
-dbpprop:nickname "Turks" .
 
 <http://dbpedia.org/resource/Kankakee_Community_College> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Kankakee Community College" ;
@@ -4341,7 +4244,7 @@ dbpprop:name <http://dbpedia.org/resource/VC3A1clav_OndC599ejka,http://www.fkmb.
 
 <http://dbpedia.org/resource/FC_Metalurh_Donetsk> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Metalurh Donetsk" ;
-rdfs:comment "Football Club Metalurh Donetsk (Ukrainian:    ) is a Ukrainian professional football club based in Donetsk." ;
+rdfs:comment "Football Club Metalurh Donetsk is a Ukrainian professional football club based in Donetsk." ;
 dbpprop:manager "http://dbpedia.org/resource/Yuriy_Maksymov" ;
 dbpprop:name <http://dbpedia.org/resource/Mykola_Morozyuk,http://metallurg.donetsk.ua/> .
 
@@ -4434,8 +4337,6 @@ rdfs:comment "The Maharaja Krishna Chandra Gajapati Medical College  Hospital, B
 <http://dbpedia.org/resource/Profusion_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Profusion (band)" ;
 rdfs:comment "Profusion is an Italian progressive rock band based in Siena and founded in 2002. Their music is distributed by ProgRock Records.,Profusion,www.profusion.it" .
-
-<http://dbpedia.org/resource/Sport_Club_Corinthians_Paulista> dbpprop:nickname "Todo Poderoso" .
 
 <http://dbpedia.org/resource/Club_AtlC3A9tico_Atlanta> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Club Atltico Atlanta" ;
@@ -4535,8 +4436,6 @@ dbpprop:website <http://www.bcwfc.co.uk/> .
 rdfs:label "National Weather Service Chicago, Illinois" ;
 rdfs:comment "National Weather Service Chicago, currently based in Romeoville, Illinois, is a weather forecast office responsible for monitoring weather conditions for 23 counties in Northern Illinois, the Chicago metropolitan area and Northwest Indiana. The Army Signal Service established the first federal weather office in the region in Chicago on October 15, 1870.,WXK24,http://www.crh.noaa.gov/lot/?n=WNG689" .
 
-<http://dbpedia.org/resource/Sepahan_Isfahan_F.C.> dbpprop:name <http://dbpedia.org/resource/Radomir_C490aloviC487> ;
-dbpprop:nickname "Asias Yellow Storm" .
 
 <http://dbpedia.org/resource/Merelinense_F.C.> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Merelinense F.C." ;
@@ -4572,7 +4471,6 @@ rdfs:comment "The University of Malta (Maltese L-Universit ta Malta) is the high
 rdfs:label "KSAFA Major League" ;
 rdfs:comment "The KSAFA Major League is a third-division football league in Jamaica. The twelve teams that compete in the league are based in the parishes of St. Andrew and Kingston. At the end of each season, the top two teams are promoted to the KSAFA Super League. The bottom two teams are relegated to the KSAFA Syd Bartlett League.,KSAFA Major League,http://www.ksafa.net/Major.htm" .
 
-<http://dbpedia.org/resource/Parma_F.C.> dbpprop:name "Daniele Bernasconi" .
 
 <http://dbpedia.org/resource/Chelsea_Grin_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Chelsea Grin (band)" ;
@@ -4767,9 +4665,6 @@ dbpprop:website <http://www.fkjagodina.org.rs/> .
 rdfs:label "Fabulous Disaster (band)" ;
 rdfs:comment "Fabulous Disaster was an riot grrrl band founded in 1998 out of San Francisco, California.,Fabulous Disaster,http://www.fabulous-disaster.com" .
 
-<http://dbpedia.org/resource/SC3A3o_Paulo_FC> dbpprop:name <http://dbpedia.org/resource/LC3BAcio> ;
-dbpprop:nickname "O Mais Querido" .
-
 <http://dbpedia.org/resource/Ajloun_National_Private_University> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Ajloun National Private University" ;
 rdfs:comment "Ajloun National Private University (Arabic    ) is located in Ajloun- Jordan. The university was established in 2008 and started its first academic semester Fall 2009.,Ajloun National Private University,http://www.anpu.edu.jo" .
@@ -4789,9 +4684,6 @@ rdfs:comment "The GMP International Union (formerly the Glass, Molders, Pottery,
 <http://dbpedia.org/resource/826_Chicago> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "826 Chicago" ;
 rdfs:comment "826 Chicago is the Chicago chapter of the non-profit 826 National, an organization dedicated to offering free after-school tutoring and creative writing workshops for kids ages 618. All programs are open for Chicago Public School students. The center opened in 2005 in Chicagos Wicker Park Neighborhood.,826,http://www.826chi.org/" .
-
-<http://dbpedia.org/resource/1._FC_Tatran_PreC5A1ov> dbpprop:name "Jn Mizerk" ;
-dbpprop:nickname "Koare" .
 
 <http://dbpedia.org/resource/1._FC_Union_Berlin> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "1. FC Union Berlin" ;
@@ -4823,8 +4715,6 @@ rdfs:comment "Northern New Mexico College (commonly referred to as NNMC, Norther
 <http://dbpedia.org/resource/The_Brat_Attack> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "The Brat Attack" ;
 rdfs:comment "The Brat Attack are a political punk band from Winnipeg, Manitoba, Canada. Their first two albums were released on guitarist/vocalist/songwriter Dave Zegaracs label, 3rd Generation Records. Underground Operations signed the band in 2005 and released their album, From This Beauty Comes Chaos and Mayhem. The album was produced by Mark Spicoluk and Steve Rizun. They played the Warped Tour. In 2005, the band fell apart and lost a few members.,The Brat Attack,http://www.myspace.com/thebratattack" .
-
-<http://dbpedia.org/resource/AC_Sparta_Prague> dbpprop:name "David Hovorka" .
 
 <http://dbpedia.org/resource/Montclair_High_School_(California)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Montclair High School (California)" ;
@@ -5199,7 +5089,6 @@ rdfs:comment "Orica-GreenEDGE is an Australian professional road race cycling te
 dbpprop:manager "Shayne Bannan" ;
 dbpprop:name <http://dbpedia.org/resource/Daryl_Impey,http://www.greenedgecycling.com/> .
 
-<http://dbpedia.org/resource/PSV_Eindhoven> dbpprop:nickname "Philips" .
 
 <http://dbpedia.org/resource/South_Nottinghamshire_Academy> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "South Nottinghamshire Academy" ;
@@ -5215,7 +5104,7 @@ rdfs:comment "The Beijing University of Posts and Telecommunications (BUPT) is a
 
 <http://dbpedia.org/resource/PFC_Minyor_Pernik> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "PFC Minyor Pernik" ;
-rdfs:comment "PFC Minyor Pernik (Bulgarian:   ) is a Bulgarian football club from the town of Pernik, which currently competes in the Bulgarian A Professional Football Group, the top division of Bulgarian football." ;
+rdfs:comment "PFC Minyor Pernik is a Bulgarian football club from the town of Pernik, which currently competes in the Bulgarian A Professional Football Group, the top division of Bulgarian football." ;
 dbpprop:manager "Nikolay Todorov" ;
 dbpprop:name <http://dbpedia.org/resource/David_Stoyanov> ;
 dbpprop:nickname "" ;
@@ -5522,7 +5411,6 @@ dbpprop:name <http://dbpedia.org/resource/Michal_Reichl> ;
 dbpprop:nickname "Hanci" ;
 dbpprop:website <http://www.sigmafotbal.cz/> .
 
-<http://dbpedia.org/resource/Bucaspor> dbpprop:name <http://dbpedia.org/resource/OC49Fuz_Sabankay> .
 
 <http://dbpedia.org/resource/Central_New_Mexico_Community_College> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Central New Mexico Community College" ;
@@ -5609,8 +5497,6 @@ rdfs:comment "African Lyon is a football club in Dar es Salaam, Tanzania. They p
 dbpprop:manager "Jumanne Chale" ;
 dbpprop:name <http://dbpedia.org/resource/Mohammed_Baggio_Abdallah,http://www.africanlyonfc.com> .
 
-<http://dbpedia.org/resource/Birmingham_City_F.C.> dbpprop:name <http://dbpedia.org/resource/Will_Packwood> .
-
 <http://dbpedia.org/resource/Penang_FA> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Penang FA" ;
 rdfs:comment "The Football Association of Penang also known as Penang FA are a Malaysian football team, represent the state of Penang. The team currently plays in the third-level division in Malaysian football, the Malaysia FAM League. It is one of the fourteen football association in Malaysia, and one of the countrys most-decorated clubs.,Mohd Fitri Jamaludin" ;
@@ -5620,8 +5506,6 @@ dbpprop:name <http://www.fap.org.my/> .
 <http://dbpedia.org/resource/One_FM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "One FM" ;
 rdfs:comment "one FM is a Chinese language radio station in Malaysia. Initially starting with broadcasts in the Klang Valley, it is now broadcast in the cities of Ipoh, Kota Kinabalu, Kuantan, Seremban and Kuching and statewide in Johor, Kedah, Melaka and Penang. one FM is owned by Media Prima Berhad.,one FM,http://www.onefm.com.my" .
-
-<http://dbpedia.org/resource/Rakhine_United_F.C.> dbpprop:name <http://dbpedia.org/resource/Aung_Zaw_Myo,http://www.rakhineunitedfc.com/> .
 
 <http://dbpedia.org/resource/WCKY-FM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WCKY-FM" ;
@@ -5639,14 +5523,10 @@ rdfs:comment "KFIV is a radio station broadcasting a News Talk Information forma
 rdfs:label "Istiqlol Dushanbe" ;
 rdfs:comment "FC Istiqlol Dushanbe, is football club based in Tajikistan. The currently play in the top division of the country.,http://dbpedia.org/resource/Naim_Ulmasov,www.fc-istiklol.tj" .
 
-<http://dbpedia.org/resource/Bradford_City_W.F.C.> dbpprop:name "Sarah Binns" .
-
 <http://dbpedia.org/resource/Nirmala_College> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Nirmala College" ;
 rdfs:comment "Nirmala College is a institution in Muvattupuzha, Kerala, India run by the Syro-Malabar Catholic Church, The college admits undergraduates and post-graduates and offers degrees in the liberal arts, sciences and commerce. The institution is affiliated to the Mahatma Gandhi University, Kottayam.,Nirmala College, Muvattupuzha,http://www.nirmalacollege.ac.in/" .
 
-<http://dbpedia.org/resource/S.L._Benfica> dbpprop:name <http://dbpedia.org/resource/Nemanja_MatiC487> ;
-dbpprop:nickname "guias" .
 
 <http://dbpedia.org/resource/WAAZ-FM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WAAZ-FM" ;
@@ -5749,8 +5629,6 @@ dbpprop:website <http://www.fchk.cz> .
 <http://dbpedia.org/resource/Joe_Boyd_Vigil> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Joe Boyd Vigil" ;
 rdfs:comment "Joe Boyd Vigil is an audio engineer, sound designer and composer of electronic music. Boyd Vigil composed the score for Cartoon Networks action TV block Toonami from 1999 through 2002. His compositions make up the official soundtrack album titled Toonami: Deep Space Bass that was released in 2001. Joe Boyd Vigils second album titled Deeper Space was released in January 2007. This album was followed by the released Boyd Vigils third album, The Inevitable Course of Events, in December 2007.,Boyd Vigil, Joe,http://www.myspace.com/joeboydvigil" .
-
-<http://dbpedia.org/resource/FC_Zimbru_ChiC899inC483u> dbpprop:name <http://dbpedia.org/resource/Mihail_PC483iuC59F> .
 
 <http://dbpedia.org/resource/Bristow_Middle_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Bristow Middle School" ;
@@ -5868,11 +5746,6 @@ rdfs:comment "Canyon Ridge Middle School is a Junior High School based in Austin
 rdfs:label "Universidade Federal de Santa Maria" ;
 rdfs:comment "The Federal University of Santa Maria (in Portuguese, Universidade Federal de Santa Maria or UFSM) is a Brazilian public university located in Santa Maria, in the state of Rio Grande do Sul, funded by the federal government of Brazil. It was founded in 1960, by Professor Jos Mariano da Rocha Filho. UFSMs presence in the municipality of Santa Maria is one of the reasons why the city is sometimes called university city or culture city.,Federal University of Santa Maria,http://www.ufsm.br/" .
 
-<http://dbpedia.org/resource/Cincinnati_Kings> dbpprop:name <http://dbpedia.org/resource/Andre_Sharpe> .
-
-<http://dbpedia.org/resource/AEL_1964_FC> dbpprop:name <http://dbpedia.org/resource/Thanasis_Dinopapas> ;
-dbpprop:nickname "Vyssini" .
-
 <http://dbpedia.org/resource/1._FK_PC599C3ADbram> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "1. FK Pbram" ;
 rdfs:comment "1. FK Pbram is a Czech football club from Pbram. The team originated from two clubs, the 1966-67 European Cup semi-finalist Dukla Prague, which tradition it carries, and FC Pbram, merged in 1996." ;
@@ -5941,7 +5814,6 @@ dbpprop:name <http://dbpedia.org/resource/Aram_Loretsyan,http://fcimpulse.com/> 
 rdfs:label "MOJOFLY" ;
 rdfs:comment "MOJOFLY is a now defunct pop-rock band from the Philippines. Formed in '99 by bassist Ricci Gurango after his departure from Hungry Young Poets, MOJOFLY reeled in mainstream and alternative crowds alike with the debut album Birth Day (1999) and follow-up A Million Stories (2002), both released under Sony BMG Philippines. Then-lead singer Kitchie Nadal helped propel singles such as Another Day and Scooter Boy to national recognition.,Mojofly,http://www.mojofly.com.ph" .
 
-<http://dbpedia.org/resource/Genoa_C.F.C.> dbpprop:name <http://dbpedia.org/resource/Mario_Sampirisi> .
 
 <http://dbpedia.org/resource/WCTQ> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WCTQ" ;
@@ -5966,8 +5838,6 @@ rdfs:comment "The Ridge Meadows Flames are a junior B ice hockey team based in M
 <http://dbpedia.org/resource/Pink_Anvil> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Pink Anvil" ;
 rdfs:comment "Pink Anvil was a duo consisting of former members of the group Ministry - Paul Barker and Max Brody. The pair formed during a time of personal turmoil in Ministry, which due to drug abuse and record label disagreements nearly ended the group. Upon an invitation from one Dave Palmer (of the jazz group Earl Harvin Trio), they performed an experimental set at a small rave in Austin, TX on Halloween, 2001. The recorded set was later released as Halloween Party on Ipecac Recordings in 2003.,Pink Anvil,http://www.ipecac.com/bio.php?id=19" .
-
-<http://dbpedia.org/resource/VfL_Bochum> dbpprop:name <http://dbpedia.org/resource/Lukas_Sinkiewicz,http://www.vfl-bochum.de> .
 
 <http://dbpedia.org/resource/FC_St._Pauli> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC St. Pauli" ;
@@ -6126,8 +5996,6 @@ rdfs:comment "KASH-FM is a commercial country music radio station in Anchorage, 
 <http://dbpedia.org/resource/A_Hero_A_Fake> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "A Hero A Fake" ;
 rdfs:comment "A Hero A Fake is an American metalcore band from Charlotte, North Carolina. Forming in 2004, they signed to Victory Records in July 2008. Their debut album Volatile was released in October 2008 and their sophomore follow up Let Oceans Lie released in January 2010.,A Hero A Fake,http://www.aheroafake.com/" .
-
-<http://dbpedia.org/resource/Llanidloes_Ladies_F.C.> dbpprop:name "Rhian Townsend" .
 
 <http://dbpedia.org/resource/Paris_FC> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Paris FC" ;
@@ -6325,11 +6193,6 @@ rdfs:comment "Cerritos High School, also called CHS, is a comprehensive, 4 year 
 rdfs:label "Free State Project" ;
 rdfs:comment "The Free State Project (FSP) is a political migration, founded in 2001, to recruit at least 20,000 libertarians to move to a single low-population state (New Hampshire, selected in 2003) in order to make the state a stronghold for libertarian ideas. The project seeks to overcome the historical ineffectiveness of limited-government activism which they believe was caused by the small number and diffuse population of libertarian activists across the 50 United States and around the world.,Free State Project,http://www.freestateproject.org/" .
 
-<http://dbpedia.org/resource/Partick_Thistle_F.C.> dbpprop:name "David Wilson" .
-
-<http://dbpedia.org/resource/Anorthosis_Famagusta_FC> dbpprop:name <http://dbpedia.org/resource/Toni_Calvo> ;
-dbpprop:nickname "Mahites" .
-
 <http://dbpedia.org/resource/University_of_Arts_and_Industrial_Design_Linz> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "University of Arts and Industrial Design Linz" ;
 rdfs:comment "The University of Arts and Industrial Design Linz (common short form University of Arts Linz) is one of four universities in Linz, Upper Austria. At present, approximately 800 students are enrolled. The University of Art and Design Linz (Kunstuniversitt Linz) has its institutional and programmatic roots in the Kunstschule (Art School) of the City of Linz, which was founded in 1947, assigned academy status in 1973 and finally made a fully-fledged university in 1998.,University of Arts and Industrial Design Linz,http://www.ufg.ac.at" .
@@ -6368,8 +6231,6 @@ dbpprop:website <http://www.sevillafc.es/nuevaweb/equipos/plantilla/298/sevilla-
 <http://dbpedia.org/resource/Osborne_High_School_(Georgia)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Osborne High School (Georgia)" ;
 rdfs:comment "Robert L. Osborne High School is a public high school located north of Atlanta in Marietta, Georgia. It is the oldest high school in Cobb County. It has about 1600 students. The school mascot is the cardinal, and the school colors are red and white. The current principal is Joshua Morreale. The school has 130 teachers.,Osborne High School,http://www.cobbk12.org/Osborne/index.asp" .
-
-<http://dbpedia.org/resource/Long_Island_Rough_Riders> dbpprop:name <http://dbpedia.org/resource/Matthew_Uy> .
 
 <http://dbpedia.org/resource/WVOI> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WVOI" ;
@@ -6445,7 +6306,6 @@ dbpprop:name "Mrio Tropp,http://www.fksnv.sk" .
 rdfs:label "The Luxury Flats" ;
 rdfs:comment "The Luxury Flats are a rock band out of Hudson, NY. The band is composed of Joe V, Damara, Joe Terry, and Mikey. The banDs members live at Spook Rock, an 18th century house east of Hudson, New York where together they eat, sleep, record and play croquet. The band was named MetrolanDs best band of 2006 and were featured in a cover story by associate editor John Brodeur in August 2006.,The Luxury Flats,http://www.theluxuryflats.com" .
 
-<http://dbpedia.org/resource/Salgaocar_F.C.> dbpprop:name <http://dbpedia.org/resource/Randeep_Singh> .
 
 <http://dbpedia.org/resource/C.F._Monterrey> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "C.F. Monterrey" ;
@@ -6461,11 +6321,6 @@ rdfs:comment "Zejtun Corinthians Football Club is a Maltese football club from t
 dbpprop:manager "Joey Falzon" ;
 dbpprop:name <http://dbpedia.org/resource/Karl_Vassallo,http://www.zejtuncorinthians.com/> .
 
-<http://dbpedia.org/resource/Genoa_C.F.C.> dbpprop:name "Riccardo Improta" ;
-dbpprop:nickname "I Rossoblu ," .
-
-<http://dbpedia.org/resource/NAC_Breda> dbpprop:name <http://dbpedia.org/resource/Elson_Hooi> ;
-dbpprop:nickname "The Rats" .
 
 <http://dbpedia.org/resource/Royal_Sydney_Yacht_Squadron> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Royal Sydney Yacht Squadron" ;
@@ -6510,7 +6365,6 @@ dbpprop:name <http://dbpedia.org/resource/Zhang_Chenglin,http://renhe.gzdsw.com/
 rdfs:label "American Osteopathic Board of Orthopedic Surgery" ;
 rdfs:comment "The American Osteopathic Board of Orthopedic Surgery (AOBOS) is an organization that provides board certification to qualified Doctors of Osteopathic Medicine (D.O. ) who specialize in the medical and surgical treatment of disorders of the musculoskeletal system.,American Osteopathic Board of Orthopedic Surgery,http://www.aobos.org/content/100/home.aspx" .
 
-<http://dbpedia.org/resource/Bolton_Wanderers_F.C.> dbpprop:name <http://dbpedia.org/resource/Stuart_Holden> .
 
 <http://dbpedia.org/resource/Pressure_Point> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Pressure Point" ;
@@ -6556,8 +6410,6 @@ dbpprop:website <http://www.ismailyclub.org/> .
 <http://dbpedia.org/resource/CHOI-FM> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "CHOI-FM" ;
 rdfs:comment "CHOI-FM is a French language FM radio station that broadcasts on the frequency 98.1 MHz out of Quebec City, Quebec, Canada, with a talk radio format (before its takeover by RNC Media, it aired mainly active rock music, and finally to modern rock until becoming a talk radio station in 2010). Locally, it is known as Radio X (a reference to Generation X, as most of CHOIs listeners consider themselves). It was owned by Genex Communications since July 1996.,CHOI-FM,http://www.radiox.com/" .
-
-<http://dbpedia.org/resource/Parma_F.C.> dbpprop:name <http://dbpedia.org/resource/Abdou_Doumbia> .
 
 <http://dbpedia.org/resource/Del_Norte_High_School_(New_Mexico)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Del Norte High School (New Mexico)" ;
@@ -6616,8 +6468,6 @@ dbpprop:website <http://www.mainepremiersoccer.com> .
 <http://dbpedia.org/resource/Clearlight_(French_band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Clearlight (French band)" ;
 rdfs:comment "Clearlight are a French progressive rock band from the 1970s, although their best known work was produced in England, and released by a major British record company. While progressive rock is an appropriate overall genre for the band, much of their work delves into other genres including psychedelic music, jam band music, symphonic rock, space rock, jazz fusion, and new age music.,Clearlight,http://www.clearlight888music.com" .
-
-<http://dbpedia.org/resource/FC_Dunav_Ruse> dbpprop:name <http://dbpedia.org/resource/Iliya_Kovachganev,http://www.fcdunav.com/> .
 
 <http://dbpedia.org/resource/Changwon_City_FC> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Changwon City FC" ;
@@ -6796,9 +6646,6 @@ dbpprop:name <http://dbpedia.org/resource/Rita_Caravilla,http://www.calciochiasi
 rdfs:label "KHNR" ;
 rdfs:comment "KHNR is a News/Talk radio station serving Honolulu, Hawaii. The Salem Communications outlet broadcasts at 690kHz with a power level of 10,000 watts.,KHNR,http://www.khnr.com" .
 
-<http://dbpedia.org/resource/Hibernian_F.C.> dbpprop:name <http://dbpedia.org/resource/David_Wotherspoon> ;
-dbpprop:nickname "The Cabbage" .
-
 <http://dbpedia.org/resource/New_York_Fury> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "New York Fury" ;
 rdfs:comment "New York Fury is a professional American womens soccer club playing in the Womens Premier Soccer League Elite, the top tier of womens soccer in the United States. It is a part of the Fury Soccer Organization which also supports the Long Island Fury. The club, founded in 2011, was a member of Womens Premier Soccer League, and in 2012 joined the newly formed Womens Premier Soccer League Elite." ;
@@ -6814,9 +6661,6 @@ rdfs:label "Neptnas (basketball club)" ;
 rdfs:comment "BC Neptnas (Lithuanian: Krepinio Klubas Neptnas) is the major basketball club of Klaipda, Lithuania participating in Lithuanian Basketball League and Baltic Basketball League. BC Maistas basketball club was founded in 1962. In 1964, BC Maistas name was changed to BC Neptnas which is used until now. The club carries the name of the Roman sea god Neptune." ;
 dbpprop:manager "Osvaldas Kurauskas" ;
 dbpprop:name <http://dbpedia.org/resource/Mindaugas_GirdC5BEiC5ABnas,http://www.bcneptunas.lt/> .
-
-<http://dbpedia.org/resource/University_of_Edinburgh_Medical_School> rdfs:comment "The University of Edinburgh Medical School is part of the College of Medicine and Veterinary Medicine of the University of Edinburgh in Scotland. Established in 1726, during the Scottish Enlightenment, Edinburgh Medical School is the oldest established medical school in Scotland and one of the oldest in the English-speaking world. It ranks 1st in Scotland and 3rd in the UK according to the Guardian University Guide, The Times Good University Guide. and the Complete University Guide.,http://dbpedia.org/resource/James_McGrigor,http://www.mvm.ed.ac.uk/index.htm" .
-
 
 <http://dbpedia.org/resource/Biotechnology_High_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Biotechnology High School" ;
@@ -6947,15 +6791,13 @@ rdfs:comment "Bournville School and sixth form centre is a coeducational, state 
 rdfs:label "Cooper Research Technology" ;
 rdfs:comment "Cooper Research Technology Limited (also known as Cooper Technology) is the No.1 British Company and a manufacturer of high-performance testing equipment for asphaltic and unbound materials based in Ripley, Derbyshire, England. The company specialises in the design and manufacture of laboratory testing equipment used for the investigation of the mechanical properties of materials used in road construction.,Cooper Research Technology,http://www.cooper.co.uk" .
 
-<http://dbpedia.org/resource/Hapoel_Tel_Aviv_F.C.> dbpprop:name <http://dbpedia.org/resource/Eric_Djemba-Djemba> .
-
 <http://dbpedia.org/resource/KLDY> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KLDY" ;
 rdfs:comment "KLDY (1280 AM, ESPN Deportes Seattle) is a radio station broadcasting a Spanish language sports radio format. Licensed to Lacey, Washington, USA, the station is currently owned by Seattle Streaming Radio, LLC and features Hispanic programing from ESPN Radio.,KLDY,http://www.espndeportesseattle.com" .
 
 <http://dbpedia.org/resource/Asteras_Tripoli_F.C.> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Asteras Tripoli F.C." ;
-rdfs:comment "PAE Asteras Tripolis (Greek:   ) is a Greek football club from the town of Tripoli in Arcadia, Greece. The club was founded in 1931 and since the 2007-08 season have played in the Greek Super League, the highest league in the country. Tha word asteras means star." ;
+rdfs:comment "PAE Asteras Tripolis is a Greek football club from the town of Tripoli in Arcadia, Greece. The club was founded in 1931 and since the 2007-08 season have played in the Greek Super League, the highest league in the country. Tha word asteras means star." ;
 dbpprop:manager "http://dbpedia.org/resource/Sakis_Tsiolis" ;
 dbpprop:name <http://dbpedia.org/resource/Ximo_Navarro> ;
 dbpprop:nickname "The yellow-blue" ;
@@ -7044,7 +6886,7 @@ dbpprop:website <http://www.banik.ruzina.eu/> .
 
 <http://dbpedia.org/resource/FC_Zooveti> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Zooveti" ;
-rdfs:comment "FC Zooveti Tbilisi (Georgian:   ) is a Georgian football club that is based in Tbilisi. In 2010-11 the club became champions of the Georgian Meore Liga and were automatically promoted to the Georgian Pirveli Liga championship, where they are currently playing." ;
+rdfs:comment "FC Zooveti Tbilisi is a Georgian football club that is based in Tbilisi. In 2010-11 the club became champions of the Georgian Meore Liga and were automatically promoted to the Georgian Pirveli Liga championship, where they are currently playing." ;
 dbpprop:manager "Jemal Gugushvili" ;
 dbpprop:name "Shota Parulava,http://fczoovetitbilisi.net/team-management.html" .
 
@@ -7081,8 +6923,6 @@ rdfs:comment "WWLE is a radio station broadcasting a News Talk Information forma
 <http://dbpedia.org/resource/KWYS_(AM)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KWYS (AM)" ;
 rdfs:comment "KWYS is a radio station licensed to serve West Yellowstone, Montana. The station is owned by Radio West, LLC. It airs an Oldies/Classic Hits music format. The stations studios are located at 303 Canyon Street, in West Yellowstone. The transmitter site is south of town, on Broadcast Trail Road, near the west gate to Yellowstone National Park. The station was assigned the KWYS call letters by the Federal Communications Commission.,KWYS,http://www.kwys920.com/" .
-
-<http://dbpedia.org/resource/Celta_de_Vigo> dbpprop:name <http://dbpedia.org/resource/Sergio_C381lvarez_Conde> .
 
 <http://dbpedia.org/resource/Florida_State_University_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Florida State University School" ;
@@ -7307,7 +7147,7 @@ rdfs:comment "Founded in 1881, Dana Hall School in Wellesley, Massachusetts, USA
 
 <http://dbpedia.org/resource/AEL_Limassol> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "AEL Limassol" ;
-rdfs:comment "Athlitiki Enosi Lemesou (Greek:   ), commonly known as AEL Limassol, is a Greek Cypriot multisport club based in the city of Limassol, the port of Cyprus. Currently AEL maintains a football team, mens and womens basketball teams, a womens volleyball team and a newly established Futsal team (1st year) and womens handball team (2nd year) and cricket. AEL is considered as the most successful club of the island. (240 official trophies plus some unofficial ones)." ;
+rdfs:comment "Athlitiki Enosi Lemesou , commonly known as AEL Limassol, is a Greek Cypriot multisport club based in the city of Limassol, the port of Cyprus. Currently AEL maintains a football team, mens and womens basketball teams, a womens volleyball team and a newly established Futsal team (1st year) and womens handball team (2nd year) and cricket. AEL is considered as the most successful club of the island. (240 official trophies plus some unofficial ones)." ;
 dbpprop:manager "http://dbpedia.org/resource/Jorge_Costa" ;
 dbpprop:name <http://dbpedia.org/resource/Luciano_BebC3AA,http://www.aelfc.com> .
 
@@ -7422,7 +7262,7 @@ rdfs:comment "Clover School District, officially known as York County School Dis
 
 <http://dbpedia.org/resource/Diskoteka_Avariya> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Diskoteka Avariya" ;
-rdfs:comment "Diskoteka Avaria (Russian:   - Disco Crash) are a Russian band from Ivanovo, Russia. The trio consists of Anna Hohlova ( ), Aleksey Borisovich Serov (  ) and Aleksey Olegovich Ryzhov (  ). Its former members include vocalist Nikolay Stagoranovich Timofeev (  ), who left in July 2012, and rapper Oleg Yevgenyevich Zhukov (  ), who died on February 9, 2002 of cancer.,Diskoteka Avariya,http://www.avariya.ru" .
+rdfs:comment "Diskoteka Avaria (Russian:Disco Crash) are a Russian band from Ivanovo, Russia. The trio consists of Anna Hohlova ( ), Aleksey Borisovich Serov (  ) and Aleksey Olegovich Ryzhov (  ). Its former members include vocalist Nikolay Stagoranovich Timofeev (  ), who left in July 2012, and rapper Oleg Yevgenyevich Zhukov (  ), who died on February 9, 2002 of cancer.,Diskoteka Avariya,http://www.avariya.ru" .
 
 <http://dbpedia.org/resource/Staffordshire_University> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Staffordshire University" ;
@@ -7475,8 +7315,6 @@ rdfs:label "FC Seoul" ;
 rdfs:comment "FC Seoul is a South Korean professional football club based in Seoul, South Korea, that plays in the K League Classic. It is currently owned by GS Sports, a subsidiary of GS Group. The club was officially founded as Lucky-Goldstar FC in 1983, by the Lucky-Goldstar Group. FC Seoul have won 5 League titles, 2 League Cups and 1 FA Cup. FC Seoul is one of the most successful and the most popular club and in the K League Classic, with financial backing from the GS Group." ;
 dbpprop:manager "Choi Yong-Soo" ;
 dbpprop:name <http://dbpedia.org/resource/Yun_Il-Lok,http://www.fcseoul.com> .
-
-<http://dbpedia.org/resource/Los_Andes_de_Lomas_de_Zamora> dbpprop:name <http://dbpedia.org/resource/Ariel_Barros> .
 
 <http://dbpedia.org/resource/AFC_Rushden__Diamonds> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "AFC Rushden  Diamonds" ;
@@ -7631,9 +7469,6 @@ rdfs:comment "Newman Theological College (NTC) is a Roman Catholic School of The
 dbpprop:manager "NTC" ;
 dbpprop:name <http://www.newman.edu/> .
 
-<http://dbpedia.org/resource/Sport_Club_do_Recife> dbpprop:name <http://dbpedia.org/resource/GC3A9rson_Barbosa> ;
-dbpprop:nickname "Sport Recife or Sport" .
-
 <http://dbpedia.org/resource/Hull_City_Council> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Hull City Council" ;
 rdfs:comment "(Kingston upon) Hull City Council is the governing body for the unitary authority and city of Kingston upon Hull. It was created in 1972 as the successor to the Corporation of (Kingston upon) Hull, which was also known as Hull Corporation.,Kingston upon Hull City Council,http://www.hullcc.gov.uk/" .
@@ -7676,8 +7511,6 @@ rdfs:comment "Morris Brown College (MBC) is a private, coed, liberal arts colleg
 dbpprop:manager "MBC" ;
 dbpprop:name <http://www.morrisbrown.edu> .
 
-<http://dbpedia.org/resource/Al-Wakrah_Sport_Club> dbpprop:name <http://dbpedia.org/resource/Shami_Hassan_Al_Abdulla> ;
-dbpprop:nickname "" .
 
 <http://dbpedia.org/resource/KXI91> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KXI91" ;
@@ -7923,8 +7756,6 @@ dbpprop:website <http://www.dcfc.co.kr/> .
 <http://dbpedia.org/resource/WMVG> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WMVG" ;
 rdfs:comment "WMVG is a radio station broadcasting a Sports radio format. Licensed to Milledgeville, Georgia, USA. The station is currently owned by Wmvg, Inc. and features programing from ABC Radio, ESPN Radio and Motor Racing Network.,WMVG,http://country102fm.com/" .
-
-<http://dbpedia.org/resource/Paris_Saint-Germain_F.C._Reserves_and_Academy> dbpprop:name "Hervin Ongenda,http://www.psg.fr/" .
 
 <http://dbpedia.org/resource/KWAX> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KWAX" ;
@@ -8580,11 +8411,6 @@ dbpprop:name "Artrs Seilis,http://www.preili.lv/futbols" .
 rdfs:label "The Dollyrots" ;
 rdfs:comment "The Dollyrots are an American pop punk band composed of Kelly Ogden (bass, vocals) and Luis Cabezas (guitar). They have released four studio albums and are currently under their own label Arrested Youth.,The Dollyrots,http://www.dollyrots.com" .
 
-<http://dbpedia.org/resource/FK_Khazar_Lankaran> rdfs:comment "FK Khazar Lankaran (Azerbaijani: Xzr Lnkran Futbol Klubu) is an Azerbaijani football club based in Lankaran, who play in the Azerbaijan Premier League. Khazar Lankaran have won the League title only once, and the Azerbaijan Cup three times.,http://dbpedia.org/resource/Radomir_Todorov" .
-
-<http://dbpedia.org/resource/Bologna_F.C._1909> dbpprop:name <http://dbpedia.org/resource/Juan_Cruz_Alvaro_Armada> ;
-dbpprop:nickname "Rossobl ;" .
-
 <http://dbpedia.org/resource/HotKid> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "HotKid" ;
 rdfs:comment "HotKid is a Canadian indie rock band formed in 2005 from Cambridge, Ontario, Canada.,HotKid,http://www.hotkid.ca/" .
@@ -8634,8 +8460,6 @@ rdfs:comment "Nee is a Kannada music band, founded by Siddeshwar, released their
 <http://dbpedia.org/resource/Chungking_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Chungking (band)" ;
 rdfs:comment "Chungking are a British indie pop group formed in Brighton.,Chungking,http://www.chungking.co.uk/" .
-
-<http://dbpedia.org/resource/Syracuse_Silver_Knights> dbpprop:name "Slavia Ubiparipovi" .
 
 <http://dbpedia.org/resource/Colegio_Nacional_Iquitos> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Colegio Nacional Iquitos" ;
@@ -8689,7 +8513,7 @@ dbpprop:website <http://www.inter.hr> .
 
 <http://dbpedia.org/resource/Modern_University_for_the_Humanities> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Modern University for the Humanities" ;
-rdfs:comment "The Modern University for the Humanities (MUH) (Russian:   ), established in 1992, is a state-accredited higher educational institution in Moscow, Russia offering primarily distance-based undergraduate, graduate, and post-graduate studies and vocational education. MUHs philosophy is to make available accessible, high-quality education regardless of a students place of residence.,Modern University for the Humanities,http://www.eng.muh.ru/" .
+rdfs:comment "The Modern University for the Humanities (MUH), established in 1992, is a state-accredited higher educational institution in Moscow, Russia offering primarily distance-based undergraduate, graduate, and post-graduate studies and vocational education. MUHs philosophy is to make available accessible, high-quality education regardless of a students place of residence.,Modern University for the Humanities,http://www.eng.muh.ru/" .
 
 <http://dbpedia.org/resource/Stade_Brestois_29> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Stade Brestois 29" ;
@@ -9109,9 +8933,6 @@ rdfs:comment "Young Africans Sports Club, locally known as Yanga, is a Tanzanian
 dbpprop:manager "Yanga" ;
 dbpprop:name <http://www.youngafricans.co.tz> .
 
-<http://dbpedia.org/resource/Paris_Saint-Germain_F.C._Reserves_and_Academy> dbpprop:manager "Franck Rizzetto" ;
-dbpprop:name "Kalifa Traor,http://www.psg.fr/" .
-
 <http://dbpedia.org/resource/The_Dreamscapes_Project> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "The Dreamscapes Project" ;
 rdfs:comment "The Dreamscapes Project is a rock band from Reston, Virginia that formed in 1997. In 2010 Northern Virginia Magazine awarded the band as best musician in their Best of NOVA awards.,The Dreamscapes Project,http://www.thedreamscapesproject.com/" .
@@ -9390,7 +9211,7 @@ dbpprop:name <http://www.forkunion.com> .
 
 <http://dbpedia.org/resource/FC_Aktobe> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Aktobe" ;
-rdfs:comment "FC Aktobe (Kazakh:   ) is a Kazakh football club based in Aktobe. Founded in 1967 as a Soviet team of Aktyubinets, currently it is the second best team in Kazakhstan. As of 2012 the club plays in the Kazakhstan Premier League." ;
+rdfs:comment "FC Aktobe is a Kazakh football club based in Aktobe. Founded in 1967 as a Soviet team of Aktyubinets, currently it is the second best team in Kazakhstan. As of 2012 the club plays in the Kazakhstan Premier League." ;
 dbpprop:manager "http://dbpedia.org/resource/Vladimir_Mukhanov" ;
 dbpprop:name <http://dbpedia.org/resource/Robert_Primus> ;
 dbpprop:nickname "The Red-Whites" ;
@@ -9629,7 +9450,7 @@ dbpprop:website <http://www.ligindogo.com/> .
 
 <http://dbpedia.org/resource/FC_Mordovia_Saransk> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Mordovia Saransk" ;
-rdfs:comment "FC Mordovia Saransk (Russian:   ) is a Russian association football club from Saransk, Republic of Mordovia. In its current state it was formed in 2005, through the merger of Biokhimik-Mordovia and Lisma-Mordovia. In 2010, the club won promotion to the Russian First Division. On the 8th of May 2012 Mordovia beat Shinnik Yaroslavl 2-0 at home." ;
+rdfs:comment "FC Mordovia Saransk is a Russian association football club from Saransk, Republic of Mordovia. In its current state it was formed in 2005, through the merger of Biokhimik-Mordovia and Lisma-Mordovia. In 2010, the club won promotion to the Russian First Division. On the 8th of May 2012 Mordovia beat Shinnik Yaroslavl 2-0 at home." ;
 dbpprop:manager "http://dbpedia.org/resource/Dorinel_Munteanu" ;
 dbpprop:name "Anton Sobolev,http://www.fc-mordovia.ru/" .
 
@@ -10046,8 +9867,6 @@ rdfs:comment "Kira Pika was a Hello! Project unit consisting of Mai Hagiwara fro
 rdfs:label "Open Source Geospatial Foundation" ;
 rdfs:comment "The Open Source Geospatial Foundation (OSGeo), is a non-profit non-governmental organization whose mission is to support and promote the collaborative development of open geospatial technologies and data. The foundation was formed in February 2006 to provide financial, organizational and legal support to the broader Free and open source geospatial community.,Open Source Geospatial Foundation,http://www.osgeo.org/" .
 
-<http://dbpedia.org/resource/Al_Sadd_SC> dbpprop:name "Hilal Mohammed" .
-
 <http://dbpedia.org/resource/European_Audiovisual_Observatory> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "European Audiovisual Observatory" ;
 rdfs:comment "The European Audiovisual Observatory was set up by the Council of Europe as a Partial Agreement. Its legal basis is Resolution (92) 70 of the Committee of Ministers of the Council of Europe, 15 December 1992. The idea for the Observatory originated at the European Audiovisual Assizes in 1989, and was actively pursued by Audiovisual Eureka during the years 1989 to 1992.,European Audiovisual Observatory,www.obs.coe.int" .
@@ -10352,7 +10171,7 @@ rdfs:comment "Reemer is a 4-piece Indie, Pop, Punk  Rock band from the United Ki
 rdfs:label "FK Brodarac" ;
 rdfs:comment "FK Brodarac is a Serbian football club based in Belgrade, Serbia. It is located between two oldest bridges over Sava River, in the Staro Sajmite, next to the former Staro Sajmite concentration camp that existed during the Second World War. Club was renamed Brodarac - Winner, and football academy was opened in the club." ;
 dbpprop:manager "Dragan Ilic Lita" ;
-dbpprop:name <http://dbpedia.org/resource/Mijodrag_DabiC487,http://brodaracwinner.rs> .
+dbpprop:name <http://dbpedia.org/resource/Mijodrag_DabiC487> .
 
 <http://dbpedia.org/resource/FC_Rubin_Kazan> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Rubin Kazan" ;
@@ -10547,8 +10366,6 @@ dbpprop:name <http://dbpedia.org/resource/Luis_GarcC3ADa_FernC3A1ndez> ;
 dbpprop:nickname "Felinos" ;
 dbpprop:website <http://www.tigres.com.mx/> .
 
-<http://dbpedia.org/resource/Blackpool_F.C._Ladies> dbpprop:name "Joanne Entwistle" ;
-dbpprop:nickname "The Tangerines" .
 
 <http://dbpedia.org/resource/KMZA> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "KMZA" ;
@@ -10557,8 +10374,6 @@ rdfs:comment "KMZA is a radio station airing a Country music format licensed to 
 <http://dbpedia.org/resource/Brazilian_Naval_School> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Brazilian Naval School" ;
 rdfs:comment "The Brazilian Naval School (Escola Naval in Portuguese) is an Academy of the Brazilian Navy, the Brazilian equivalent of the US Naval Academy, located in Rio de Janeiro, on Villegagnon Island just inside of Guanabara Bay. The Brazilian Naval Academy is an institution of higher education, which aims to train officers of the Brazilian Navy.,Brazilian Naval School,http://www.mar.mil.br/en/" .
-
-<http://dbpedia.org/resource/Le_Mans_FC> dbpprop:name <http://dbpedia.org/resource/Olivier_Thomert> .
 
 <http://dbpedia.org/resource/WNVA_(AM)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WNVA (AM)" ;
@@ -10839,8 +10654,6 @@ rdfs:comment "8 Flavahz is an all-female dance crew from Honolulu, Hawaii and Lo
 rdfs:label "Crispell Middle School" ;
 rdfs:comment "Crispell Middle School is the oldest building in the Pine Bush Central School District. It is located along NY 302 near the center of Pine Bush. It was erected in 1941, and became Pine Bushs only school. It originally taught grades 1-12. After Pine Bush High School was built in 1961, Crispell became the Middle School. It has been renovated numerous times. The original part of the school has 12-foot (4 m) ceilings, while the additions have 10-foot (3 m) ceilings.,Crispell Middle School,http://www.pinebushschools.org/" .
 
-<http://dbpedia.org/resource/FC_Erpeldange_72> dbpprop:name <http://dbpedia.org/resource/Alexandre_Vianda,http://www.fc72ierpeldeng.lu/> .
-
 <http://dbpedia.org/resource/The_Details> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "The Details" ;
 rdfs:comment "For the 2011 film of the same name, see The Details (film) The Details {{#invoke:InfoboxImage|InfoboxImage|image=}}Origin Winnipeg, Manitoba, CanadaGenres Indie rockYears active 2006presentLabels Parliament of TreesWebsite www. thedetails. caMembers Jon Plett Keli Martin Sean Vidal Shaun GibsonPast members Matt Janzen The Details are an indie rock band formed in Winnipeg, Manitoba, Canada.,The Details,http://www.thedetails.ca" .
@@ -10875,7 +10688,7 @@ rdfs:comment "KBVU-FM is a commercial radio station licensed to serve the commun
 
 <http://dbpedia.org/resource/P.A.O.K._F.C.> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "P.A.O.K. F.C." ;
-rdfs:comment "P.A.O.K. F.C. (Greek:      Panthessalonkios Athlitiks milos Konstantinoupolitn, the Pan-Thessalonican Athletic Club of Constantinopolitans) is a Greek association football club based in Thessaloniki, Greece." ;
+rdfs:comment "P.A.O.K. F.C. (Greek: Panthessalonkios Athlitiks milos Konstantinoupolitn, the Pan-Thessalonican Athletic Club of Constantinopolitans) is a Greek association football club based in Thessaloniki, Greece." ;
 dbpprop:manager "http://dbpedia.org/resource/Giorgos_Donis" ;
 dbpprop:name "Dimitris Aggelidis,http://www.paokfc.gr/" .
 
@@ -11502,8 +11315,6 @@ rdfs:comment "The United World College Maastricht (UWCM) is the thirteenth Unite
 rdfs:label "XETOT-AM" ;
 rdfs:comment "XETOT (branded as ABC Radio) is a Mexican Spanish-language AM radio station that serves the Tampico, Tamaulipas market area.,XETOT,http://www.oem.com.mx/abcradio/" .
 
-<http://dbpedia.org/resource/National_Weather_Service_Chicago,_Illinois> rdfs:comment "National Weather Service Chicago, currently based in Romeoville, Illinois, is a weather forecast office responsible for monitoring weather conditions for 23 counties in Northern Illinois, the Chicago metropolitan area and Northwest Indiana. The Army Signal Service established the first federal weather office in the region in Chicago on October 15, 1870.,WXK24,http://www.crh.noaa.gov/lot/?n=KZZ57" .
-
 <http://dbpedia.org/resource/C39Ajpest_FC> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "jpest FC" ;
 rdfs:comment "jpest Football Club, usually known simply as jpest and previously known as jpesti TE (UTE) and jpesti Dzsa, is a Hungarian football club, based in jpest, Budapest. The clubs colours are purple and white. Their 20 league titles and 8 cup titles make them one of the most successful clubs in the country while their long history makes them the oldest still existing one. jpest plays at Budapests Szusza Ferenc Stadium. jpest FC is part of the jpesti TE family." ;
@@ -11573,8 +11384,6 @@ dbpprop:website <http://www.rahesari.ir/> .
 rdfs:label "National Gay  Lesbian Chamber of Commerce" ;
 rdfs:comment "The National Gay  Lesbian Chamber of Commerce (NGLCC) is a U.S. not-for-profit advocacy organization specifically dedicated to expanding the economic opportunities and advancements of the LGBT business community. The NGLCC headquarters is located at 729 15 Street, NW in Washington, D.C. They are the national certification body for LGBT-owned businesses and leading advocates for LGBT supplier diversity.,National Gay  Lesbian Chamber of Commerce,http://www.nglcc.org" .
 
-<http://dbpedia.org/resource/Arema_FC> dbpprop:name <http://dbpedia.org/resource/Munhar> .
-
 <http://dbpedia.org/resource/Pela> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Pela" ;
 rdfs:comment "Pela was an American indie rock band from Brooklyn known for their intense live performances.,Pela,http://www.pelamusic.com" .
@@ -11616,8 +11425,6 @@ rdfs:comment "MO5AIC (Mosaic) is a five-man vocal band from the United States. A
 <http://dbpedia.org/resource/Gauge_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Gauge (band)" ;
 rdfs:comment "Gauge was a post hardcore band from the northwest suburbs of Chicago, Illinois.,Gauge,http://www.gaugechicago.com" .
-
-<http://dbpedia.org/resource/P.A.O.K._F.C.> dbpprop:name "Rafail Savvas Soilemezoglou,http://www.paokfc.gr/" .
 
 <http://dbpedia.org/resource/Sequester_(band)> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Sequester (band)" ;
@@ -11919,9 +11726,6 @@ rdfs:comment "The Democratic Confederation of San Marino Workers (CDLS) is a nat
 rdfs:label "Thinking Fellers Union Local 282" ;
 rdfs:comment "Thinking Fellers Union Local 282 is an experimental indie rock group formed in 1986 in San Francisco, California, though half of its members are from Iowa. Their albums combine lo-fi noise rock and ambient sounds (referred to as Feller filler) with tightly constructed rock and pop songs. The band has a small but intensely loyal cult following. Band members are Brian Hageman, Mark Davies, Anne Eickelberg, Hugh Swarts and Jay Paget.,Thinking Fellers Union Local 282,http://www.tful282.com/" .
 
-<http://dbpedia.org/resource/S.C._Braga> dbpprop:name "Wanderson" ;
-dbpprop:nickname "Os Arsenalistas" .
-
 <http://dbpedia.org/resource/Wycombe_Wanderers_F.C.> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Wycombe Wanderers F.C." ;
 rdfs:comment "Wycombe Wanderers Football Club is an English professional football team from High Wycombe in Buckinghamshire. The club first entered the Football League in 1993 and currently plays in League Two. The clubs nicknames are The Chairboys and The Blues and the name of their stadium is Adams Park." ;
@@ -12003,7 +11807,7 @@ rdfs:comment "Edison High School is a public high school located in Huntington B
 
 <http://dbpedia.org/resource/Mehran_University_of_Engineering_and_Technology> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Mehran University of Engineering and Technology" ;
-rdfs:comment "The Mehran University of Engineering and Technology, Jamshoro (Sindhi:      ) informally shortened as Mehran University (MUET) is the largest engineering degree-awarding institute in Pakistan. It is in the university town of Jamshoro in the Sindh province, along with the University of Sindh and Liaquat University of Medical  Health Sciences. The university was certified as having ISO 9000 compliant business processes.,Mehran University of Engineering and Technology, Jamshoro,http://www.muet.edu.pk" .
+rdfs:comment "The Mehran University of Engineering and Technology, Jamshoro informally shortened as Mehran University (MUET) is the largest engineering degree-awarding institute in Pakistan. It is in the university town of Jamshoro in the Sindh province, along with the University of Sindh and Liaquat University of Medical  Health Sciences. The university was certified as having ISO 9000 compliant business processes.,Mehran University of Engineering and Technology, Jamshoro,http://www.muet.edu.pk" .
 
 <http://dbpedia.org/resource/New_Orleans_City_Council> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "New Orleans City Council" ;
@@ -12033,8 +11837,6 @@ rdfs:comment "Hazard Community and Technical College (HCTC), located in Hazard, 
 <http://dbpedia.org/resource/WVUS> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "WVUS" ;
 rdfs:comment "WVUS is a Catholic Religious formatted broadcast radio station licensed to Grafton, West Virginia, serving Grafton and Taylor County, West Virginia. WVUS is owned and operated by Light of Life Community, Inc.,WVUS,http://www.wvlol.org/7r20Radio.html" .
-
-<http://dbpedia.org/resource/Centro_de_Futebol_Zico_Sociedade_Esportiva> dbpprop:name <http://dbpedia.org/resource/Thiago_de_Almeida_Rodrigues_Abrantes> .
 
 <http://dbpedia.org/resource/Collingwood_College,_Surrey> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Collingwood College, Surrey" ;
@@ -12218,7 +12020,7 @@ dbpprop:name <http://rsd.k12.pa.us> .
 
 <http://dbpedia.org/resource/Maejo_University> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Maejo University" ;
-rdfs:comment "Maejo University (also spelled Maecho University, Thai: ) in Chiang Mai Province, Thailand, is the oldest agricultural institution in the country. Founded in 1934 as the Northern Agricultural Teachers Training School, it was restructured and renamed several times until it gained the status of a full-fledged public university in 1996 and since then has been known as Maejo University.,Maejo University,http://www.mju.ac.th" .
+rdfs:comment "Maejo University (also spelled Maecho University) in Chiang Mai Province, Thailand, is the oldest agricultural institution in the country. Founded in 1934 as the Northern Agricultural Teachers Training School, it was restructured and renamed several times until it gained the status of a full-fledged public university in 1996 and since then has been known as Maejo University.,Maejo University,http://www.mju.ac.th" .
 
 <http://dbpedia.org/resource/RC_Strasbourg> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "RC Strasbourg" ;
@@ -12593,7 +12395,7 @@ dbpprop:name <http://dbpedia.org/resource/Carlota_Zabaleta,http://www.fprelolivo
 
 <http://dbpedia.org/resource/FC_Chornomorets_Odesa> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "FC Chornomorets Odesa" ;
-rdfs:comment "Football Club Chornomorets Odesa (Ukrainian:    ) is a Ukrainian professional football club based in Odessa. The clubs home ground is the 34,164 capacity Chornomorets Stadium opened in 1935 and rebuilt in 2011. The club was officially formed in 1936 as Dynamo, but after a number of name and management changes, it emerged under its current name in 1958." ;
+rdfs:comment "Football Club Chornomorets Odesa is a Ukrainian professional football club based in Odessa. The clubs home ground is the 34,164 capacity Chornomorets Stadium opened in 1935 and rebuilt in 2011. The club was officially formed in 1936 as Dynamo, but after a number of name and management changes, it emerged under its current name in 1958." ;
 dbpprop:manager "http://dbpedia.org/resource/Roman_Hryhorchuk" ;
 dbpprop:name <http://dbpedia.org/resource/Lucian_Burdujan> ;
 dbpprop:nickname "The Sailors" ;
@@ -12707,8 +12509,6 @@ rdfs:comment "Little Texas is an American country music band founded in Nashvill
 rdfs:label "Mayan (band)" ;
 rdfs:comment "MaYaN is a Dutch symphonic death metal band founded by vocalist Mark Jansen, keyboardist Jack Driessen and guitarist Frank Schiphorst. The name of the band was chosen by Jansen out of his fascination for the ancient Maya civilization.,MaYaN,http://www.mayanofficial.com/" .
 
-<http://dbpedia.org/resource/ACF_Fiorentina> dbpprop:name <http://dbpedia.org/resource/RafaC582_Wolski> .
-
 <http://dbpedia.org/resource/Bearsuit> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "Bearsuit" ;
 rdfs:comment "Bearsuit are an art-rock/dance/punk band from Norwich, UK.,Bearsuit,http://www.bearsuit.co.uk/" .
@@ -12719,7 +12519,7 @@ rdfs:comment "The University of d was founded May 24, 1945 in d, Poland, as a co
 
 <http://dbpedia.org/resource/PFC_Levski_Sofia> a <http://dbpedia.org/ontology/Organisation> ;
 rdfs:label "PFC Levski Sofia" ;
-rdfs:comment "PFC Levski Sofia, (Bulgarian:   ) otherwise simply known as Levski or Levski Sofia, is a professional football club based in Sofia, Bulgaria. The club was founded on May 24, 1914 by a group of young students, and is named after Vasil Levski, a Bulgarian revolutionary renowned as the national hero of Bulgaria." ;
+rdfs:comment "PFC Levski Sofia,otherwise simply known as Levski or Levski Sofia, is a professional football club based in Sofia, Bulgaria. The club was founded on May 24, 1914 by a group of young students, and is named after Vasil Levski, a Bulgarian revolutionary renowned as the national hero of Bulgaria." ;
 dbpprop:manager "Ilian Iliev" ;
 dbpprop:name <http://dbpedia.org/resource/Vladimir_Gadzhev> ;
 dbpprop:nickname "  " ;

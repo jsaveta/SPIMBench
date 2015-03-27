@@ -141,12 +141,10 @@ dbpprop:equipment "Inline hockey skates5" .
 
 <http://dbpedia.org/resource/Sport_diving_(sport)> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Sport Diving is an underwater sport that uses recreational open circuit scuba diving equipment and consists of a set of individual and team events conducted in a swimming pool that test the competitors competency in recreational scuba diving technique. The sport was developed in Spain during the late 1990s and is currently played mainly in Europe. It is known as Plonge Sportive in French and as Buceo De Competicin in Spanish." ;
-dbpprop:caption "." ;
 dbpprop:equipment "http://dbpedia.org/resource/Diving_maskindividual and teams of 2 and 4" .
 
 <http://dbpedia.org/resource/Underwater_target_shooting> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment " Underwater Target Shooting is an underwater sport that tests a competitors ability to accurately use a speargun via a set of individual and team events conducted in a swimming pool using free diving or Apnoea technique. The sport was developed in France during the early 1980s and is currently practised mainly in Europe. It is known as Tir sur cible subaquatique in French and as Tiro al Blanco Subacutico in Spanish." ;
-dbpprop:caption "." ;
 dbpprop:equipment "http://dbpedia.org/resource/Snorkelingyes" .
 
 <http://dbpedia.org/resource/Major_League_Ultimate> a <http://dbpedia.org/ontology/Sport> ;
@@ -386,10 +384,6 @@ dbpprop:equipment "Basketball" ;
 dbpprop:olympic "Yes" ;
 dbpprop:team "Five on-court players per team" .
 
-<http://dbpedia.org/resource/Carom_billiards> dbpprop:equipment "http://dbpedia.org/resource/Cue_stick" .
-
-<http://dbpedia.org/resource/PesC3A4pallo> dbpprop:olympic "Demonstrated 1952,12" .
-
 <http://dbpedia.org/resource/Luge> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "A Luge is a small one- or two-person sled on which one sleds supine (face up) and feet-first. Steering is done by flexing the sleds runners with the calf of each leg or exerting opposite shoulder pressure to the seat. Racing sleds weigh 21-25 kilograms (46-55 lbs. ) for singles and 25-30 kilograms (55-66 lbs. ) for doubles. Luge is also the name of an Olympic sport. Of the three Olympic sliding sports, which include bobsleigh and skeleton, luge is the fastest and most dangerous." ;
 dbpprop:caption "Departing German luger at the 2010 Olympics" ;
@@ -439,7 +433,6 @@ dbpprop:caption "The University of Alberta Golden Bears  line up on offence agai
 rdfs:comment "Skeleton is a fast winter sliding sport in which an individual person rides a small sled down a frozen track while lying face down, during which athletes experience forces up to 5g. It originated in St. Moritz, Switzerland as a spin-off from the popular British sport of Cresta sledding." ;
 dbpprop:caption "USAF Major Brady Canfield, 2003 canada skeleton champion, shows off his takeoff form.Part of the Winter Olympic programme in 1928 and 1948,1" .
 
-<http://dbpedia.org/resource/Cricket> dbpprop:caption "A bowler bowling to a batsman. The paler strip is the cricket pitch. The two sets of three wooden stumps on the pitch are the wickets. The two white lines are the creases.1900,11" .
 
 <http://dbpedia.org/resource/Basque_pelota> a <http://dbpedia.org/ontology/Sport> ;
 rdfs:comment "Basque pelota (pilota or eusko pilota in Basque, pelota vasca in Spanish, and pelote or pelote basque in French) is the name for a variety of court sports played with a ball using ones hand, a racket, a wooden bat or a basket, against a wall (frontis) or, more traditionally, with two teams face to face separated by a line on the ground or a net. Their roots can be traced to the Greek and other ancient cultures." ;

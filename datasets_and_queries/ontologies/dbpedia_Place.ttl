@@ -51,6 +51,7 @@ dbpprop:population
 	owl:equivalentProperty core:population ;
     rdfs:label "population"^^xsd:string .
 
-#geo:geometry
-
+geo:geometry 
+	rdf:type rdf:Property ;
+	rdfs:label "Point"^^xsd:string .
 
