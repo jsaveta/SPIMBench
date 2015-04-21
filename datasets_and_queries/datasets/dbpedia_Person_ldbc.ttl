@@ -90,14 +90,6 @@
 	<http://dbpedia.org/ontology/deathDate> "1862-04-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Hardin_County,_Tennessee> .
 
-<http://dbpedia.org/resource/Albert_Einstein> <http://xmlns.com/foaf/0.1/name> "Albert Einstein"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Einstein"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Albert"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Physicist"@en ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Ulm> , <http://dbpedia.org/resource/Baden-Württemberg> , <http://dbpedia.org/resource/German_Empire> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Princeton,_New_Jersey> , <http://dbpedia.org/resource/United_States> .
-
 <http://dbpedia.org/resource/Alfred_Korzybski> <http://xmlns.com/foaf/0.1/name> "Alfred Korzybski"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Korzybski"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Alfred"@en ;
@@ -538,7 +530,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Catholic cardinal"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1490-06-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Cölln> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Colln> ;
 	<http://dbpedia.org/ontology/deathDate> "1545-09-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Mainz> .
 
@@ -1109,7 +1101,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Adolph Wilhelm Hermann"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/birthDate> "1818-09-27"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Göttingen> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Gottingen> ;
 	<http://dbpedia.org/ontology/deathDate> "1884-11-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Leipzig> .
 
@@ -1328,13 +1320,6 @@
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Thornton,_West_Yorkshire> , <http://dbpedia.org/resource/Yorkshire> , <http://dbpedia.org/resource/England> ;
 	<http://dbpedia.org/ontology/deathDate> "1849-05-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Scarborough,_North_Yorkshire> , <http://dbpedia.org/resource/England> .
-
-<http://dbpedia.org/resource/August_Horch> <http://xmlns.com/foaf/0.1/name> "August Horch"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Horch"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "August"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Winningen> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Münchberg> , <http://dbpedia.org/resource/Bavaria> .
 
 <http://dbpedia.org/resource/Augustine_of_Hippo> <http://xmlns.com/foaf/0.1/name> "Saint Augustine of Hippo"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Augustine of Hippo"@en ;
@@ -1622,16 +1607,6 @@
 	<http://dbpedia.org/ontology/birthDate> "1937-12-31"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Margam> , <http://dbpedia.org/resource/Port_Talbot> , <http://dbpedia.org/resource/Wales> .
 
-<http://dbpedia.org/resource/Albrecht_Dürer> <http://xmlns.com/foaf/0.1/name> "Albrecht Dürer"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Dürer"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Albrecht"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "German artist and mathematician"@en ;
-	<http://dbpedia.org/ontology/birthDate> "1471-05-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Nuremberg> ;
-	<http://dbpedia.org/ontology/deathDate> "1528-04-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Nuremberg> .
-
 <http://dbpedia.org/resource/Alban_Berg> <http://xmlns.com/foaf/0.1/name> "Alban Berg"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Berg"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Alban"@en ;
@@ -1673,7 +1648,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1901-10-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Borgonovo> , <http://dbpedia.org/resource/Stampa> , <http://dbpedia.org/resource/Switzerland> ;
 	<http://dbpedia.org/ontology/deathDate> "1966-01-11"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Chur> , <http://dbpedia.org/resource/Graubünden> , <http://dbpedia.org/resource/Switzerland> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Chur> , <http://dbpedia.org/resource/Graubunden> , <http://dbpedia.org/resource/Switzerland> .
 
 <http://dbpedia.org/resource/Anton_Chekhov> <http://xmlns.com/foaf/0.1/name> "Anton Pavlovich Chekhov"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Chekhov"@en ;
@@ -1827,14 +1802,6 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Caliph of Cordoba"@en .
 
-<http://dbpedia.org/resource/Abdülaziz> <http://xmlns.com/foaf/0.1/name> "Abdulaziz"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://purl.org/dc/elements/1.1/description> "Sultan of the Ottoman Empire"@en ;
-	<http://dbpedia.org/ontology/birthDate> "1830-02-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Constantinople> ;
-	<http://dbpedia.org/ontology/deathDate> "1876-06-04"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Çırağan_Palace> .
-
 <http://dbpedia.org/resource/Abdul_Hamid_I> <http://xmlns.com/foaf/0.1/name> "Abdulhamid"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Sultan"@en ;
@@ -1923,7 +1890,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/deathDate> "1339-05-26"^^<http://www.w3.org/2001/XMLSchema#date> .
 
-<http://dbpedia.org/resource/Andreas_Schlüter> <http://xmlns.com/foaf/0.1/name> "Andreas Schlueter"@en ;
+<http://dbpedia.org/resource/Andreas_Schluter> <http://xmlns.com/foaf/0.1/name> "Andreas Schlueter"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Schlueter"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Andreas"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -2206,7 +2173,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Duke of Prussia (1568-1618)"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1553-05-07"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> ;
 	<http://dbpedia.org/ontology/deathDate> "1618-08-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Primorsk,_Kaliningrad_Oblast> .
 
@@ -2288,7 +2255,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1950-12-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Aarhus> , <http://dbpedia.org/resource/Denmark> .
 
-<http://dbpedia.org/resource/Björn_Ulvaeus> <http://xmlns.com/foaf/0.1/name> "Bjorn Ulvaeus"@en ;
+<http://dbpedia.org/resource/Bjorn_Ulvaeus> <http://xmlns.com/foaf/0.1/name> "Bjorn Ulvaeus"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Ulvaeus"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Bjorn"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -2774,7 +2741,7 @@
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Cyprus> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Cyprus> .
 
-<http://dbpedia.org/resource/Björn_Borg> <http://xmlns.com/foaf/0.1/name> "Bjorn Rune Borg"@en ;
+<http://dbpedia.org/resource/Bjorn_Borg> <http://xmlns.com/foaf/0.1/name> "Bjorn Rune Borg"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Borg"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Bjorn Rune"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -2890,13 +2857,6 @@
 	<http://dbpedia.org/ontology/deathDate> "1998-05-29"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Paradise_Valley,_Arizona> , <http://dbpedia.org/resource/United_States> .
 
-<http://dbpedia.org/resource/Barış_Manço> <http://xmlns.com/foaf/0.1/name> "Baris Manco"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Manco"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Baris"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://dbpedia.org/ontology/birthDate> "1943-01-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Üsküdar> , <http://dbpedia.org/resource/Istanbul> ;
-	<http://dbpedia.org/ontology/deathDate> "1999-02-01"^^<http://www.w3.org/2001/XMLSchema#date> .
 
 <http://dbpedia.org/resource/Bob_Wills> <http://xmlns.com/foaf/0.1/name> "Bob Wills"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Wills"@en ;
@@ -3310,7 +3270,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1777-04-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Braunschweig> , <http://dbpedia.org/resource/Germany> ;
 	<http://dbpedia.org/ontology/deathDate> "1855-02-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Göttingen> , <http://dbpedia.org/resource/Kingdom_of_Hanover> , <http://dbpedia.org/resource/Germany> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Gottingen> , <http://dbpedia.org/resource/Kingdom_of_Hanover> , <http://dbpedia.org/resource/Germany> .
 
 <http://dbpedia.org/resource/Christoph_Ludwig_Agricola> <http://xmlns.com/foaf/0.1/name> "Christoph Ludwig Agricola"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Agricola"@en ;
@@ -3418,7 +3378,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Christian"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/birthDate> "1690-03-18"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/Brandenburg-Prussia> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/Brandenburg-Prussia> ;
 	<http://dbpedia.org/ontology/deathDate> "1764-11-20"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Moscow> , <http://dbpedia.org/resource/Russian_Empire> .
 
@@ -4402,9 +4362,9 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Mathematician"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1862-01-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/East_Prussia> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/East_Prussia> ;
 	<http://dbpedia.org/ontology/deathDate> "1943-02-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Göttingen> , <http://dbpedia.org/resource/Germany> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Gottingen> , <http://dbpedia.org/resource/Germany> .
 
 <http://dbpedia.org/resource/David_Janssen> <http://xmlns.com/foaf/0.1/name> "David Janssen"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Janssen"@en ;
@@ -5282,7 +5242,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "American artist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1816-05-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Schwäbisch_Gmünd> , <http://dbpedia.org/resource/Kingdom_of_Württemberg> , <http://dbpedia.org/resource/Germany> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Schwäbisch_Gmund> , <http://dbpedia.org/resource/Kingdom_of_Wurttemberg> , <http://dbpedia.org/resource/Germany> ;
 	<http://dbpedia.org/ontology/deathDate> "1868-07-18"^^<http://www.w3.org/2001/XMLSchema#date> .
 
 <http://dbpedia.org/resource/Eusebius_Amort> <http://xmlns.com/foaf/0.1/name> "Eusebius Amort"@en ;
@@ -5473,8 +5433,8 @@
 	<http://dbpedia.org/ontology/deathDate> "1974-10-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/New_York_City> , <http://dbpedia.org/resource/United_States> .
 
-<http://dbpedia.org/resource/Erwin_Schrödinger> <http://xmlns.com/foaf/0.1/name> "Erwin Schrödinger"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Schrödinger"@en ;
+<http://dbpedia.org/resource/Erwin_Schrodinger> <http://xmlns.com/foaf/0.1/name> "Erwin Schrodinger"@en ;
+	<http://xmlns.com/foaf/0.1/surname> "Schrodinger"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Erwin"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Physicist"@en ;
@@ -5682,7 +5642,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Prussian jurist, author, composer, music critic, and artist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1776-01-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/East_Prussia> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/East_Prussia> ;
 	<http://dbpedia.org/ontology/deathDate> "1822-06-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Province_of_Brandenburg> , <http://dbpedia.org/resource/Kingdom_of_Prussia> .
 
@@ -5767,18 +5727,6 @@
 	<http://dbpedia.org/ontology/deathDate> "1954-11-28"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Chicago> , <http://dbpedia.org/resource/Illinois> .
 
-<http://dbpedia.org/resource/Erdoğan_Atalay> <http://xmlns.com/foaf/0.1/name> "Erdogan Atalay"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Atalay"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Erdogan"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://dbpedia.org/ontology/birthDate> "1966-09-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-
-<http://dbpedia.org/resource/Emin_Boztepe> <http://xmlns.com/foaf/0.1/name> "Emin Boztepe"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Boztepe"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "Emin"@en ;
-	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
-	<http://dbpedia.org/ontology/birthDate> "1962-06-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Eskişehir> , <http://dbpedia.org/resource/Turkey> .
 
 <http://dbpedia.org/resource/Ennio_Morricone> <http://xmlns.com/foaf/0.1/name> "Ennio Morricone"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Morricone"@en ;
@@ -6125,7 +6073,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Friedrich"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "19th century philosopher"@en ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Röcken> , <http://dbpedia.org/resource/Leipzig> , <http://dbpedia.org/resource/Saxony> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Rocken> , <http://dbpedia.org/resource/Leipzig> , <http://dbpedia.org/resource/Saxony> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Weimar> .
 
 <http://dbpedia.org/resource/Frank_Zappa> <http://xmlns.com/foaf/0.1/name> "Frank Zappa"@en ;
@@ -6152,7 +6100,7 @@
 	<http://dbpedia.org/ontology/deathDate> "1984-10-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Neuilly-sur-Seine> .
 
-<http://dbpedia.org/resource/Friedrich_Wöhler> <http://xmlns.com/foaf/0.1/name> "Friedrich Woehler"@en ;
+<http://dbpedia.org/resource/Friedrich_Wohler> <http://xmlns.com/foaf/0.1/name> "Friedrich Woehler"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Woehler"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Friedrich"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -6160,7 +6108,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1800-07-31"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Eschersheim_(Frankfurt_am_Main)> , <http://dbpedia.org/resource/Landgraviate_of_Hesse-Kassel> , <http://dbpedia.org/resource/Holy_Roman_Empire> ;
 	<http://dbpedia.org/ontology/deathDate> "1882-09-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Göttingen> , <http://dbpedia.org/resource/Germany> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Gottingen> , <http://dbpedia.org/resource/Germany> .
 
 <http://dbpedia.org/resource/Frederic_Chopin> <http://xmlns.com/foaf/0.1/name> "Frederic François Chopin"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Chopin"@en ;
@@ -6422,7 +6370,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Finnish writer"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1888-09-16"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Hämeenkyrö> , <http://dbpedia.org/resource/Grand_Duchy_of_Finland> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Hämeenkyro> , <http://dbpedia.org/resource/Grand_Duchy_of_Finland> ;
 	<http://dbpedia.org/ontology/deathDate> "1964-06-03"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Helsinki> , <http://dbpedia.org/resource/Finland> .
 
@@ -6641,7 +6589,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1784-07-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Minden> , <http://dbpedia.org/resource/Minden-Ravensberg> , <http://dbpedia.org/resource/Germany> ;
 	<http://dbpedia.org/ontology/deathDate> "1846-03-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/Province_of_Prussia> , <http://dbpedia.org/resource/Russia> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/Province_of_Prussia> , <http://dbpedia.org/resource/Russia> .
 
 <http://dbpedia.org/resource/Frances_Abington> <http://xmlns.com/foaf/0.1/name> "Frances Abington"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Abington"@en ;
@@ -6830,7 +6778,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "Franz"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://dbpedia.org/ontology/birthDate> "1734-05-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Bishopric_of_Constance> , <http://dbpedia.org/resource/Moos,_Baden-Württemberg> , <http://dbpedia.org/resource/Germany> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Bishopric_of_Constance> , <http://dbpedia.org/resource/Moos,_Baden-Wurttemberg> , <http://dbpedia.org/resource/Germany> ;
 	<http://dbpedia.org/ontology/deathDate> "1815-03-05"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Meersburg> , <http://dbpedia.org/resource/Grand_Duchy_of_Baden> .
 
@@ -7101,7 +7049,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Physicist"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1824-03-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/East_Prussia> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/East_Prussia> ;
 	<http://dbpedia.org/ontology/deathDate> "1887-10-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Berlin> , <http://dbpedia.org/resource/Germany> .
 
@@ -7416,7 +7364,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1594-12-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Tre_Kronor_(castle)> , <http://dbpedia.org/resource/Sweden> ;
 	<http://dbpedia.org/ontology/deathDate> "1632-11-06"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Lützen> , <http://dbpedia.org/resource/Electorate_of_Saxony> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Lutzen> , <http://dbpedia.org/resource/Electorate_of_Saxony> .
 
 <http://dbpedia.org/resource/Gallienus> <http://xmlns.com/foaf/0.1/name> "Gallienus"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -7568,9 +7516,9 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Elector and Margrave of Brandenburg, Duke of Prussia"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1595-11-13"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Cölln> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Colln> ;
 	<http://dbpedia.org/ontology/deathDate> "1640-12-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Königsberg> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Konigsberg> .
 
 <http://dbpedia.org/resource/Grigori_Rasputin> <http://xmlns.com/foaf/0.1/name> "Grigori Yefimovich Rasputin"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Rasputin"@en ;
@@ -7604,7 +7552,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "German politician"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1878-11-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Lübeck> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Lubeck> ;
 	<http://dbpedia.org/ontology/deathDate> "1949-11-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Heidelberg> .
 
@@ -8054,7 +8002,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1900-10-07"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Munich> , <http://dbpedia.org/resource/German_Empire> ;
 	<http://dbpedia.org/ontology/deathDate> "1945-05-23"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Lüneburg> , <http://dbpedia.org/resource/Lower_Saxony> , <http://dbpedia.org/resource/German_Empire> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Luneburg> , <http://dbpedia.org/resource/Lower_Saxony> , <http://dbpedia.org/resource/German_Empire> .
 
 <http://dbpedia.org/resource/Heinrich_Hertz> <http://xmlns.com/foaf/0.1/name> "Heinrich Rudolf Hertz"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Hertz"@en ;
@@ -8121,8 +8069,8 @@
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Kos> , <http://dbpedia.org/resource/Greece> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Kos> , <http://dbpedia.org/resource/Greece> .
 
-<http://dbpedia.org/resource/Hermann_Göring> <http://xmlns.com/foaf/0.1/name> "Hermann Wilhelm Göring"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "Göring"@en ;
+<http://dbpedia.org/resource/Hermann_Goring> <http://xmlns.com/foaf/0.1/name> "Hermann Wilhelm Goring"@en ;
+	<http://xmlns.com/foaf/0.1/surname> "Goring"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Hermann Wilhelm"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "German politician and military leader, a leading member of the Nazi Party, second in command of the Third Reich, and commander of the Luftwaffe"@en ;
@@ -8213,7 +8161,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "German novelist, short story writer, essayist and poet"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1877-07-02"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Calw> , <http://dbpedia.org/resource/Kingdom_of_Württemberg> , <http://dbpedia.org/resource/German_Empire> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Calw> , <http://dbpedia.org/resource/Kingdom_of_Wurttemberg> , <http://dbpedia.org/resource/German_Empire> ;
 	<http://dbpedia.org/ontology/deathDate> "1962-08-09"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Montagnola> , <http://dbpedia.org/resource/Switzerland> .
 
@@ -8324,7 +8272,7 @@
 <http://dbpedia.org/resource/Hildegard_of_Bingen> <http://xmlns.com/foaf/0.1/name> "Hildegard of Bingen"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Christian mystic, German Benedictine abbess, author, counselor, linguist, naturalist, scientist, philosopher, physician, herbalist, poet, visionary and composer"@en ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Bermersheim_vor_der_Höhe> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Bermersheim_vor_der_Hohe> ;
 	<http://dbpedia.org/ontology/deathDate> "1179-09-17"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Bingen_am_Rhein> .
 
@@ -8346,7 +8294,7 @@
 	<http://xmlns.com/foaf/0.1/givenName> "H. R."@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Swiss artist"@en ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Chur> , <http://dbpedia.org/resource/Graubünden> , <http://dbpedia.org/resource/Switzerland> .
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Chur> , <http://dbpedia.org/resource/Graubunden> , <http://dbpedia.org/resource/Switzerland> .
 
 <http://dbpedia.org/resource/Halle_Berry> <http://xmlns.com/foaf/0.1/name> "Halle Berry"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -8382,7 +8330,7 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "United States Secretaries of State, National Security Advisor"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1923-05-27"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Fürth> , <http://dbpedia.org/resource/Bavaria> , <http://dbpedia.org/resource/Weimar_Republic> .
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Furth> , <http://dbpedia.org/resource/Bavaria> , <http://dbpedia.org/resource/Weimar_Republic> .
 
 <http://dbpedia.org/resource/Herbert_Marcuse> <http://xmlns.com/foaf/0.1/name> "Herbert Marcuse"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Marcuse"@en ;
@@ -8530,7 +8478,7 @@
 	<http://dbpedia.org/ontology/deathDate> "1891-07-04"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Bangor,_Maine> , <http://dbpedia.org/resource/Maine> , <http://dbpedia.org/resource/United_States> .
 
-<http://dbpedia.org/resource/Helene_Kröller-Müller> <http://xmlns.com/foaf/0.1/name> "Helene Kroller-Muller"@en ;
+<http://dbpedia.org/resource/Helene_Kroller-Muller> <http://xmlns.com/foaf/0.1/name> "Helene Kroller-Muller"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Kroller-Muller"@en ;
 	<http://xmlns.com/foaf/0.1/givenName> "Helene"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
@@ -8920,9 +8868,9 @@
 	<http://dbpedia.org/ontology/deathDate> "--04-06"^^<http://www.w3.org/2001/XMLSchema#gMonthDay> ;
 	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/New_York> , <http://dbpedia.org/resource/New_York> .
 
-<http://dbpedia.org/resource/İsmet_İnönü> <http://xmlns.com/foaf/0.1/name> "İsmet İnönü"@en ;
-	<http://xmlns.com/foaf/0.1/surname> "İnönü"@en ;
-	<http://xmlns.com/foaf/0.1/givenName> "İsmet"@en ;
+<http://dbpedia.org/resource/Ismet_Inonu> <http://xmlns.com/foaf/0.1/name> "Ismet Inonu"@en ;
+	<http://xmlns.com/foaf/0.1/surname> "Inonu"@en ;
+	<http://xmlns.com/foaf/0.1/givenName> "Ismet"@en ;
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "Turkish politician"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1884-09-24"^^<http://www.w3.org/2001/XMLSchema#date> ;
@@ -8938,7 +8886,7 @@
 	<http://dbpedia.org/ontology/birthDate> "1918-07-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
 	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Uppsala> ;
 	<http://dbpedia.org/ontology/deathDate> "2007-07-30"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Fårö> , <http://dbpedia.org/resource/Sweden> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Fåro> , <http://dbpedia.org/resource/Sweden> .
 
 <http://dbpedia.org/resource/Immanuel_Kant> <http://xmlns.com/foaf/0.1/name> "Immanuel Kant"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Kant"@en ;
@@ -8946,9 +8894,9 @@
 	rdf:type <http://xmlns.com/foaf/0.1/Person> ;
 	<http://purl.org/dc/elements/1.1/description> "German philosopher"@en ;
 	<http://dbpedia.org/ontology/birthDate> "1724-04-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/Kingdom_of_Prussia> ;
+	<http://dbpedia.org/ontology/birthPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/Kingdom_of_Prussia> ;
 	<http://dbpedia.org/ontology/deathDate> "1804-02-12"^^<http://www.w3.org/2001/XMLSchema#date> ;
-	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Königsberg> , <http://dbpedia.org/resource/Kingdom_of_Prussia> .
+	<http://dbpedia.org/ontology/deathPlace> <http://dbpedia.org/resource/Konigsberg> , <http://dbpedia.org/resource/Kingdom_of_Prussia> .
 
 <http://dbpedia.org/resource/Isaac_Newton> <http://xmlns.com/foaf/0.1/name> "Isaac Newton"@en ;
 	<http://xmlns.com/foaf/0.1/surname> "Newton"@en ;
