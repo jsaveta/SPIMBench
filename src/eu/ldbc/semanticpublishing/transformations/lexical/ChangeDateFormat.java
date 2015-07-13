@@ -53,7 +53,7 @@ public class ChangeDateFormat implements DataValueTransformation {
 			f = df.format(d);
 		} catch (ParseException e) {
 		} finally{
-			return SesameBuilder.sesameValueFactory.createLiteral(f,XMLSchema.DATETIME); 
+			return SesameBuilder.sesameValueFactory.createLiteral(f,XMLSchema.DATE); 
 		}
 	}
 
