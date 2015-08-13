@@ -1,22 +1,34 @@
 package eu.ldbc.semanticpublishing.generators.data;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 import java.util.Map.Entry;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.openrdf.model.Model;
+import org.openrdf.model.Resource;
+import org.openrdf.model.URI;
+import org.openrdf.model.Value;
+import org.openrdf.model.impl.LinkedHashModel;
+import org.openrdf.rio.RDFFormat;
 import org.openrdf.rio.RDFHandlerException;
 import org.openrdf.rio.RDFParseException;
+import org.openrdf.rio.Rio;
 
 import com.google.common.collect.Iterables;
 
+import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.properties.Configuration;
 import eu.ldbc.semanticpublishing.properties.Definitions;
 import eu.ldbc.semanticpublishing.refdataset.DataManager;
@@ -27,6 +39,7 @@ import eu.ldbc.semanticpublishing.util.DivergenceUtil;
 import eu.ldbc.semanticpublishing.util.ExponentialDecayNumberGeneratorUtil;
 import eu.ldbc.semanticpublishing.util.FileUtils;
 import eu.ldbc.semanticpublishing.util.RandomUtil;
+import eu.ldbc.semanticpublishing.util.SesameUtils;
 
 /**
  * The class responsible for managing data generation for the benchmark.
@@ -303,7 +316,7 @@ public class DataGenerator {
 			//double k = (0.1 * Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)))/js;
 			double k = js*files + Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)); //TODO fix this!
 			
-			int times = Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING));
+			int times = 1;  //Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING));
 			
 			if((int)k <= Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING))){
 				System.out.println("\tThe rescalSampling you chose is satisfactory.");
@@ -311,17 +324,43 @@ public class DataGenerator {
 			else{
 				if(k>files) k = files;
 				System.out.println("\tThe suggested rescalSampling is : " + (int)k); 
-				times = (int)k; 
+				times = 1;  //(int)k; 
 			}
 			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
-				times = files;
+				times = 1;  // files;
 			}
 			List<String> list = new ArrayList<String>();
 			if(Integer.parseInt(configuration.getString(Configuration.FILES_FOR_RESCAL_SAMPLING)) > files){
-				times = files;
+				times = 1;  // files;
 			}
 			for (Entry<String, Double> entry : square_cos.entrySet()) {
-			  if (list.size() > times -1) {CreateFinalGS.writeFinalGSFiles(); break;}
+			  if (list.size() > (times -1)) {
+				  
+				  
+				//Write extended ontology file here..
+					RDFFormat rdfFormat = SesameUtils.parseRdfFormat("turtle");
+					File f = new File("newOnto.ttl");
+					FileOutputStream fos = new FileOutputStream(f, false);
+					Model ontoModel = new LinkedHashModel();
+				    
+				  	TreeSet<String> newProperties = AbstractAsynchronousWorker.getExtendOntologyProps();
+					System.out.println("Going to print newProperties treeset with size "+ newProperties.size());
+					Iterator<String> it = newProperties.iterator();
+					while(it.hasNext()) {
+					   // System.out.println("props to add in ontology: "+it.next());
+					    Resource s = SesameBuilder.sesameValueFactory.createURI(it.next().toString());
+					    URI p = SesameBuilder.sesameValueFactory.createURI("http://www.w3.org/1999/02/22-rdf-syntax-ns#type");
+					    Value o = SesameBuilder.sesameValueFactory.createURI("http://www.w3.org/1999/02/22-rdf-syntax-ns#Property");
+					    ontoModel.add(s,p,o);
+					}
+
+					try {
+						Rio.write(ontoModel, fos, rdfFormat);
+					} catch (RDFHandlerException e) {
+						e.printStackTrace();
+					}
+				  CreateFinalGS.writeFinalGSFiles(); break;
+			  }
 			  else{  
 				  list.add(entry.getKey());
 				  try {

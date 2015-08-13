@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeSet;
 
 import org.openrdf.model.Literal;
 import org.openrdf.model.Model;
@@ -35,7 +36,17 @@ public abstract class AbstractAsynchronousWorker extends Thread {
 	protected static final String FILENAME_FORMAT_D2 = "%s%sgeneratedCreativeWorksD2-%04d.";
 	protected static final String FILENAME_FORMAT_GS = "%s%sgeneratedCreativeWorksGS-%04d.";
 	//protected static final String FILENAME_FORMAT_SIMPLEGS = "%s%sgeneratedCreativeWorksSIMPLEGS-%04d.";
+	//Treeset for keeping the properties that are going to be added to the ontology.
+	private static final TreeSet <String> extendOntologyProps = new TreeSet<String>();
+		
+
+	public static void addToextendOntologyProps(String p){
+		extendOntologyProps.add(p);
+	}
 	
+	public static TreeSet<String> getExtendOntologyProps(){
+		return extendOntologyProps;
+	}
 	
 
 	

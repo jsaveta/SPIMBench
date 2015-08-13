@@ -10,9 +10,11 @@ import org.openrdf.model.URI;
 import org.openrdf.model.Value;
 import org.openrdf.model.impl.LinkedHashModel;
 
+import eu.ldbc.semanticpublishing.generators.data.AbstractAsynchronousWorker;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.transformations.InvalidTransformation;
 import eu.ldbc.semanticpublishing.transformations.Transformation;
+
 
 public class ExtractProperty  implements Transformation{
 		int N;
@@ -87,6 +89,8 @@ public class ExtractProperty  implements Transformation{
 				        if(st.getObject() instanceof Literal){
 							Value object = SesameBuilder.sesameValueFactory.createLiteral(parts[i]);
 							model.add((Resource)st.getSubject(), (URI)predicate ,(Value)object,(Resource)st.getContext());
+
+							AbstractAsynchronousWorker.addToextendOntologyProps(predicate.toString()); 
 						}
 				        else{
 				        	model.add((Resource)st.getSubject(), (URI)predicate ,(Value)st.getObject(),(Resource)st.getContext());	

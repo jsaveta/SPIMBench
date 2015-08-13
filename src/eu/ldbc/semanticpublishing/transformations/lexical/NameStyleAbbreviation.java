@@ -11,14 +11,7 @@ import org.openrdf.model.Statement;
 
 import eu.ldbc.semanticpublishing.transformations.DataValueTransformation;
 import eu.ldbc.semanticpublishing.transformations.InvalidTransformation;
-/**
- * @author Alfio Ferrara, Universita` degli Studi di Milano
- * @date 19/mag/2010
- * Changes a string as if it was a name of form First Second Surname into the following supported formats:
- * - NDOTS => F.S. Surname
- * - SCOMMANDOT => Surname, F.S.
- * - ALLDOTS => F.S. S.
- */
+
 public class NameStyleAbbreviation implements DataValueTransformation {
 	
 //	public static int NDOTS = 0;

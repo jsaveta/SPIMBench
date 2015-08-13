@@ -1,6 +1,7 @@
 package eu.ldbc.semanticpublishing.transformations;
 
 
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -32,6 +33,7 @@ import Jama.Matrix;
 import eu.ldbc.semanticpublishing.generators.data.sesamemodelbuilders.SesameBuilder;
 import eu.ldbc.semanticpublishing.rescal.turtleRescalTripleFinder.RescalStarter;
 import eu.ldbc.semanticpublishing.util.CleanZeros;
+import eu.ldbc.semanticpublishing.util.FileUtils;
 import eu.ldbc.semanticpublishing.util.Matrices;
 import eu.ldbc.semanticpublishing.util.SesameUtils;
 
@@ -252,6 +254,7 @@ public static ArrayList<Double> calculateSpecificTransfWeights(ArrayList<ArrayLi
 			weight = T_array[i - zeroIndexes];//regression.residuals(i - zeroIndexes);   <-------------
 		}
 		specificWeights.add(Math.abs(weight));
+		//specificWeights.add(weight);
 	}
 //	for(int i = 0; i < specificWeights.size(); i++) {   
 //	    System.out.println("i: "+ i+ "  specificWeight: "+specificWeights.get(i));
@@ -279,6 +282,16 @@ File[] listOfFiles = folder.listFiles();
 	    	
 	    	try {
 	    		File file = new File("generatedGS\\"+GSfile.toString().replace(".ttl", "")+"_final"+ ".txt");	
+	    		
+	    		//oaei
+	    		OAEIRDFAlignmentFormat oaeiRDF = null;
+	    		OAEIAlignmentOutput oaei = null;
+	    		try {
+	    			oaeiRDF = new OAEIRDFAlignmentFormat("OAEIRDFGoldStandards\\"+GSfile.toString().replace( FileUtils.getFileExtension(GSfile), "rdf"), GSfile.toString().replace("goldStandard", "source"), GSfile.toString().replace("goldStandard", "target"));
+	    			oaei = new OAEIAlignmentOutput(GSfile.toString().replace(".", "").replace( FileUtils.getFileExtension(GSfile), ""), GSfile.toString().replace("goldStandard", "source"), GSfile.toString().replace("goldStandard", "target"));
+	    		} catch (Exception e1) {
+					e1.printStackTrace();
+				}
 	    		BufferedWriter simpleGSfile = new BufferedWriter(new FileWriter(file));
 	    		
 	    		Model detailedGS = new LinkedHashModel();
@@ -302,7 +315,7 @@ File[] listOfFiles = folder.listFiles();
 				Statement st = it.next();
 				
 			    if(st.getPredicate().stringValue().equals(exactmatch) && !u.equals(st.getSubject().stringValue())){
-			    	if(!u.equals("")){ //chech disjointness again
+			    	if(!u.equals("")){ //check disjointness again
 			    		if((Integer)TypeTemp.get(31) == 0 && (Integer)TypeTemp.get(33) == 0 && !IdTemp.isEmpty()){ //check for disjoint and do not add it 
 				    		finalGS.add(IdTemp);
 				    		finalGS.add(ResTemp);
@@ -318,7 +331,21 @@ File[] listOfFiles = folder.listFiles();
 					    		}
 								simpleGSfile.write(IdTemp.get(0)+" "+IdTemp.get(1)+" "+weight+"\n"); //made it 1- weight 
 					    		u_uPrime_weight = 0d; /////
-							} catch ( IOException e ) {
+							
+					    		//oaei
+								try {
+//									oaeiRDF.addMapping2Output(IdTemp.get(0).toString(), IdTemp.get(1).toString(), 0, weight);
+//									oaei.addMapping2Output(IdTemp.get(0).toString(), IdTemp.get(1).toString(), 0, weight);
+									oaeiRDF.addMapping2Output(IdTemp.get(0).toString(), IdTemp.get(1).toString(), 0, 1.0);
+									oaei.addMapping2Output(IdTemp.get(0).toString(), IdTemp.get(1).toString(), 0, 1.0);
+									u_uPrime_weight = 0d; /////
+									
+									
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
+					    	
+					    	} catch ( IOException e ) {
 								   e.printStackTrace();
 							}
 				    	}
@@ -357,6 +384,13 @@ File[] listOfFiles = folder.listFiles();
 	    	RDFFormat rdfFormat = SesameUtils.parseRdfFormat("turtle");
 	    		 
 	    	Rio.write(detailedGS, fos_det, rdfFormat);
+	    	
+	    	try {
+				oaeiRDF.saveOutputFile();
+				oaei.saveOutputFile();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			simpleGSfile.close();	
 			fileinputstream.close();
 	    	inputstreamreader.close();

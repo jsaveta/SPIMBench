@@ -408,15 +408,15 @@ public class TransformationsCall {
 		transformationsArrayList = new ArrayList<Transformation>();
 
 		//lexical
-		transformationsArrayList.add(TransformationConfiguration.addRANDOMBLANKS(0.2));
-		transformationsArrayList.add(TransformationConfiguration.deleteRANDOMBLANKS(0.2));
-		transformationsArrayList.add(TransformationConfiguration.addRANDOMCHARS(0.2));
-		transformationsArrayList.add(TransformationConfiguration.deleteRANDOMCHARS(0.2));
-		transformationsArrayList.add(TransformationConfiguration.substituteRANDOMCHARS(0.2));
-		transformationsArrayList.add(TransformationConfiguration.addTOKENS("a", 0.2));
-		transformationsArrayList.add(TransformationConfiguration.deleteTOKENS("b", 0.2));
-		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS("e", 0.2));
-		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS(" ", 0.2));
+		transformationsArrayList.add(TransformationConfiguration.addRANDOMBLANKS(0.5));
+		transformationsArrayList.add(TransformationConfiguration.deleteRANDOMBLANKS(0.5));
+		transformationsArrayList.add(TransformationConfiguration.addRANDOMCHARS(0.5));
+		transformationsArrayList.add(TransformationConfiguration.deleteRANDOMCHARS(0.5));
+		transformationsArrayList.add(TransformationConfiguration.substituteRANDOMCHARS(0.5));
+		transformationsArrayList.add(TransformationConfiguration.addTOKENS("a", 0.5));
+		transformationsArrayList.add(TransformationConfiguration.deleteTOKENS("b", 0.5));
+		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS("e", 0.5));
+		transformationsArrayList.add(TransformationConfiguration.shuffleTOKENS(" ", 0.5));
 		transformationsArrayList.add(TransformationConfiguration.STEMWORD());
 		transformationsArrayList.add(TransformationConfiguration.abbreviateNAME(/*NameStyleAbbreviation.SCOMMANDOT,*/1)); //NDOTS/ALLDOTS
 		//transformationsArrayList.add(TransformationConfiguration.abbreviateNAME(NameStyleAbbreviation.NDOTS,1)); //NDOTS/ALLDOTS

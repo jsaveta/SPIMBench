@@ -119,6 +119,19 @@ public class FileUtils {
 		}
 	}
 	
+	
+	public static String getFileExtension(String f) {
+		String fileName = f;
+		String fileExtension = fileName;
+		
+		int lastPos = fileName.lastIndexOf('.');
+		
+		if (lastPos > 0 && lastPos < (fileName.length() - 1)) {
+			fileExtension = fileName.substring(lastPos + 1).toLowerCase();
+		}
+		
+		return fileExtension;
+	}
 	public static boolean isWindowsOS() {
 		String osName = System.getProperty("os.name");
 		return osName.toLowerCase().contains("windows");
