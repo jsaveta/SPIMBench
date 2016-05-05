@@ -8,7 +8,9 @@ WHERE
 { ?travelsId rdf:type <http://www.w3.org/2002/07/owl#NamedIndividual> .
   ?travelsId rdf:type ?travelsType 
   FILTER (
-?travelsType = <http://www.co-ode.org/roberts/travel.owl#AdministrativeDivision> ||  
+  
+  (!isBlank(?travelsId)) &&
+(?travelsType = <http://www.co-ode.org/roberts/travel.owl#AdministrativeDivision> ||  
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#City> ||
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#Coastline> ||
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#Continent> ||
@@ -19,7 +21,7 @@ WHERE
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#River> || 
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#TierOneAdministrativeDivision> ||
 ?travelsType = <http://www.co-ode.org/roberts/travel.owl#bodyOfLand> ||
-?travelsType = <http://www.co-ode.org/roberts/upper.owl#Person_agent>
+?travelsType = <http://www.co-ode.org/roberts/upper.owl#Person_agent>)
  ) .
  
   OPTIONAL{ ?travelsId rdf:type ?r .
